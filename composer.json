@@ -23,7 +23,9 @@
         "drush/drush": "~8.0",
         "drupal/console": "~0.10",
         "drupal/devel": "8.*",
-        "drupal/coffee": "8.*"
+        "drupal/coffee": "8.*",
+        "drupal/special_menu_items": "8.*",
+        "drupal/spamspan": "8.*"
     },
     "require-dev": {
         "behat/mink": "~1.6",
@@ -50,6 +52,11 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+      "patches": {
+        "drupal/spamspan": {
+          "Patch description": "URL to patch"
         }
+      }
     }
 }

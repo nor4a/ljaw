@@ -1,0 +1,110 @@
+diff --git a/src/Plugin/Filter/FilterSpamspan.php b/src/Plugin/Filter/FilterSpamspan.php
+old mode 100644
+new mode 100755
+index 03c2067..f879404
+--- a/src/Plugin/Filter/FilterSpamspan.php
++++ b/src/Plugin/Filter/FilterSpamspan.php
+@@ -44,6 +44,47 @@ use Drupal\Component\Utility\Xss;
+  *   }
+  * )
+  */
++
++define('SPAMSPAN_PATTERN_MAIN',
++  "([-\.\~\'\!\#\$\%\&\+\/\*\=\?\^\_\`\{\|\}\w\+^@]+)"
++  .'@'                # @
++  .'((?:'             # Group 2
++  .'[-\w]+\.'         # one or more letters or dashes followed by a dot.
++  .')+'               # The whole thing one or more times
++  .'[A-Z]{2,63}'      # with between 2 and 63 letters at the end (NB new TLDs)
++  .')');
++
++define('SPAMSPAN_PATTERN_EMAIL_BARE',
++  '!'. SPAMSPAN_PATTERN_MAIN .'!ix'
++);
++define('SPAMSPAN_PATTERN_EMAIL_WITH_OPTIONS',
++  '!'. SPAMSPAN_PATTERN_MAIN .'\[(.*?)\]!ix'
++);
++define('SPAMSPAN_PATTERN_MAILTO',
++  '!<a\s+'                                            # opening <a and spaces
++  ."((?:\w+\s*=\s*)(?:\w+|\"[^\"]*\"|'[^']*'))*?"     # any attributes
++  .'\s*'                                              # whitespace
++  ."href\s*=\s*(['\"])(mailto:"                       # the href attribute
++  . SPAMSPAN_PATTERN_MAIN                                # the email address
++  ."(?:\?[A-Za-z0-9_= %\.\-\~\_\&;\!\*\(\)\\'#&]*)?)" # an optional ? followed
++  # by a query string. NB
++  # we allow spaces here,
++  # even though strictly
++  # they should be URL
++  # encoded
++  .'\\2'                                              # the relevant quote
++  # character
++  ."((?:\s+\w+\s*=\s*)(?:\w+|\"[^\"]*\"|'[^']*'))*?"  # any more attributes
++  .'>'                                                # end of the first tag
++  .'(.*?)'                                            # tag contents.  NB this
++  # will not work properly
++  # if there is a nested
++  # <a>, but this is not
++  # valid xhtml anyway.
++  .'</a>'                                             # closing tag
++  .'!ix'
++);
++
+ class FilterSpamspan extends FilterBase {
+ 
+   /**
+@@ -57,21 +98,15 @@ class FilterSpamspan extends FilterBase {
+    */
+   const PATTERN_MAIN =
+     # Group 1 - Match the name part - dash, dot or special characters.
+-    "([-\.\~\'\!\#\$\%\&\+\/\*\=\?\^\_\`\{\|\}\w\+^@]+)"
+-    .'@'                # @
+-    .'((?:'             # Group 2
+-    .'[-\w]+\.'         # one or more letters or dashes followed by a dot.
+-    .')+'               # The whole thing one or more times
+-    .'[A-Z]{2,63}'      # with between 2 and 63 letters at the end (NB new TLDs)
+-    .')';
++    SPAMSPAN_PATTERN_MAIN;
+ 
+   // Top and tail the email regexp it so that it is case insensitive and
+   // ignores whitespace.
+-  const PATTERN_EMAIL_BARE = '!'. self::PATTERN_MAIN .'!ix';
++  const PATTERN_EMAIL_BARE = SPAMSPAN_PATTERN_EMAIL_BARE;
+ 
+   // options such as subject or body
+   // e.g. <a href="mailto:email@example.com?subject=Hi there!&body=Dear Sir">
+-  const PATTERN_EMAIL_WITH_OPTIONS = '!'. self::PATTERN_MAIN .'\[(.*?)\]!ix';
++  const PATTERN_EMAIL_WITH_OPTIONS = SPAMSPAN_PATTERN_EMAIL_WITH_OPTIONS;
+ 
+   // Next set up a regex for mailto: URLs.
+   // - see http://www.faqs.org/rfcs/rfc2368.html
+@@ -79,29 +114,7 @@ class FilterSpamspan extends FilterBase {
+   // the name into the third group and the domain into
+   // the fourth. The tag contents go into the fifth.
+ 
+-  const PATTERN_MAILTO =
+-    '!<a\s+'                                            # opening <a and spaces
+-    ."((?:\w+\s*=\s*)(?:\w+|\"[^\"]*\"|'[^']*'))*?"     # any attributes
+-    .'\s*'                                              # whitespace
+-    ."href\s*=\s*(['\"])(mailto:"                       # the href attribute
+-    . self::PATTERN_MAIN                                # the email address
+-    ."(?:\?[A-Za-z0-9_= %\.\-\~\_\&;\!\*\(\)\\'#&]*)?)" # an optional ? followed
+-                                                        # by a query string. NB
+-                                                        # we allow spaces here,
+-                                                        # even though strictly
+-                                                        # they should be URL
+-                                                        # encoded
+-    .'\\2'                                              # the relevant quote
+-                                                        # character
+-    ."((?:\s+\w+\s*=\s*)(?:\w+|\"[^\"]*\"|'[^']*'))*?"  # any more attributes
+-    .'>'                                                # end of the first tag
+-    .'(.*?)'                                            # tag contents.  NB this
+-                                                        # will not work properly
+-                                                        # if there is a nested
+-                                                        # <a>, but this is not
+-                                                        # valid xhtml anyway.
+-    .'</a>'                                             # closing tag
+-    .'!ix';
++  const PATTERN_MAILTO = SPAMSPAN_PATTERN_MAILTO;
+ 
+   // these will help us deal with inline images, which if very large
+   // break the preg_match and preg_replace

@@ -14,7 +14,7 @@
             "type": "composer",
             "url": "https://packagist.drupal-composer.org"
         },
-        {
+      {
         "type": "package",
         "package": {
           "name": "harvesthq/chosen",
@@ -26,6 +26,19 @@
           },
           "require": {
             "composer/installers": "~1.0"
+          }
+        }
+      },
+      {
+        "type": "package",
+        "package": {
+          "name": "drupal/ckeditor_anchor_link",
+          "version": "8.1",
+          "type": "drupal-module",
+          "source": {
+            "url": "https://git.drupal.org/sandbox/RajabNatshah/2672766.git",
+            "type": "git",
+            "reference": "8.x-1.x"
           }
         }
       }
@@ -42,7 +55,10 @@
         "drupal/special_menu_items": "8.*",
         "drupal/spamspan": "8.*",
         "drupal/chosen": "8.*",
-        "harvesthq/chosen": "1.5.1"
+        "harvesthq/chosen": "1.5.1",
+        "drupal/linkit": "8.4.1",
+        "drupal/editor_advanced_link": "8.1.0",
+        "drupal/ckeditor_anchor_link": "8.1"
     },
     "require-dev": {
         "behat/mink": "~1.6",

@@ -1,0 +1,22 @@
+#block-mainnavigation{
+    width:auto;
+}
+#block-mainnavigation div > ul > li{
+    float:left;
+}
+#block-mainnavigation div > ul > li > ul,
+#block-mainnavigation div > ul > li > ul > li > ul {
+    padding-left:15px;
+}
+
+#block-mainnavigation div > ul > li > a{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+#block-mainnavigation div > ul > li > ul > li > a{
+    font-weight:bold;
+}
+#block-mainnavigation div > ul > li > ul > li > ul > li a{
+    font-style: italic;
+}
+

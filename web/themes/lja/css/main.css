@@ -66,7 +66,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face {
   font-family: "Helvetica Neue";
-  src: url(/stylesheets/fonts/HelveticaNeue.ttf), url(/stylesheets/fonts/HelveticaNeueBold.ttf);
+  src: url("../fonts/HelveticaNeue.ttf"), url("../fonts/HelveticaNeueBold.ttf");
 }
 /* line 15, ../sass/main.scss */
 body {
@@ -78,13 +78,13 @@ body {
 
 /* line 20, ../sass/main.scss */
 h1.wave:before {
-  content: url("/img/wave-blue-long.png");
+  content: url("..../img/wave-blue-long.png");
   top: -110px;
 }
 
 /* line 27, ../sass/main.scss */
 h2.wave:before {
-  content: url("/img/wave-blue-short.png");
+  content: url("..../img/wave-blue-short.png");
   top: -46px;
 }
 
@@ -111,14 +111,14 @@ a {
 
 /* line 49, ../sass/main.scss */
 .content-container {
-  background: url("/img/background.png");
+  background: url("../img/background.png");
   background-size: cover;
   padding-top: 100px;
 }
 /* line 53, ../sass/main.scss */
 .content-container.page {
   padding-top: 175px;
-  background: url("/img/background-page.png");
+  background: url("../img/background-page.png");
   background-size: cover;
 }
 /* line 58, ../sass/main.scss */
@@ -211,7 +211,7 @@ a {
   width: 31px;
   height: 31px;
   display: inline-block;
-  background: url("/img/arrow-right-blue.png");
+  background: url("../img/arrow-right-blue.png");
   left: 0;
   bottom: -7px;
 }
@@ -240,7 +240,7 @@ a {
 }
 /* line 140, ../sass/main.scss */
 .content-container .container .blue-circle h2.wave:before {
-  content: url("/img/wave-gray-short.png");
+  content: url("../img/wave-gray-short.png");
   margin-left: -20px;
   left: 50%;
 }
@@ -361,7 +361,7 @@ a {
 .content-container .container .wrap .block.vertical .border > div .wrapper-text:before, .content-container .container .wrap .block.vertical .border > div .wrapper-text:after,
 .content-container .container .wrap .block.vertical .background .wrapper-text:before,
 .content-container .container .wrap .block.vertical .background .wrapper-text:after {
-  content: url("/img/wave-gray-short.png");
+  content: url("../img/wave-gray-short.png");
   position: absolute;
 }
 /* line 230, ../sass/main.scss */
@@ -471,7 +471,7 @@ a {
 }
 /* line 305, ../sass/main.scss */
 .content-container .container .wrap .block .border > div h2.wave:before {
-  content: url("/img/wave-blue-long.png");
+  content: url("../img/wave-blue-long.png");
   top: 34px;
   left: 50%;
   margin-left: -34px;
@@ -583,7 +583,7 @@ a {
 /* line 385, ../sass/main.scss */
 .header-container .container div.menu ul li.active a:before,
 .header-container .container .mobile-bar.menu ul li.active a:before {
-  content: url("/img/menu-icon.png");
+  content: url("../img/menu-icon.png");
   position: absolute;
   top: -10px;
   left: 50%;
@@ -638,7 +638,7 @@ a {
 /* line 424, ../sass/main.scss */
 .header-container .container div.menu ul li a.active:before,
 .header-container .container .mobile-bar.menu ul li a.active:before {
-  content: url("/img/menu-icon.png");
+  content: url("../img/menu-icon.png");
   position: absolute;
   top: -10px;
   left: 50%;

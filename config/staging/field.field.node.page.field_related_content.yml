@@ -1,0 +1,26 @@
+uuid: d3ba1ab8-227c-40c0-b709-9aac4e0c46c3
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_content
+    - node.type.page
+id: node.page.field_related_content
+field_name: field_related_content
+entity_type: node
+bundle: page
+label: 'Saistītais saturs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+    sort:
+      field: title
+      direction: ASC
+field_type: entity_reference

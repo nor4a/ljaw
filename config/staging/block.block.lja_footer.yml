@@ -1,0 +1,26 @@
+uuid: 80e4b9f7-0d15-4fa9-b725-37efdcbf1a8b
+langcode: lv
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - lja
+_core:
+  default_config_hash: h06zhb3xV9_2_3Zy9NsyylL7YBaEDlMwMEqNwAn8kMo
+id: lja_footer
+theme: lja
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: 82329970-3ada-49f7-be00-d3083a4961fb
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.banner
+id: node.banner.title
+field_name: title
+entity_type: node
+bundle: banner
+label: 'Administratīvais nosaukums'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

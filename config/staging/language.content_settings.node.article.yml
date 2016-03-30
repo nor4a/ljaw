@@ -1,0 +1,16 @@
+uuid: 4b9ea1c1-4032-490b-b235-5359c628d9ed
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.article
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.article
+target_entity_type_id: node
+target_bundle: article
+default_langcode: current_interface
+language_alterable: false

@@ -1,0 +1,12 @@
+uuid: 6a4cdbcc-ab7b-4053-884e-78c36a227305
+langcode: lv
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: flXhTcp55yLcyy7ZLOhPGKGZobZQJdkAFVWV3LseiuI
+id: user.register
+label: Reģistrēties
+targetEntityType: user
+cache: true

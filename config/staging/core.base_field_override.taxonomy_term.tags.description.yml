@@ -1,0 +1,20 @@
+uuid: 71c9ed1a-831c-4190-8f44-68c77f9932bb
+langcode: lv
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+  module:
+    - text
+id: taxonomy_term.tags.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tags
+label: Apraksts
+description: 'Termina apraksts.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,18 @@
+uuid: 63bb0619-e559-4b74-ac00-a5dcf0bd88b3
+langcode: lv
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+id: taxonomy_term.tags.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tags
+label: Labots
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

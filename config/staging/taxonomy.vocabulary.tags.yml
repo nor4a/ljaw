@@ -1,0 +1,11 @@
+uuid: 641b398c-d62f-4c04-b801-1c3d6ea5d15c
+langcode: lv
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lO5ziR5dVI1PpEeHZsSOfQ-Y7NWihSDKW8-MMf6uoms
+name: Iezīmes
+vid: tags
+description: 'Izmantojiet tagus lai grupētu rakstus par līdzīgu tēmu vienā kategorijā.'
+hierarchy: 0
+weight: 0

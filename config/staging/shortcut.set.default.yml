@@ -1,0 +1,8 @@
+uuid: 2fd9425b-befd-4b30-b200-b987b711f8aa
+langcode: lv
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: U5VlGjd_SfV0Qm_EfnaynOfc549cNscFAx48JfYoMRI
+id: default
+label: 'Noklusētā vērtība'

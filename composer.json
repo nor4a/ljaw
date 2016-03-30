@@ -86,11 +86,6 @@
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "web/libraries/{$name}": ["type:drupal-library"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
-        },
-      "patches": {
-        "drupal/spamspan": {
-          "Class constant fixes": "https://raw.githubusercontent.com/nor4a/ljaw/master/patches/spamspan-class_constant_errors_fix-2685475-comment-10958195-8.patch"
         }
-      }
     }
 }

@@ -1,0 +1,14 @@
+uuid: 511017e5-f111-42cc-8710-1690dd1486bc
+langcode: lv
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: k3aUaZXGDuhkek2TZIee0PApOPTvYZLadziekdyHA5A
+id: user_search
+label: Lietotāji
+path: user
+weight: 0
+plugin: user_search
+configuration: {  }

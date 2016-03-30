@@ -1,0 +1,22 @@
+uuid: 8d696ec9-414f-4b21-9005-05e4e95a72d0
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.sticky
+field_name: sticky
+entity_type: node
+bundle: page
+label: 'Izcelts saraksta augšā'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aktīvs
+  off_label: Izslēgts
+field_type: boolean

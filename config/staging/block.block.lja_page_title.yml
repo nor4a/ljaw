@@ -1,0 +1,20 @@
+uuid: 21e4648e-e5b0-4ab6-8b32-509cf872fbe5
+langcode: lv
+status: true
+dependencies:
+  theme:
+    - lja
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: lja_page_title
+theme: lja
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,12 @@
+uuid: 3ed871cb-0931-427c-8800-e766d3582629
+langcode: lv
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: ElrtInxGjZd7GaapJ5O9n-ugi2hG2IxFivtgn0tHOsk
+id: node.full
+label: 'Pilns saturs'
+targetEntityType: node
+cache: true

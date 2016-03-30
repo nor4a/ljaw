@@ -1,0 +1,22 @@
+uuid: 96fd67d0-19f9-4d83-a553-836bdfce0a90
+langcode: lv
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - lja
+_core:
+  default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
+id: lja_search
+theme: lja
+region: '-1'
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

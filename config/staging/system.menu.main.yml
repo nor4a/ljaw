@@ -1,0 +1,10 @@
+uuid: 91dd2de4-e9d0-4f41-b420-32c8db7ac5cd
+langcode: und
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
+id: main
+label: 'Galvenā izvēlne'
+description: 'Site section links'
+locked: true

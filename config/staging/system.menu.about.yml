@@ -1,0 +1,8 @@
+uuid: d1c0546a-181e-403e-a258-8841091ac89f
+langcode: lv
+status: true
+dependencies: {  }
+id: about
+label: 'Par LJA'
+description: ''
+locked: false

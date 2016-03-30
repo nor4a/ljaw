@@ -1,0 +1,22 @@
+uuid: fa2f0f4c-6b6f-48d0-9d07-7bdc8da9636d
+langcode: lv
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - laws
+      - about
+    parent: 'main:'
+_core:
+  default_config_hash: zhtPXoRcC6REiepM0k16zw__FDW5YOXDR6U2WlldTrs
+name: 'Vienkārša lapa'
+type: page
+description: 'Izmantojiet <em>lapas</em> statiskam saturam, piemēram lapai  ''Par mums''.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

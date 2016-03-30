@@ -1,0 +1,13 @@
+uuid: 82ecc312-2d2d-4ce0-b200-a3e983393395
+langcode: lv
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: lsQkbo4njZ-Q_oGKCPGXGWFjWF1I7QpgA6m-t9rcRoA
+id: node_publish_action
+label: 'Publicēt saturu'
+type: node
+plugin: node_publish_action
+configuration: {  }

@@ -1,0 +1,11 @@
+uuid: 835977f2-7c53-442c-8729-41e76c6a80eb
+langcode: lv
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4w1vDIuPlVqNIiynysHZHU-9sBCpx5uiEIPlo4SW1tw
+id: personal
+label: 'Personīgā kontaktu forma'
+recipients: {  }
+reply: ''
+weight: 0

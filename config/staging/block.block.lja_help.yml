@@ -1,0 +1,22 @@
+uuid: 4248ed86-4266-4079-bf3d-615eaf13ff27
+langcode: lv
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - lja
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: lja_help
+theme: lja
+region: header
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

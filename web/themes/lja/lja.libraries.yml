@@ -1,0 +1,12 @@
+global-css:
+  css:
+    theme:
+      css/main.css: {}
+      css/responsive.css: {}
+      css/font-awesome.min.css: {}
+
+global-js:
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery

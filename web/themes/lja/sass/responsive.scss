@@ -1,0 +1,138 @@
+
+@import "mixins";
+@import "breakpoint";
+
+@include breakpoint(max-width 1200px){
+  .header-container .container{
+    padding: 0 20px;
+  }
+  .container{
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+  }
+}
+
+@include breakpoint(max-width 1000px){
+  .header-container .container{
+    .menu,
+    .social{
+      display: none;
+    }
+    .mobile-bar{
+      display: table-cell;
+      text-align: center;
+    }
+  }
+  .menu-bar-container .container{
+    .column{
+      padding: 0 50px 55px;
+      width: 50%;
+      @include box-sizing(border-box);
+      @include breakpoint(max-width 600px){
+        width: 100%;
+        padding: 0 20px 55px;
+      }
+    }
+  }
+
+
+  .content-container .container .wrap{
+    height: auto;
+    text-align: center;
+    padding: 50px;
+    @include box-sizing(border-box);
+    .block{
+      float: left;
+      position: relative;
+      margin: 0 auto 20px;
+      width: 45%;
+      &.horizontal{
+        bottom: auto;
+        left: auto;
+        float: right;
+      }
+    }
+    @include breakpoint(max-width 800px){
+      .block{
+        width: 370px;
+        float: none !important;
+        display: block;
+        @include breakpoint(max-width 500px){
+          width: 320px;
+        }
+      }
+      padding: 0;
+    }
+  }
+
+  @include breakpoint(max-width 850px){
+    .content-container .container {
+      .bar-menu{
+        width: 100%;
+        position: relative;
+        top: auto;
+        .block{
+          width: 420px;
+          margin: 0 auto 30px;
+          @include breakpoint(max-width 460px){
+            width: 320px;
+          }
+        }
+      }
+    }
+    .content-container {
+      @include breakpoint(max-width 500px){
+        padding-top: 100px !important;
+        .text-block{
+          padding-bottom: 50px !important;
+        }
+      }
+    }
+  }
+
+  .footer .container{
+    .column{
+      width: 50% !important;
+      min-height: 170px;
+      padding-bottom: 15px;
+      @include breakpoint(max-width 700px){
+        width: 100% !important;
+        text-align: center;
+        min-height: auto;
+        .col{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(max-width 750px){
+  .content-container .container{
+    .text-block{
+      width: 100% !important;
+      h1{font-size: 55px;}
+    }
+    .blue-circle{
+      position: relative;
+      right: 0;
+      top: 0;
+      display: inline-block;
+      margin: 20px 0;
+      left: 50%;
+      margin-left: -92px;
+    }
+  }
+}
+
+@include breakpoint(max-width 500px){
+  h1{
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+  h2{
+    font-size: 22px !important;
+    line-height: 27px !important;
+  }
+}
+

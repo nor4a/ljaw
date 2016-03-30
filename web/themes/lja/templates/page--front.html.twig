@@ -1,0 +1,45 @@
+<div class="header-container home">
+    <div class="container">
+        {{ page.header }}
+        {# todo: export to block? #}
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+
+
+{#
+<div id="page-wrapper">
+    <div id="page">
+        <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
+            <div class="section layout-container clearfix">
+                {{ page.header }}
+            </div>
+        </header>
+        <div id="main-wrapper" class="layout-main-wrapper layout-container clearfix">
+            <div id="main" class="layout-main clearfix">
+                <main id="content" class="column main-content" role="main">
+                    <section class="section">
+                        <a id="main-content" tabindex="-1"></a>
+                        {{ page.content }}
+                    </section>
+                </main>
+                {% if page.sidebar %}
+                    <div id="sidebar-first" class="column sidebar">
+                        <aside class="section" role="complementary">
+                            {{ page.sidebar }}
+                        </aside>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <footer class="site-footer">
+            <div class="layout-container">
+                {{ page.footer }}
+            </div>
+        </footer>
+    </div>
+</div>
+#}

@@ -16,4 +16,8 @@ web/sites/default/files
 web/*
 web/**/*
 !web/themes
+!web/themes/**/*
+!web/modules
+!web/modules/**/*
+web/modules/contrib/**/*
 composer.lock

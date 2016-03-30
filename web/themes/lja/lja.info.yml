@@ -1,0 +1,9 @@
+name: LJA
+type: theme
+description: The LJA website theme
+core: 8.x
+regions:
+  header: Header
+  content: Content
+  sidebar_right: Sidebar
+  footer: Footer

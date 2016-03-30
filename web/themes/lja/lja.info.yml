@@ -5,5 +5,8 @@ core: 8.x
 regions:
   header: Header
   content: Content
-  sidebar_right: Sidebar
+  sidebar: Sidebar
   footer: Footer
+libraries:
+  - lja/global-css
+  - lja/global-js

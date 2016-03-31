@@ -6,15 +6,14 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 _core:
   default_config_hash: i4OVV5qrD7abstl4SKS8v5Ee7PuxrL548iZVSty1HRg
 name: Raksts
 type: article
 description: 'Izmantojiet <em>rakstu</em> uz laiku jūtigam saturam, piemēram ziņām, preses relīzēm vai bloga ierakstiem.'
 help: ''
-new_revision: false
-preview_mode: 1
+new_revision: true
+preview_mode: 0
 display_submitted: false

@@ -7,8 +7,8 @@ dependencies:
 third_party_settings:
   menu_ui:
     available_menus:
-      - main
       - laws
+      - main
       - about
     parent: 'main:'
 _core:
@@ -17,6 +17,6 @@ name: 'Vienkārša lapa'
 type: page
 description: 'Izmantojiet <em>lapas</em> statiskam saturam, piemēram lapai  ''Par mums''.'
 help: ''
-new_revision: false
-preview_mode: 1
+new_revision: true
+preview_mode: 0
 display_submitted: false

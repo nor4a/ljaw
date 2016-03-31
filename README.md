@@ -21,3 +21,10 @@ $ chown -R apache.apache ljaw/web/sites/default/files
 $ chmod -R 0755 ljaw/web/sites/default/files
 
 
+Debug problems
+
+1) Recursive structures in twig causing memory usage: {{ kint(fields) }}: <br/>
+The solution:
+/modules/contrib/devel/kint/kint/config.default.php
+line 89
+changed to 3

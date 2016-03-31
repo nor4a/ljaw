@@ -12,3 +12,7 @@ function lja_preprocess_menu(&$variables) {
     }
   }
 }
+
+function lja_preprocess_block__phone(&$variables) {
+  $variables['attributes']['class'][] = 'blue-circle';
+}

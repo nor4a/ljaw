@@ -1,6 +1,6 @@
 uuid: 729fefae-6bba-4e17-b013-197eed61daf1
 langcode: lv
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
 id: lja_powered
 theme: lja
-region: footer
-weight: -7
+region: '-1'
+weight: 0
 provider: null
 plugin: system_powered_by_block
 settings:

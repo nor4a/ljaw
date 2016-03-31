@@ -1,0 +1,24 @@
+uuid: 55667cb9-d755-4706-9516-227dea69c9fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.laws
+  module:
+    - system
+  theme:
+    - lja
+id: likumdosana
+theme: lja
+region: footer
+weight: -8
+provider: null
+plugin: 'system_menu_block:laws'
+settings:
+  id: 'system_menu_block:laws'
+  label: Likumdošana
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

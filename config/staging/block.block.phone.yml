@@ -1,9 +1,9 @@
-uuid: b4173ae6-777e-4a63-b402-2f58a46e92e7
+uuid: 0d5844fb-a8da-4bef-8600-ae6d94a3c8e7
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:7b54bf6b-d72d-4f60-8f5a-90f626761c7c'
+    - 'block_content:basic:32336b7a-d492-4b4a-961b-27cb0a7a4210'
   module:
     - block_content
   theme:
@@ -11,14 +11,14 @@ dependencies:
 id: phone
 theme: lja
 region: content
-weight: null
+weight: -9
 provider: null
-plugin: 'block_content:7b54bf6b-d72d-4f60-8f5a-90f626761c7c'
+plugin: 'block_content:32336b7a-d492-4b4a-961b-27cb0a7a4210'
 settings:
-  id: 'block_content:7b54bf6b-d72d-4f60-8f5a-90f626761c7c'
+  id: 'block_content:32336b7a-d492-4b4a-961b-27cb0a7a4210'
   label: Phone
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

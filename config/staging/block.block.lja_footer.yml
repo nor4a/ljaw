@@ -1,6 +1,6 @@
 uuid: 80e4b9f7-0d15-4fa9-b725-37efdcbf1a8b
 langcode: lv
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -12,8 +12,8 @@ _core:
   default_config_hash: h06zhb3xV9_2_3Zy9NsyylL7YBaEDlMwMEqNwAn8kMo
 id: lja_footer
 theme: lja
-region: footer
-weight: 0
+region: '-1'
+weight: 1
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

@@ -11,7 +11,7 @@ _core:
 id: lja_breadcrumbs
 theme: lja
 region: '-1'
-weight: -6
+weight: -8
 provider: null
 plugin: system_breadcrumb_block
 settings:

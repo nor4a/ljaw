@@ -11,7 +11,7 @@ dependencies:
 id: saziniesarmums
 theme: lja
 region: footer
-weight: -9
+weight: -7
 provider: null
 plugin: 'block_content:8eac7669-6261-4121-9a3b-59f2ba100fe4'
 settings:

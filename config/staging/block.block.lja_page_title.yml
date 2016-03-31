@@ -1,6 +1,6 @@
 uuid: 21e4648e-e5b0-4ab6-8b32-509cf872fbe5
 langcode: lv
-status: true
+status: false
 dependencies:
   theme:
     - lja
@@ -8,8 +8,8 @@ _core:
   default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
 id: lja_page_title
 theme: lja
-region: content
-weight: -7
+region: '-1'
+weight: -6
 provider: null
 plugin: page_title_block
 settings:

@@ -34,16 +34,12 @@
     {% else %}
       <ul>
     {% endif %}
-    {% for item in items %}
+    {% for key, item in items %}
       <li{{ item.attributes }}>
-        <a {% if item.linkable %} href="{{ item.url }}" class="linkable" {% else %} class="not-linkable" {% endif %}>
+        <a {% if item.linkable %} href="{{ item.url }}" class="linkable" {% else %} class="not-linkable" {% endif %} data-id="{{ key }}">
           {{ item.title }}
           </br><span class="description">{{ item.description }}</span>
         </a>
-        {# todo: second level menu #}
-        {#{% if item.below %}
-          {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
-        {% endif %}#}
       </li>
     {% endfor %}
     </ul>

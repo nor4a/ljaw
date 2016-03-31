@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.banner.body
+    - field.field.node.banner.field_column
     - field.field.node.banner.field_icon
     - field.field.node.banner.field_image
     - field.field.node.banner.field_position
@@ -12,6 +13,7 @@ dependencies:
   module:
     - image
     - link
+    - options
     - text
     - user
 id: node.banner.default
@@ -26,6 +28,12 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
+  field_column:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
   field_icon:
     weight: 5
     label: hidden

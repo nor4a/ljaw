@@ -1,0 +1,10 @@
+<div class="column"{{ attributes|without('role', 'aria-labelledby') }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <h2>{{ configuration.label }}</h2>
+  <div class="col">
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+</div>

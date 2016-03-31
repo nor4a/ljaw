@@ -1,0 +1,30 @@
+uuid: 2c5836b1-b51e-4cdd-9750-80334187a9ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_column
+field_name: field_column
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: First
+    -
+      value: '2'
+      label: Second
+    -
+      value: '3'
+      label: Third
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

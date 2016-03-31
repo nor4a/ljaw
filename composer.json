@@ -58,7 +58,8 @@
         "harvesthq/chosen": "1.5.1",
         "drupal/linkit": "8.4.1",
         "drupal/editor_advanced_link": "8.1.0",
-        "drupal/ckeditor_anchor_link": "8.1"
+        "drupal/ckeditor_anchor_link": "8.1",
+        "drupal/pathauto": "8.1.*"
     },
     "require-dev": {
         "behat/mink": "~1.6",

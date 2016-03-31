@@ -36,7 +36,7 @@
     {% endif %}
     {% for item in items %}
       <li{{ item.attributes }}>
-        <a href="{{ item.url }}">
+        <a {% if item.linkable %} href="{{ item.url }}" class="linkable" {% else %} class="not-linkable" {% endif %}>
           {{ item.title }}
           </br><span class="description">{{ item.description }}</span>
         </a>

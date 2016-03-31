@@ -1,0 +1,13 @@
+uuid: 21dbf73e-49cd-4279-850e-144414733183
+langcode: lv
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: gGQXiSspwGl0lyOS6w_HCPpvGAPDciqDNLFwWOydVtI
+id: node_unpublish_action
+label: 'Atpublicēt saturu'
+type: node
+plugin: node_unpublish_action
+configuration: {  }

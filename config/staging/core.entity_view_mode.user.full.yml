@@ -1,0 +1,12 @@
+uuid: 97862773-4ac2-4d78-be00-da7f8e9b5a59
+langcode: lv
+status: false
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: mQIF_foYjmnVSr9MpcD4CTaJE_FpO1AyDd_DskztGhM
+id: user.full
+label: 'Lietotāja konts'
+targetEntityType: user
+cache: true

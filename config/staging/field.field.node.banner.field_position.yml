@@ -1,0 +1,27 @@
+uuid: db99eb2d-0f37-4316-8005-059d767edb8b
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position
+    - node.type.banner
+    - taxonomy.vocabulary.banner
+id: node.banner.field_position
+field_name: field_position
+entity_type: node
+bundle: banner
+label: 'Atrašanās vieta'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      banner: banner
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

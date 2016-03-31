@@ -1,0 +1,22 @@
+uuid: 30613926-a999-4ea3-af00-b4787debebc0
+langcode: lv
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lja
+_core:
+  default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
+id: lja_breadcrumbs
+theme: lja
+region: header
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

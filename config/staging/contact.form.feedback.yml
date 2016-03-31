@@ -1,0 +1,12 @@
+uuid: 8553ffcd-7871-45e7-b800-ecf790f8b6be
+langcode: lv
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - it@idynamic.se
+reply: ''
+weight: 0

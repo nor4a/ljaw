@@ -1,0 +1,13 @@
+uuid: 6393d27f-839b-452c-a00a-107402410956
+langcode: lv
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: U9HspszLxcw6pZmRacFa6yDbbheyMN-We4fPbrWWHGg
+id: node_save_action
+label: 'Saglabāt saturu'
+type: node
+plugin: node_save_action
+configuration: {  }

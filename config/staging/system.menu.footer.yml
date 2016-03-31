@@ -1,0 +1,10 @@
+uuid: 42442bbf-6f06-40ea-8b38-56b377463971
+langcode: lv
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7yrlW5z9zdg2eBucB2GPqXKSMQfH9lSRSO4DbWF7AFc
+id: footer
+label: Kājene
+description: 'Site information links'
+locked: true

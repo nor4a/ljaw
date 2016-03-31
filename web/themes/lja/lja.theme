@@ -9,6 +9,7 @@ function lja_preprocess_menu(&$variables) {
     foreach($variables['items'] as &$item) {
       $a = $item['url']->getOption('attributes');
       $item['description'] = $a['title'];
+      $item['linkable'] = $item['url']->toString() != '/';
     }
   }
 }

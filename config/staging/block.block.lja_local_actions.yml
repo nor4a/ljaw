@@ -1,6 +1,6 @@
 uuid: 6ff64221-03c5-4887-b411-171ef848664f
 langcode: lv
-status: true
+status: false
 dependencies:
   theme:
     - lja
@@ -8,8 +8,8 @@ _core:
   default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
 id: lja_local_actions
 theme: lja
-region: header
-weight: -7
+region: '-1'
+weight: -4
 provider: null
 plugin: local_actions_block
 settings:

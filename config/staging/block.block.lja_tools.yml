@@ -1,6 +1,6 @@
 uuid: 0136a6ae-4d18-4d0b-a207-7c6f4be8089d
 langcode: lv
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
@@ -12,8 +12,8 @@ _core:
   default_config_hash: f3Dd5TnUiFDjFZp9yEGJInwt6cUzs7O6SvLTFTATSlU
 id: lja_tools
 theme: lja
-region: header
-weight: 0
+region: '-1'
+weight: -1
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

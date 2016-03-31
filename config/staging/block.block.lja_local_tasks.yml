@@ -1,6 +1,6 @@
 uuid: 6746e53d-d834-4d4d-8a41-65857ac9164d
 langcode: lv
-status: true
+status: false
 dependencies:
   theme:
     - lja
@@ -8,8 +8,8 @@ _core:
   default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
 id: lja_local_tasks
 theme: lja
-region: header
-weight: -7
+region: '-1'
+weight: -2
 provider: null
 plugin: local_tasks_block
 settings:

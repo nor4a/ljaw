@@ -791,7 +791,7 @@ div.container {
   z-index: 100;
   background: white;
   width: 100%;
-  padding: 60px 0 0;
+  padding: 0 0 20px;
   -webkit-box-shadow: 0px -4px 20px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px -4px 20px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px -4px 20px 0px rgba(0, 0, 0, 0.3);
@@ -805,34 +805,33 @@ div.container {
 .menu-bar-container .container .column {
   width: 33.33%;
   float: left;
-  min-height: 110px;
-  padding-bottom: 55px;
+  margin-top: 70px;
 }
-/* line 567, ../sass/main.scss */
+/* line 566, ../sass/main.scss */
 .menu-bar-container .container .column h2 {
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 12px;
 }
-/* line 574, ../sass/main.scss */
+/* line 573, ../sass/main.scss */
 .menu-bar-container .menu {
   display: none;
 }
-/* line 577, ../sass/main.scss */
+/* line 576, ../sass/main.scss */
 .menu-bar-container .menu.visible {
   display: block;
 }
 
-/* line 582, ../sass/main.scss */
+/* line 581, ../sass/main.scss */
 ul.list-style {
   list-style: none;
 }
-/* line 584, ../sass/main.scss */
+/* line 583, ../sass/main.scss */
 ul.list-style li {
   padding-left: 15px;
   position: relative;
 }
-/* line 587, ../sass/main.scss */
+/* line 586, ../sass/main.scss */
 ul.list-style li:before {
   content: "•";
   color: #007fff;
@@ -840,7 +839,7 @@ ul.list-style li:before {
   left: 1px;
   top: 3px;
 }
-/* line 594, ../sass/main.scss */
+/* line 593, ../sass/main.scss */
 ul.list-style li a {
   font-size: 13px;
   color: #636673;
@@ -852,7 +851,7 @@ ul.list-style li a {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 600, ../sass/main.scss */
+/* line 599, ../sass/main.scss */
 ul.list-style li a:hover {
   color: #007fff;
 }

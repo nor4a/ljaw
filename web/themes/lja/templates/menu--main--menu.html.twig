@@ -33,7 +33,7 @@
       <ul class="list-style">
         {% for subchild in child.below %}
         <li>
-          <a {% if subchild.linkable %} href="{{ subchild.url }}" class="linkable" {% else %} class="not-linkable" {% endif %}>
+          <a href="{{ subchild.url }}" class="linkable">
             {{ subchild.title }}
           </a>
         </li>

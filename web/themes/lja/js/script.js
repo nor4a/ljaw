@@ -1,4 +1,4 @@
-(function ($, Drupal) {
+(function ($) {
 
     $(document).ready(function () {
 
@@ -32,4 +32,4 @@
 
     });
 
-})(jQuery, Drupal);
+})(jQuery);

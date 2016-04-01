@@ -19,7 +19,7 @@ body{
 h1.wave{
   &:before{
     content: url('../img/wave-blue-long.png');
-    top: -110px;
+    top: -100px;
   }
 }
 
@@ -71,8 +71,12 @@ a{
       color: #636673;
       padding-bottom: 100px;
       &.home{
-        width: 50%;
+        width: 60%;
         padding-bottom: 20px;
+        .content a {
+          margin-top: 50px;
+          display: block;
+        }
       }
       .block{
         padding: 83px 0 0;
@@ -94,7 +98,7 @@ a{
         }
       }
       .content {
-      h1{font-size: 76px; font-weight: bold;}
+      h1{font-size: 70px; font-weight: bold;}
       h3{padding: 17px 0 0;color: #7e93b2;}
       p{
         font-size: 15px;
@@ -363,6 +367,9 @@ a{
       vertical-align: middle;
       &.logo{
         text-align: left;
+        img {
+          max-height: 80px;
+        }
       }
       &.social{
         text-align: right;

@@ -9,7 +9,7 @@ function lja_preprocess_menu(&$variables) {
     foreach($variables['items'] as &$item) {
       $a = $item['url']->getOption('attributes');
       $item['description'] = $a['title'];
-      $item['linkable'] = $item['url']->toString() != '/';
+      $item['linkable'] = !in_array($item['url']->toString(),array('/','/lv','/en','/ru'));
     }
   }
   $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();

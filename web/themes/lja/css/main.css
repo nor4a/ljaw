@@ -866,4 +866,9 @@ ul.list-style li a:hover {
   color: #007fff;
 }
 
+/* line 613, ../sass/main.scss */
+a.not-linkable {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=main.css.map */

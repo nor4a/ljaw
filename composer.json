@@ -59,7 +59,8 @@
         "drupal/linkit": "8.4.1",
         "drupal/editor_advanced_link": "8.1.0",
         "drupal/ckeditor_anchor_link": "8.1",
-        "drupal/pathauto": "8.1.*"
+        "drupal/pathauto": "8.1.*",
+        "drupal/extlink": "8.*"
     },
     "require-dev": {
         "behat/mink": "~1.6",

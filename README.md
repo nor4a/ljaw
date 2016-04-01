@@ -28,3 +28,11 @@ The solution:
 /modules/contrib/devel/kint/kint/config.default.php
 line 89
 changed to 3
+
+
+
+Edit Edit
+ Copy Copy
+ Delete Delete
+block.block.phone
+a:12:{s:4:"uuid";s:36:"0d5844fb-a8da-4bef-8600-ae6d94a3c8e7";s:8:"langcode";s:2:"en";s:6:"status";b:1;s:12:"dependencies";a:1:{s:5:"theme";a:1:{i:0;s:3:"lja";}}s:2:"id";s:5:"phone";s:5:"theme";s:3:"lja";s:6:"region";s:7:"content";s:6:"weight";i:-8;s:8:"provider";N;s:6:"plugin";s:50:"block_content:32336b7a-d492-4b4a-961b-27cb0a7a4210";s:8:"settings";a:7:{s:2:"id";s:50:"block_content:32336b7a-d492-4b4a-961b-

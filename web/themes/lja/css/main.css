@@ -173,11 +173,11 @@ a {
   margin: 20px 0;
 }
 /* line 95, ../sass/main.scss */
-.content-container .container .text-block .block ul {
+.content-container .container .text-block .block ul, .content-container .container .text-block .block ol {
   padding-left: 35px;
 }
 /* line 97, ../sass/main.scss */
-.content-container .container .text-block .block ul li {
+.content-container .container .text-block .block ul li, .content-container .container .text-block .block ol li {
   padding-bottom: 10px;
 }
 /* line 103, ../sass/main.scss */
@@ -872,8 +872,12 @@ ul.list-style li a {
 ul.list-style li a:hover {
   color: #007fff;
 }
+/* line 614, ../sass/main.scss */
+ul.list-style li a.active {
+  color: #007fff;
+}
 
-/* line 618, ../sass/main.scss */
+/* line 621, ../sass/main.scss */
 a.not-linkable {
   cursor: pointer;
 }

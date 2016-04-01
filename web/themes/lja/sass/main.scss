@@ -92,7 +92,7 @@ a{
           }
         }
         p{margin: 20px 0;}
-        ul{
+        ul, ol {
           padding-left: 35px;
           li{
             padding-bottom: 10px;
@@ -609,6 +609,9 @@ ul.list-style{
       display: block;
       @include transition(all 0.5s);
       &:hover{
+        color: #007fff;
+      }
+      &.active {
         color: #007fff;
       }
     }

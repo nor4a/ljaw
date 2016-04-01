@@ -13,11 +13,17 @@
 
             e.preventDefault();
 
+            $('.header-container .menu').removeClass('active');
+            $('.header-container .menu li.active').removeClass('active');
+
             var link = $(this);
             var id = link.data('id');
             var menu = $('.menu[data-id="' + id + '"]');
 
             var container = $('.menu-bar-container');
+
+            $('.header-container .menu').addClass('active');
+            link.parent().addClass('active');
 
             if(container.hasClass('visible') && menu.hasClass('visible')) {
                 container.removeClass('visible');

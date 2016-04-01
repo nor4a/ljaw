@@ -1,0 +1,3 @@
+cd web/core
+../../vendor/drush/drush/drush.launcher config-export staging
+cd ../../

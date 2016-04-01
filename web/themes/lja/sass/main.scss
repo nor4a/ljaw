@@ -26,7 +26,7 @@ h1.wave{
 h2.wave{
   &:before{
     content: url('../img/wave-blue-short.png');
-      top: -46px;
+      top: -22px;
   }
 }
 h1,h2{
@@ -398,6 +398,27 @@ a{
             padding: 24px 15px 0;
           }
           @include box-sizing(border-box);
+          li a {
+            cursor: pointer;
+          }
+          li a:before {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            margin-left: -30px;
+          }
+          li.active:nth-child(1) a:before {
+            content: url('../img/menu-sailor.png');
+          }
+          li.active:nth-child(2) a:before {
+            content: url('../img/menu-vessel.png');
+          }
+          li.active:nth-child(3) a:before {
+            content: url('../img/menu-icon.png');
+          }
+          li.active:nth-child(4) a:before {
+            content: url('../img/menu-map.png');
+          }
           li{
             float: left;
             font-weight: bold;
@@ -559,11 +580,10 @@ div.container {
   z-index: 100;
   background: white;
   width: 100%;
-  padding: 0 0 20px;
+  padding: 0;
   -webkit-box-shadow: 0px -4px 20px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px -4px 20px 0px rgba(0,0,0,0.3);
   box-shadow: 0px -4px 20px 0px rgba(0,0,0,0.3);
-  display: none;
   &.visible {
     display: inline-block;
   }
@@ -574,16 +594,18 @@ div.container {
     .column{
       width: 33.33%;
       float: left;
-      margin-top: 70px;
+      margin-top: 30px;
       h2 {
         font-size: 13px;
         font-weight: bold;
-        margin-bottom: 12px;
+        margin-bottom: 6px;
       }
     }
   }
   .menu {
     display: none;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   .menu.visible {
     display: block;
@@ -593,19 +615,20 @@ div.container {
 ul.list-style{
   list-style: none;
   li{
-    padding-left: 15px;
+    padding-left: 12px;
     position: relative;
     &:before{
       content: "•";
       color: #007fff;
       position: absolute;
+      top: 4px;
+      font-size: 10px;
       left: 1px;
-      top: 3px;
     }
     a{
       font-size: 13px;
       color: #636673;
-      padding: 5px 0 5px;
+      padding: 2px 0 2px;
       display: block;
       @include transition(all 0.5s);
       &:hover{
@@ -616,9 +639,5 @@ ul.list-style{
       }
     }
   }
-}
-
-a.not-linkable {
-  cursor: pointer;
 }
 

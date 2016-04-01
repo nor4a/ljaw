@@ -21,7 +21,7 @@
 {% import _self as menus %}
 
 {% for key, item in items %}
-<div class="menu" data-id="{{ key }}">
+<div class="menu {% if item.in_active_trail %}visible{% endif %}" data-id="{{ key }}">
   {% for child in item.below %}
     <div class="column">
       <h2 class="wave">

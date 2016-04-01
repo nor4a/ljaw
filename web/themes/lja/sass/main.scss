@@ -51,7 +51,7 @@ a{
   background-size: cover;
   padding-top: 100px;
   &.page{
-    padding-top: 175px;
+    padding-top: 35px;
     background: url('../img/background-page.png');
     background-size: cover;
     .container .text-block{
@@ -77,9 +77,11 @@ a{
           margin-top: 50px;
           display: block;
         }
+        .block {
+          padding: 83px 0 0;
+        }
       }
       .block{
-        padding: 83px 0 0;
         color: #7f93b3;
         h2{
           font-size: 32px;
@@ -163,7 +165,7 @@ a{
       width: 32%;
       position: absolute;
       right: 0;
-      top: 140px;
+      top: 0px;
       display: inline-block;
       .block{
         width: 100%;
@@ -564,6 +566,9 @@ div.container {
   display: none;
   &.visible {
     display: inline-block;
+  }
+  &.relative {
+    position: relative !important;
   }
   .container{
     .column{

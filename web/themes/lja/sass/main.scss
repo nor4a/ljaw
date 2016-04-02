@@ -573,16 +573,17 @@ div.container {
         list-style: none;
         li{
           padding-left: 0;
-          a{
-            font-size: 13px;
-            color: #636673;
-            padding: 5px 0 5px;
-            display: block;
-            @include transition(all 0.5s);
-            &:hover{
-              color: #007fff;
-            }
-          }
+        }
+      }
+      ul li a,
+      .views-row a {
+        font-size: 13px;
+        color: #636673;
+        padding: 5px 0 5px;
+        display: block;
+        @include transition(all 0.5s);
+        &:hover{
+          color: #007fff;
         }
       }
     }

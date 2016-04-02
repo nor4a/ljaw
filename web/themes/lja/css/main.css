@@ -836,8 +836,9 @@ div.container {
 .footer .container .column ul li {
   padding-left: 0;
 }
-/* line 576, ../sass/main.scss */
-.footer .container .column ul li a {
+/* line 578, ../sass/main.scss */
+.footer .container .column ul li a,
+.footer .container .column .views-row a {
   font-size: 13px;
   color: #636673;
   padding: 5px 0 5px;
@@ -848,26 +849,27 @@ div.container {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 582, ../sass/main.scss */
-.footer .container .column ul li a:hover {
+/* line 585, ../sass/main.scss */
+.footer .container .column ul li a:hover,
+.footer .container .column .views-row a:hover {
   color: #007fff;
 }
 
-/* line 592, ../sass/main.scss */
+/* line 593, ../sass/main.scss */
 #sub-menu {
   z-index: 105;
   background: #F5F7FA;
 }
-/* line 595, ../sass/main.scss */
+/* line 596, ../sass/main.scss */
 #sub-menu .menu.visible.current {
   display: none !important;
 }
-/* line 598, ../sass/main.scss */
+/* line 599, ../sass/main.scss */
 #sub-menu .menu.current {
   display: none !important;
 }
 
-/* line 603, ../sass/main.scss */
+/* line 604, ../sass/main.scss */
 .menu-bar-container {
   position: absolute;
   z-index: 100;
@@ -878,47 +880,47 @@ div.container {
   -moz-box-shadow: 0px -4px 20px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px -4px 20px 0px rgba(0, 0, 0, 0.3);
 }
-/* line 612, ../sass/main.scss */
+/* line 613, ../sass/main.scss */
 .menu-bar-container.visible {
   display: block;
 }
-/* line 615, ../sass/main.scss */
+/* line 616, ../sass/main.scss */
 .menu-bar-container.relative {
   position: relative !important;
 }
-/* line 619, ../sass/main.scss */
+/* line 620, ../sass/main.scss */
 .menu-bar-container .container .column {
   width: 33.33%;
   float: left;
   margin-top: 30px;
 }
-/* line 623, ../sass/main.scss */
+/* line 624, ../sass/main.scss */
 .menu-bar-container .container .column h2 {
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* line 630, ../sass/main.scss */
+/* line 631, ../sass/main.scss */
 .menu-bar-container .menu {
   display: none;
   padding-top: 10px;
   padding-bottom: 20px;
 }
-/* line 635, ../sass/main.scss */
+/* line 636, ../sass/main.scss */
 .menu-bar-container .menu.visible {
   display: block;
 }
 
-/* line 640, ../sass/main.scss */
+/* line 641, ../sass/main.scss */
 .menu .column ul {
   list-style: none;
 }
-/* line 642, ../sass/main.scss */
+/* line 643, ../sass/main.scss */
 .menu .column ul li {
   padding-left: 12px;
   position: relative;
 }
-/* line 645, ../sass/main.scss */
+/* line 646, ../sass/main.scss */
 .menu .column ul li:before {
   content: "•";
   color: #007fff;
@@ -927,7 +929,7 @@ div.container {
   font-size: 10px;
   left: 1px;
 }
-/* line 653, ../sass/main.scss */
+/* line 654, ../sass/main.scss */
 .menu .column ul li a {
   font-size: 13px;
   color: #636673;
@@ -939,26 +941,26 @@ div.container {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 659, ../sass/main.scss */
+/* line 660, ../sass/main.scss */
 .menu .column ul li a:hover {
   color: #007fff;
 }
-/* line 662, ../sass/main.scss */
+/* line 663, ../sass/main.scss */
 .menu .column ul li a.active {
   color: #007fff;
 }
 
-/* line 670, ../sass/main.scss */
+/* line 671, ../sass/main.scss */
 .content-container .text-block ul, .content-container .text-block ol {
   padding-left: 0px !important;
   list-style: none;
 }
-/* line 673, ../sass/main.scss */
+/* line 674, ../sass/main.scss */
 .content-container .text-block ul li, .content-container .text-block ol li {
   padding-left: 12px;
   position: relative;
 }
-/* line 676, ../sass/main.scss */
+/* line 677, ../sass/main.scss */
 .content-container .text-block ul li:before, .content-container .text-block ol li:before {
   content: "•";
   color: #007fff;
@@ -967,12 +969,12 @@ div.container {
   font-size: 10px;
   left: 1px;
 }
-/* line 686, ../sass/main.scss */
+/* line 687, ../sass/main.scss */
 .content-container .text-block ol {
   margin: 10px 0;
   padding-left: 15px !important;
 }
-/* line 690, ../sass/main.scss */
+/* line 691, ../sass/main.scss */
 .content-container .text-block a {
   color: #007fff;
   -webkit-transition: all 0.5s;
@@ -981,15 +983,15 @@ div.container {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 693, ../sass/main.scss */
+/* line 694, ../sass/main.scss */
 .content-container .text-block a:hover {
   color: black;
 }
-/* line 697, ../sass/main.scss */
+/* line 698, ../sass/main.scss */
 .content-container .text-block h1, .content-container .text-block h2 {
   margin: 20px 0;
 }
-/* line 701, ../sass/main.scss */
+/* line 702, ../sass/main.scss */
 .content-container .text-block table {
   width: 100%;
   background: #fff;
@@ -1000,7 +1002,7 @@ div.container {
   border-collapse: separate;
   border-spacing: 0;
 }
-/* line 710, ../sass/main.scss */
+/* line 711, ../sass/main.scss */
 .content-container .text-block table thead th {
   cursor: auto;
   background: white;
@@ -1014,18 +1016,18 @@ div.container {
   border-bottom: 1px solid #dadada;
   border-left: none;
 }
-/* line 723, ../sass/main.scss */
+/* line 724, ../sass/main.scss */
 .content-container .text-block table th, .content-container .text-block table td {
   font-weight: 300;
   padding: 10px 15px;
   border-right: 1px solid #efefef;
   font-size: 14px;
 }
-/* line 728, ../sass/main.scss */
+/* line 729, ../sass/main.scss */
 .content-container .text-block table th:last-child, .content-container .text-block table td:last-child {
   border-right: none;
 }
-/* line 732, ../sass/main.scss */
+/* line 733, ../sass/main.scss */
 .content-container .text-block table tbody tr:nth-child(1n) td {
   background: #f9f9f9;
 }

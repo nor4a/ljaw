@@ -1,0 +1,11 @@
+uuid: daaf24c9-a949-4808-891a-26a26d488e03
+langcode: lv
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pricelist_category
+id: taxonomy_term.pricelist_category
+target_entity_type_id: taxonomy_term
+target_bundle: pricelist_category
+default_langcode: site_default
+language_alterable: false

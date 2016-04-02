@@ -1,0 +1,23 @@
+uuid: f7008c26-4c7b-4238-bf36-54e1caf3ee4a
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.legislation
+  module:
+    - link
+id: node.legislation.field_url
+field_name: field_url
+entity_type: node
+bundle: legislation
+label: URL
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

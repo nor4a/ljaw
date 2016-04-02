@@ -1,0 +1,46 @@
+uuid: 902b5f5a-c3d5-444d-8c00-a37d711da5ba
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.field.node.forms.field_attachment
+    - field.field.node.forms.field_form_cat
+    - field.field.node.forms.field_url
+    - node.type.forms
+  module:
+    - file
+    - link
+    - user
+id: node.forms.default
+targetEntityType: node
+bundle: forms
+mode: default
+content:
+  field_attachment:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_form_cat:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_url:
+    weight: 101
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  links:
+    weight: 100
+hidden:
+  langcode: true

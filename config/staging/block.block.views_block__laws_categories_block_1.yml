@@ -11,7 +11,7 @@ dependencies:
 id: views_block__laws_categories_block_1
 theme: lja
 region: footer
-weight: -8
+weight: -9
 provider: null
 plugin: 'views_block:laws_categories-block_1'
 settings:

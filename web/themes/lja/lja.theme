@@ -35,7 +35,16 @@ function lja_theme_suggestions_block_alter(array &$suggestions, array $variables
 function lja_preprocess_block(&$variables) {
   $block = \Drupal\block\Entity\Block::load($variables['elements']['#id']);
   $variables['content']['#attributes']['block_id'] = $variables['attributes']['id'];
-  $variables['content']['#attributes']['region'] = $block->getRegion();
+  $variables['content']['#attributes']['region']   = $block->getRegion();
+
+  $mylanguage = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['language'] = $mylanguage != 'lv' ? '/' . $mylanguage : '';
+
+  switch ($variables['attributes']['id']) {
+    case 'block-views-block-laws-categories-block-1':
+      $variables['title_link'] = $variables['language'] . '/legislation';
+      break;
+  }
 }
 
 function lja_theme_suggestions_menu_alter(array &$suggestions, array $variables) {

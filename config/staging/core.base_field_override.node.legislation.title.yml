@@ -1,0 +1,18 @@
+uuid: 940d1125-f80c-4b74-9f5b-91e5bf958364
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.legislation
+id: node.legislation.title
+field_name: title
+entity_type: node
+bundle: legislation
+label: Nosaukums
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

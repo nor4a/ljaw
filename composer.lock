@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "35209b27987005fb6ca5ead379bad90b",
-    "content-hash": "d478d1be8042753d3e44a049f1d52949",
+    "hash": "a1d2c91da25138556fe169b4217ad448",
+    "content-hash": "59b6583c1bd9bad490b5db9fe821141b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1433,6 +1433,64 @@
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
             "time": "2016-01-21 08:02:24"
+        },
+        {
+            "name": "drupal/views_field_view",
+            "version": "8.1.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_field_view",
+                "reference": "e22dca04e0e2de9aaa5d8a25530affec0ac1b509"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_field_view-8.x-1.0-beta2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/views": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Adds a view field handler to embed views inside views.",
+            "homepage": "https://www.drupal.org/project/views_field_view",
+            "time": "2015-11-19 12:29:53"
+        },
+        {
+            "name": "drupal/views_tree",
+            "version": "dev-8.x-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_tree",
+                "reference": "83b075199b21750a85bbeaaf4c9abeba46edab47"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/views": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-2.x": "8.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "A Views style plugin to display a tree of elements using the adjacency model.",
+            "homepage": "https://www.drupal.org/project/views_tree",
+            "time": "2016-03-31 13:25:42"
         },
         {
             "name": "drush/drush",

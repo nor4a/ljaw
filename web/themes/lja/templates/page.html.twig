@@ -9,17 +9,18 @@
   </div>
 </div>
 
+{% if page.menu %}
 <div class="menu-bar-container" id="sub-menu">
   <div class="container">
     {{ page.menu }}
   </div>
 </div>
-
 <div class="menu-bar-container visible relative">
   <div class="container">
     {{ page.menu }}
   </div>
 </div>
+{% endif %}
 
 <div class="content-container page">
   <div class="container">

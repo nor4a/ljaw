@@ -36,7 +36,7 @@
       <ul>
     {% endif %}
     {% for key, item in items %}
-      {% set class = (item.in_active_trail ? 'active' : '') %}
+      {% set class = (item.in_active_trail ? 'active current' : '') %}
       <li{{ item.attributes.addClass(class) }}>
         <a {% if item.linkable %} href="{{ item.url }}" class="linkable" {% else %} class="not-linkable" {% endif %} data-id="{{ key }}">
           {{ item.title }}

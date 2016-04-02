@@ -26,9 +26,14 @@ h1.wave{
 h2.wave{
   &:before{
     content: url('../img/wave-blue-short.png');
-      top: -22px;
+      top: -25px;
   }
 }
+
+#block-phone h2.wave:before {
+  top: -45px;
+}
+
 h1,h2{
   color: #252b41;
 }
@@ -58,8 +63,9 @@ a{
       h1{
         font-size: 50px;
         line-height: 61px;
+        padding-top: 15px;
         &:before{
-          top: -93px;
+          top: -45px;
         }
       }
     }
@@ -390,16 +396,18 @@ a{
       }
       &.menu{
         text-align: center;
+        display: block;
+        height: 120px;
         ul {
           display: inline-block;
           padding: 0 30px 0 0;
           width: 100%;
-          &.active {
-            padding: 24px 15px 0;
-          }
+          height: 100%;
           @include box-sizing(border-box);
           li a {
             cursor: pointer;
+            padding: 0;
+            margin: 45px 0;
           }
           li a:before {
             position: absolute;
@@ -407,16 +415,16 @@ a{
             left: 50%;
             margin-left: -30px;
           }
-          li.active:nth-child(1) a:before {
+          li:nth-child(1) a:before {
             content: url('../img/menu-sailor.png');
           }
-          li.active:nth-child(2) a:before {
+          li:nth-child(2) a:before {
             content: url('../img/menu-vessel.png');
           }
-          li.active:nth-child(3) a:before {
+          li:nth-child(3) a:before {
             content: url('../img/menu-icon.png');
           }
-          li.active:nth-child(4) a:before {
+          li:nth-child(4) a:before {
             content: url('../img/menu-map.png');
           }
           li{
@@ -425,38 +433,33 @@ a{
             font-size: 16px;
             position: relative;
             width: 25%;
-            &.active + li>a{
-              border-left: none;
+            height: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            &.active {
+              border-left: 1px solid #e9ecf1;
             }
-            &.active a{
+            &.active + li {
+              border-left: 1px solid #e9ecf1;
+            }
+            &.active:last-child {
+              border-right: 1px solid #e9ecf1;
+            }
+            &.active a {
               color: #007fff;
-              margin: 0;
-              padding: 42px 0 20px;
               border: none;
-              &:before{
-                content: url('../img/menu-icon.png');
-                position: absolute;
-                top: -10px;
-                left: 50%;
-                margin-left: -30px;
-              }
-              &:after{
-                content: '';
-                width: 100%;
-                height: 120px;
-                position: absolute;
-                left: 0;
-                top: -24px;
-                border-left: 1px solid #e9ecf1;
-                border-right: 1px solid #e9ecf1;
+              margin: 65px 0 25px;
+              &:before {
+                opacity: 1;
               }
             }
             a{
-              margin: 20px 0;
               position: relative;
               color: #252b41;
               width: 100%;
               display: inline-block;
+              border-color: #e9ecf1 !important;
               border-right: 1px solid #e9ecf1;
               @include transition(all 0.5s);
               span{
@@ -466,7 +469,14 @@ a{
               &:hover{
                 color: #007fff;
               }
-
+              &:before{
+                position: absolute;
+                top: -45px;
+                left: 50%;
+                margin-left: -30px;
+                opacity: 0;
+                @include transition(all 0.5s)
+              }
               &.active{
                 color: #007fff;
                 margin: 0;
@@ -513,8 +523,8 @@ div.container {
 }
 
 .footer{
-  height: 380px;
-  padding: 130px 0 100px;
+  height: 320px;
+  padding: 90px 0 100px;
   @include box-sizing(border-box);
   .container{
     .column{
@@ -575,6 +585,17 @@ div.container {
   }
 }
 
+#sub-menu {
+  z-index: 105;
+  background: #F5F7FA;
+  .menu.visible.current {
+    display: none !important;
+  }
+  .menu.current {
+    display: none !important;
+  }
+}
+
 .menu-bar-container {
   position: absolute;
   z-index: 100;
@@ -598,7 +619,7 @@ div.container {
       h2 {
         font-size: 13px;
         font-weight: bold;
-        margin-bottom: 6px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -612,7 +633,7 @@ div.container {
   }
 }
 
-ul.list-style{
+.menu .column ul {
   list-style: none;
   li{
     padding-left: 12px;
@@ -638,6 +659,39 @@ ul.list-style{
         color: #007fff;
       }
     }
+  }
+}
+
+.content-container .text-block {
+  ul, ol {
+    padding-left: 0px !important;
+    list-style: none;
+    li {
+      padding-left: 12px;
+      position: relative;
+      &:before {
+        content: "•";
+        color: #007fff;
+        position: absolute;
+        top: 4px;
+        font-size: 10px;
+        left: 1px;
+      }
+    }
+  }
+  ol {
+    margin: 10px 0;
+    padding-left: 15px !important;
+  }
+  a {
+    color: #007fff;
+    @include transition(all 0.5s);
+    &:hover {
+      color: black;
+    }
+  }
+  h1, h2 {
+    margin: 20px 0;
   }
 }
 

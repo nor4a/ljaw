@@ -526,7 +526,8 @@ div.container {
   height: 320px;
   padding: 90px 0 100px;
   &.front {
-    padding-top: 120px !important;
+    padding: 120px 0 100px !important;
+    margin-bottom: 30px;
   }
   @include box-sizing(border-box);
   .container{

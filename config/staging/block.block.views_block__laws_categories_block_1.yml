@@ -1,0 +1,24 @@
+uuid: de2992cd-b133-4a72-ad05-5edf1d5faba8
+langcode: lv
+status: true
+dependencies:
+  config:
+    - views.view.laws_categories
+  module:
+    - views
+  theme:
+    - lja
+id: views_block__laws_categories_block_1
+theme: lja
+region: footer
+weight: -8
+provider: null
+plugin: 'views_block:laws_categories-block_1'
+settings:
+  id: 'views_block:laws_categories-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

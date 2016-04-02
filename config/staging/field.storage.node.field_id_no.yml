@@ -1,0 +1,21 @@
+uuid: ee314069-a492-4f69-9a00-b99b12b801c7
+langcode: lv
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_id_no
+field_name: field_id_no
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

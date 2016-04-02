@@ -1,0 +1,19 @@
+uuid: 1d8c6c4d-7727-417f-8100-e6b039413ee5
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tender_winner
+    - node.type.tenders
+id: node.tenders.field_tender_winner
+field_name: field_tender_winner
+entity_type: node
+bundle: tenders
+label: 'Līguma izpildītājs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

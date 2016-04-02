@@ -1,0 +1,123 @@
+uuid: 07ae1204-d4af-43dd-8700-b6a44fd6405c
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.field.node.tenders.body
+    - field.field.node.tenders.field_attachments
+    - field.field.node.tenders.field_cpv_code
+    - field.field.node.tenders.field_estimated_price
+    - field.field.node.tenders.field_id_no
+    - field.field.node.tenders.field_offer_deadlinie
+    - field.field.node.tenders.field_orderer
+    - field.field.node.tenders.field_results_date
+    - field.field.node.tenders.field_tender_procedure
+    - field.field.node.tenders.field_tender_proposal_sum
+    - field.field.node.tenders.field_tender_type
+    - field.field.node.tenders.field_tender_winner
+    - node.type.tenders
+  module:
+    - datetime
+    - file
+    - options
+    - text
+    - user
+id: node.tenders.default
+targetEntityType: node
+bundle: tenders
+mode: default
+content:
+  body:
+    label: inline
+    type: text_default
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  field_attachments:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_cpv_code:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_estimated_price:
+    weight: 7
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+  field_id_no:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_offer_deadlinie:
+    weight: 8
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_orderer:
+    weight: 6
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_results_date:
+    weight: 10
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_tender_procedure:
+    weight: 4
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_tender_proposal_sum:
+    weight: 11
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+  field_tender_type:
+    weight: 1
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_tender_winner:
+    weight: 12
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

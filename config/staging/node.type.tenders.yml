@@ -1,0 +1,17 @@
+uuid: d1b100f8-b64a-4c08-8300-d232d857c2d8
+langcode: lv
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Iepirkumi
+type: tenders
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

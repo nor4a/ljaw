@@ -1,0 +1,23 @@
+uuid: c690d402-80ec-41cc-bc00-e9bf63d0864c
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tender_type
+    - node.type.tenders
+  module:
+    - options
+id: node.tenders.field_tender_type
+field_name: field_tender_type
+entity_type: node
+bundle: tenders
+label: Veids
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

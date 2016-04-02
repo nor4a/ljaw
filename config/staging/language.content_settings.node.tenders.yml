@@ -1,0 +1,16 @@
+uuid: ec2ab0df-5ba2-4220-a100-c1bbe7735bd0
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.tenders
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.tenders
+target_entity_type_id: node
+target_bundle: tenders
+default_langcode: site_default
+language_alterable: false

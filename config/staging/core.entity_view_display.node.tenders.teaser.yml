@@ -1,0 +1,60 @@
+uuid: c647f17b-ba30-41fd-9000-0c334a6fa31e
+langcode: lv
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tenders.body
+    - field.field.node.tenders.field_attachments
+    - field.field.node.tenders.field_cpv_code
+    - field.field.node.tenders.field_estimated_price
+    - field.field.node.tenders.field_id_no
+    - field.field.node.tenders.field_offer_deadlinie
+    - field.field.node.tenders.field_orderer
+    - field.field.node.tenders.field_results_date
+    - field.field.node.tenders.field_tender_procedure
+    - field.field.node.tenders.field_tender_proposal_sum
+    - field.field.node.tenders.field_tender_type
+    - field.field.node.tenders.field_tender_winner
+    - node.type.tenders
+  module:
+    - text
+    - user
+id: node.tenders.teaser
+targetEntityType: node
+bundle: tenders
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_estimated_price:
+    type: number_decimal
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_attachments: true
+  field_cpv_code: true
+  field_id_no: true
+  field_offer_deadlinie: true
+  field_orderer: true
+  field_results_date: true
+  field_tender_procedure: true
+  field_tender_proposal_sum: true
+  field_tender_type: true
+  field_tender_winner: true
+  langcode: true

@@ -1,0 +1,18 @@
+uuid: 322b08f2-68cb-4618-a93c-60e67057db48
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.tenders
+id: node.tenders.title
+field_name: title
+entity_type: node
+bundle: tenders
+label: Nosaukums
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

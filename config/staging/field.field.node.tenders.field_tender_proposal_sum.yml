@@ -1,0 +1,23 @@
+uuid: 38b0ed1a-7375-4d80-b600-d4158ad773e4
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tender_proposal_sum
+    - node.type.tenders
+id: node.tenders.field_tender_proposal_sum
+field_name: field_tender_proposal_sum
+entity_type: node
+bundle: tenders
+label: 'Līguma summa'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: EUR
+field_type: decimal

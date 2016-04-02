@@ -1,0 +1,23 @@
+uuid: 730a2af3-c1b7-48da-a000-eefe9d4885c6
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estimated_price
+    - node.type.tenders
+id: node.tenders.field_estimated_price
+field_name: field_estimated_price
+entity_type: node
+bundle: tenders
+label: 'Paredzamā līgumcena '
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: EUR
+field_type: decimal

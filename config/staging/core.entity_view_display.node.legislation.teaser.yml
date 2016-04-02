@@ -1,0 +1,24 @@
+uuid: 12751f31-5559-4372-a725-37b513260c74
+langcode: lv
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.legislation.field_attachment
+    - field.field.node.legislation.field_legislation_cat
+    - field.field.node.legislation.field_url
+    - node.type.legislation
+  module:
+    - user
+id: node.legislation.teaser
+targetEntityType: node
+bundle: legislation
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_attachment: true
+  field_legislation_cat: true
+  field_url: true
+  langcode: true

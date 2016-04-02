@@ -1,0 +1,46 @@
+uuid: e2eb3457-28e6-41b8-9442-6649d123e4f9
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.field.node.price_list.field_attachment
+    - field.field.node.price_list.field_pricelist_cat
+    - field.field.node.price_list.field_url
+    - node.type.price_list
+  module:
+    - file
+    - link
+    - user
+id: node.price_list.default
+targetEntityType: node
+bundle: price_list
+mode: default
+content:
+  field_attachment:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_pricelist_cat:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_url:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  links:
+    weight: 100
+hidden:
+  langcode: true

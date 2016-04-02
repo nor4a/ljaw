@@ -1,0 +1,17 @@
+uuid: d20d80dc-18f0-4500-942c-44de7227703f
+langcode: lv
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Formas
+type: forms
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

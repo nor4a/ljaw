@@ -1,0 +1,9 @@
+uuid: ac81de5e-2f12-4e80-9b01-1f48bab68648
+langcode: lv
+status: true
+dependencies: {  }
+name: 'Cenu lapas kategorija'
+vid: pricelist_category
+description: ''
+hierarchy: 1
+weight: 0

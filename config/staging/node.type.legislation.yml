@@ -1,0 +1,17 @@
+uuid: e669f645-8feb-4b86-9811-17a767828ef0
+langcode: lv
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Likumdošana
+type: legislation
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

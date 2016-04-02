@@ -1,0 +1,48 @@
+uuid: eae761a4-fc9c-4495-8400-c81a60af478a
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.field.node.legislation.field_attachment
+    - field.field.node.legislation.field_legislation_cat
+    - field.field.node.legislation.field_url
+    - node.type.legislation
+  module:
+    - file
+    - link
+    - user
+id: node.legislation.default
+targetEntityType: node
+bundle: legislation
+mode: default
+content:
+  field_attachment:
+    weight: 104
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_legislation_cat:
+    weight: 103
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_url:
+    weight: 101
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

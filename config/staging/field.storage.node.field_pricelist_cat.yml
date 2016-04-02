@@ -1,0 +1,20 @@
+uuid: a93427bc-c6cc-43f8-972d-45cdd2d378bc
+langcode: lv
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_pricelist_cat
+field_name: field_pricelist_cat
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

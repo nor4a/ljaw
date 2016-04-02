@@ -1,0 +1,22 @@
+uuid: da3508d1-cac6-42f9-ab03-3ebb969e5762
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.price_list
+id: node.price_list.promote
+field_name: promote
+entity_type: node
+bundle: price_list
+label: 'Izvirzīts uz pirmo lapu'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aktīvs
+  off_label: Izslēgts
+field_type: boolean

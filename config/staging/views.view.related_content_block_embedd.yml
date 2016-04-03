@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_attachment
     - field.storage.node.field_url
-    - node.type.price_list
+    - node.type.page
   module:
     - file
     - link
@@ -273,9 +273,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: in
+          operator: 'not in'
           value:
-            price_list: price_list
+            page: page
           group: 1
           exposed: false
           expose:

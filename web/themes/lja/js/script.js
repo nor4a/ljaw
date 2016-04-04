@@ -9,53 +9,76 @@
             });
         });
 
+        // Menu
+
+        var currentActiveMenu = {
+            link: null,
+            linkId: null,
+            dropdown: null,
+            event: null,
+            animatingTimeout: null
+        };
+
         $('.header-container .menu a').on('click', function(e) {
 
             e.preventDefault();
 
-            $('.header-container .menu li.active').removeClass('active');
+            clearTimeout(currentActiveMenu.animatingTimeout);
+            $('.header-container, #sub-menu').unbind('mouseleave');
 
-            var link = $(this);
-            var id = link.data('id');
+            // ---- Main menu
 
-            var container = $('#sub-menu');
-            var menu = $('.menu[data-id="' + id + '"]', container);
-            var activeMenu = $('.menu.visible', container);
-
-            link.parent().addClass('active');
-
-            if(menu.hasClass('visible') && !menu.hasClass('current')) {
-                link.parent().removeClass('active');
-                menuSlide(menu);
-            } else {
-                menuSlide(activeMenu);
-                if(activeMenu.is('div')) {
-                    setTimeout(function() {
-                        menuSlide(menu);
-                    }, 300);
-                } else {
-                    menuSlide(menu);
-                }
-                $('.header-container').on('mouseleave', function(e) {
-                    menuSlide(menu);
-                    menu.unbind('mouseleave');
-                    $('.header-container .menu li.active').removeClass('active');
-                    $('.header-container .menu li.current').addClass('active');
-                });
+            if(currentActiveMenu.link) {
+                $(currentActiveMenu.link).removeClass('active');
             }
+
+            if(currentActiveMenu.linkId !== $(this).data('id')) {
+                currentActiveMenu.link = $(this).parent();
+                currentActiveMenu.linkId = $(this).data('id');
+                currentActiveMenu.link.addClass('active');
+            }
+
+            // ---- Dropdown
+
+            var dropdown = $('#sub-menu .menu[data-id="' + currentActiveMenu.linkId + '"]');
+            var dropdownTimeout = 300;
+
+            if(currentActiveMenu.dropdown) {
+                currentActiveMenu.dropdown.slideUp(300);
+            }
+
+            if($(currentActiveMenu.dropdown).data('id') === $(dropdown).data('id')) {
+                currentActiveMenu.link = null;
+                currentActiveMenu.linkId = null;
+                currentActiveMenu.dropdown = null;
+                return;
+            }
+
+            currentActiveMenu.animatingTimeout = setTimeout(function() {
+                currentActiveMenu.dropdown = dropdown;
+                currentActiveMenu.dropdown.slideDown(300, function() {
+                    $('.header-container, #sub-menu').mouseleave(function(e) {
+                        // If we are moving mouse over childs
+                        if($(e.toElement).parents('.header-container').length || $(e.toElement).parents('#sub-menu').length) {
+                            return;
+                        }
+                        // Hide current active menu
+                        currentActiveMenu.dropdown.slideUp(300);
+                        currentActiveMenu.link = null;
+                        currentActiveMenu.linkId = null;
+                        currentActiveMenu.dropdown = null;
+                        // Unbind this event, we don't need it anymore
+                        $('.header-container, #sub-menu').unbind('mouseleave');
+                        // Remove .active from main menu element
+                        $('.header-container .menu li.active').removeClass('active');
+                        // If we are on subpage, mark current menu tree as active
+                        $('.header-container .menu li.current').addClass('active');
+                    });
+                });
+            }, currentActiveMenu.dropdown ? dropdownTimeout : 0);
 
         });
 
-        var menuSlide = function(element, time) {
-            if(time === undefined) var time = 300;
-            element.slideToggle(time, function () {
-                if ($(this).is(':visible')) {
-                    $(this).addClass('visible');
-                } else {
-                    $(this).removeClass('visible');
-                }
-            });
-        }
 
     });
 

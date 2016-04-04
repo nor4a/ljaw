@@ -209,12 +209,12 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: 'Cenu lapas'
+    display_title: Cenrādis
     position: 1
     display_options:
       display_extenders: {  }
       display_description: ''
-      block_description: 'Cenu lapas'
+      block_description: Cenrādis
       fields:
         field_pricelist_cat:
           id: field_pricelist_cat
@@ -334,7 +334,7 @@ display:
       defaults:
         fields: false
         title: false
-      title: 'Cenu lapas'
+      title: Cenrādis
     cache_metadata:
       max-age: -1
       contexts:

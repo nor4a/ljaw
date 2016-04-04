@@ -2,8 +2,8 @@ uuid: ac81de5e-2f12-4e80-9b01-1f48bab68648
 langcode: lv
 status: true
 dependencies: {  }
-name: 'Cenu lapas kategorija'
+name: 'Cenrāža kategorija'
 vid: pricelist_category
 description: ''
-hierarchy: 1
+hierarchy: 0
 weight: -10

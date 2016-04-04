@@ -119,7 +119,7 @@ a {
 }
 /* line 51, ../sass/main.scss */
 .content-container.page {
-  padding-top: 35px;
+  padding-top: 20px;
   background: url("../img/background-page.png");
   background-size: cover;
 }
@@ -1060,7 +1060,7 @@ div.container {
   box-shadow: none;
   text-align: left;
   color: rgba(0, 0, 0, 0.87);
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 0;
 }
 /* line 761, ../sass/main.scss */
@@ -1071,29 +1071,23 @@ div.container {
   color: rgba(0, 0, 0, 0.87);
   padding: 10px;
   vertical-align: inherit;
-  font-style: none;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: none;
-  border-bottom: 1px solid #dadada;
-  border-left: none;
 }
-/* line 774, ../sass/main.scss */
+/* line 771, ../sass/main.scss */
 .content-container .text-block table th, .content-container .text-block table td {
-  font-weight: 300;
+  font-weight: 400;
   padding: 10px 15px;
-  border-right: 1px solid #efefef;
-  font-size: 14px;
+  border: 1px solid #efefef;
+  font-size: 13px;
 }
-/* line 779, ../sass/main.scss */
-.content-container .text-block table th:last-child, .content-container .text-block table td:last-child {
-  border-right: none;
-}
-/* line 783, ../sass/main.scss */
-.content-container .text-block table tbody tr:nth-child(1n) td {
+/* line 777, ../sass/main.scss */
+.content-container .text-block table tbody tr:nth-child(1) td,
+.content-container .text-block table tbody tr:nth-child(2n+1) td {
   background: #f9f9f9;
 }
 
-/* line 792, ../sass/main.scss */
+/* line 787, ../sass/main.scss */
 .upper-header {
   z-index: 115;
   position: relative;
@@ -1101,11 +1095,11 @@ div.container {
   text-align: right;
   height: 40px;
 }
-/* line 798, ../sass/main.scss */
+/* line 793, ../sass/main.scss */
 .upper-header, .upper-header a, .upper-header h1, .upper-header h2, .upper-header h3, .upper-header p, .upper-header span, .upper-header div {
   color: white;
 }
-/* line 801, ../sass/main.scss */
+/* line 796, ../sass/main.scss */
 .upper-header a {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -1113,11 +1107,11 @@ div.container {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 804, ../sass/main.scss */
+/* line 799, ../sass/main.scss */
 .upper-header a:hover {
   color: #cdd7ea;
 }
-/* line 807, ../sass/main.scss */
+/* line 802, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs {
   display: inline-block;
   height: 40px;
@@ -1127,30 +1121,30 @@ div.container {
   padding-right: 10px;
   margin-right: 10px;
 }
-/* line 815, ../sass/main.scss */
+/* line 810, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown {
   position: relative;
 }
-/* line 817, ../sass/main.scss */
+/* line 812, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown i {
   margin-left: 5px;
 }
-/* line 820, ../sass/main.scss */
+/* line 815, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown li, .upper-header #block-valoduparsledzejs > ul.dropdown a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 826, ../sass/main.scss */
+/* line 821, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown > li {
   position: relative;
 }
-/* line 828, ../sass/main.scss */
+/* line 823, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown > li > a {
   display: block;
   padding: 13px 8px;
 }
-/* line 833, ../sass/main.scss */
+/* line 828, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown > li > ul {
   background: #007fff;
   top: 100%;
@@ -1160,13 +1154,13 @@ div.container {
   -moz-box-shadow: 0px 7px 6px -6px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 7px 6px -6px rgba(0, 0, 0, 0.3);
 }
-/* line 841, ../sass/main.scss */
+/* line 836, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown > li > ul li {
   position: relative;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding-left: 12px;
 }
-/* line 845, ../sass/main.scss */
+/* line 840, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown > li > ul li:before {
   content: "•";
   color: white;
@@ -1175,20 +1169,20 @@ div.container {
   font-size: 10px;
   left: 11px;
 }
-/* line 854, ../sass/main.scss */
+/* line 849, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown > li > ul a {
   padding: 8px 12px;
 }
-/* line 859, ../sass/main.scss */
+/* line 854, ../sass/main.scss */
 .upper-header .social {
   display: inline-block;
 }
-/* line 861, ../sass/main.scss */
+/* line 856, ../sass/main.scss */
 .upper-header .social a {
   padding: 10px 10px 10px 5px;
   display: inline-block;
 }
-/* line 866, ../sass/main.scss */
+/* line 861, ../sass/main.scss */
 .upper-header .sitemap {
   height: 40px;
   display: inline-block;
@@ -1196,26 +1190,26 @@ div.container {
   margin-right: 10px;
   border-right: 1px solid rgba(255, 255, 255, 0.4);
 }
-/* line 872, ../sass/main.scss */
+/* line 867, ../sass/main.scss */
 .upper-header .sitemap a {
   font-size: 13px;
   display: block;
   padding: 13px 0;
 }
 
-/* line 883, ../sass/main.scss */
+/* line 878, ../sass/main.scss */
 ul.dropdown li:last-child a {
   border-right: none;
 }
 
 /* Doesn't work in IE */
-/* line 888, ../sass/main.scss */
+/* line 883, ../sass/main.scss */
 ul.dropdown li.hover,
 ul.dropdown li:hover {
   position: relative;
 }
 
-/* line 898, ../sass/main.scss */
+/* line 893, ../sass/main.scss */
 ul.dropdown ul {
   display: none;
   width: 220px;
@@ -1224,38 +1218,38 @@ ul.dropdown ul {
   left: 0;
 }
 
-/* line 908, ../sass/main.scss */
+/* line 903, ../sass/main.scss */
 ul.dropdown ul li {
   font-weight: normal;
   float: none;
 }
 
 /* IE 6 & 7 Needs Inline Block */
-/* line 915, ../sass/main.scss */
+/* line 910, ../sass/main.scss */
 ul.dropdown ul li a {
   border-right: none;
   width: 100%;
   display: inline-block;
 }
 
-/* line 921, ../sass/main.scss */
+/* line 916, ../sass/main.scss */
 ul.dropdown ul ul {
   left: 100%;
   top: 0;
 }
 
-/* line 933, ../sass/main.scss */
+/* line 928, ../sass/main.scss */
 #sub-menu {
   background: none !important;
   box-shadow: none !important;
 }
-/* line 936, ../sass/main.scss */
+/* line 931, ../sass/main.scss */
 #sub-menu .container {
   -webkit-box-shadow: 0px 7px 6px -6px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 7px 6px -6px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 7px 6px -6px rgba(0, 0, 0, 0.3);
 }
-/* line 941, ../sass/main.scss */
+/* line 936, ../sass/main.scss */
 #sub-menu .menu {
   background: #007fff;
   padding: 0px 20px 15px;
@@ -1264,19 +1258,19 @@ ul.dropdown ul ul {
   box-sizing: border-box;
   border-bottom: 5px solid white;
 }
-/* line 948, ../sass/main.scss */
+/* line 943, ../sass/main.scss */
 #sub-menu .menu a:hover {
   text-decoration: underline;
 }
-/* line 951, ../sass/main.scss */
+/* line 946, ../sass/main.scss */
 #sub-menu .menu a.not-linkable:hover {
   text-decoration: none;
 }
-/* line 954, ../sass/main.scss */
+/* line 949, ../sass/main.scss */
 #sub-menu .menu h1, #sub-menu .menu h2, #sub-menu .menu h3, #sub-menu .menu a, #sub-menu .menu span, #sub-menu .menu p {
   color: white;
 }
-/* line 957, ../sass/main.scss */
+/* line 952, ../sass/main.scss */
 #sub-menu .menu li:before {
   color: white;
 }

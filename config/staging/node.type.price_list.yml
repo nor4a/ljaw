@@ -8,10 +8,10 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: 'Cenu lapa'
+name: Cenrādis
 type: price_list
 description: ''
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 0
 display_submitted: false

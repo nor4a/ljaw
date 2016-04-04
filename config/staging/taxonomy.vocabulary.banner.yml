@@ -2,8 +2,8 @@ uuid: 78260371-1890-468a-aa1d-299a1b23c6bf
 langcode: lv
 status: true
 dependencies: {  }
-name: Banner
+name: 'Banneru novietojums'
 vid: banner
 description: ''
 hierarchy: 0
-weight: 0
+weight: -6

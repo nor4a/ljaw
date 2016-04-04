@@ -25,6 +25,7 @@
  * @see template_preprocess_block()
  */
 #}
+{%  if content_exists %}
 <div{{ attributes.addClass('block') }}>
   <div class="border">
   {{ title_prefix }}
@@ -37,3 +38,4 @@
   {% endblock %}
   </div>
 </div>
+{% endif %}

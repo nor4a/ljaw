@@ -2,8 +2,8 @@ uuid: 94068ffc-c10e-4698-bd00-0fd19a2507f5
 langcode: lv
 status: true
 dependencies: {  }
-name: Likumdošana
+name: 'Likumdošanas kategorija'
 vid: laws
 description: ''
-hierarchy: 1
-weight: 0
+hierarchy: 0
+weight: -8

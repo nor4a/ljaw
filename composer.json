@@ -90,6 +90,12 @@
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "web/libraries/{$name}": ["type:drupal-library"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+      "patches": {
+        "drupal/core": {
+          "EntityStoragePatch": "https://raw.githubusercontent.com/nor4a/ljaw/master/patches/EntityStoragePatch.patch"
         }
+      }
     }
 }
+

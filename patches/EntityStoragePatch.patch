@@ -1,0 +1,17 @@
+diff --git a/core/lib/Drupal/Core/Entity/EntityStorageBase.php b/core/lib/Drupal/Core/Entity/EntityStorageBase.php
+old mode 100644
+new mode 100755
+index 31bf8ed..19e0b05
+--- a/core/lib/Drupal/Core/Entity/EntityStorageBase.php
++++ b/core/lib/Drupal/Core/Entity/EntityStorageBase.php
+@@ -229,6 +229,10 @@
+     // were passed. The $ids array is reduced as items are loaded from cache,
+     // and we need to know if it's empty for this reason to avoid querying the
+     // database when all requested entities are loaded from cache.
++
++    //IDYNAMIC PATCHed to avoid warnings if invalid structure passed
++    if(!empty($ids) && ($fid = reset($ids)) && is_object($fid)) { return NULL;  }
++
+     $passed_ids = !empty($ids) ? array_flip($ids) : FALSE;
+     // Try to load entities from the static cache, if the entity type supports
+     // static caching.

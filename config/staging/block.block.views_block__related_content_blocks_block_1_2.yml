@@ -1,21 +1,21 @@
-uuid: cef0b906-8d62-4719-b507-7a5911428b09
+uuid: d3e1ad57-5292-456e-9c00-e0d8b88e4561
 langcode: lv
 status: true
 dependencies:
   config:
-    - views.view.content_banners
+    - views.view.related_content_blocks
   module:
     - views
   theme:
     - lja
-id: views_block__content_banners_block_2
+id: views_block__related_content_blocks_block_1_2
 theme: lja
 region: sidebar
-weight: -11
+weight: -14
 provider: null
-plugin: 'views_block:content_banners-block_2'
+plugin: 'views_block:related_content_blocks-block_1'
 settings:
-  id: 'views_block:content_banners-block_2'
+  id: 'views_block:related_content_blocks-block_1'
   label: ''
   provider: views
   label_display: visible

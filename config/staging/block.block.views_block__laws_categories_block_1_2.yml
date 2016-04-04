@@ -1,21 +1,21 @@
-uuid: cef0b906-8d62-4719-b507-7a5911428b09
+uuid: 90a72988-9443-4c0b-9700-bd3b1fa46c94
 langcode: lv
-status: true
+status: false
 dependencies:
   config:
-    - views.view.content_banners
+    - views.view.laws_categories
   module:
     - views
   theme:
     - lja
-id: views_block__content_banners_block_2
+id: views_block__laws_categories_block_1_2
 theme: lja
-region: sidebar
+region: '-1'
 weight: -11
 provider: null
-plugin: 'views_block:content_banners-block_2'
+plugin: 'views_block:laws_categories-block_1'
 settings:
-  id: 'views_block:content_banners-block_2'
+  id: 'views_block:laws_categories-block_1'
   label: ''
   provider: views
   label_display: visible

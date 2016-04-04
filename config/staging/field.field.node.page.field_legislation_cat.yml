@@ -1,0 +1,27 @@
+uuid: 1c3e8b65-d9f3-4502-b906-6cf42f0c4ee8
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legislation_cat
+    - node.type.page
+    - taxonomy.vocabulary.laws
+id: node.page.field_legislation_cat
+field_name: field_legislation_cat
+entity_type: node
+bundle: page
+label: 'Likumu kategorija'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      laws: laws
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

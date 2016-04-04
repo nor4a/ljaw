@@ -5,6 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_form_cat
+    - field.field.node.page.field_legislation_cat
+    - field.field.node.page.field_pricelist_cat
     - node.type.page
   module:
     - text
@@ -26,4 +29,7 @@ content:
   links:
     weight: 101
 hidden:
+  field_form_cat: true
+  field_legislation_cat: true
+  field_pricelist_cat: true
   langcode: true

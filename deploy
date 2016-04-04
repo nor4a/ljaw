@@ -1,5 +1,0 @@
-git pull
-cd web/core
-../../vendor/drush/drush/drush.launcher config-import staging
-../../vendor/drush/drush/drush.launcher cache-rebuild
-cd ../../

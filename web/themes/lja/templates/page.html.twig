@@ -1,11 +1,19 @@
-<div class="header-container home">
+<div class="upper-header">
   <div class="container">
-    {{ page.header }}
-    {# todo: export to block? #}
+    {{ page.top }}
+    <div class="sitemap">
+      <a href="#">Sitemap</a>
+    </div>
     <div class="social">
       <a href="#"><i class="fa fa-facebook"></i></a>
       <a href="#"><i class="fa fa-twitter"></i></a>
     </div>
+  </div>
+</div>
+
+<div class="header-container home">
+  <div class="container">
+    {{ page.header }}
   </div>
 </div>
 
@@ -32,12 +40,14 @@
       {{ page.sidebar }}
     </div>
     {% endif %}
+    <div style="clear:both"></div>
   </div>
 </div>
 
 <div class="footer">
   <div class="container">
     {{ page.footer }}
+    <div class="clearfix"></div>
   </div>
 </div>
 

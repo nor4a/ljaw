@@ -36,7 +36,7 @@
                 } else {
                     menuSlide(menu);
                 }
-                menu.on('mouseleave', function(e) {
+                $('.header-container').on('mouseleave', function(e) {
                     menuSlide(menu);
                     menu.unbind('mouseleave');
                     $('.header-container .menu li.active').removeClass('active');

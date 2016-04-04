@@ -1,3 +1,17 @@
+<div class="upper-header">
+    <div class="container">
+        {{ page.top }}
+        {# todo: export to block? #}
+        <div class="sitemap">
+            <a href="#">Sitemap</a>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+
 <div class="header-container home">
     <div class="container">
         {{ page.header }}
@@ -15,7 +29,7 @@
     </div>
 </div>
 
-<div class="content-container">
+<div class="content-container home">
     <div class="container">
         {{ page.content }}
     </div>
@@ -24,5 +38,6 @@
 <div class="footer front">
     <div class="container">
         {{ page.footer }}
+        <div class="clearfix"></div>
     </div>
 </div>

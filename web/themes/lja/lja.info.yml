@@ -3,6 +3,7 @@ type: theme
 description: The LJA website theme
 core: 8.x
 regions:
+  top: Upper header
   header: Header
   menu: Menu
   content: Content

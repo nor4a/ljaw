@@ -24,7 +24,7 @@
 <div class="menu {% if item.in_active_trail %}current visible{% endif %}" data-id="{{ key }}">
   {% for child in item.below %}
     <div class="column">
-      <h2 class="wave">
+      <h2>
         <a {% if child.linkable %} href="{{ child.url }}" class="linkable" {% else %} class="not-linkable" {% endif %}>
           {{ child.title }}
         </a>

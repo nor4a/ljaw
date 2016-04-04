@@ -6,4 +6,4 @@ name: 'Cenu lapas kategorija'
 vid: pricelist_category
 description: ''
 hierarchy: 1
-weight: 0
+weight: -10

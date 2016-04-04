@@ -15,4 +15,7 @@ content:
   links:
     weight: 100
 hidden:
+  field_attachment: true
+  field_form_cat: true
+  field_url: true
   langcode: true

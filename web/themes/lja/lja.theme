@@ -40,6 +40,13 @@ function lja_preprocess_block(&$variables) {
   $mylanguage = \Drupal::languageManager()->getCurrentLanguage()->getId();
   $variables['language'] = $mylanguage != 'lv' ? '/' . $mylanguage : '';
 
+  if(isset($variables['content']['#view'])) {
+    $variables['content']        = render($variables['content']);
+    $variables['content_exists'] = !empty(trim(strip_tags($variables['content'])));
+  }else{
+    $variables['content_exists'] = true;
+  }
+
   switch ($variables['attributes']['id']) {
     case 'block-views-block-laws-categories-block-1':
       $variables['title_link'] = $variables['language'] . '/legislation';

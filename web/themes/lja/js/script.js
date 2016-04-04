@@ -15,7 +15,6 @@
             link: null,
             linkId: null,
             dropdown: null,
-            event: null,
             animatingTimeout: null
         };
 
@@ -28,7 +27,7 @@
 
             // ---- Main menu
 
-            if(currentActiveMenu.link) {
+            if(currentActiveMenu.link && !$(currentActiveMenu.link).hasClass('current')) {
                 $(currentActiveMenu.link).removeClass('active');
             }
 

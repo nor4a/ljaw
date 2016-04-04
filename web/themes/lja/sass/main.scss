@@ -76,6 +76,14 @@ a {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
+      > div {
+        padding-right: 80px;
+      }
+      hr {
+        border: none;
+        border-top: 1px solid #dadada;
+        margin: 25px 0;
+      }
       &.home {
         width: 60%;
         padding-bottom: 60px !important;
@@ -90,12 +98,47 @@ a {
       }
       .block {
         color: #363842;
+        counter-reset: bookmarks-counter;
         h2 {
-          font-size: 32px;
-          font-weight: bold;
-          line-height: 40px;
-          &:before {
-            top: -61px;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 18px;
+          margin: 12px 0;
+          div {
+            display: inline-block;
+          }
+          a[href] {
+            position: relative;
+            padding-left: 28px;
+            &:hover:before {
+              border-color: #007fff;
+              background: #007fff;
+              color: white;
+            }
+            &:before {
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+              position: absolute;
+              top: -3px;
+              left: 0;
+              content: counter(bookmarks-counter);
+              counter-increment: bookmarks-counter;
+              padding: 2px 7px;
+              font-size: 10px;
+              display: block;
+              border-radius: 50%;
+              width: 22px;
+              height: 22px;
+              color: #007fff;
+              border: 1px solid #dadada;
+              font-weight: 700;
+              @include transition(all 0.3s);
+            }
+          }
+          a:not([href]), > span, & {
+            font-weight: 500;
+            color: #363842;
           }
         }
         p {
@@ -104,7 +147,7 @@ a {
         ul, ol {
           padding-left: 35px;
           li {
-            padding-bottom: 10px;
+            padding-bottom: 5px;
           }
         }
       }
@@ -715,6 +758,9 @@ div.container {
 .content-container {
   padding-bottom: 30px;
 }
+.content-container.home {
+  padding-bottom: 0px !important;
+}
 .content-container .text-block {
   background: white;
   padding: 25px;
@@ -728,7 +774,7 @@ div.container {
         content: "•";
         color: #007fff;
         position: absolute;
-        top: 4px;
+        top: 1px;
         font-size: 10px;
         left: 1px;
       }

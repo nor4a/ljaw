@@ -28,7 +28,7 @@ h2.wave {
 }
 
 h1, h2 {
-  color: #252b41;
+  color: #3B4F72;
 }
 
 .wave {
@@ -41,7 +41,7 @@ h1, h2 {
 
 a {
   text-decoration: none;
-  color: #252b41;
+  color: #3B4F72;
 }
 
 .content-container {
@@ -540,7 +540,7 @@ a {
             }
             a {
               position: relative;
-              color: #252b41;
+              color: #3B4F72;
               width: 100%;
               display: inline-block;
               border-color: #e9ecf1 !important;
@@ -704,7 +704,7 @@ div.container {
     .column {
       width: 33.33%;
       float: left;
-      margin-top: 20px;
+      margin-top: 10px;
       h2 {
         font-size: 15px;
         font-weight: bold;
@@ -833,9 +833,10 @@ div.container {
 .upper-header {
   z-index: 115;
   position: relative;
-  background: #007fff;
+  background: #3B4F72;
   text-align: right;
-  height: 40px;
+  height: 20px;
+  line-height: 0;
   &, a, h1, h2, h3, p, span, div {
     color: white
   }
@@ -847,9 +848,9 @@ div.container {
   }
   #block-valoduparsledzejs {
     display: inline-block;
-    height: 40px;
+    height: 20px;
     box-sizing: border-box;
-    font-size: 13px;
+    font-size: 11px;
     border-right: 1px solid rgba(255,255,255,0.4);
     padding-right: 10px;
     margin-right: 10px;
@@ -868,7 +869,7 @@ div.container {
       position: relative;
       > a {
         display: block;
-        padding: 13px 8px;
+        padding: 5px 8px;
       }
     }
     > ul.dropdown > li > ul {
@@ -900,20 +901,21 @@ div.container {
   .social {
     display: inline-block;
     a {
-      padding: 10px 10px 10px 5px;
+      font-size: 11px;
+      padding: 2px 10px 2px 5px;
       display: inline-block;
     }
   }
   .sitemap {
-    height: 40px;
+    height: 20px;
     display: inline-block;
     padding-right: 15px;
     margin-right: 10px;
     border-right: 1px solid rgba(255,255,255,0.4);
     a {
-      font-size: 13px;
+      font-size: 11px;
       display: block;
-      padding: 13px 0;
+      padding: 0px 0;
     }
   }
 }

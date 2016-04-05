@@ -92,7 +92,7 @@ h2.wave:before {
 
 /* line 30, ../sass/main.scss */
 h1, h2 {
-  color: #252b41;
+  color: #3B4F72;
 }
 
 /* line 34, ../sass/main.scss */
@@ -108,7 +108,7 @@ h1, h2 {
 /* line 42, ../sass/main.scss */
 a {
   text-decoration: none;
-  color: #252b41;
+  color: #3B4F72;
 }
 
 /* line 47, ../sass/main.scss */
@@ -779,7 +779,7 @@ a {
 .header-container .container div.menu ul li a,
 .header-container .container .mobile-bar.menu ul li a {
   position: relative;
-  color: #252b41;
+  color: #3B4F72;
   width: 100%;
   display: inline-block;
   border-color: #e9ecf1 !important;
@@ -990,7 +990,7 @@ div.container {
 .menu-bar-container .container .column {
   width: 33.33%;
   float: left;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 /* line 708, ../sass/main.scss */
 .menu-bar-container .container .column h2 {
@@ -1149,15 +1149,16 @@ div.container {
 .upper-header {
   z-index: 115;
   position: relative;
-  background: #007fff;
+  background: #3B4F72;
   text-align: right;
-  height: 40px;
+  height: 20px;
+  line-height: 0;
 }
-/* line 839, ../sass/main.scss */
+/* line 840, ../sass/main.scss */
 .upper-header, .upper-header a, .upper-header h1, .upper-header h2, .upper-header h3, .upper-header p, .upper-header span, .upper-header div {
   color: white;
 }
-/* line 842, ../sass/main.scss */
+/* line 843, ../sass/main.scss */
 .upper-header a {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -1165,44 +1166,44 @@ div.container {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 845, ../sass/main.scss */
+/* line 846, ../sass/main.scss */
 .upper-header a:hover {
   color: #cdd7ea;
 }
-/* line 848, ../sass/main.scss */
+/* line 849, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs {
   display: inline-block;
-  height: 40px;
+  height: 20px;
   box-sizing: border-box;
-  font-size: 13px;
+  font-size: 11px;
   border-right: 1px solid rgba(255, 255, 255, 0.4);
   padding-right: 10px;
   margin-right: 10px;
 }
-/* line 856, ../sass/main.scss */
+/* line 857, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown {
   position: relative;
 }
-/* line 858, ../sass/main.scss */
+/* line 859, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown i {
   margin-left: 5px;
 }
-/* line 861, ../sass/main.scss */
+/* line 862, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown li, .upper-header #block-valoduparsledzejs > ul.dropdown a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 867, ../sass/main.scss */
+/* line 868, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown > li {
   position: relative;
 }
-/* line 869, ../sass/main.scss */
+/* line 870, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown > li > a {
   display: block;
-  padding: 13px 8px;
+  padding: 5px 8px;
 }
-/* line 874, ../sass/main.scss */
+/* line 875, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown > li > ul {
   background: #007fff;
   top: 100%;
@@ -1212,13 +1213,13 @@ div.container {
   -moz-box-shadow: 0px 7px 6px -6px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 7px 6px -6px rgba(0, 0, 0, 0.3);
 }
-/* line 882, ../sass/main.scss */
+/* line 883, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown > li > ul li {
   position: relative;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding-left: 12px;
 }
-/* line 886, ../sass/main.scss */
+/* line 887, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown > li > ul li:before {
   content: "•";
   color: white;
@@ -1227,47 +1228,48 @@ div.container {
   font-size: 10px;
   left: 11px;
 }
-/* line 895, ../sass/main.scss */
+/* line 896, ../sass/main.scss */
 .upper-header #block-valoduparsledzejs > ul.dropdown > li > ul a {
   padding: 8px 12px;
 }
-/* line 900, ../sass/main.scss */
+/* line 901, ../sass/main.scss */
 .upper-header .social {
   display: inline-block;
 }
-/* line 902, ../sass/main.scss */
+/* line 903, ../sass/main.scss */
 .upper-header .social a {
-  padding: 10px 10px 10px 5px;
+  font-size: 11px;
+  padding: 2px 10px 2px 5px;
   display: inline-block;
 }
-/* line 907, ../sass/main.scss */
+/* line 909, ../sass/main.scss */
 .upper-header .sitemap {
-  height: 40px;
+  height: 20px;
   display: inline-block;
   padding-right: 15px;
   margin-right: 10px;
   border-right: 1px solid rgba(255, 255, 255, 0.4);
 }
-/* line 913, ../sass/main.scss */
+/* line 915, ../sass/main.scss */
 .upper-header .sitemap a {
-  font-size: 13px;
+  font-size: 11px;
   display: block;
-  padding: 13px 0;
+  padding: 0px 0;
 }
 
-/* line 924, ../sass/main.scss */
+/* line 926, ../sass/main.scss */
 ul.dropdown li:last-child a {
   border-right: none;
 }
 
 /* Doesn't work in IE */
-/* line 929, ../sass/main.scss */
+/* line 931, ../sass/main.scss */
 ul.dropdown li.hover,
 ul.dropdown li:hover {
   position: relative;
 }
 
-/* line 939, ../sass/main.scss */
+/* line 941, ../sass/main.scss */
 ul.dropdown ul {
   display: none;
   width: 220px;
@@ -1276,38 +1278,38 @@ ul.dropdown ul {
   left: 0;
 }
 
-/* line 949, ../sass/main.scss */
+/* line 951, ../sass/main.scss */
 ul.dropdown ul li {
   font-weight: normal;
   float: none;
 }
 
 /* IE 6 & 7 Needs Inline Block */
-/* line 956, ../sass/main.scss */
+/* line 958, ../sass/main.scss */
 ul.dropdown ul li a {
   border-right: none;
   width: 100%;
   display: inline-block;
 }
 
-/* line 962, ../sass/main.scss */
+/* line 964, ../sass/main.scss */
 ul.dropdown ul ul {
   left: 100%;
   top: 0;
 }
 
-/* line 974, ../sass/main.scss */
+/* line 976, ../sass/main.scss */
 #sub-menu {
   background: none !important;
   box-shadow: none !important;
 }
-/* line 977, ../sass/main.scss */
+/* line 979, ../sass/main.scss */
 #sub-menu .container {
   -webkit-box-shadow: 0px 7px 6px -6px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 7px 6px -6px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 7px 6px -6px rgba(0, 0, 0, 0.3);
 }
-/* line 982, ../sass/main.scss */
+/* line 984, ../sass/main.scss */
 #sub-menu .menu {
   background: #007fff;
   padding: 0px 20px 15px;
@@ -1316,19 +1318,19 @@ ul.dropdown ul ul {
   box-sizing: border-box;
   border-bottom: 5px solid white;
 }
-/* line 989, ../sass/main.scss */
+/* line 991, ../sass/main.scss */
 #sub-menu .menu a:hover {
   text-decoration: underline;
 }
-/* line 992, ../sass/main.scss */
+/* line 994, ../sass/main.scss */
 #sub-menu .menu a.not-linkable:hover {
   text-decoration: none;
 }
-/* line 995, ../sass/main.scss */
+/* line 997, ../sass/main.scss */
 #sub-menu .menu h1, #sub-menu .menu h2, #sub-menu .menu h3, #sub-menu .menu a, #sub-menu .menu span, #sub-menu .menu p {
   color: white;
 }
-/* line 998, ../sass/main.scss */
+/* line 1000, ../sass/main.scss */
 #sub-menu .menu li:before {
   color: white;
 }

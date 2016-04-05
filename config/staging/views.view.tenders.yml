@@ -9,7 +9,6 @@ dependencies:
     - field.storage.node.field_offer_deadlinie
     - field.storage.node.field_tender_type
     - node.type.tenders
-    - system.menu.about
   module:
     - datetime
     - node
@@ -539,7 +538,7 @@ display:
       display_extenders: {  }
       path: tenders
       menu:
-        type: normal
+        type: none
         title: Iepirkumi
         description: ''
         expanded: false

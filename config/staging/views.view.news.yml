@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.article
-    - system.menu.about
   module:
     - node
     - user
@@ -209,10 +208,15 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: jaunumi
+      path: news
       menu:
-        type: normal
+        type: none
         title: Jaunumi
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
         menu_name: about
     cache_metadata:
       max-age: -1

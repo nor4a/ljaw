@@ -3,7 +3,6 @@ langcode: lv
 status: true
 dependencies:
   config:
-    - system.menu.forms-pricelists
     - taxonomy.vocabulary.forms_category
     - taxonomy.vocabulary.laws
     - taxonomy.vocabulary.pricelist_category
@@ -527,15 +526,6 @@ display:
     display_options:
       display_extenders: {  }
       path: forms
-      menu:
-        type: normal
-        title: Formas
-        description: ''
-        expanded: false
-        parent: ''
-        weight: 0
-        context: '0'
-        menu_name: forms-pricelists
       filters:
         vid:
           id: vid
@@ -894,15 +884,6 @@ display:
         groups:
           1: AND
           2: OR
-      menu:
-        type: normal
-        title: 'Cenu lapas'
-        description: ''
-        expanded: false
-        parent: ''
-        weight: 0
-        context: '0'
-        menu_name: forms-pricelists
     cache_metadata:
       max-age: -1
       contexts:

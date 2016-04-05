@@ -63,7 +63,9 @@
         "drupal/extlink": "8.*",
         "drupal/views_field_view": "8.*",
         "drupal/views_tree": "8.*",
-        "drupal/diff": "8.*"
+        "drupal/diff": "8.*",
+        "drupal/sitemap": "8.*",
+        "drupal/simple_sitemap": "8.*"
     },
     "require-dev": {
         "behat/mink": "~1.6",

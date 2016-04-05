@@ -1,8 +1,0 @@
-uuid: 9871d407-f3a7-4e7b-9300-f1c8cbca98b8
-langcode: lv
-status: true
-dependencies: {  }
-id: forms-pricelists
-label: 'Forms and Pricelists'
-description: ''
-locked: false

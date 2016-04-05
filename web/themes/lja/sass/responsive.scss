@@ -12,7 +12,13 @@
   }
 }
 
-@include breakpoint(max-width 1000px){
+@include breakpoint(max-width 1000px) {
+  .content-container.page .container .text-block h1 {
+    font-size: 22px;
+  }
+  .content-container .container .text-block .block h2 {
+    font-size: 14px;
+  }
   .content-container .container .text-block .content h1 {
     font-size: 30px;
     font-weight: bold;
@@ -20,6 +26,10 @@
     &.wave:before {
       top: -45px;
     }
+  }
+  .content-container .container .bar-menu .block .views-row a {
+    font-size: 12px;
+    line-height: 14px;
   }
   .content-container .container .text-block .content p {
     margin: 20px 0 28px;

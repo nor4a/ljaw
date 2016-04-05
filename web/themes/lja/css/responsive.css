@@ -11,59 +11,102 @@
   }
 }
 @media (max-width: 1000px) {
-  /* line 17, ../sass/responsive.scss */
+  /* line 16, ../sass/responsive.scss */
+  .content-container .container .text-block .content h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+  /* line 20, ../sass/responsive.scss */
+  .content-container .container .text-block .content h1.wave:before {
+    top: -45px;
+  }
+
+  /* line 24, ../sass/responsive.scss */
+  .content-container .container .text-block .content p {
+    margin: 20px 0 28px;
+  }
+
+  /* line 27, ../sass/responsive.scss */
+  .content-container {
+    padding-top: 40px;
+  }
+
+  /* line 30, ../sass/responsive.scss */
+  .content-container .container .wrap {
+    height: 210px;
+  }
+  /* line 32, ../sass/responsive.scss */
+  .content-container .container .wrap .block.block-1 {
+    height: 170px;
+  }
+  /* line 35, ../sass/responsive.scss */
+  .content-container .container .wrap .block.block-2 {
+    height: 280px;
+  }
+  /* line 37, ../sass/responsive.scss */
+  .content-container .container .wrap .block.block-2 .border div h2 {
+    margin-top: 43px;
+  }
+  /* line 40, ../sass/responsive.scss */
+  .content-container .container .wrap .block.block-2 .border div img {
+    margin-top: 39px;
+  }
+  /* line 44, ../sass/responsive.scss */
+  .content-container .container .wrap .block .border div h2 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  /* line 49, ../sass/responsive.scss */
+  .content-container .container .text-block.home {
+    padding-bottom: 30px !important;
+  }
+  /* line 51, ../sass/responsive.scss */
+  .content-container .container .text-block.home p {
+    font-size: 14px;
+  }
+
+  /* line 55, ../sass/responsive.scss */
+  .footer.front {
+    padding: 80px 0 0px !important;
+  }
+
+  /* line 58, ../sass/responsive.scss */
+  .content-container .container .blue-circle h2 {
+    font-size: 22px;
+  }
+
+  /* line 62, ../sass/responsive.scss */
   .header-container .container .menu,
   .header-container .container .social {
     display: none;
   }
 
-  /* line 27, ../sass/responsive.scss */
-  .menu-bar-container .container .column {
-    padding: 0 50px 55px;
-    width: 50%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  /* line 71, ../sass/responsive.scss */
+  .menu-bar-container .container .column h2 {
+    font-size: 13px;
   }
-}
-@media (max-width: 1000px) and (max-width: 600px) {
-  /* line 27, ../sass/responsive.scss */
-  .menu-bar-container .container .column {
-    width: 100%;
-    padding: 0 20px 55px;
-  }
-}
 
-@media (max-width: 1000px) {
-  /* line 39, ../sass/responsive.scss */
+  /* line 74, ../sass/responsive.scss */
+  .menu .column ul li a {
+    font-size: 11px;
+  }
+
+  /* line 88, ../sass/responsive.scss */
   .content-container .container .wrap {
-    height: auto;
     text-align: center;
-    padding: 50px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  /* line 44, ../sass/responsive.scss */
-  .content-container .container .wrap .block {
-    float: left;
-    position: relative;
-    margin: 0 auto 20px;
-    width: 45%;
-  }
-  /* line 49, ../sass/responsive.scss */
-  .content-container .container .wrap .block.horizontal {
-    bottom: auto;
-    left: auto;
-    float: right;
   }
 }
 @media (max-width: 1000px) and (max-width: 800px) {
-  /* line 39, ../sass/responsive.scss */
+  /* line 88, ../sass/responsive.scss */
   .content-container .container .wrap {
     padding: 0;
   }
-  /* line 56, ../sass/responsive.scss */
+  /* line 105, ../sass/responsive.scss */
   .content-container .container .wrap .block {
     width: 370px;
     float: none !important;
@@ -72,45 +115,45 @@
 }
 
 @media (max-width: 1000px) and (max-width: 800px) and (max-width: 500px) {
-  /* line 56, ../sass/responsive.scss */
+  /* line 105, ../sass/responsive.scss */
   .content-container .container .wrap .block {
     width: 320px;
   }
 }
 
 @media (max-width: 1000px) and (max-width: 850px) {
-  /* line 70, ../sass/responsive.scss */
+  /* line 119, ../sass/responsive.scss */
   .content-container .container .bar-menu {
     width: 100%;
     position: relative;
     top: auto;
   }
-  /* line 74, ../sass/responsive.scss */
+  /* line 123, ../sass/responsive.scss */
   .content-container .container .bar-menu .block {
     width: 420px;
     margin: 0 auto 30px;
   }
 }
 @media (max-width: 1000px) and (max-width: 850px) and (max-width: 460px) {
-  /* line 74, ../sass/responsive.scss */
+  /* line 123, ../sass/responsive.scss */
   .content-container .container .bar-menu .block {
     width: 320px;
   }
 }
 
 @media (max-width: 1000px) and (max-width: 850px) and (max-width: 500px) {
-  /* line 83, ../sass/responsive.scss */
+  /* line 132, ../sass/responsive.scss */
   .content-container {
     padding-top: 100px !important;
   }
-  /* line 86, ../sass/responsive.scss */
+  /* line 135, ../sass/responsive.scss */
   .content-container .text-block {
     padding-bottom: 50px !important;
   }
 }
 
 @media (max-width: 1000px) {
-  /* line 94, ../sass/responsive.scss */
+  /* line 143, ../sass/responsive.scss */
   .footer .container .column {
     width: 50% !important;
     min-height: 170px;
@@ -118,28 +161,28 @@
   }
 }
 @media (max-width: 1000px) and (max-width: 700px) {
-  /* line 94, ../sass/responsive.scss */
+  /* line 143, ../sass/responsive.scss */
   .footer .container .column {
     width: 100% !important;
     text-align: center;
     min-height: auto;
   }
-  /* line 102, ../sass/responsive.scss */
+  /* line 151, ../sass/responsive.scss */
   .footer .container .column .col {
     width: 100%;
   }
 }
 
 @media (max-width: 750px) {
-  /* line 112, ../sass/responsive.scss */
+  /* line 161, ../sass/responsive.scss */
   .content-container .container .text-block {
     width: 100% !important;
   }
-  /* line 114, ../sass/responsive.scss */
+  /* line 163, ../sass/responsive.scss */
   .content-container .container .text-block h1 {
     font-size: 55px;
   }
-  /* line 116, ../sass/responsive.scss */
+  /* line 165, ../sass/responsive.scss */
   .content-container .container .blue-circle {
     position: relative;
     right: 0;
@@ -151,13 +194,13 @@
   }
 }
 @media (max-width: 500px) {
-  /* line 129, ../sass/responsive.scss */
+  /* line 178, ../sass/responsive.scss */
   h1 {
     font-size: 30px !important;
     line-height: 35px !important;
   }
 
-  /* line 133, ../sass/responsive.scss */
+  /* line 182, ../sass/responsive.scss */
   h2 {
     font-size: 22px !important;
     line-height: 27px !important;

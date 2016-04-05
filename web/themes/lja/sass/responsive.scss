@@ -13,6 +13,51 @@
 }
 
 @include breakpoint(max-width 1000px){
+  .content-container .container .text-block .content h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    &.wave:before {
+      top: -45px;
+    }
+  }
+  .content-container .container .text-block .content p {
+    margin: 20px 0 28px;
+  }
+  .content-container {
+    padding-top: 40px;
+  }
+  .content-container .container .wrap {
+    height: 210px;
+    .block.block-1 {
+      height: 170px;
+    }
+    .block.block-2 {
+      height: 280px;
+      .border div h2 {
+        margin-top: 43px;
+      }
+      .border div img {
+        margin-top: 39px;
+      }
+    }
+    .block .border div h2 {
+      font-size: 26px;
+      line-height: 28px;
+    }
+  }
+  .content-container .container .text-block.home {
+    padding-bottom: 30px !important;
+    p {
+      font-size: 14px;
+    }
+  }
+  .footer.front {
+    padding: 80px 0 0px !important;
+  }
+  .content-container .container .blue-circle h2 {
+    font-size: 22px;
+  }
   .header-container .container{
     .menu,
     .social{
@@ -23,35 +68,39 @@
     //  text-align: center;
     //}
   }
+  .menu-bar-container .container .column h2 {
+    font-size: 13px;
+  }
+  .menu .column ul li a {
+    font-size: 11px;
+  }
   .menu-bar-container .container{
     .column{
-      padding: 0 50px 55px;
-      width: 50%;
-      @include box-sizing(border-box);
-      @include breakpoint(max-width 600px){
-        width: 100%;
-        padding: 0 20px 55px;
-      }
+      //padding: 0 50px 55px;
+      //width: 50%;
+      //@include box-sizing(border-box);
+      //@include breakpoint(max-width 600px){
+      //  width: 100%;
+      //  padding: 0 20px 55px;
+      //}
     }
   }
-
-
   .content-container .container .wrap{
-    height: auto;
+    //height: auto;
     text-align: center;
-    padding: 50px;
+    //padding: 50px;
     @include box-sizing(border-box);
-    .block{
-      float: left;
-      position: relative;
-      margin: 0 auto 20px;
-      width: 45%;
-      &.horizontal{
-        bottom: auto;
-        left: auto;
-        float: right;
-      }
-    }
+    //.block{
+    //  float: left;
+    //  position: relative;
+    //  margin: 0 auto 20px;
+    //  width: 45%;
+    //  &.horizontal{
+    //    bottom: auto;
+    //    left: auto;
+    //    float: right;
+    //  }
+    //}
     @include breakpoint(max-width 800px){
       .block{
         width: 370px;

@@ -8,9 +8,11 @@
 <div{{ attributes.addClass(classes) }}>
     {% for row in items %}
         {% for column in row.content %}
-          <div class="block block-{{ loop.index }}">
-            {{ column.content }}
-          </div>
+            <div class="block block-{{ loop.index }}">
+                <div class="wrapper">
+                    {{ column.content }}
+                </div>
+            </div>
         {% endfor %}
     {% endfor %}
 </div>

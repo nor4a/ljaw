@@ -24,3 +24,8 @@ entity:
 _core:
   default_config_hash: 2GE7UJUi0iGBPVb9DkGqN4bHjIsphvlb2DM8a-uej4s
 langcode: lv
+content_type_settings:
+  page:
+    view_mode: ''
+  article:
+    view_mode: ''

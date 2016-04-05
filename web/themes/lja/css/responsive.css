@@ -16,11 +16,6 @@
   .header-container .container .social {
     display: none;
   }
-  /* line 21, ../sass/responsive.scss */
-  .header-container .container .mobile-bar {
-    display: table-cell;
-    text-align: center;
-  }
 
   /* line 27, ../sass/responsive.scss */
   .menu-bar-container .container .column {

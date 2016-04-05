@@ -11,165 +11,113 @@
   }
 }
 @media (max-width: 1000px) {
-  /* line 16, ../sass/responsive.scss */
+  /* line 18, ../sass/responsive.scss */
   .content-container.page .container .text-block h1 {
     font-size: 22px;
   }
 
-  /* line 19, ../sass/responsive.scss */
+  /* line 21, ../sass/responsive.scss */
   .content-container .container .text-block .block h2 {
     font-size: 14px;
   }
 
-  /* line 22, ../sass/responsive.scss */
+  /* line 24, ../sass/responsive.scss */
   .content-container .container .text-block .content h1 {
     font-size: 30px;
     font-weight: bold;
     line-height: 40px;
   }
-  /* line 26, ../sass/responsive.scss */
+  /* line 28, ../sass/responsive.scss */
   .content-container .container .text-block .content h1.wave:before {
     top: -45px;
   }
 
-  /* line 30, ../sass/responsive.scss */
+  /* line 32, ../sass/responsive.scss */
   .content-container .container .bar-menu .block .views-row a {
     font-size: 12px;
     line-height: 14px;
   }
 
-  /* line 34, ../sass/responsive.scss */
+  /* line 36, ../sass/responsive.scss */
   .content-container .container .text-block .content p {
     margin: 20px 0 28px;
   }
 
-  /* line 37, ../sass/responsive.scss */
+  /* line 39, ../sass/responsive.scss */
   .content-container {
     padding-top: 40px;
   }
 
-  /* line 40, ../sass/responsive.scss */
+  /* line 42, ../sass/responsive.scss */
   .content-container .container .wrap {
     height: 210px;
   }
-  /* line 42, ../sass/responsive.scss */
+  /* line 44, ../sass/responsive.scss */
   .content-container .container .wrap .block.block-1 {
     height: 170px;
   }
-  /* line 45, ../sass/responsive.scss */
+  /* line 47, ../sass/responsive.scss */
   .content-container .container .wrap .block.block-2 {
     height: 280px;
   }
-  /* line 47, ../sass/responsive.scss */
+  /* line 49, ../sass/responsive.scss */
   .content-container .container .wrap .block.block-2 .border div h2 {
     margin-top: 43px;
   }
-  /* line 50, ../sass/responsive.scss */
+  /* line 52, ../sass/responsive.scss */
   .content-container .container .wrap .block.block-2 .border div img {
     margin-top: 39px;
   }
-  /* line 54, ../sass/responsive.scss */
+  /* line 56, ../sass/responsive.scss */
   .content-container .container .wrap .block .border div h2 {
     font-size: 26px;
     line-height: 28px;
   }
 
-  /* line 59, ../sass/responsive.scss */
+  /* line 61, ../sass/responsive.scss */
   .content-container .container .text-block.home {
     padding-bottom: 30px !important;
   }
-  /* line 61, ../sass/responsive.scss */
+  /* line 63, ../sass/responsive.scss */
   .content-container .container .text-block.home p {
     font-size: 14px;
   }
 
-  /* line 65, ../sass/responsive.scss */
+  /* line 67, ../sass/responsive.scss */
   .footer.front {
     padding: 80px 0 0px !important;
   }
 
-  /* line 68, ../sass/responsive.scss */
+  /* line 70, ../sass/responsive.scss */
   .content-container .container .blue-circle h2 {
     font-size: 22px;
   }
 
-  /* line 72, ../sass/responsive.scss */
+  /* line 74, ../sass/responsive.scss */
   .header-container .container .menu,
   .header-container .container .social {
     display: none;
   }
 
-  /* line 81, ../sass/responsive.scss */
+  /* line 83, ../sass/responsive.scss */
   .menu-bar-container .container .column h2 {
     font-size: 13px;
   }
 
-  /* line 84, ../sass/responsive.scss */
+  /* line 86, ../sass/responsive.scss */
   .menu .column ul li a {
     font-size: 11px;
   }
 
-  /* line 98, ../sass/responsive.scss */
+  /* line 101, ../sass/responsive.scss */
   .content-container .container .wrap {
     text-align: center;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-}
-@media (max-width: 1000px) and (max-width: 800px) {
-  /* line 98, ../sass/responsive.scss */
-  .content-container .container .wrap {
-    padding: 0;
-  }
-  /* line 115, ../sass/responsive.scss */
-  .content-container .container .wrap .block {
-    width: 370px;
-    float: none !important;
-    display: block;
-  }
-}
 
-@media (max-width: 1000px) and (max-width: 800px) and (max-width: 500px) {
-  /* line 115, ../sass/responsive.scss */
-  .content-container .container .wrap .block {
-    width: 320px;
-  }
-}
-
-@media (max-width: 1000px) and (max-width: 850px) {
-  /* line 129, ../sass/responsive.scss */
-  .content-container .container .bar-menu {
-    width: 100%;
-    position: relative;
-    top: auto;
-  }
-  /* line 133, ../sass/responsive.scss */
-  .content-container .container .bar-menu .block {
-    width: 420px;
-    margin: 0 auto 30px;
-  }
-}
-@media (max-width: 1000px) and (max-width: 850px) and (max-width: 460px) {
-  /* line 133, ../sass/responsive.scss */
-  .content-container .container .bar-menu .block {
-    width: 320px;
-  }
-}
-
-@media (max-width: 1000px) and (max-width: 850px) and (max-width: 500px) {
-  /* line 142, ../sass/responsive.scss */
-  .content-container {
-    padding-top: 100px !important;
-  }
-  /* line 145, ../sass/responsive.scss */
-  .content-container .text-block {
-    padding-bottom: 50px !important;
-  }
-}
-
-@media (max-width: 1000px) {
-  /* line 153, ../sass/responsive.scss */
+  /* line 120, ../sass/responsive.scss */
   .footer .container .column {
     width: 50% !important;
     min-height: 170px;
@@ -177,49 +125,318 @@
   }
 }
 @media (max-width: 1000px) and (max-width: 700px) {
-  /* line 153, ../sass/responsive.scss */
+  /* line 120, ../sass/responsive.scss */
   .footer .container .column {
     width: 100% !important;
     text-align: center;
     min-height: auto;
   }
-  /* line 161, ../sass/responsive.scss */
+  /* line 128, ../sass/responsive.scss */
   .footer .container .column .col {
     width: 100%;
   }
 }
 
-@media (max-width: 750px) {
-  /* line 171, ../sass/responsive.scss */
-  .content-container .container .text-block {
-    width: 100% !important;
-  }
-  /* line 173, ../sass/responsive.scss */
-  .content-container .container .text-block h1 {
-    font-size: 55px;
-  }
-  /* line 175, ../sass/responsive.scss */
-  .content-container .container .blue-circle {
-    position: relative;
-    right: 0;
-    top: 0;
-    display: inline-block;
-    margin: 20px 0;
-    left: 50%;
-    margin-left: -92px;
-  }
-}
-@media (max-width: 500px) {
-  /* line 188, ../sass/responsive.scss */
-  h1 {
-    font-size: 30px !important;
-    line-height: 35px !important;
+@media (max-width: 768px) {
+  /* line 139, ../sass/responsive.scss */
+  .header-container .container {
+    padding: 0 10px;
   }
 
-  /* line 192, ../sass/responsive.scss */
-  h2 {
-    font-size: 22px !important;
-    line-height: 27px !important;
+  /* line 142, ../sass/responsive.scss */
+  .header-container .container div.menu ul li a, .header-container .container .mobile-bar.menu ul li a {
+    font-size: 16px;
+  }
+
+  /* line 145, ../sass/responsive.scss */
+  .header-container .container div.menu ul li a span, .header-container .container .mobile-bar.menu ul li a span {
+    font-size: 11px;
+  }
+
+  /* line 148, ../sass/responsive.scss */
+  .content-container {
+    padding-top: 20px;
+  }
+
+  /* line 151, ../sass/responsive.scss */
+  .content-container .container .text-block .content h1 {
+    font-size: 25px;
+  }
+
+  /* line 154, ../sass/responsive.scss */
+  .content-container .container .text-block .content h1.wave:before {
+    top: -37px;
+  }
+
+  /* line 157, ../sass/responsive.scss */
+  .content-container .container .blue-circle {
+    right: 10px;
+  }
+
+  /* line 160, ../sass/responsive.scss */
+  .content-container .container .text-block .content p {
+    margin: -16px 0 28px;
+  }
+
+  /* line 163, ../sass/responsive.scss */
+  .content-container .container .wrap .block.block-2 {
+    height: 220px;
+  }
+
+  /* line 166, ../sass/responsive.scss */
+  .content-container .container .wrap .block.block-1 img,
+  .content-container .container .wrap .block.block-2 img {
+    height: 30px;
+    width: auto;
+  }
+
+  /* line 171, ../sass/responsive.scss */
+  .content-container .container .wrap .block .border div h2 {
+    font-size: 22px;
+  }
+
+  /* line 174, ../sass/responsive.scss */
+  .content-container .container .wrap .block.block-1,
+  .content-container .container .wrap .block.block-3 {
+    top: -50px;
+  }
+
+  /* line 178, ../sass/responsive.scss */
+  .content-container .container .wrap .block.block-1 {
+    height: 130px;
+  }
+
+  /* line 181, ../sass/responsive.scss */
+  .content-container .container .wrap {
+    height: 160px;
+  }
+
+  /* line 184, ../sass/responsive.scss */
+  .content-container .container .text-block.home {
+    width: 80%;
+  }
+
+  /* line 187, ../sass/responsive.scss */
+  .content-container .container .wrap .block.block-1 .wrapper-text:after,
+  .content-container .container .wrap .block.block-1 .wrapper-text:before {
+    z-index: -1;
+  }
+
+  /* line 191, ../sass/responsive.scss */
+  .content-container .container .text-block.home {
+    padding-bottom: 10px !important;
+  }
+
+  /* line 194, ../sass/responsive.scss */
+  .content-container .container .blue-circle {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* line 198, ../sass/responsive.scss */
+  .content-container .container .blue-circle h2 {
+    margin-top: 72px;
+  }
+
+  /* line 201, ../sass/responsive.scss */
+  #block-phone h2.wave:before {
+    top: -37px;
+  }
+
+  /* line 204, ../sass/responsive.scss */
+  .menu-bar-container .container .column h2 {
+    font-size: 12px;
+  }
+
+  /* line 207, ../sass/responsive.scss */
+  .menu .column ul li a {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  /* line 211, ../sass/responsive.scss */
+  .container {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
+
+  /* line 215, ../sass/responsive.scss */
+  .menu-bar-container .container .column {
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+
+  /* line 219, ../sass/responsive.scss */
+  .content-container.page {
+    padding-top: 10px;
+  }
+
+  /* line 222, ../sass/responsive.scss */
+  .content-container .container .bar-menu {
+    padding-left: 10px;
+  }
+
+  /* line 225, ../sass/responsive.scss */
+  .content-container .container .bar-menu .block {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* line 229, ../sass/responsive.scss */
+  .content-container .container .bar-menu .block .border {
+    padding: 30px 10px 10px;
+  }
+
+  /* line 232, ../sass/responsive.scss */
+  h1.wave:before {
+    display: block;
+    content: "";
+    background: url("../img/wave-blue-long.png") no-repeat;
+    width: 55px;
+    height: 10px;
+    position: absolute;
+    background-size: contain;
+  }
+
+  /* line 241, ../sass/responsive.scss */
+  .content-container.page .container .text-block h1:before {
+    top: -17px;
+  }
+
+  /* line 244, ../sass/responsive.scss */
+  .content-container .text-block {
+    background: white;
+    padding: 15px;
+  }
+
+  /* line 248, ../sass/responsive.scss */
+  .content-container.page .container .text-block h1 {
+    line-height: 22px;
+  }
+
+  /* line 251, ../sass/responsive.scss */
+  .content-container .container .text-block > div {
+    padding-right: 5px;
+  }
+
+  /* line 254, ../sass/responsive.scss */
+  .content-container .container .text-block {
+    width: 65%;
+  }
+
+  /* line 257, ../sass/responsive.scss */
+  .content-container .container .bar-menu {
+    width: 35%;
+  }
+
+  /* line 260, ../sass/responsive.scss */
+  .content-container {
+    padding-bottom: 10px;
+  }
+
+  /* line 263, ../sass/responsive.scss */
+  .content-container .container .text-block .block h2 {
+    font-size: 13px;
+    margin: 8px 0;
+  }
+
+  /* line 267, ../sass/responsive.scss */
+  .content-container .container .text-block {
+    font-size: 12px;
+  }
+}
+@media (max-width: 425px) {
+  /* line 275, ../sass/responsive.scss */
+  .header-container .container div.menu ul li a span, .header-container .container .mobile-bar.menu ul li a span {
+    display: none;
+  }
+
+  /* line 278, ../sass/responsive.scss */
+  .logo img {
+    height: 45px;
+  }
+
+  /* line 281, ../sass/responsive.scss */
+  .header-container .container {
+    height: 70px;
+  }
+
+  /* line 284, ../sass/responsive.scss */
+  .header-container .container div.menu, .header-container .container .mobile-bar.menu {
+    height: 70px;
+  }
+
+  /* line 287, ../sass/responsive.scss */
+  .header-container .container {
+    padding: 0 2px;
+  }
+
+  /* line 290, ../sass/responsive.scss */
+  .header-container .container div.menu ul li, .header-container .container .mobile-bar.menu ul li {
+    display: table-cell;
+    font-weight: bold;
+    font-size: 12px;
+    position: relative;
+    width: 25%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: middle;
+    height: 70px;
+    float: none;
+  }
+  /* line 303, ../sass/responsive.scss */
+  .header-container .container div.menu ul li a, .header-container .container .mobile-bar.menu ul li a {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  /* line 308, ../sass/responsive.scss */
+  .content-container .container .text-block .content {
+    padding-right: 0;
+  }
+
+  /* line 311, ../sass/responsive.scss */
+  .content-container .container .text-block .content h1 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  /* line 315, ../sass/responsive.scss */
+  .content-container .container .text-block.home p {
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 10px;
+  }
+
+  /* line 320, ../sass/responsive.scss */
+  .content-container .text-block h1, .content-container .text-block h2 {
+    margin: 0px 0 10px;
+  }
+
+  /* line 323, ../sass/responsive.scss */
+  .content-container .container .text-block .content h1.wave:before {
+    top: -6px;
+  }
+
+  /* line 326, ../sass/responsive.scss */
+  .content-container .container .text-block.home .content a {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  /* line 329, ../sass/responsive.scss */
+  .content-container .container .text-block.home .content a:before {
+    width: 15px;
+    height: 15px;
+    left: 0;
+    bottom: 2px;
+    background-size: contain;
+  }
+
+  /* line 337, ../sass/responsive.scss */
+  #block-phone {
+    display: none;
   }
 }
 

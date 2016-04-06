@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_form_cat
-    - field.field.node.page.field_legislation_cat
-    - field.field.node.page.field_pricelist_cat
+    - field.field.node.page.field_attachments
+    - field.field.node.page.field_forms_ref
+    - field.field.node.page.field_legislation_ref
+    - field.field.node.page.field_pricelists_ref
     - node.type.page
   module:
+    - file
     - text
     - user
 _core:
@@ -24,12 +26,18 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-  links:
+  field_attachments:
     weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  links:
+    weight: 2
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_form_cat: true
-  field_legislation_cat: true
-  field_pricelist_cat: true
+  field_forms_ref: true
+  field_legislation_ref: true
+  field_pricelists_ref: true
   langcode: true

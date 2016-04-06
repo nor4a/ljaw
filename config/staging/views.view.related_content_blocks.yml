@@ -4,8 +4,9 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_form_cat
-    - field.storage.node.field_legislation_cat
-    - field.storage.node.field_pricelist_cat
+    - field.storage.node.field_forms_ref
+    - field.storage.node.field_legislation_ref
+    - field.storage.node.field_pricelists_ref
   module:
     - node
     - user
@@ -153,7 +154,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: standard
-      title: Formas
+      title: Anketas
       header: {  }
       footer: {  }
       empty: {  }
@@ -190,7 +191,7 @@ display:
             type: none
             fail: 'not found'
           validate_options: {  }
-          break_phrase: false
+          break_phrase: true
           not: false
           entity_type: node
           entity_field: nid
@@ -216,10 +217,10 @@ display:
       display_description: ''
       block_description: Cenrādis
       fields:
-        field_pricelist_cat:
-          id: field_pricelist_cat
-          table: node__field_pricelist_cat
-          field: field_pricelist_cat
+        field_pricelists_ref:
+          id: field_pricelists_ref
+          table: node__field_pricelists_ref
+          field: field_pricelists_ref
           relationship: none
           group_type: group
           admin_label: ''
@@ -261,9 +262,9 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: true
+          hide_empty: false
           empty_zero: false
-          hide_alter_empty: false
+          hide_alter_empty: true
           click_sort_column: target_id
           type: entity_reference_entity_id
           settings:
@@ -329,7 +330,7 @@ display:
           hide_alter_empty: true
           view: related_content_block_embedd
           display: embed_1
-          arguments: '{{ fields.field_pricelist_cat }}'
+          arguments: '{{ fields.field_pricelists_ref }}'
           plugin_id: view
       defaults:
         fields: false
@@ -344,25 +345,25 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_pricelist_cat'
+        - 'config:field.storage.node.field_pricelists_ref'
   block_2:
     display_plugin: block
     id: block_2
-    display_title: 'Saistītie likumi'
+    display_title: 'Tiesību akti'
     position: 2
     display_options:
       display_extenders: {  }
       display_description: ''
-      block_description: 'Saistītie likumi'
-      title: 'Saistītie likumi'
+      block_description: 'Tiesību akti'
+      title: 'Tiesību akti'
       defaults:
         title: false
         fields: false
       fields:
-        field_legislation_cat:
-          id: field_legislation_cat
-          table: node__field_legislation_cat
-          field: field_legislation_cat
+        field_legislation_ref:
+          id: field_legislation_ref
+          table: node__field_legislation_ref
+          field: field_legislation_ref
           relationship: none
           group_type: group
           admin_label: ''
@@ -472,7 +473,7 @@ display:
           hide_alter_empty: true
           view: related_content_block_embedd
           display: embed_1
-          arguments: '{{ fields.field_legislation_cat }}'
+          arguments: '{{ fields.field_legislation_ref }}'
           plugin_id: view
     cache_metadata:
       max-age: -1
@@ -483,21 +484,21 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_legislation_cat'
+        - 'config:field.storage.node.field_legislation_ref'
   block_3:
     display_plugin: block
     id: block_3
-    display_title: Formas
+    display_title: Anketas
     position: 3
     display_options:
       display_extenders: {  }
       display_description: ''
-      block_description: Formas
+      block_description: Anketas
       fields:
-        field_form_cat:
-          id: field_form_cat
-          table: node__field_form_cat
-          field: field_form_cat
+        field_forms_ref:
+          id: field_forms_ref
+          table: node__field_forms_ref
+          field: field_forms_ref
           relationship: none
           group_type: group
           admin_label: ''
@@ -539,9 +540,9 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: true
+          hide_empty: false
           empty_zero: false
-          hide_alter_empty: false
+          hide_alter_empty: true
           click_sort_column: target_id
           type: entity_reference_entity_id
           settings:
@@ -607,7 +608,7 @@ display:
           hide_alter_empty: true
           view: related_content_block_embedd
           display: embed_1
-          arguments: '{{ fields.field_form_cat }}'
+          arguments: '{{ fields.field_forms_ref }}'
           plugin_id: view
       defaults:
         fields: false
@@ -620,4 +621,4 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_form_cat'
+        - 'config:field.storage.node.field_forms_ref'

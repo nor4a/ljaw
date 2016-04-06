@@ -29,3 +29,7 @@ content_type_settings:
     view_mode: ''
   article:
     view_mode: ''
+  legislation:
+    view_mode: ''
+  forms:
+    view_mode: ''

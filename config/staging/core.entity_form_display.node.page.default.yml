@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_form_cat
-    - field.field.node.page.field_legislation_cat
-    - field.field.node.page.field_pricelist_cat
+    - field.field.node.page.field_attachments
+    - field.field.node.page.field_forms_ref
+    - field.field.node.page.field_legislation_ref
+    - field.field.node.page.field_pricelists_ref
     - node.type.page
   module:
+    - file
     - path
     - text
 _core:
@@ -31,21 +33,36 @@ content:
     weight: 2
     settings: {  }
     third_party_settings: {  }
-  field_form_cat:
+  field_attachments:
     weight: 6
-    settings: {  }
+    settings:
+      progress_indicator: throbber
     third_party_settings: {  }
-    type: options_select
-  field_legislation_cat:
+    type: file_generic
+  field_forms_ref:
     weight: 7
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
-  field_pricelist_cat:
+    type: entity_reference_autocomplete
+  field_legislation_ref:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_pricelists_ref:
     weight: 8
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: entity_reference_autocomplete
   langcode:
     type: language_select
     weight: 1

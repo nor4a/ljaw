@@ -310,7 +310,7 @@
   }
   .content-container .container .text-block .content h1 {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 22px;
   }
   .content-container .container .text-block.home p {
     font-size: 13px;
@@ -318,10 +318,10 @@
     margin-top: 10px;
   }
   .content-container .text-block h1, .content-container .text-block h2 {
-    margin: 0px 0 10px;
+    margin: 8px 0 10px;
   }
   .content-container .container .text-block .content h1.wave:before {
-    top: -6px;
+    top: -14px;
   }
   .content-container .container .text-block.home .content a {
     font-size: 14px;
@@ -336,5 +336,222 @@
   }
   #block-phone {
     display: none;
+  }
+  .header-container .container div.logo, .header-container .container .mobile-bar.logo {
+    display: none;
+  }
+  .upper-header {
+    height: auto;
+    background: white;
+    border-bottom: 1px solid #dadada;
+    padding: 5px 0px;
+    #block-sitebranding {
+      display: block;
+      float: left;
+      img {
+        height: 30px;
+        width: auto;
+      }
+    }
+    &:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+    }
+  }
+  .upper-header, .upper-header a, .upper-header h1, .upper-header h2, .upper-header h3, .upper-header p, .upper-header span, .upper-header div {
+    color: #3B4F72;
+  }
+  .content-container .container .text-block .content p {
+    margin: 0px 0 14px;
+  }
+  .content-container .container .text-block .content a {
+    padding-left: 22px;
+  }
+  .content-container .container .wrap {
+    height: auto;
+  }
+  .content-container .container .wrap .block {
+    width: 100%;
+    padding: 0 !important;
+    top: 0 !important;
+    margin-bottom: 5px;
+  }
+  .content-container .container .wrap .block .border div h2 {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .content-container .container .wrap .block.horizontal .background, .content-container .container .wrap .block.block-2 .background {
+    overflow: hidden;
+  }
+  .content-container .container .wrap .block.horizontal .background img, .content-container .container .wrap .block.block-2 .background img {
+    width: 100%;
+    height: auto;
+  }
+  .content-container .container .wrap .block.block-2 .border div h2 {
+    margin-top: 41px;
+  }
+  .content-container .container .wrap .block .border > div h2.wave:before {
+    top: 28px;
+  }
+  .content-container .container .wrap {
+    margin-bottom: -40px;
+  }
+  .header-container .container div.menu ul li.active a, .header-container .container .mobile-bar.menu ul li.active a {
+    margin: 30px 0 0;
+  }
+  .header-container .container .mobile-bar.menu ul,
+  .header-container .container div.menu ul {
+    li:nth-child(1) a:before {
+      background: url('../img/menu-sailor.png') no-repeat;
+      background-size: contain;
+    }
+    li:nth-child(2) a:before {
+      background: url('../img/menu-vessel.png') no-repeat;
+      background-size: contain;
+    }
+    li:nth-child(3) a:before {
+      background: url('../img/menu-icon.png') no-repeat;
+      background-size: contain;
+    }
+    li:nth-child(4) a:before {
+      background: url('../img/menu-map.png') no-repeat;
+      background-size: contain;
+    }
+  }
+  .header-container .container div.menu ul li a:before, .header-container .container .mobile-bar.menu ul li a:before {
+    display: block;
+    content: '' !important;
+    height: 30px;
+    width: 35px;
+    top: -30px;
+    margin-left: -20px;
+  }
+  .header-container .container div.menu ul li.active:last-child, .header-container .container .mobile-bar.menu ul li.active:last-child {
+    border-right: none;
+  }
+  #block-sitebranding
+  {
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
+  }
+  .container {
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+  }
+  .menu-bar-container .container .column {
+    width: 50%;
+  }
+  #sub-menu .menu {
+    padding: 0px 0px 5px;
+    font-size: 0;
+  }
+  #sub-menu .container {
+    margin: 0 !important;
+  }
+  .menu .column ul li {
+    padding-left: 6px;
+  }
+  .menu-bar-container .container .column h2 {
+    margin-bottom: 5px;
+  }
+  .menu-bar-container .container .column h2 {
+    font-size: 11px;
+  }
+  .menu-bar-container .container .column {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .block.block-2 {
+    display: none !important;
+  }
+  .menu-bar-container.visible.relative {
+    display: none !important;
+  }
+  .content-container.page {
+    padding-top: 2px;
+  }
+  .content-container .container .text-block,
+  .content-container .container .bar-menu {
+    width: 100%;
+  }
+  h1.wave:before {
+    width: 45px;
+  }
+  .content-container .container .text-block > div {
+    padding-right: 0;
+  }
+  .content-container .text-block {
+    padding: 7px;
+  }
+  .content-container.page .container .text-block h1 {
+    font-size: 14px;
+  }
+  .content-container.page {
+    background: #C9D3E4;
+    padding-bottom: 2px;
+  }
+  .container {
+    margin-right: 2px !important;
+    margin-left: 2px !important;
+  }
+  .content-container .text-block ol {
+    margin: 0;
+    padding-left: 0px !important;
+  }
+  .content-container .container .bar-menu {
+    padding-left: 0;
+    margin-top: 2px;
+  }
+  .content-container .container .bar-menu .block {
+    padding: 7px;
+    margin-bottom: 2px;
+  }
+  .content-container .container .bar-menu .block .border {
+    padding: 20px 0 0;
+    border: 0 !important;
+  }
+  .content-container .container .bar-menu .block .border h2 {
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 2px;
+  }
+  .header-container .container div.menu ul li:first-child,
+  .header-container .container .mobile-bar.menu ul li:first-child {
+    border-left: 0 !important;
+  }
+  .content-container .container .text-block .block h2 {
+    font-size: 12px;
+  }
+  .content-container .container .text-block table p {
+    margin: 0 !important;
+  }
+  .content-container .text-block table th, .content-container .text-block table td {
+    padding: 5px 5px;
+    font-size: 12px;
+  }
+  .header-container .container div.menu ul {
+    li:nth-child(1),
+    li:nth-child(2) {
+      width: 20%;
+    }
+    li:nth-child(3),
+    li:nth-child(4) {
+      width: 30%;
+    }
+  }
+  #block-lja-content {
+    padding: 0 6px;
+  }
+  .content-container .container .text-block.home {
+    width: 100%;
   }
 }

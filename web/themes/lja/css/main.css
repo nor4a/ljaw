@@ -417,7 +417,7 @@ a {
   padding: 2px 0;
 }
 /* line 291, ../sass/main.scss */
-.content-container .container .wrap {
+.content-container .container #block-views-block-content-banners-block-1 .wrap {
   width: 100%;
   display: inline-block;
   position: relative;
@@ -427,7 +427,7 @@ a {
   vertical-align: bottom;
 }
 /* line 299, ../sass/main.scss */
-.content-container .container .wrap .block {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block {
   width: 33.33%;
   height: 130px;
   position: relative;
@@ -442,7 +442,7 @@ a {
   transition: all 0.5s;
 }
 /* line 305, ../sass/main.scss */
-.content-container .container .wrap .block .wrapper {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block .wrapper {
   display: block;
   width: 100%;
   height: 100%;
@@ -454,98 +454,98 @@ a {
   padding: 20px;
 }
 /* line 314, ../sass/main.scss */
-.content-container .container .wrap .block > a {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block > a {
   display: block;
   height: 90px;
 }
 /* line 318, ../sass/main.scss */
-.content-container .container .wrap .block:hover {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block:hover {
   cursor: pointer;
 }
 /* line 321, ../sass/main.scss */
-.content-container .container .wrap .block.block-1 {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 {
   padding-right: 16px;
 }
 /* line 324, ../sass/main.scss */
-.content-container .container .wrap .block.block-2 {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-2 {
   padding: 0 8px;
 }
 /* line 327, ../sass/main.scss */
-.content-container .container .wrap .block.block-3 {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-3 {
   padding-left: 16px;
 }
 /* line 330, ../sass/main.scss */
-.content-container .container .wrap .block.vertical, .content-container .container .wrap .block.block-1 {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 {
   height: 220px;
   position: relative;
   top: -70px;
 }
 /* line 335, ../sass/main.scss */
-.content-container .container .wrap .block.vertical > a, .content-container .container .wrap .block.block-1 > a {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical > a, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 > a {
   display: block;
   height: 180px;
 }
 /* line 339, ../sass/main.scss */
-.content-container .container .wrap .block.vertical .border > div,
-.content-container .container .wrap .block.vertical .background, .content-container .container .wrap .block.block-1 .border > div,
-.content-container .container .wrap .block.block-1 .background {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical .border > div,
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical .background, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 .border > div,
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 .background {
   width: 50%;
   height: 100%;
 }
 /* line 343, ../sass/main.scss */
-.content-container .container .wrap .block.vertical .border > div .wrapper-text,
-.content-container .container .wrap .block.vertical .background .wrapper-text, .content-container .container .wrap .block.block-1 .border > div .wrapper-text,
-.content-container .container .wrap .block.block-1 .background .wrapper-text {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical .border > div .wrapper-text,
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical .background .wrapper-text, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 .border > div .wrapper-text,
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 .background .wrapper-text {
   text-align: left;
   display: inline-block;
   margin: auto;
 }
 /* line 347, ../sass/main.scss */
-.content-container .container .wrap .block.vertical .border > div .wrapper-text:before, .content-container .container .wrap .block.vertical .border > div .wrapper-text:after,
-.content-container .container .wrap .block.vertical .background .wrapper-text:before,
-.content-container .container .wrap .block.vertical .background .wrapper-text:after, .content-container .container .wrap .block.block-1 .border > div .wrapper-text:before, .content-container .container .wrap .block.block-1 .border > div .wrapper-text:after,
-.content-container .container .wrap .block.block-1 .background .wrapper-text:before,
-.content-container .container .wrap .block.block-1 .background .wrapper-text:after {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical .border > div .wrapper-text:before, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical .border > div .wrapper-text:after,
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical .background .wrapper-text:before,
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical .background .wrapper-text:after, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 .border > div .wrapper-text:before, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 .border > div .wrapper-text:after,
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 .background .wrapper-text:before,
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 .background .wrapper-text:after {
   content: url("../img/wave-gray-short.png");
   position: absolute;
 }
 /* line 352, ../sass/main.scss */
-.content-container .container .wrap .block.vertical .border > div .wrapper-text:before,
-.content-container .container .wrap .block.vertical .background .wrapper-text:before, .content-container .container .wrap .block.block-1 .border > div .wrapper-text:before,
-.content-container .container .wrap .block.block-1 .background .wrapper-text:before {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical .border > div .wrapper-text:before,
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical .background .wrapper-text:before, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 .border > div .wrapper-text:before,
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 .background .wrapper-text:before {
   right: -3px;
   top: 22px;
 }
 /* line 356, ../sass/main.scss */
-.content-container .container .wrap .block.vertical .border > div .wrapper-text:after,
-.content-container .container .wrap .block.vertical .background .wrapper-text:after, .content-container .container .wrap .block.block-1 .border > div .wrapper-text:after,
-.content-container .container .wrap .block.block-1 .background .wrapper-text:after {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical .border > div .wrapper-text:after,
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical .background .wrapper-text:after, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 .border > div .wrapper-text:after,
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 .background .wrapper-text:after {
   bottom: 22px;
   left: -3px;
 }
 /* line 362, ../sass/main.scss */
-.content-container .container .wrap .block.vertical .background, .content-container .container .wrap .block.block-1 .background {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical .background, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 .background {
   position: absolute;
   right: 0;
   top: 0;
   z-index: 1;
 }
 /* line 367, ../sass/main.scss */
-.content-container .container .wrap .block.vertical .background img, .content-container .container .wrap .block.block-1 .background img {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical .background img, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1 .background img {
   width: 100%;
   height: 100%;
 }
 /* line 373, ../sass/main.scss */
-.content-container .container .wrap .block.horizontal, .content-container .container .wrap .block.block-2 {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.horizontal, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-2 {
   height: 370px;
 }
 /* line 376, ../sass/main.scss */
-.content-container .container .wrap .block.horizontal > a, .content-container .container .wrap .block.block-2 > a {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.horizontal > a, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-2 > a {
   display: block;
   height: 330px;
 }
 /* line 380, ../sass/main.scss */
-.content-container .container .wrap .block.horizontal .border div, .content-container .container .wrap .block.block-2 .border div {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.horizontal .border div, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-2 .border div {
   width: 100%;
   height: 50%;
   display: inline-block;
@@ -554,15 +554,15 @@ a {
   box-sizing: border-box;
 }
 /* line 385, ../sass/main.scss */
-.content-container .container .wrap .block.horizontal .border div img, .content-container .container .wrap .block.block-2 .border div img {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.horizontal .border div img, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-2 .border div img {
   margin-top: 65px;
 }
 /* line 388, ../sass/main.scss */
-.content-container .container .wrap .block.horizontal .border div h2, .content-container .container .wrap .block.block-2 .border div h2 {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.horizontal .border div h2, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-2 .border div h2 {
   margin-top: 80px;
 }
 /* line 392, ../sass/main.scss */
-.content-container .container .wrap .block.horizontal .background, .content-container .container .wrap .block.block-2 .background {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.horizontal .background, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-2 .background {
   width: 100%;
   height: 40%;
   position: absolute;
@@ -571,22 +571,22 @@ a {
   z-index: 1;
 }
 /* line 399, ../sass/main.scss */
-.content-container .container .wrap .block.horizontal .background img, .content-container .container .wrap .block.block-2 .background img {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.horizontal .background img, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-2 .background img {
   width: 100%;
   height: 100%;
 }
 /* line 405, ../sass/main.scss */
-.content-container .container .wrap .block.block-3 {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-3 {
   position: relative;
   top: -70px;
 }
 /* line 408, ../sass/main.scss */
-.content-container .container .wrap .block.block-3 a img {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-3 a img {
   max-width: 100%;
   height: auto;
 }
 /* line 413, ../sass/main.scss */
-.content-container .container .wrap .block .border {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block .border {
   border: 3px solid #d6dce8;
   height: 100%;
   width: 100%;
@@ -604,13 +604,13 @@ a {
   transition: all 0.5s;
 }
 /* line 423, ../sass/main.scss */
-.content-container .container .wrap .block .border > div {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block .border > div {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
 /* line 427, ../sass/main.scss */
-.content-container .container .wrap .block .border > div img.one {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block .border > div img.one {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -619,7 +619,7 @@ a {
   box-sizing: border-box;
 }
 /* line 433, ../sass/main.scss */
-.content-container .container .wrap .block .border > div h2 {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block .border > div h2 {
   font-size: 31px;
   font-weight: bold;
   line-height: 35px;
@@ -630,18 +630,18 @@ a {
   transition: all 0.5s;
 }
 /* line 438, ../sass/main.scss */
-.content-container .container .wrap .block .border > div h2.wave:before {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block .border > div h2.wave:before {
   content: url("../img/wave-blue-long.png");
   top: 34px;
   left: 50%;
   margin-left: -34px;
 }
 /* line 448, ../sass/main.scss */
-.content-container .container .wrap .block:hover .border {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block:hover .border {
   border-color: #007fff;
 }
 /* line 451, ../sass/main.scss */
-.content-container .container .wrap .block:hover .border div h2 {
+.content-container .container #block-views-block-content-banners-block-1 .wrap .block:hover .border div h2 {
   color: #007fff;
 }
 
@@ -921,44 +921,47 @@ div.container {
 }
 /* line 647, ../sass/main.scss */
 .footer .container .column {
-  width: 22%;
   float: left;
 }
-/* line 650, ../sass/main.scss */
+/* line 649, ../sass/main.scss */
 .footer .container .column:first-child {
-  width: 33%;
+  width: 70%;
 }
-/* line 652, ../sass/main.scss */
+/* line 651, ../sass/main.scss */
 .footer .container .column:first-child .col {
-  width: 40%;
+  width: 33.33%;
   float: left;
 }
-/* line 656, ../sass/main.scss */
+/* line 655, ../sass/main.scss */
 .footer .container .column:first-child h2 {
   position: relative;
 }
-/* line 659, ../sass/main.scss */
+/* line 658, ../sass/main.scss */
 .footer .container .column:first-child h2:before {
   position: absolute;
   text-align: center;
   content: url("../img/wave-blue-short.png");
   top: -25px;
 }
-/* line 666, ../sass/main.scss */
+/* line 665, ../sass/main.scss */
 .footer .container .column h2 {
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* line 671, ../sass/main.scss */
+/* line 670, ../sass/main.scss */
 .footer .container .column p {
   font-size: 12px;
   color: #636673;
   padding: 2px 0;
   display: block;
 }
+/* line 676, ../sass/main.scss */
+.footer .container .column#block-saziniesarmums {
+  width: 30%;
+}
 /* line 678, ../sass/main.scss */
-.footer .container .column:last-child a {
+.footer .container .column#block-saziniesarmums a {
   color: #007fff;
   font-size: 13px;
   padding: 5px 0;

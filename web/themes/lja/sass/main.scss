@@ -288,7 +288,7 @@ a {
         }
       }
     }
-    .wrap {
+    #block-views-block-content-banners-block-1 .wrap {
       width: 100%;
       display: inline-block;
       position: relative;
@@ -645,12 +645,11 @@ div.container {
   @include box-sizing(border-box);
   .container {
     .column {
-      width: 22%;
       float: left;
       &:first-child {
-        width: 33%;
+        width: 70%;
         .col {
-          width: 40%;
+          width: 33.33%;
           float: left;
         }
         h2 {
@@ -674,7 +673,8 @@ div.container {
         padding: 2px 0;
         display: block;
       }
-      &:last-child {
+      &#block-saziniesarmums {
+        width: 30%;
         a {
           color: #007fff;
           font-size: 13px;

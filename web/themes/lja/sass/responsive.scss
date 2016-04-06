@@ -116,26 +116,15 @@
     //}
   }
 
-  .footer .container{
-    .column{
-      width: 50% !important;
-      min-height: 170px;
-      padding-bottom: 15px;
-      @include breakpoint(max-width 700px){
-        width: 100% !important;
-        text-align: center;
-        min-height: auto;
-        .col{
-          width: 100%;
-        }
-      }
-    }
-  }
 }
 
 // 768
 
 @include breakpoint(max-width 768px) {
+  .footer .container .column {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
   .header-container .container {
     padding: 0 10px;
   }
@@ -272,6 +261,10 @@
 // 425
 
 @include breakpoint(max-width 425px) {
+  .footer .container .column .col {
+    width: auto !important;
+    margin-right: 15px;
+  }
   .header-container .container div.menu ul li a span, .header-container .container .mobile-bar.menu ul li a span {
     display: none;
   }
@@ -553,5 +546,11 @@
   }
   .content-container .container .text-block.home {
     width: 100%;
+  }
+}
+
+@include breakpoint(max-width 350px) {
+  .footer .container .column .col {
+    width: 100% !important;
   }
 }

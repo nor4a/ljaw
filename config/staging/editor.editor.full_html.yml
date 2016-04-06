@@ -54,6 +54,7 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+            - Styles
         -
           name: Tools
           items:
@@ -61,7 +62,7 @@ settings:
             - Source
   plugins:
     stylescombo:
-      styles: ''
+      styles: "p.attention|Attention\r\np.numeration|Numeration"
     linkit:
       linkit_profile: default
 image_upload:

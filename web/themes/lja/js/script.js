@@ -18,12 +18,27 @@
             animatingTimeout: null
         };
 
+        var isMobileMenu = function() {
+            if($(window).width() < 680) {
+                return true;
+            }
+            return false;
+        };
+
         $('.header-container .menu a').on('click', function(e) {
 
             e.preventDefault();
 
             clearTimeout(currentActiveMenu.animatingTimeout);
             $('.header-container, #sub-menu').unbind('mouseleave');
+
+            if(!isMobileMenu() && $(this).parent().hasClass('current')) {
+                if(currentActiveMenu.link && !$(currentActiveMenu.link).hasClass('current')) {
+                    $(currentActiveMenu.link).removeClass('active');
+                    currentActiveMenu.dropdown.slideUp(300);
+                }
+                return;
+            }
 
             // ---- Main menu
 

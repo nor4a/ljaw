@@ -1001,11 +1001,11 @@ div.container {
 }
 /* line 709, ../sass/main.scss */
 #sub-menu .menu.visible.current {
-  display: none !important;
+  display: none;
 }
 /* line 712, ../sass/main.scss */
 #sub-menu .menu.current {
-  display: none !important;
+  display: none;
 }
 
 /* line 717, ../sass/main.scss */
@@ -1387,6 +1387,15 @@ ul.dropdown ul ul {
   -webkit-box-shadow: 0px 7px 6px -6px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 7px 6px -6px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 7px 6px -6px rgba(0, 0, 0, 0.3);
+}
+
+/* line 1049, ../sass/main.scss */
+#block-views-block-content-banners-block-2 .border {
+  padding: 20px;
+}
+/* line 1052, ../sass/main.scss */
+#block-views-block-content-banners-block-2 img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

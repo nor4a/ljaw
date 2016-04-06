@@ -117,7 +117,7 @@
     box-sizing: border-box;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   /* line 124, ../sass/responsive.scss */
   .footer .container .column {
     width: 100% !important;
@@ -331,7 +331,7 @@
     font-size: 12px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 680px) {
   /* line 264, ../sass/responsive.scss */
   .footer .container .column .col {
     width: auto !important;

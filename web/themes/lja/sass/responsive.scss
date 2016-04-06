@@ -120,7 +120,7 @@
 
 // 768
 
-@include breakpoint(max-width 768px) {
+@include breakpoint(max-width 880px) {
   .footer .container .column {
     width: 100% !important;
     margin-bottom: 10px;
@@ -260,7 +260,7 @@
 
 // 425
 
-@include breakpoint(max-width 425px) {
+@include breakpoint(max-width 680px) {
   .footer .container .column .col {
     width: auto !important;
     margin-right: 15px;

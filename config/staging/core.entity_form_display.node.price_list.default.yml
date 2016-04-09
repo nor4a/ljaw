@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.price_list.field_attachment
+    - field.field.node.price_list.field_page_ref
     - field.field.node.price_list.field_pricelist_cat
     - field.field.node.price_list.field_url
     - node.type.price_list
@@ -21,6 +22,14 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+  field_page_ref:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   field_pricelist_cat:
     weight: 1
     settings: {  }

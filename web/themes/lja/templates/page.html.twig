@@ -1,53 +1,59 @@
-<div class="upper-header">
-  <div class="container">
-    {{ page.top }}
-    <div class="sitemap">
-      <a href="#">Sitemap</a>
+<div class="content-wrapper">
+  <div class="upper-header">
+    <div class="container">
+      {{ page.top }}
+      <div class="sitemap">
+        <a href="#">Par mums</a>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
     </div>
-    <div class="social">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
+  </div>
+  <div class="header-container home">
+    <div class="shadow">
+      <div class="container">
+        {{ page.header }}
+      </div>
+    </div>
+  </div>
+  {% if page.menu %}
+  <div class="menu-bar-container" id="sub-menu">
+    <div class="container">
+      {{ page.menu }}
+    </div>
+  </div>
+  <div class="menu-bar-container visible relative">
+    <div class="container">
+      {{ page.menu }}
+    </div>
+  </div>
+  {% endif %}
+  <div class="content-container page">
+    <div class="container">
+      <div class="text-block">
+        {{ page.content }}
+      </div>
+      {% if page.sidebar %}
+      <div class="bar-menu">
+        {{ page.sidebar }}
+      </div>
+      {% endif %}
+      <div style="clear:both"></div>
     </div>
   </div>
 </div>
-
-<div class="header-container home">
-  <div class="container">
-    {{ page.header }}
-  </div>
-</div>
-
-{% if page.menu %}
-<div class="menu-bar-container" id="sub-menu">
-  <div class="container">
-    {{ page.menu }}
-  </div>
-</div>
-<div class="menu-bar-container visible relative">
-  <div class="container">
-    {{ page.menu }}
-  </div>
-</div>
-{% endif %}
-
-<div class="content-container page">
-  <div class="container">
-    <div class="text-block">
-      {{ page.content }}
+<div class="footer-wrapper">
+  <div class="footer">
+    <div class="container">
+      {{ page.footer }}
+      <div class="clearfix"></div>
     </div>
-    {% if page.sidebar %}
-    <div class="bar-menu">
-      {{ page.sidebar }}
+  </div>
+  <div class="copyright">
+    <div class="container">
+      Latvijas Jūras administrācija &copy; 2016
     </div>
-    {% endif %}
-    <div style="clear:both"></div>
   </div>
 </div>
-
-<div class="footer">
-  <div class="container">
-    {{ page.footer }}
-    <div class="clearfix"></div>
-  </div>
-</div>
-

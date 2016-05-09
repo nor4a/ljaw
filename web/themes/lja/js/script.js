@@ -106,6 +106,34 @@
             });
         });
 
+        // Minimal height of body
+
+        var minimumHeight = function() {
+
+            var windowHeight = $(window).height();
+            var contentHeight = $('.content-wrapper').height();
+            var footerHeight = $('.footer-wrapper').height();
+
+            var headerHeight = $('.upper-header').height() + $('.header-container').height();
+
+            console.log(windowHeight, footerHeight);
+            if (contentHeight + footerHeight < windowHeight) {
+                // Content
+                var minHeight = windowHeight - footerHeight;
+                $('.content-wrapper').css('min-height', minHeight);
+                // Inner
+                var minInnerHeight = minHeight - headerHeight;
+                $('.content-container').css('min-height', minInnerHeight);
+            }
+
+        };
+
+        minimumHeight();
+
+        $(window).resize(function() {
+            minimumHeight();
+        });
+
     });
 
 })(jQuery);

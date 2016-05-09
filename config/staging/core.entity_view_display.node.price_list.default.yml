@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.price_list.field_attachment
+    - field.field.node.price_list.field_page_ref
     - field.field.node.price_list.field_pricelist_cat
     - field.field.node.price_list.field_url
     - node.type.price_list
@@ -22,6 +23,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: file_default
+  field_page_ref:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   field_pricelist_cat:
     weight: 103
     label: above

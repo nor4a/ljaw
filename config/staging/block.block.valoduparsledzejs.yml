@@ -9,7 +9,7 @@ dependencies:
 id: valoduparsledzejs
 theme: lja
 region: top
-weight: null
+weight: -14
 provider: null
 plugin: 'language_block:language_interface'
 settings:

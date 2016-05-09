@@ -1,0 +1,26 @@
+uuid: 70c54469-5ca3-4f9e-b8db-b15f5253e430
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_ref
+    - node.type.legislation
+    - node.type.page
+id: node.legislation.field_page_ref
+field_name: field_page_ref
+entity_type: node
+bundle: legislation
+label: 'Piesaistīts saturam'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+    sort:
+      field: _none
+field_type: entity_reference

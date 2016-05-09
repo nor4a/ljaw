@@ -11,7 +11,7 @@ dependencies:
 id: views_block__content_banners_block_2
 theme: lja
 region: sidebar
-weight: -11
+weight: -10
 provider: null
 plugin: 'views_block:content_banners-block_2'
 settings:

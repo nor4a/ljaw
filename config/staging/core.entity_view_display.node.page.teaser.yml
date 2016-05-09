@@ -5,9 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
-    - field.field.node.page.field_form_cat
-    - field.field.node.page.field_legislation_cat
-    - field.field.node.page.field_pricelist_cat
+    - field.field.node.page.field_attachments
+    - field.field.node.page.field_forms_ref
+    - field.field.node.page.field_legislation_ref
+    - field.field.node.page.field_pricelists_ref
     - node.type.page
   module:
     - text
@@ -29,7 +30,8 @@ content:
   links:
     weight: 101
 hidden:
-  field_form_cat: true
-  field_legislation_cat: true
-  field_pricelist_cat: true
+  field_attachments: true
+  field_forms_ref: true
+  field_legislation_ref: true
+  field_pricelists_ref: true
   langcode: true

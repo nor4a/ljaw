@@ -1,0 +1,27 @@
+uuid: 9e72ced8-77c5-4996-9d0d-1dfdb031f8a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachments
+    - node.type.page
+  module:
+    - file
+id: node.page.field_attachments
+field_name: field_attachments
+entity_type: node
+bundle: page
+label: Pielikumi
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: page_attachments
+  file_extensions: 'doc docx pdf ppt pptx xls xsls'
+  max_filesize: 10MB
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

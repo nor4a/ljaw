@@ -6,13 +6,61 @@ use Drupal\Core\Template\Attribute;
 
 function lja_preprocess_menu(&$variables) {
   if($variables['menu_name'] == 'main') {
-    foreach($variables['items'] as &$item) {
+    foreach ($variables['items'] as &$item) {
       $a = $item['url']->getOption('attributes');
       $item['description'] = $a['title'];
-      $item['linkable'] = !in_array($item['url']->toString(),array('/','/lv','/en','/ru'));
+      $item['linkable'] = !in_array($item['url']->toString(), array('/', '/lv', '/en', '/ru'));
+    }
+
+    //and now we get the background image if it exists...
+    $ids = \Drupal::service('menu.active_trail')->getActiveTrailIds('main');
+    $parent_id = '';
+    foreach ($ids as $id => $content) {
+      //print_r($content . 'xxx');exit();
+      if ($content) {
+        $parent_id = $content;
+      }
+    }
+    if($parent_id) {
+      list($table, $uuid) = explode(':', $parent_id);
+      //get the menu id
+      if ($result = db_select($table, 'm')
+        ->fields('m', array('id'))
+        ->condition('m.uuid', $uuid)
+        ->execute()
+      ) {
+        foreach ($result as $r) {
+          //get the entity id
+          if ($er = db_select('node__field_menu_ref', 'm')
+            ->fields('m', array('entity_id'))
+            ->condition('m.field_menu_ref_target_id', $r->id)
+            ->execute()
+          ) {
+            foreach ($er as $e) {
+              $e = entity_load('node', $e->entity_id);
+              if ($ev = $e->get('field_fona_bilde')->getValue()) {
+                if ($fr = db_select('file_managed', 'f')
+                  ->fields('f', array('uri'))
+                  ->condition('f.fid', $ev[0]['target_id'])
+                  ->execute()
+                ) {
+                  foreach ($fr as $f) {
+                    $url = file_create_url($f->uri);
+                    $url = parse_url($url);
+                    $variables['background_image'] = $url['path'];
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }else{
+      //get the home menu item...
     }
   }
   $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+
 }
 
 function lja_preprocess_block__phone(&$variables) {

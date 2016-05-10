@@ -1,0 +1,11 @@
+uuid: 94689893-99f2-4edf-894b-9b09f4a9e683
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.background_images
+id: node.background_images
+target_entity_type_id: node
+target_bundle: background_images
+default_langcode: site_default
+language_alterable: false

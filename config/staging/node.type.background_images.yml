@@ -1,0 +1,17 @@
+uuid: 63330f03-a99f-4caf-9ccf-8f6618859661
+langcode: lv
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Fona bilde'
+type: background_images
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

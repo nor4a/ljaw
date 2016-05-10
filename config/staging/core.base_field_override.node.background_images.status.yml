@@ -1,0 +1,22 @@
+uuid: 6ff5e226-b0c9-424c-bc8f-4f6366c00105
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.background_images
+id: node.background_images.status
+field_name: status
+entity_type: node
+bundle: background_images
+label: 'Publishing status'
+description: 'A boolean indicating whether the node is published.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Aktīvs
+  off_label: Izslēgts
+field_type: boolean

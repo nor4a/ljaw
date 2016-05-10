@@ -9,3 +9,4 @@ debug_mail_directory: 'temporary://devel-mails'
 _core:
   default_config_hash: a9KObOzARMPO0Jb5FNTpYcjGv6z-Zr0QU27y9PRGAE4
 langcode: lv
+devel_dumper: kint

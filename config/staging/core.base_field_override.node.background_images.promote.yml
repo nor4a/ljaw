@@ -1,0 +1,22 @@
+uuid: 8f28b42f-dab8-407f-95e5-eace8f0c4b1f
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.background_images
+id: node.background_images.promote
+field_name: promote
+entity_type: node
+bundle: background_images
+label: 'Izvirzīts uz pirmo lapu'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aktīvs
+  off_label: Izslēgts
+field_type: boolean

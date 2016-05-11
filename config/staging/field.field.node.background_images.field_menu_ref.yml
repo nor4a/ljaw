@@ -1,0 +1,28 @@
+uuid: 07e90d9b-0853-4637-b135-f8f015728fbb
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_menu_ref
+    - node.type.background_images
+id: node.background_images.field_menu_ref
+field_name: field_menu_ref
+entity_type: node
+bundle: background_images
+label: 'Izvēlnes elements'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:menu_link_content'
+  handler_settings:
+    target_bundles:
+      menu_link_content: menu_link_content
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

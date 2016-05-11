@@ -116,7 +116,6 @@
 
             var headerHeight = $('.upper-header').height() + $('.header-container').height();
 
-            console.log(windowHeight, footerHeight);
             if (contentHeight + footerHeight < windowHeight) {
                 // Content
                 var minHeight = windowHeight - footerHeight;
@@ -151,8 +150,9 @@
                 }
                 $svg = $svg.removeAttr('xmlns:a');
                 if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-                    $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+                    $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'));
                 }
+                $svg.css('max-width', 35).css('max-height', 35);
                 $img.replaceWith($svg);
             }, 'xml');
         });

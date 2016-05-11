@@ -801,8 +801,8 @@ a {
 .header-container .container div.menu ul li a svg,
 .header-container .container .mobile-bar.menu ul li a svg {
   display: block;
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   margin: 10px auto;
 }
 /* line 580, ../sass/main.scss */

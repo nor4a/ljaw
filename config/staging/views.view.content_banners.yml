@@ -11,8 +11,8 @@ dependencies:
     - node.type.banner
     - taxonomy.vocabulary.banner
   content:
-    - 'taxonomy_term:banner:c0ae5e0e-8e6c-4fa1-b54a-7483623eb42a'
-    - 'taxonomy_term:banner:d9459e8b-f017-43d9-bf00-f9eef0b72b88'
+    - 'taxonomy_term:banner:4114b997-7ee4-4e09-a604-4fb0fd3fff93'
+    - 'taxonomy_term:banner:707cd07f-787a-49d2-9104-4de4a264952a'
   module:
     - image
     - link

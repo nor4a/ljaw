@@ -574,8 +574,8 @@ a {
               box-sizing: border-box;
               svg {
                 display: block;
-                height: 40px;
-                width: 40px;
+                height: 35px;
+                width: 35px;
                 margin: 10px auto;
                 path {
                   @include transition(all 0.5s);

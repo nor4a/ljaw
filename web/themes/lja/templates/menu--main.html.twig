@@ -34,7 +34,7 @@
       {% set class = (item.in_active_trail ? 'active current' : '') %}
       <li{{ item.attributes.addClass(class) }}>
         <a {% if item.linkable %} href="{{ item.url }}" class="linkable" {% else %} class="not-linkable" {% endif %} data-id="{{ key }}">
-          <img src="/themes/lja/img/icons/{{ item.icon }}" class="icon svg"/>
+          <img src="/themes/lja/img/icons/{{ item.icon }}" class="icon svg" style="max-width: 35px; max-height: 35px;"/>
           {{ item.title }}
           </br><span class="description">{{ item.description }}</span>
         </a>

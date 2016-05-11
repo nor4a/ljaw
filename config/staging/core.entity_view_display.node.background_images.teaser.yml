@@ -1,0 +1,22 @@
+uuid: 01e9585b-007c-4a02-8b69-b0e62fc88db5
+langcode: lv
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.background_images.field_background_image
+    - field.field.node.background_images.field_menu_ref
+    - node.type.background_images
+  module:
+    - user
+id: node.background_images.teaser
+targetEntityType: node
+bundle: background_images
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_background_image: true
+  field_menu_ref: true
+  langcode: true

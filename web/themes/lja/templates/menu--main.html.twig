@@ -20,12 +20,7 @@
 #}
 {% import _self as menus %}
 
-{#
-  We call a macro which calls itself to render the full tree.
-  @see http://twig.sensiolabs.org/doc/tags/macro.html
-#}
 {{ menus.menu_links(items, attributes, 0, is_front) }}
-
 {% macro menu_links(items, attributes, menu_level, is_front) %}
   {% import _self as menus %}
   {% if items %}
@@ -39,10 +34,12 @@
       {% set class = (item.in_active_trail ? 'active current' : '') %}
       <li{{ item.attributes.addClass(class) }}>
         <a {% if item.linkable %} href="{{ item.url }}" class="linkable" {% else %} class="not-linkable" {% endif %} data-id="{{ key }}">
+          <img src="/themes/lja/img/icons/{{ item.icon }}" class="icon svg"/>
           {{ item.title }}
           </br><span class="description">{{ item.description }}</span>
         </a>
       </li>
+      <?php $current++; ?>
     {% endfor %}
     </ul>
   {% endif %}

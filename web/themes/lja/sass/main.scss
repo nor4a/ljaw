@@ -509,24 +509,24 @@ a {
             padding: 0;
             margin: 45px 0;
           }
-          li a:before {
-            position: absolute;
-            top: -10px;
-            left: 50%;
-            margin-left: -30px;
-          }
-          li:nth-child(1) a:before {
-            content: url('../img/menu-sailor.png');
-          }
-          li:nth-child(2) a:before {
-            content: url('../img/menu-vessel.png');
-          }
-          li:nth-child(3) a:before {
-            content: url('../img/menu-icon.png');
-          }
-          li:nth-child(4) a:before {
-            content: url('../img/menu-map.png');
-          }
+          //li a:before {
+          //  position: absolute;
+          //  top: -10px;
+          //  left: 50%;
+          //  margin-left: -30px;
+          //}
+          //li:nth-child(1) a:before {
+          //  content: url('../img/menu-sailor.png');
+          //}
+          //li:nth-child(2) a:before {
+          //  content: url('../img/menu-vessel.png');
+          //}
+          //li:nth-child(3) a:before {
+          //  content: url('../img/menu-icon.png');
+          //}
+          //li:nth-child(4) a:before {
+          //  content: url('../img/menu-map.png');
+          //}
           li {
             float: left;
             font-weight: bold;
@@ -572,6 +572,15 @@ a {
               -webkit-box-sizing: border-box;
               -moz-box-sizing: border-box;
               box-sizing: border-box;
+              svg {
+                display: block;
+                height: 40px;
+                width: 40px;
+                margin: 10px auto;
+                path {
+                  @include transition(all 0.5s);
+                }
+              }
               @include transition(all 0.5s);
               span {
                 font-weight: lighter;
@@ -579,28 +588,31 @@ a {
               }
               &:hover {
                 color: #007fff;
+                svg path {
+                  fill: #007fff !important;
+                }
               }
-              &:before {
-                position: absolute;
-                top: -45px;
-                left: 50%;
-                margin-left: -30px;
-                //opacity: 0;
-                @include transition(all 0.5s)
-              }
+              //&:before {
+              //  position: absolute;
+              //  top: -45px;
+              //  left: 50%;
+              //  margin-left: -30px;
+              //  //opacity: 0;
+              //  @include transition(all 0.5s)
+              //}
               //&.active {
               //  color: #007fff;
                 margin: 0;
                 //padding: 42px;
-                padding: 66px 0 18px 0;
+                padding: 10px 0 13px 0;
               //  border: none;
-                &:before {
-                  content: url('../img/menu-icon.png');
-                  position: absolute;
-                  top: 18px;
-                  left: 50%;
-                  margin-left: -30px;
-                }
+              //  &:before {
+              //    content: url('../img/menu-icon.png');
+              //    position: absolute;
+              //    top: 18px;
+              //    left: 50%;
+              //    margin-left: -30px;
+              //  }
                 &:after {
                   content: '';
                   width: 100%;

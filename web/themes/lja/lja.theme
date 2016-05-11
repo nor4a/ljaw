@@ -6,10 +6,15 @@ use Drupal\Core\Template\Attribute;
 
 function lja_preprocess_menu(&$variables) {
   if($variables['menu_name'] == 'main') {
+    $counter = 0;
+    $icons = array('anchor.svg', 'ship.svg', 'hands.svg', 'map.svg');
     foreach($variables['items'] as &$item) {
       $a = $item['url']->getOption('attributes');
       $item['description'] = $a['title'];
       $item['linkable'] = !in_array($item['url']->toString(),array('/','/lv','/en','/ru'));
+      // Icons
+      $item['icon'] = isset($icons[$counter]) ? $icons[$counter] : null;
+      $counter++;
     }
   }
   $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();

@@ -1,4 +1,13 @@
-{{  background_image }}
+{% if background_image %}
+<style type="text/css">
+  .content-wrapper {
+    background: url({{ background_image }}) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+  }
+</style>
+{% endif %}
 <div class="content-wrapper">
   <div class="upper-header">
     <div class="container">

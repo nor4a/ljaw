@@ -5,7 +5,7 @@ features:
   favicon: 1
 logo:
   use_default: 0
-  path: 'public://logo.png'
+  path: themes/lja/img/logo.svg
 favicon:
   use_default: 1
   path: ''

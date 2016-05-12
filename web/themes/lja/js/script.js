@@ -117,11 +117,11 @@
             var contentHeight = $('.content-wrapper').height();
             var footerHeight = $('.footer-wrapper').height();
 
-            var headerHeight = $('.upper-header').height() + $('.header-container').height();
+            var headerHeight = $('#block-lja-content').offset().top; // $('.upper-header').height() + $('.header-container').height();
 
             if (contentHeight + footerHeight < windowHeight) {
                 // Content
-                var minHeight = windowHeight - footerHeight;
+                var minHeight = windowHeight - footerHeight - 5;
                 $('.content-wrapper').css('min-height', minHeight);
                 // Inner
                 var minInnerHeight = minHeight - headerHeight;

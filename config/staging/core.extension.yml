@@ -52,6 +52,7 @@ module:
   text: 0
   token: 0
   toolbar: 0
+  topbutton: 0
   tour: 0
   update: 0
   user: 0

@@ -25,7 +25,7 @@
             return false;
         };
 
-        $('.header-container .menu a').on('click', function(e) {
+        $('.header-container .menu a').on('mouseenter', function(e) {
 
             e.preventDefault();
 
@@ -97,6 +97,9 @@
 
         $('a[href^="#"]').on('click',function (e) {
             e.preventDefault();
+            if(!this.hash) {
+                return;
+            }
             var target = this.hash;
             var $target = $(target);
             $('html, body').stop().animate({
@@ -155,6 +158,42 @@
                 $svg.css('max-width', 35).css('max-height', 35);
                 $img.replaceWith($svg);
             }, 'xml');
+        });
+
+        $('a').each(function() {
+            var match = this.href.match(/\.([a-zA-Z0-9]{2,4})([#;?]|$)/);
+            var name = 'link-icon-html link-icon';
+            if(match) {
+                var name = 'link-icon-' + match[1] + ' link-icon';
+            }
+            $(this).addClass(name);
+            $(this).parents('.views-row').addClass(name);
+        });
+
+        var topButton = $('.goTopWrapper');
+
+        $(window).on('scroll', function(e) {
+           var scrollTop = $(window).scrollTop();
+           var containerHeight = $('#block-lja-content').height();
+           var containerOffset = $('#block-lja-content').offset().top;
+           var position = scrollTop - containerOffset + 10; // $(window).height()
+           if(position > containerHeight) {
+               position = containerHeight;
+           }
+           topButton.css('top', position);
+           if(scrollTop > 600 && topButton.css('display') == 'none') {
+               topButton.fadeIn();
+           } else if(scrollTop < 600 && topButton.css('display') != 'none') {
+               topButton.fadeOut();
+           }
+        });
+
+        topButton.find('a').on('click', function() {
+            $('html, body').stop().animate({
+                'scrollTop': $('#block-lja-content').offset().top - 30
+            }, 900, 'swing', function () {
+                window.location.hash = '';
+            });
         });
 
     });

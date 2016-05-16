@@ -218,15 +218,15 @@
   .content-container .container .bar-menu .block .border {
     padding: 30px 10px 10px;
   }
-  h1.wave:before {
-    display: block;
-    content: "";
-    background: url("../img/wave-blue-long.png") no-repeat;
-    width: 55px;
-    height: 10px;
-    position: absolute;
-    background-size: contain;
-  }
+  //h1.wave:before {
+  //  display: block;
+  //  content: "";
+  //  background: url("../img/wave-blue-long.png") no-repeat;
+  //  width: 55px;
+  //  height: 10px;
+  //  position: absolute;
+  //  background-size: contain;
+  //}
   .content-container.page .container .text-block h1:before {
     top: -17px;
   }
@@ -531,16 +531,16 @@
     padding: 5px 5px;
     font-size: 12px;
   }
-  .header-container .container div.menu ul {
-    li:nth-child(1),
-    li:nth-child(2) {
-      width: 20%;
-    }
-    li:nth-child(3),
-    li:nth-child(4) {
-      width: 30%;
-    }
-  }
+  //.header-container .container div.menu ul {
+  //  li:nth-child(1),
+  //  li:nth-child(2) {
+  //    width: 20%;
+  //  }
+  //  li:nth-child(3),
+  //  li:nth-child(4) {
+  //    width: 30%;
+  //  }
+  //}
   #block-lja-content {
     padding: 0 6px;
   }
@@ -552,5 +552,17 @@
 @include breakpoint(max-width 350px) {
   .footer .container .column .col {
     width: 100% !important;
+  }
+}
+
+// SVG IE fix
+
+.ie9 img[src$=".svg"] {
+  width: 100%;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src$=".svg"] {
+    width: 100%;
   }
 }

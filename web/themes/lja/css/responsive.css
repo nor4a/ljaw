@@ -273,17 +273,6 @@
     padding: 30px 10px 10px;
   }
 
-  /* line 221, ../sass/responsive.scss */
-  h1.wave:before {
-    display: block;
-    content: "";
-    background: url("../img/wave-blue-long.png") no-repeat;
-    width: 55px;
-    height: 10px;
-    position: absolute;
-    background-size: contain;
-  }
-
   /* line 230, ../sass/responsive.scss */
   .content-container.page .container .text-block h1:before {
     top: -17px;
@@ -727,17 +716,6 @@
     font-size: 12px;
   }
 
-  /* line 535, ../sass/responsive.scss */
-  .header-container .container div.menu ul li:nth-child(1),
-  .header-container .container div.menu ul li:nth-child(2) {
-    width: 20%;
-  }
-  /* line 539, ../sass/responsive.scss */
-  .header-container .container div.menu ul li:nth-child(3),
-  .header-container .container div.menu ul li:nth-child(4) {
-    width: 30%;
-  }
-
   /* line 544, ../sass/responsive.scss */
   #block-lja-content {
     padding: 0 6px;
@@ -752,6 +730,17 @@
   /* line 553, ../sass/responsive.scss */
   .footer .container .column .col {
     width: 100% !important;
+  }
+}
+/* line 560, ../sass/responsive.scss */
+.ie9 img[src$=".svg"] {
+  width: 100%;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* line 565, ../sass/responsive.scss */
+  img[src$=".svg"] {
+    width: 100%;
   }
 }
 

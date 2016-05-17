@@ -608,6 +608,9 @@ a {
             &:last-child a {
               border-right: none;
             }
+            .menu {
+              display: none;
+            }
             a {
               position: relative;
               color: #063D85;

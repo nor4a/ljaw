@@ -114,7 +114,11 @@
 
         var minimumHeight = function() {
 
+            $('.content-wrapper').css('min-height', 0);
+            $('.content-container').css('min-height', 0);
+
             var windowHeight = $(window).height();
+
             var contentHeight = $('.content-wrapper').height();
             var footerHeight = $('.footer-wrapper').height();
 
@@ -135,11 +139,15 @@
 
         var minimumHomeHeight = function() {
 
+            $('.footer').css('min-height', 0);
+
             var windowHeight = $(window).height();
 
             var contentHeight = $('.content-wrapper').height();
             var footerHeight = $('.footer-wrapper').height();
             var headerHeight = $('#block-lja-content').offset().top;
+
+            console.log(contentHeight, footerHeight);
 
             if (contentHeight + footerHeight < windowHeight) {
                 // Footer
@@ -150,12 +158,12 @@
         };
 
         if(!$('body').hasClass('path-frontpage')) {
-            minimumHeight();
+            setTimeout(minimumHeight, 100);
             $(window).resize(function() {
                 minimumHeight();
             });
         } else {
-            minimumHomeHeight();
+            setTimeout(minimumHomeHeight, 100);
             $(window).resize(function() {
                 minimumHomeHeight();
             });

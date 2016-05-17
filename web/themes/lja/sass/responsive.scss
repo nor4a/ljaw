@@ -623,6 +623,22 @@
     height: auto;
     > ul > li {
       border-bottom: 1px solid #dadada;
+      > a {
+        padding: 16px !important;
+        text-align: left;
+        padding-left: 55px !important;
+        svg {
+          position: absolute;
+          top: 2px;
+          left: 10px;
+          width: 30px;
+          height: 30px;
+        }
+        .description {
+          display: block !important;
+          margin-top: 2px;
+        }
+      }
     }
     .menu {
       display: block;
@@ -633,6 +649,7 @@
       .column {
         display: block;
         width: 100%;
+        margin-bottom: 5px;
         > h2 a {
           padding-bottom: 0 !important;
           &:hover {
@@ -644,7 +661,7 @@
           > li {
             a {
               font-weight: normal;
-              padding: 10px 0 0px 0 !important;
+              padding: 6px 0 0px 0 !important;
             }
           }
         }
@@ -657,7 +674,17 @@
       display: none;
     }
   }
-
+  .mobile-menu {
+    padding: 10px 0;
+    text-align: left !important;
+    padding-left: 10px;
+    a.active {
+      color: #063D85;
+    }
+  }
+  .upper-header {
+    display: none;
+  }
 }
 
 @include breakpoint(max-width 425px) {

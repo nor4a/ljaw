@@ -804,13 +804,13 @@ a {
   box-sizing: border-box;
 }
 /* line 593, ../sass/main.scss */
-.header-container .container div.menu ul li.active a,
-.header-container .container .mobile-bar.menu ul li.active a {
+.header-container .container div.menu ul li.active > a,
+.header-container .container .mobile-bar.menu ul li.active > a {
   color: #007fff;
 }
 /* line 595, ../sass/main.scss */
-.header-container .container div.menu ul li.active a svg path,
-.header-container .container .mobile-bar.menu ul li.active a svg path {
+.header-container .container div.menu ul li.active > a svg path,
+.header-container .container .mobile-bar.menu ul li.active > a svg path {
   fill: #007fff !important;
 }
 /* line 599, ../sass/main.scss */

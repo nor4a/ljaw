@@ -29,6 +29,8 @@
 
             e.preventDefault();
 
+            var menuElement = $(this);
+
             clearTimeout(currentActiveMenu.animatingTimeout);
             $('.header-container, #sub-menu').unbind('mouseleave');
 
@@ -84,6 +86,22 @@
                         currentActiveMenu.dropdown = null;
                         // Unbind this event, we don't need it anymore
                         $('.header-container, #sub-menu').unbind('mouseleave');
+                        $(this).unbind('click');
+                        // Remove .active from main menu element
+                        $('.header-container .menu li.active').removeClass('active');
+                        // If we are on subpage, mark current menu tree as active
+                        $('.header-container .menu li.current').addClass('active');
+                    });
+                    menuElement.on('click', function() {
+                        console.log('clicked');
+                        // Hide current active menu
+                        currentActiveMenu.dropdown.slideUp(300);
+                        currentActiveMenu.link = null;
+                        currentActiveMenu.linkId = null;
+                        currentActiveMenu.dropdown = null;
+                        // Unbind this event, we don't need it anymore
+                        $('.header-container, #sub-menu').unbind('mouseleave');
+                        menuElement.unbind('click');
                         // Remove .active from main menu element
                         $('.header-container .menu li.active').removeClass('active');
                         // If we are on subpage, mark current menu tree as active

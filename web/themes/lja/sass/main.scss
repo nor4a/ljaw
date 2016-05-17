@@ -203,7 +203,7 @@ a {
           @include transition(all 0.3s);
           font-weight: bold;
           &:hover {
-            color: #252b41;
+            color: #063D85;
           }
           &:before {
             content: '';
@@ -225,7 +225,7 @@ a {
       background: #007fff;
       @include border-radius(50%);
       right: 94px;
-      top: 0;
+      top: 15px;
       text-align: center;
       color: white;
       h2 {
@@ -235,8 +235,8 @@ a {
         margin-top: 77px;
         color: white;
         &.wave:before {
-          content: url('../img/wave-gray-short.png');
-          margin-left: -20px;
+          content: url('../img/icons/wave-single-small.svg');
+          margin-left: -24px;
           left: 50%;
         }
       }
@@ -416,7 +416,7 @@ a {
               margin: auto;
               &:before,
               &:after {
-                content: url('../img/wave-gray-short.png');
+                content: url('../img/icons/wave-single-small.svg');
                 position: absolute;
               }
               &:before {
@@ -506,10 +506,10 @@ a {
               line-height: 35px;
               @include transition(all 0.5s);
               &.wave:before {
-                content: url('../img/wave-blue-long.png');
-                top: 34px;
+                content: url('../img/icons/wave-small.svg');
+                top: 28px;
                 left: 50%;
-                margin-left: -34px;
+                margin-left: -40px;
               }
             }
           }
@@ -725,11 +725,10 @@ div.container {
       }
       &#block-saziniesarmums {
         width: 30%;
+        line-height: 15px;
+        padding-top: 8px;
         a {
           color: #007fff;
-          font-size: 13px;
-          padding: 5px 0;
-          border-bottom: 1px solid #b0cdff;
         }
       }
       ul {
@@ -851,6 +850,7 @@ div.container {
 }
 .content-container.home {
   padding-bottom: 0px !important;
+  padding-top: 20px !important;
 }
 .content-container .text-block {
   background: white;

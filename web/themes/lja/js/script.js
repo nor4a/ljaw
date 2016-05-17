@@ -73,7 +73,8 @@
                 currentActiveMenu.dropdown.slideDown(300, function() {
                     $('.header-container, #sub-menu').mouseleave(function(e) {
                         // If we are moving mouse over childs
-                        if($(e.toElement).parents('.header-container').length || $(e.toElement).parents('#sub-menu').length) {
+                        var element = e.toElement !== undefined ? e.toElement : e.relatedTarget;
+                        if($(element).parents('.header-container').length || $(element).parents('#sub-menu').length) {
                             return;
                         }
                         // Hide current active menu
@@ -101,7 +102,7 @@
                 return;
             }
             var target = this.hash;
-            var $target = $(target);
+            var $target = $('a[id="' + target + '"]').length ? $('a[id="' + target + '"]') : $(target);
             $('html, body').stop().animate({
                 'scrollTop': $target.offset().top - 18
             }, 900, 'swing', function () {
@@ -130,11 +131,35 @@
 
         };
 
-        minimumHeight();
+        // Minimal height of body
 
-        $(window).resize(function() {
+        var minimumHomeHeight = function() {
+
+            var windowHeight = $(window).height();
+
+            var contentHeight = $('.content-wrapper').height();
+            var footerHeight = $('.footer-wrapper').height();
+            var headerHeight = $('#block-lja-content').offset().top;
+
+            if (contentHeight + footerHeight < windowHeight) {
+                // Footer
+                var minHeight = windowHeight - contentHeight - 60;
+                $('.footer').css('min-height', minHeight);
+            }
+
+        };
+
+        if(!$('body').hasClass('path-frontpage')) {
             minimumHeight();
-        });
+            $(window).resize(function() {
+                minimumHeight();
+            });
+        } else {
+            minimumHomeHeight();
+            $(window).resize(function() {
+                minimumHomeHeight();
+            });
+        }
 
         // Replace SVG image into inline
 

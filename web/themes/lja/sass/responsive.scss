@@ -298,7 +298,7 @@
     width: 100% !important;
   }
   .logo img {
-    height: 45px;
+    height: 75px !important;
   }
   .header-container .container {
     height: 70px;
@@ -325,6 +325,7 @@
     a {
       margin: 0;
       font-size: 12px;
+      padding: 0px 0 5px 0;
     }
   }
   .content-container .container .text-block .content {
@@ -374,6 +375,9 @@
         width: auto;
       }
     }
+    #block-valoduparsledzejs {
+      border-right: 0;
+    }
     &:after {
       visibility: hidden;
       display: block;
@@ -381,6 +385,9 @@
       content: " ";
       clear: both;
       height: 0;
+    }
+    .sitemap, .social {
+      display: none;
     }
   }
   .upper-header, .upper-header a, .upper-header h1, .upper-header h2, .upper-header h3, .upper-header p, .upper-header span, .upper-header div {
@@ -591,7 +598,7 @@
   // Menu hamburger
   .header-container .container .mobile-bar {
     display: block;
-    margin-top: 40px;
+    margin-top: 25px;
     float: right;
     margin-right: 30px;
   }
@@ -650,6 +657,7 @@
       display: none;
     }
   }
+
 }
 
 @include breakpoint(max-width 425px) {

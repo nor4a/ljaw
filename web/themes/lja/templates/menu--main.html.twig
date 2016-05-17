@@ -38,9 +38,37 @@
           {{ item.title }}
           </br><span class="description">{{ item.description }}</span>
         </a>
+        {{ menus.menu_links_sub(key, item) }}
       </li>
       <?php $current++; ?>
     {% endfor %}
     </ul>
   {% endif %}
+{% endmacro %}
+
+{% macro menu_links_sub(key, item) %}
+  <div class="menu mobile-menu {% if item.in_active_trail %}current visible{% endif %}" data-id="{{ key }}">
+  {% for child in item.below %}
+    <div class="column">
+      <h2>
+        <a {% if child.linkable %} href="{{ child.url }}" class="linkable" {% else %} class="not-linkable" {% endif %}>
+          {{ child.title }}
+        </a>
+      </h2>
+      {% if child.below %}
+      <ul class="list-style">
+        {% for subchild in child.below %}
+        <li>
+          <a href="{{ subchild.url }}" class="linkable {% if subchild.in_active_trail %}active{% endif %}">
+            {{ subchild.title }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  {% endfor %}
+  <div style="clear:both"></div>
+</div>
+
 {% endmacro %}

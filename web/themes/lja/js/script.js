@@ -27,6 +27,10 @@
 
         $('.header-container .menu a').on('mouseenter', function(e) {
 
+            if($(window).width() < 600) {
+                return false;
+            }
+
             e.preventDefault();
 
             var menuElement = $(this);
@@ -93,7 +97,6 @@
                         $('.header-container .menu li.current').addClass('active');
                     });
                     menuElement.on('click', function() {
-                        console.log('clicked');
                         // Hide current active menu
                         currentActiveMenu.dropdown.slideUp(300);
                         currentActiveMenu.link = null;
@@ -110,6 +113,33 @@
                 });
             }, currentActiveMenu.dropdown ? dropdownTimeout : 0);
 
+        });
+
+        // Mobile
+
+        $('#bar').on('click', function() {
+            var menu = $('.header-container .container > .menu');
+            if(menu.is(':visible')) {
+                menu.slideUp();
+                $('.mobile-menu:visible').slideUp(400);
+            } else {
+                menu.slideDown();
+            }
+        });
+
+        $('.header-container .container > .menu > ul > li > a').on('click', function(e) {
+            var submenu = $(this).parent().find('.mobile-menu');
+            if(submenu.is(':visible')) {
+                submenu.slideUp(400);
+            } else {
+                $('.mobile-menu:visible').slideUp(400);
+                submenu.slideDown(400);
+            }
+        });
+
+        $('.header-container .container > .menu ul ul a').on('click', function() {
+            $('.mobile-menu:visible').slideUp(400);
+            $('.header-container .container > .menu').slideUp(400);
         });
 
         // Internal links

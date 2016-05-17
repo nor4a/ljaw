@@ -359,9 +359,9 @@
   #block-phone {
     display: none;
   }
-  .header-container .container div.logo, .header-container .container .mobile-bar.logo {
-    display: none;
-  }
+  //.header-container .container div.logo, .header-container .container .mobile-bar.logo {
+  //  display: none;
+  //}
   .upper-header {
     height: auto;
     background: white;
@@ -435,14 +435,18 @@
     float: left;
     height: auto;
   }
-  .header-container .container div.menu ul:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+  .header-container .container div.menu ul li a:after, .header-container .container .mobile-bar.menu ul li a:after {
+    display: none;
+    content: none;
   }
+  //.header-container .container div.menu ul:after {
+  //  visibility: hidden;
+  //  display: block;
+  //  font-size: 0;
+  //  content: " ";
+  //  clear: both;
+  //  height: 0;
+  //}
   //.header-container .container .mobile-bar.menu ul,
   //.header-container .container div.menu ul {
   //  li:nth-child(1) a:before {
@@ -583,6 +587,68 @@
   }
   .footer {
     padding: 40px 0 20px;
+  }
+  // Menu hamburger
+  .header-container .container .mobile-bar {
+    display: block;
+    margin-top: 40px;
+    float: right;
+    margin-right: 30px;
+  }
+  .header-container .container div.menu, .header-container .container .mobile-bar.menu {
+    //display: none;
+  }
+  .logo {
+    padding-left: 10px;
+  }
+  .header-container .container div.menu, .header-container .container .mobile-bar.menu {
+    height: auto;
+    display: none;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    background: white;
+    width: 100%;
+    left: 0;
+    border-top: 1px solid #dadada;
+    height: auto;
+    > ul > li {
+      border-bottom: 1px solid #dadada;
+    }
+    .menu {
+      display: block;
+      position: relative;
+      top: 100%;
+      background: white;
+      z-index: 100;
+      .column {
+        display: block;
+        width: 100%;
+        > h2 a {
+          padding-bottom: 0 !important;
+          &:hover {
+            color: #063D85 !important;
+            text-decoration: none;
+          }
+        }
+        > ul {
+          > li {
+            a {
+              font-weight: normal;
+              padding: 10px 0 0px 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .header-container .container div.menu ul li, .header-container .container .mobile-bar.menu ul li {
+    width: 100% !important;
+    .menu {
+      display: none;
+    }
   }
 }
 

@@ -279,6 +279,17 @@
 
 // 425
 
+@include breakpoint(min-width 680px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}
+@include breakpoint(max-width 679px) {
+  #block-mainnavigation .menu {
+    display: none !important;
+  }
+}
+
 @include breakpoint(max-width 680px) {
   .content-container .container #block-views-block-content-banners-block-1 .wrap {
     top: 0;

@@ -128,6 +128,10 @@
         });
 
         $('.header-container .container > .menu > ul > li > a').on('click', function(e) {
+            if($(window).width() > 680) {
+                console.log('out');
+                return;
+            }
             var submenu = $(this).parent().find('.mobile-menu');
             if(submenu.is(':visible')) {
                 submenu.slideUp(400);

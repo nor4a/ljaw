@@ -9,6 +9,10 @@ body {
   @include box-sizing(border-box);
 }
 
+a.linkable:hover {
+  text-decoration: underline;
+}
+
 h1 .wave-svg,
 h1.wave img,
 h2 .wave-svg,
@@ -57,6 +61,7 @@ a {
     //background-attachment: fixed;
     //background-position: center center;
     .container .text-block {
+      margin-bottom: 20px;
       h1 {
         font-size: 25px;
         font-weight: 500;
@@ -734,6 +739,9 @@ div.container {
         a {
           color: #007fff;
         }
+        a:hover {
+          text-decoration: underline;
+        }
       }
       ul {
         list-style: none;
@@ -750,6 +758,7 @@ div.container {
         @include transition(all 0.5s);
         &:hover {
           color: #007fff;
+          text-decoration: underline;
         }
       }
     }
@@ -764,6 +773,21 @@ div.container {
   }
   .menu.current {
     display: none;
+  }
+  #block-parlja-2 {
+    display: none;
+  }
+}
+
+#block-parlja-2 {
+  padding-top: 20px;
+  h2 {
+    color: #063D85;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .menu {
+    padding-top: 0;
   }
 }
 
@@ -1211,5 +1235,88 @@ div.logo {
     content: " ";
     clear: both;
     height: 0;
+  }
+}
+
+.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a {
+  .views-row {
+    padding-left: 12px;
+    position: relative;
+    display: block;
+    &.link-icon {
+      padding-left: 18px;
+      &:before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        top: 3px;
+        left: -1px
+      }
+    }
+    &.link-icon-doc:before {
+      background: url('../img/icons/doc.svg') no-repeat;
+      background-size: contain;
+    }
+    &.link-icon-pdf:before {
+      background: url('../img/icons/pdf.svg') no-repeat;
+      background-size: contain;
+    }
+    &.link-icon-php:before,
+    &.link-icon-html:before {
+      background: url('../img/icons/link.svg') no-repeat;
+      background-size: contain;
+      height: 10px;
+      top: 5px;
+      left: 2px
+    }
+    &:before {
+      content: '';
+      color: #007fff;
+      position: absolute;
+      top: 4px;
+      font-size: 10px;
+      left: 1px;
+    }
+    a {
+      display: block;
+      padding: 2px 0;
+      @include transition(all 0.5s);
+    }
+    a:hover {
+      color: #007fff;
+      text-decoration: underline;
+    }
+  }
+  ol {
+    margin: 5px 0 0 !important;
+  }
+  ol li {
+    padding-left: 22px !important;
+    color: #007fff;
+    &:before {
+      content: '' !important;
+      width: 15px;
+      height: 15px;
+      background: url('../img/icons/folder-plus.svg') no-repeat;
+      background-size: contain;
+      color: #007fff;
+      position: absolute;
+      top: 4px;
+      font-size: 10px;
+      left: 1px;
+    }
+    div.childs > div > .views-row:first-child {
+      margin-top: 5px;
+    }
+    > div {
+      display: none;
+      margin-left: -5px !important;
+    }
+    > ol {
+      display: none;
+    }
+  }
+  ol ol {
+    margin-left: -20px !important;
   }
 }

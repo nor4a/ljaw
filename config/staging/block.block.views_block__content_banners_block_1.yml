@@ -12,7 +12,7 @@ dependencies:
 id: views_block__content_banners_block_1
 theme: lja
 region: content
-weight: -9
+weight: -13
 provider: null
 plugin: 'views_block:content_banners-block_1'
 settings:

@@ -281,6 +281,26 @@
             });
         });
 
+        // Directories
+
+        $('.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a > ol > li').each(function() {
+            // Variables
+            var label = $(this)[0].innerText;
+            var content = $(this).html().replace(label, '');
+            // Link
+            var link = $('<a href="#">' + label + '</a>');
+            // Recompose
+            $(this).html('');
+            $(this).append(link);
+            $(this).append('<div class="childs">' + content + '</div>')
+            // Listener
+            link.on('click', function(e) {
+                console.log($(this));
+                e.preventDefault();
+                $(this).parent().find('.childs').slideToggle();
+            });
+        });
+
     });
 
 })(jQuery);

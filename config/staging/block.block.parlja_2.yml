@@ -1,0 +1,24 @@
+uuid: 0f3bd2e2-cd41-4936-99b6-f6f97808be4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.about
+  module:
+    - system
+  theme:
+    - lja
+id: parlja_2
+theme: lja
+region: menu
+weight: -13
+provider: null
+plugin: 'system_menu_block:about'
+settings:
+  id: 'system_menu_block:about'
+  label: 'Par LJA'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

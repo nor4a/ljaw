@@ -26,7 +26,7 @@ function lja_preprocess_block__phone(&$variables) {
 
 function lja_preprocess_block__parlja_2(&$variables) {
   $link = \Drupal::service('menu.active_trail')->getActiveLink();
-  if($link->getMenuName() !== 'about') {
+  if($link && $link->getMenuName() !== 'about') {
     $variables = array();
   }
 }

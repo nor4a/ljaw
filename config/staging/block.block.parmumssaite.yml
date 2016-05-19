@@ -1,0 +1,25 @@
+uuid: 10efc0c5-48ed-42b4-ba91-90de2eef1a70
+langcode: lv
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ef711fd8-9caa-40fa-b06b-d02a6006b2eb'
+  module:
+    - block_content
+  theme:
+    - lja
+id: parmumssaite
+theme: lja
+region: top
+weight: null
+provider: null
+plugin: 'block_content:ef711fd8-9caa-40fa-b06b-d02a6006b2eb'
+settings:
+  id: 'block_content:ef711fd8-9caa-40fa-b06b-d02a6006b2eb'
+  label: 'Par mums saite'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

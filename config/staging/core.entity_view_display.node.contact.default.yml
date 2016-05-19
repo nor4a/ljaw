@@ -1,0 +1,65 @@
+uuid: ee6f975a-279d-4dfc-9de2-5ce9004cfa2a
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.field.node.contact.field_department
+    - field.field.node.contact.field_display_sequence
+    - field.field.node.contact.field_email
+    - field.field.node.contact.field_first_name
+    - field.field.node.contact.field_phone
+    - field.field.node.contact.field_second_name
+    - field.field.node.contact.field_working_time
+    - node.type.contact
+  module:
+    - user
+id: node.contact.default
+targetEntityType: node
+bundle: contact
+mode: default
+content:
+  field_department:
+    weight: 0
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_email:
+    weight: 4
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_first_name:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_phone:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_second_name:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_working_time:
+    weight: 5
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  field_display_sequence: true
+  langcode: true
+  links: true

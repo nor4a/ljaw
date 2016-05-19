@@ -1,0 +1,32 @@
+uuid: bba54aa3-8f10-4137-a028-f2435eb6289b
+langcode: lv
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contact.field_department
+    - field.field.node.contact.field_display_sequence
+    - field.field.node.contact.field_email
+    - field.field.node.contact.field_first_name
+    - field.field.node.contact.field_phone
+    - field.field.node.contact.field_second_name
+    - field.field.node.contact.field_working_time
+    - node.type.contact
+  module:
+    - user
+id: node.contact.teaser
+targetEntityType: node
+bundle: contact
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_department: true
+  field_display_sequence: true
+  field_email: true
+  field_first_name: true
+  field_phone: true
+  field_second_name: true
+  field_working_time: true
+  langcode: true

@@ -35,3 +35,5 @@ content_type_settings:
     view_mode: ''
   background_images:
     view_mode: ''
+  contact:
+    view_mode: ''

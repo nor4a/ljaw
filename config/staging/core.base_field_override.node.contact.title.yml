@@ -1,0 +1,18 @@
+uuid: e460e535-d9e1-4e6c-9904-f3843a8e153f
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.contact
+id: node.contact.title
+field_name: title
+entity_type: node
+bundle: contact
+label: Amats
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

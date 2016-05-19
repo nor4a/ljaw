@@ -184,7 +184,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Content Type'
+          label: Veids
           exclude: false
           alter:
             alter_text: false

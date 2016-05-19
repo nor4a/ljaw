@@ -283,21 +283,47 @@
 
         // Directories
 
-        $('.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a > ol > li').each(function() {
+        var prepareExtendableList = function(container, scoope) {
             // Variables
-            var label = $(this)[0].innerText;
-            var content = $(this).html().replace(label, '');
+            var clone = $(container).clone();//.hide().appendTo('body');
+            $(clone).find('div, ol, ul').remove();
+            var label = $.trim($(clone).text());
+            var content = $(container).html().replace(label, '');
             // Link
             var link = $('<a href="#">' + label + '</a>');
             // Recompose
-            $(this).html('');
-            $(this).append(link);
-            $(this).append('<div class="childs">' + content + '</div>')
+            $(container).html('');
+            $(container).append(link);
+            $(container).append('<div class="childs">' + content + '</div>')
             // Listener
             link.on('click', function(e) {
-                console.log($(this));
                 e.preventDefault();
-                $(this).parent().find('.childs').slideToggle();
+                var parent = $(this).parent();
+                // Hide clicked
+                if(parent.hasClass('expanded')) {
+                    parent.find('.childs').slideUp();
+                    parent.removeClass('expanded');
+                    return;
+                }
+                // Hide all expanded
+                var current = $('.extendable-list .expanded');
+                if(scoope !== undefined) {
+                    var current = $('.extendable-list').find(scoope + '.expanded');
+                }
+                current.find('.childs').slideUp();
+                current.removeClass('expanded');
+                // Show clicked
+                parent.find('> .childs').slideDown();
+                parent.addClass('expanded');
+            });
+        };
+
+        $('.extendable-list > ol > li').each(function() {
+            $(this).addClass('level-1');
+            prepareExtendableList(this);
+            $('.childs > ol > li', this).each(function() {
+               $(this).addClass('level-2');
+               prepareExtendableList(this, '.level-2');
             });
         });
 

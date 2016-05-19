@@ -1238,7 +1238,7 @@ div.logo {
   }
 }
 
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a {
+.extendable-list {
   .views-row {
     padding-left: 12px;
     position: relative;
@@ -1305,10 +1305,14 @@ div.logo {
       font-size: 10px;
       left: 1px;
     }
+    &.expanded:before {
+      background: url('../img/icons/folder-minus.svg') no-repeat !important;
+      background-size: contain;
+    }
     div.childs > div > .views-row:first-child {
       margin-top: 5px;
     }
-    > div {
+    > div, > div.childs {
       display: none;
       margin-left: -5px !important;
     }
@@ -1317,6 +1321,6 @@ div.logo {
     }
   }
   ol ol {
-    margin-left: -20px !important;
+    margin-left: -12px !important;
   }
 }

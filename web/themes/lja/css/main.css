@@ -1487,17 +1487,17 @@ div.logo img {
 }
 
 /* line 1242, ../sass/main.scss */
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a .views-row {
+.extendable-list .views-row {
   padding-left: 12px;
   position: relative;
   display: block;
 }
 /* line 1246, ../sass/main.scss */
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a .views-row.link-icon {
+.extendable-list .views-row.link-icon {
   padding-left: 18px;
 }
 /* line 1248, ../sass/main.scss */
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a .views-row.link-icon:before {
+.extendable-list .views-row.link-icon:before {
   content: '';
   width: 15px;
   height: 15px;
@@ -1505,17 +1505,17 @@ div.logo img {
   left: -1px;
 }
 /* line 1256, ../sass/main.scss */
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a .views-row.link-icon-doc:before {
+.extendable-list .views-row.link-icon-doc:before {
   background: url("../img/icons/doc.svg") no-repeat;
   background-size: contain;
 }
 /* line 1260, ../sass/main.scss */
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a .views-row.link-icon-pdf:before {
+.extendable-list .views-row.link-icon-pdf:before {
   background: url("../img/icons/pdf.svg") no-repeat;
   background-size: contain;
 }
 /* line 1264, ../sass/main.scss */
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a .views-row.link-icon-php:before, .js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a .views-row.link-icon-html:before {
+.extendable-list .views-row.link-icon-php:before, .extendable-list .views-row.link-icon-html:before {
   background: url("../img/icons/link.svg") no-repeat;
   background-size: contain;
   height: 10px;
@@ -1523,7 +1523,7 @@ div.logo img {
   left: 2px;
 }
 /* line 1272, ../sass/main.scss */
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a .views-row:before {
+.extendable-list .views-row:before {
   content: '';
   color: #007fff;
   position: absolute;
@@ -1532,7 +1532,7 @@ div.logo img {
   left: 1px;
 }
 /* line 1280, ../sass/main.scss */
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a .views-row a {
+.extendable-list .views-row a {
   display: block;
   padding: 2px 0;
   -webkit-transition: all 0.5s;
@@ -1542,21 +1542,21 @@ div.logo img {
   transition: all 0.5s;
 }
 /* line 1285, ../sass/main.scss */
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a .views-row a:hover {
+.extendable-list .views-row a:hover {
   color: #007fff;
   text-decoration: underline;
 }
 /* line 1290, ../sass/main.scss */
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a ol {
+.extendable-list ol {
   margin: 5px 0 0 !important;
 }
 /* line 1293, ../sass/main.scss */
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a ol li {
+.extendable-list ol li {
   padding-left: 22px !important;
   color: #007fff;
 }
 /* line 1296, ../sass/main.scss */
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a ol li:before {
+.extendable-list ol li:before {
   content: '' !important;
   width: 15px;
   height: 15px;
@@ -1569,21 +1569,26 @@ div.logo img {
   left: 1px;
 }
 /* line 1308, ../sass/main.scss */
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a ol li div.childs > div > .views-row:first-child {
+.extendable-list ol li.expanded:before {
+  background: url("../img/icons/folder-minus.svg") no-repeat !important;
+  background-size: contain;
+}
+/* line 1312, ../sass/main.scss */
+.extendable-list ol li div.childs > div > .views-row:first-child {
   margin-top: 5px;
 }
-/* line 1311, ../sass/main.scss */
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a ol li > div {
+/* line 1315, ../sass/main.scss */
+.extendable-list ol li > div, .extendable-list ol li > div.childs {
   display: none;
   margin-left: -5px !important;
 }
-/* line 1315, ../sass/main.scss */
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a ol li > ol {
+/* line 1319, ../sass/main.scss */
+.extendable-list ol li > ol {
   display: none;
 }
-/* line 1319, ../sass/main.scss */
-.js-view-dom-id-1fda17f782191597273c9fcb640581c007dc06103e5276eaea426257d009879a ol ol {
-  margin-left: -20px !important;
+/* line 1323, ../sass/main.scss */
+.extendable-list ol ol {
+  margin-left: -12px !important;
 }
 
 /*# sourceMappingURL=main.css.map */

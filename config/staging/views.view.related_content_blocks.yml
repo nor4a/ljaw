@@ -154,7 +154,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: standard
-      title: Anketas
+      title: Veidlapas
       header: {  }
       footer: {  }
       empty: {  }
@@ -488,7 +488,7 @@ display:
   block_3:
     display_plugin: block
     id: block_3
-    display_title: Anketas
+    display_title: Veidlapas
     position: 3
     display_options:
       display_extenders: {  }

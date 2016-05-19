@@ -1,6 +1,6 @@
 uuid: 35d9ade2-f9bf-4456-bb00-ef3ac577bb5f
 langcode: lv
-status: false
+status: true
 dependencies:
   config:
     - views.view.content_banners
@@ -11,8 +11,8 @@ dependencies:
     - lja
 id: views_block__content_banners_block_1
 theme: lja
-region: '-1'
-weight: 0
+region: content
+weight: -11
 provider: null
 plugin: 'views_block:content_banners-block_1'
 settings:

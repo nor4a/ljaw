@@ -21,4 +21,9 @@ settings:
   label_display: visible
   level: 1
   depth: 0
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/par-lja/*\r\n/about-lja/*\r\n/pricelists\r\n/legislation\r\n/legislation\r\n/forms\r\n/news\r\n/tenders"
+    negate: false
+    context_mapping: {  }

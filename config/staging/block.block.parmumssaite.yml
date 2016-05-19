@@ -18,7 +18,7 @@ settings:
   id: 'block_content:ef711fd8-9caa-40fa-b06b-d02a6006b2eb'
   label: 'Par mums saite'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

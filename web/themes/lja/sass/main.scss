@@ -66,7 +66,7 @@ a {
         font-size: 25px;
         font-weight: 500;
         line-height: 36px;
-        margin: 8px 0 10px 0;
+        margin: 0px 0 10px 0;
         .wave-svg {
           top: -10px;
         }
@@ -1239,6 +1239,9 @@ div.logo {
 }
 
 .extendable-list {
+  header h1 {
+
+  }
   .views-row {
     padding-left: 12px;
     position: relative;
@@ -1323,4 +1326,9 @@ div.logo {
   ol ol {
     margin-left: -12px !important;
   }
+}
+
+.page-wave {
+  position: relative;
+  top: -5px;
 }

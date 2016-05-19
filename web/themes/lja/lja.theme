@@ -4,6 +4,10 @@ use Drupal\Core\Menu\MenuLinkInterface;
 use Drupal\menu_link_content\Entity\MenuLinkContent;
 use Drupal\Core\Template\Attribute;
 
+function lja_views_pre_render($view) {
+
+}
+
 function lja_preprocess_menu(&$variables) {
   if($variables['menu_name'] == 'main') {
     $counter = 0;

@@ -138,7 +138,7 @@ a {
   font-size: 25px;
   font-weight: 500;
   line-height: 36px;
-  margin: 8px 0 10px 0;
+  margin: 0px 0 10px 0;
 }
 /* line 70, ../sass/main.scss */
 .content-container.page .container .text-block h1 .wave-svg {
@@ -1486,17 +1486,17 @@ div.logo img {
   height: 0;
 }
 
-/* line 1242, ../sass/main.scss */
+/* line 1245, ../sass/main.scss */
 .extendable-list .views-row {
   padding-left: 12px;
   position: relative;
   display: block;
 }
-/* line 1246, ../sass/main.scss */
+/* line 1249, ../sass/main.scss */
 .extendable-list .views-row.link-icon {
   padding-left: 18px;
 }
-/* line 1248, ../sass/main.scss */
+/* line 1251, ../sass/main.scss */
 .extendable-list .views-row.link-icon:before {
   content: '';
   width: 15px;
@@ -1504,17 +1504,17 @@ div.logo img {
   top: 3px;
   left: -1px;
 }
-/* line 1256, ../sass/main.scss */
+/* line 1259, ../sass/main.scss */
 .extendable-list .views-row.link-icon-doc:before {
   background: url("../img/icons/doc.svg") no-repeat;
   background-size: contain;
 }
-/* line 1260, ../sass/main.scss */
+/* line 1263, ../sass/main.scss */
 .extendable-list .views-row.link-icon-pdf:before {
   background: url("../img/icons/pdf.svg") no-repeat;
   background-size: contain;
 }
-/* line 1264, ../sass/main.scss */
+/* line 1267, ../sass/main.scss */
 .extendable-list .views-row.link-icon-php:before, .extendable-list .views-row.link-icon-html:before {
   background: url("../img/icons/link.svg") no-repeat;
   background-size: contain;
@@ -1522,7 +1522,7 @@ div.logo img {
   top: 5px;
   left: 2px;
 }
-/* line 1272, ../sass/main.scss */
+/* line 1275, ../sass/main.scss */
 .extendable-list .views-row:before {
   content: '';
   color: #007fff;
@@ -1531,7 +1531,7 @@ div.logo img {
   font-size: 10px;
   left: 1px;
 }
-/* line 1280, ../sass/main.scss */
+/* line 1283, ../sass/main.scss */
 .extendable-list .views-row a {
   display: block;
   padding: 2px 0;
@@ -1541,21 +1541,21 @@ div.logo img {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 1285, ../sass/main.scss */
+/* line 1288, ../sass/main.scss */
 .extendable-list .views-row a:hover {
   color: #007fff;
   text-decoration: underline;
 }
-/* line 1290, ../sass/main.scss */
+/* line 1293, ../sass/main.scss */
 .extendable-list ol {
   margin: 5px 0 0 !important;
 }
-/* line 1293, ../sass/main.scss */
+/* line 1296, ../sass/main.scss */
 .extendable-list ol li {
   padding-left: 22px !important;
   color: #007fff;
 }
-/* line 1296, ../sass/main.scss */
+/* line 1299, ../sass/main.scss */
 .extendable-list ol li:before {
   content: '' !important;
   width: 15px;
@@ -1568,27 +1568,33 @@ div.logo img {
   font-size: 10px;
   left: 1px;
 }
-/* line 1308, ../sass/main.scss */
+/* line 1311, ../sass/main.scss */
 .extendable-list ol li.expanded:before {
   background: url("../img/icons/folder-minus.svg") no-repeat !important;
   background-size: contain;
 }
-/* line 1312, ../sass/main.scss */
+/* line 1315, ../sass/main.scss */
 .extendable-list ol li div.childs > div > .views-row:first-child {
   margin-top: 5px;
 }
-/* line 1315, ../sass/main.scss */
+/* line 1318, ../sass/main.scss */
 .extendable-list ol li > div, .extendable-list ol li > div.childs {
   display: none;
   margin-left: -5px !important;
 }
-/* line 1319, ../sass/main.scss */
+/* line 1322, ../sass/main.scss */
 .extendable-list ol li > ol {
   display: none;
 }
-/* line 1323, ../sass/main.scss */
+/* line 1326, ../sass/main.scss */
 .extendable-list ol ol {
   margin-left: -12px !important;
+}
+
+/* line 1331, ../sass/main.scss */
+.page-wave {
+  position: relative;
+  top: -5px;
 }
 
 /*# sourceMappingURL=main.css.map */

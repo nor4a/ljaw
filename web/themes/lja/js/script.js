@@ -333,6 +333,16 @@
             adaptiveHeight: true
         });
 
+        // Home
+
+        var container = $('.text-block.home p');
+        var characters = container.text().split('');
+
+        container.html('');
+        $.each(characters, function (i, el) {
+            container.append("<span>" + el + "</span");
+        });
+
     });
 
 })(jQuery);

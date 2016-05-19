@@ -1778,4 +1778,17 @@ input[type=submit]:hover {
   background-size: contain;
 }
 
+/* line 1482, ../sass/main.scss */
+#block-parmumssaite {
+  display: inline-block;
+  padding: 15px;
+  padding-right: 18px;
+  margin-right: 10px;
+  border-right: 1px solid #BEBEBE;
+}
+/* line 1488, ../sass/main.scss */
+#block-parmumssaite a {
+  font-size: 13px;
+}
+
 /*# sourceMappingURL=main.css.map */

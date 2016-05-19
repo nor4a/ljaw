@@ -12,7 +12,7 @@ dependencies:
 id: phone
 theme: lja
 region: content
-weight: -12
+weight: -10
 provider: null
 plugin: 'block_content:32336b7a-d492-4b4a-961b-27cb0a7a4210'
 settings:

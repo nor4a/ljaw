@@ -1,25 +1,25 @@
-uuid: 35d9ade2-f9bf-4456-bb00-ef3ac577bb5f
-langcode: lv
-status: false
+uuid: e752449f-7f25-4796-921a-0cf95293ca7c
+langcode: en
+status: true
 dependencies:
   config:
-    - views.view.content_banners
+    - views.view.news
   module:
     - system
     - views
   theme:
     - lja
-id: views_block__content_banners_block_1
+id: views_block__news_block_1
 theme: lja
-region: '-1'
-weight: 0
+region: content
+weight: -12
 provider: null
-plugin: 'views_block:content_banners-block_1'
+plugin: 'views_block:news-block_1'
 settings:
-  id: 'views_block:content_banners-block_1'
+  id: 'views_block:news-block_1'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
 visibility:

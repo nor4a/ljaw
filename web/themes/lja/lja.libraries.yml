@@ -4,10 +4,15 @@ global-css:
       css/main.css: {}
       css/responsive.css: {}
       css/font-awesome.min.css: {}
+      css/glide.core.min.css: {}
+      css/glide.theme.min.css: {}
+      css/slick.css: {}
 
 global-js:
   js:
     js/jquery.dropdown.js: {}
+    js/glide.min.js: {}
+    js/slick.min.js: {}
     js/script.js: {}
   dependencies:
     - core/jquery

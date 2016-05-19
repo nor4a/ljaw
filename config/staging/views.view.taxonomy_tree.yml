@@ -472,18 +472,7 @@ display:
           plugin_id: language
       sorts: {  }
       title: Likumdošana
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content: '<h1>Likumdošana</h1>'
-          plugin_id: text_custom
+      header: {  }
       footer: {  }
       empty: {  }
       relationships:
@@ -711,18 +700,7 @@ display:
           2: OR
       display_description: ''
       title: Formas
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content: '<h1>Pieteikuma anketas</h1>'
-          plugin_id: text_custom
+      header: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -910,18 +888,7 @@ display:
         groups:
           1: AND
           2: OR
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content: '<h1>Cenrādis</h1>'
-          plugin_id: text_custom
+      header: {  }
     cache_metadata:
       max-age: -1
       contexts:

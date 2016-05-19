@@ -27,17 +27,19 @@
 #}
 
 <div{{ attributes.addClass('block') }}>
-  <div class="border">
-  {{ title_prefix }}
-  {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
-    <img src="/themes/lja/img/icons/wave-small.svg" class="wave-svg page-wave"/>
-  {% endif %}
-  {{ title_suffix }}
-  {% block content %}
-    {{ content }}
-  {% endblock %}
-    <div style="clear:both"></div>
-  </div>
-  <div style="clear:both"></div>
+    <div class="wrap">
+        <div class="border">
+            {{ title_prefix }}
+            {% if label %}
+                <h2{{ title_attributes }}>{{ label }}</h2>
+                <img src="/themes/lja/img/icons/wave-small.svg" class="wave-svg page-wave"/>
+            {% endif %}
+            {{ title_suffix }}
+            {% block content %}
+                {{ content }}
+            {% endblock %}
+            <div style="clear:both"></div>
+        </div>
+        <div style="clear:both"></div>
+    </div>
 </div>

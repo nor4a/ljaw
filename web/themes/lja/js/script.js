@@ -199,6 +199,11 @@
             var footerHeight = $('.footer-wrapper').height();
             var headerHeight = $('.content-container').offset().top;
 
+            if($('#toolbar-administration').is('div')) {
+                windowHeight -= 80;
+                headerHeight -= 70;
+            }
+
             if (contentHeight + footerHeight < windowHeight) {
                 // Content
                 var minHeight = windowHeight - footerHeight - 10;

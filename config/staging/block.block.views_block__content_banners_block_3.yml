@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.content_banners
   module:
+    - system
     - views
   theme:
     - lja
@@ -21,4 +22,9 @@ settings:
   label_display: '0'
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

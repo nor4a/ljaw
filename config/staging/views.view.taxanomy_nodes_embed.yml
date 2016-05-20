@@ -314,11 +314,6 @@ display:
           expose:
             label: ''
           granularity: second
-        field_display_sequence_value:
-          id: field_display_sequence_value
-          table: node__field_display_sequence
-          field: field_display_sequence_value
-          plugin_id: standard
       header: {  }
       footer: {  }
       empty: {  }

@@ -683,7 +683,7 @@ display:
           1: AND
           2: OR
       display_description: ''
-      title: Contacts
+      title: Kontakti
       header: {  }
     cache_metadata:
       max-age: -1

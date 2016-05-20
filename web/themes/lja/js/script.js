@@ -335,13 +335,13 @@
 
         // Home
 
-        // var container = $('.text-block.home p');
-        // var characters = container.text().split('');
-        //
-        // container.html('');
-        // $.each(characters, function (i, el) {
-        //     container.append("<span>" + el + "</span");
-        // });
+        var container = $('.text-block.home.front-page .content p');
+        var characters = container.text().split('');
+
+        container.html('');
+        $.each(characters, function (i, el) {
+            container.append("<span>" + el + "</span");
+        });
 
     });
 

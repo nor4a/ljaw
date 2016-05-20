@@ -1,0 +1,23 @@
+uuid: ef0408e3-3718-4fa2-8784-a6c2409b5ae8
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_sequence
+    - node.type.contact
+  module:
+    - options
+id: node.contact.field_display_sequence
+field_name: field_display_sequence
+entity_type: node
+bundle: contact
+label: 'Attēlošanas secība'
+description: 'Sarakstos, kur kontakti attēlojas viens aiz otra - kontakti ar mazāku šī lauka vērtību rādīsies pirms kontaktiem ar lielāku šī lauka vērtību. Piemēram "vadītājam" liekam 1, "vietniekam" - 2, "sekretārei" - 3'
+required: false
+translatable: false
+default_value:
+  -
+    value: 2
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

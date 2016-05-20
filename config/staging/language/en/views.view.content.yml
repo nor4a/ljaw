@@ -21,7 +21,7 @@ display:
         title:
           label: Title
         type:
-          label: 'Content Type'
+          label: 'Content type'
           separator: ', '
         name:
           label: Author
@@ -45,7 +45,7 @@ display:
                 title: Unpublished
         type:
           expose:
-            label: Type
+            label: 'Content type'
         title:
           expose:
             label: Title

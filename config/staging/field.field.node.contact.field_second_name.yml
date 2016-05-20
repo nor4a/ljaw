@@ -1,0 +1,19 @@
+uuid: 573820a4-6394-4eed-b12a-7a6df6d1da97
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_second_name
+    - node.type.contact
+id: node.contact.field_second_name
+field_name: field_second_name
+entity_type: node
+bundle: contact
+label: Uzvārds
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_attachments
+    - field.field.node.page.field_contacts_ref
     - field.field.node.page.field_forms_ref
     - field.field.node.page.field_legislation_ref
     - field.field.node.page.field_pricelists_ref
@@ -39,6 +40,14 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+  field_contacts_ref:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   field_forms_ref:
     weight: 7
     settings:

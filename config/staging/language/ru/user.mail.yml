@@ -20,7 +20,6 @@ status_activated:
   body: "[user:display-name],\r\n\r\nВаша учётная запись на сайте «[site:name]» активирована.\r\n\r\nТеперь Вы можете войти на сайт, щёлкнув по следующей ссылке, или скопировав её в адресную строку браузера:\r\n\r\n[user:one-time-login-url] \r\n\r\nЭта одноразовая ссылка для входа на сайт ведёт на страницу задания своего пароля.\r\n\r\nПосле установки пароля войти на сайт можно на странице [site:login-url], введя:\r\n\r\nИмя пользователя: [user:account-name]\r\nПароль: ваш пароль \r\n\r\n-- Команда сайта «[site:name]»"
   subject: 'Детали учётной записи [user:display-name] на сайте «[site:name]» (одобрено)'
 status_blocked:
-  body: "[user:display-name],\r\n\r\nВаша учётная запись на сайте «[site:account-name] » была заблокирована.\r\n\r\n-- Команда сайта «[site:name]»"
   subject: 'Детали учётной записи пользователя [user:display-name] на сайте [site:name] (заблокирован)'
 status_canceled:
   body: "[user:display-name],\r\n\r\nВаша учётная запись на сайте «[site:name]» удалена.\r\n\r\n-- Команда сайта «[site:name]»"

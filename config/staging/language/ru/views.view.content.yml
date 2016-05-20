@@ -45,7 +45,7 @@ display:
                 title: 'Снято с публикации'
         type:
           expose:
-            label: Тип
+            label: 'Тип материала'
         title:
           expose:
             label: Заголовок

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_attachments
+    - field.field.node.page.field_contacts_ref
     - field.field.node.page.field_forms_ref
     - field.field.node.page.field_legislation_ref
     - field.field.node.page.field_pricelists_ref
@@ -37,6 +38,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_contacts_ref: true
   field_forms_ref: true
   field_legislation_ref: true
   field_pricelists_ref: true

@@ -1,0 +1,19 @@
+uuid: 36db86a2-efe9-49e3-8ff4-d4297ad7d0a8
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_first_name
+    - node.type.contact
+id: node.contact.field_first_name
+field_name: field_first_name
+entity_type: node
+bundle: contact
+label: Vārds
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

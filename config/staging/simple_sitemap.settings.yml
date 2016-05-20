@@ -9,6 +9,9 @@ entity_types:
     article:
       index: 1
       priority: 0.5
+    contact:
+      index: 1
+      priority: 0.1
   menu:
     main:
       index: 1

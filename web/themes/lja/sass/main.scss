@@ -264,13 +264,15 @@ a {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
+      .views-element-container {
+        margin-bottom: 20px;
+      }
       .block:last-child {
         margin-bottom: 0;
       }
       .block {
         width: 100%;
         padding: 20px;
-        margin-bottom: 20px;
         background: white;
         color: #363842;
         font-size: 13px;
@@ -1536,4 +1538,8 @@ input[type=submit] {
   background: white;
   color: black;
   padding: 1px 0;
+}
+
+.bar-menu .block {
+  box-shadow: none !important;
 }

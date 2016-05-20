@@ -2,12 +2,16 @@ uuid: 10efc0c5-48ed-42b4-ba91-90de2eef1a70
 langcode: lv
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:ef711fd8-9caa-40fa-b06b-d02a6006b2eb'
+  module:
+    - block_content
   theme:
     - lja
 id: parmumssaite
 theme: lja
 region: top
-weight: -16
+weight: -15
 provider: null
 plugin: 'block_content:ef711fd8-9caa-40fa-b06b-d02a6006b2eb'
 settings:

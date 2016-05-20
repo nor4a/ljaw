@@ -1887,25 +1887,72 @@ input[type=submit]:hover {
 #block-views-block-news-block-1,
 #block-views-block-content-banners-block-3,
 #block-views-block-content-banners-block-1 {
-  position: relative;
-  bottom: -15px;
-  float: left;
-  width: 33%;
+  position: absolute;
+  width: 33.33%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  bottom: -20px;
+}
+/* line 1534, ../sass/main.scss */
+#block-views-block-news-block-1 img,
+#block-views-block-content-banners-block-3 img,
+#block-views-block-content-banners-block-1 img {
+  max-width: 100%;
+  height: auto;
 }
 
-/* line 1537, ../sass/main.scss */
+/* line 1540, ../sass/main.scss */
+#block-views-block-content-banners-block-3 {
+  left: 0;
+}
+
+/* line 1544, ../sass/main.scss */
+#block-views-block-content-banners-block-1 {
+  right: 0;
+}
+
+/* line 1548, ../sass/main.scss */
+#block-views-block-news-block-1 {
+  left: 33.33%;
+}
+
+/* line 1552, ../sass/main.scss */
 .text-block.home p span {
   background: white;
   color: black;
   padding: 1px 0;
 }
 
-/* line 1543, ../sass/main.scss */
-.bar-menu .block {
+/* line 1558, ../sass/main.scss */
+.bar-menu .block .wrapper {
   box-shadow: none !important;
+}
+
+/* line 1562, ../sass/main.scss */
+.contextual-links li:before {
+  display: none !important;
+  content: '';
+}
+
+/* line 1567, ../sass/main.scss */
+#block-socialicons {
+  display: inline-block;
+  font-size: 13px;
+}
+/* line 1570, ../sass/main.scss */
+#block-socialicons p {
+  display: inline-block;
+}
+/* line 1573, ../sass/main.scss */
+#block-socialicons a.fa {
+  padding: 5px;
+  font-size: 0;
+  margin-right: 3px;
+}
+/* line 1577, ../sass/main.scss */
+#block-socialicons a.fa:before {
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -66,13 +66,12 @@
 
 <article{{ attributes }}>
 
-  {#
   {{ title_prefix }}
-    <h1{{ title_attributes.addClass('wave') }}>
+  {#  <h1{{ title_attributes.addClass('wave') }}>
       {{ label }}
     </h1>
+    #}
   {{ title_suffix }}
-  #}
 
   {% if display_submitted %}
     <footer>

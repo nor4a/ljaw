@@ -197,14 +197,19 @@
 
             var contentHeight = $('.content-wrapper').height();
             var footerHeight = $('.footer-wrapper').height();
-            var headerHeight = $('#block-lja-content').offset().top;
-
-            console.log(contentHeight, footerHeight);
+            var headerHeight = $('.content-container').offset().top;
 
             if (contentHeight + footerHeight < windowHeight) {
+                // Content
+                var minHeight = windowHeight - footerHeight - 10;
+                $('.content-wrapper').css('min-height', minHeight);
+                // Content inner
+                var innerMinHeight = minHeight - headerHeight;
+                $('.content-container').css('min-height', innerMinHeight);
+                $('.content-container .container').css('min-height', innerMinHeight - 20);
                 // Footer
-                var minHeight = windowHeight - contentHeight - 60;
-                $('.footer').css('min-height', minHeight);
+                // var minHeight = windowHeight - contentHeight - 60;
+                // $('.footer').css('min-height', minHeight);
             }
 
         };

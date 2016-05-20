@@ -1,0 +1,25 @@
+uuid: 3942f463-3507-4ea8-b581-ca60d47f90a2
+langcode: lv
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:704709ef-0bdc-4705-8ee2-f1bda280ac01'
+  module:
+    - block_content
+  theme:
+    - lja
+id: socialicons
+theme: lja
+region: top
+weight: -14
+provider: null
+plugin: 'block_content:704709ef-0bdc-4705-8ee2-f1bda280ac01'
+settings:
+  id: 'block_content:704709ef-0bdc-4705-8ee2-f1bda280ac01'
+  label: 'Social icons'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

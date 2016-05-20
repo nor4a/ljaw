@@ -1,0 +1,28 @@
+uuid: 82a630df-f28f-485c-b7a0-ff8a24faea26
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_ref
+    - node.type.contact
+    - node.type.page
+id: node.contact.field_page_ref
+field_name: field_page_ref
+entity_type: node
+bundle: contact
+label: 'Piesaistīts saturam'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

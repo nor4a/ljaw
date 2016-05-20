@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.contact.field_display_sequence
     - field.field.node.contact.field_email
     - field.field.node.contact.field_first_name
+    - field.field.node.contact.field_page_ref
     - field.field.node.contact.field_phone
     - field.field.node.contact.field_second_name
     - field.field.node.contact.field_working_time
@@ -26,6 +27,7 @@ hidden:
   field_display_sequence: true
   field_email: true
   field_first_name: true
+  field_page_ref: true
   field_phone: true
   field_second_name: true
   field_working_time: true

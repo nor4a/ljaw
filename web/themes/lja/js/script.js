@@ -340,7 +340,9 @@
         $('#block-views-block-news-block-1 .views-rows').slick({
             //arrows: false,
             appendArrows: $('#block-views-block-news-block-1'),
-            adaptiveHeight: true
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
         });
 
         // Home

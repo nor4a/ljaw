@@ -1,4 +1,4 @@
-<div class="column"{{ attributes|without('role', 'aria-labelledby') }}>
+<div {{ attributes.addClass('column')|without('role', 'aria-labelledby') }}>
   {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes }}>{% if title_link %}<a href="{{ title_link }}">{{ label }}</a>{% else %}{{ label }}{% endif %}</h2>

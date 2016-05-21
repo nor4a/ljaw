@@ -27,6 +27,9 @@
 
         $('.header-container .menu a').on('mouseenter', function(e) {
 
+            if($(this).parent('.contextual-links').length) {
+                return false;
+            }
             if($(window).width() < 600) {
                 return false;
             }
@@ -128,8 +131,10 @@
         });
 
         $('.header-container .container > .menu > ul > li > a').on('click', function(e) {
+            if($(this).parent('.contextual-links').length) {
+                return false;
+            }
             if($(window).width() > 680) {
-                console.log('out');
                 return;
             }
             var submenu = $(this).parent().find('.mobile-menu');
@@ -142,6 +147,9 @@
         });
 
         $('.header-container .container > .menu ul ul a').on('click', function() {
+            if($(this).parent('.contextual-links').length) {
+                return false;
+            }
             $('.mobile-menu:visible').slideUp(400);
             $('.header-container .container > .menu').slideUp(400);
         });
@@ -256,6 +264,9 @@
         });
 
         $('a').each(function() {
+            if($(this).parent('.contextual-links').length) {
+                return false;
+            }
             var match = this.href.match(/\.([a-zA-Z0-9]{2,4})([#;?]|$)/);
             var name = 'link-icon-html link-icon';
             if(match) {

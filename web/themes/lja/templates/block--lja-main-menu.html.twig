@@ -1,6 +1,10 @@
-<a href="#" id="bar" class="mobile-bar"><i class="fa fa-2x fa-bars"></i></a>
-<div class="menu">
-  {% block content %}
-    {{ content }}
-  {% endblock %}
+<div {{ attributes}}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <a href="#" id="bar" class="mobile-bar"><i class="fa fa-2x fa-bars"></i></a>
+  <div class="menu">
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
 </div>

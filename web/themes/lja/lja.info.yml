@@ -6,6 +6,7 @@ regions:
   top: Upper header
   header: Header
   menu: Menu
+  dropdown: Dropdown menu
   content: Content
   sidebar: Sidebar
   footer: Footer

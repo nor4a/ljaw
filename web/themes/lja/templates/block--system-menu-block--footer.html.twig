@@ -1,4 +1,4 @@
-<div class="column"{{ attributes|without('role', 'aria-labelledby') }}>
+<div {{ attributes.addClass('column')|without('role', 'aria-labelledby') }}>
   {{ title_prefix }}
   {{ title_suffix }}
   <h2>{{ configuration.label }}</h2>
@@ -8,3 +8,5 @@
     {% endblock %}
   </div>
 </div>
+
+

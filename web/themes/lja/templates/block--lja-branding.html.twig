@@ -1,4 +1,6 @@
-<div class="logo">
+<div {{ attributes.addClass('logo') }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
   {% if site_logo %}
     <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
       <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />

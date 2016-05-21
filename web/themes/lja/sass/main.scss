@@ -65,7 +65,7 @@ a {
       h1 {
         font-size: 25px;
         font-weight: 500;
-        line-height: 36px;
+        line-height: 30px;
         margin: 0px 0 10px 0;
         .wave-svg {
           top: -10px;
@@ -704,6 +704,7 @@ div.container {
   .container {
     .column {
       float: left;
+      position: relative;
       &:first-child {
         width: 70%;
         .col {
@@ -1616,4 +1617,17 @@ input[type=submit] {
 
 .path-frontpage #block-lja-content {
   padding-bottom: 220px;
+}
+
+// Contextual links
+
+.contextual-region .contextual .contextual-links a {
+  background-color: #fff;
+  color: #333 !important;
+  display: block;
+  font-family: sans-serif;
+  font-size: small !important;
+  line-height: 0.8em !important;
+  margin: 0.25em 0 !important;
+  padding: 0.4em 0.6em !important;
 }

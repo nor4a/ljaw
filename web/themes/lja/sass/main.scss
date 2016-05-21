@@ -1721,6 +1721,34 @@ nav.pager {
   }
 }
 
+// Tender
+
+.node-tender {
+  .row {
+    display: block;
+    margin-bottom: 3px;
+    .label, .value {
+      display: inline-block;
+    }
+    .label {
+      font-weight: bold;
+      color: #063D85;
+    }
+    .value {
+
+    }
+  }
+  .row.text_with_summary {
+    .label, .value {
+      display: block;
+      margin: 0;
+    }
+    p {
+      margin: 5px 0 !important;
+    }
+  }
+}
+
 article .date {
   margin-top: -5px;
   margin-bottom: 15px;

@@ -2107,7 +2107,31 @@ nav.pager ul li.is-active a {
   color: white;
 }
 
-/* line 1724, ../sass/main.scss */
+/* line 1727, ../sass/main.scss */
+.node-tender .row {
+  display: block;
+  margin-bottom: 3px;
+}
+/* line 1730, ../sass/main.scss */
+.node-tender .row .label, .node-tender .row .value {
+  display: inline-block;
+}
+/* line 1733, ../sass/main.scss */
+.node-tender .row .label {
+  font-weight: bold;
+  color: #063D85;
+}
+/* line 1742, ../sass/main.scss */
+.node-tender .row.text_with_summary .label, .node-tender .row.text_with_summary .value {
+  display: block;
+  margin: 0;
+}
+/* line 1746, ../sass/main.scss */
+.node-tender .row.text_with_summary p {
+  margin: 5px 0 !important;
+}
+
+/* line 1752, ../sass/main.scss */
 article .date {
   margin-top: -5px;
   margin-bottom: 15px;

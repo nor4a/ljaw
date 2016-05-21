@@ -1,0 +1,33 @@
+uuid: 23ecee49-8f5c-4c77-b1b0-29d004fd9bf2
+langcode: lv
+status: true
+dependencies:
+  config:
+    - system.menu.about
+  module:
+    - node
+    - system
+  theme:
+    - lja
+id: parlja_3
+theme: lja
+region: menu
+weight: -19
+provider: null
+plugin: 'system_menu_block:about'
+settings:
+  id: 'system_menu_block:about'
+  label: 'Par LJA'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      tenders: tenders
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

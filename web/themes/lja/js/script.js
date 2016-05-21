@@ -280,25 +280,35 @@
 
         $(window).on('scroll', function(e) {
            var scrollTop = $(window).scrollTop();
-           var containerHeight = $('#block-lja-content').height();
-           var containerOffset = $('#block-lja-content').offset().top;
+           var containerHeight = $('.content-container.page .text-block').height();
+           var containerOffset = $('.content-container.page .text-block').offset().top;
            var position = scrollTop - containerOffset + 10; // $(window).height()
            if(position > containerHeight) {
                position = containerHeight;
            }
+           var topOffset = 600;
+           if($(window).width() < 880 && $(window).width() > 660) {
+               topOffset = $('.bar-menu').height() + $('.bar-menu').offset().top;
+           } else if ($(window).width() < 660) {
+               topOffset = 300;
+           }
            topButton.css('top', position);
-           if(scrollTop > 600 && topButton.css('display') == 'none') {
+           if(scrollTop > topOffset && topButton.css('display') == 'none') {
                topButton.fadeIn();
-           } else if(scrollTop < 600 && topButton.css('display') != 'none') {
+           } else if(scrollTop < topOffset && topButton.css('display') != 'none') {
                topButton.fadeOut();
            }
         });
 
         topButton.find('a').on('click', function() {
+            var scrollTo = $('.content-container.page .text-block').offset().top - 10;
+            if($(window).width() < 880) {
+                scrollTo = 0;
+            }
             $('html, body').stop().animate({
-                'scrollTop': $('#block-lja-content').offset().top - 30
+                'scrollTop': scrollTo
             }, 900, 'swing', function () {
-                window.location.hash = '';
+                window.location.hash = '#/';
             });
         });
 

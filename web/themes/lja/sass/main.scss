@@ -62,6 +62,7 @@ a {
     //background-position: center center;
     .container .text-block {
       margin-bottom: 20px;
+      position: relative;
       h1 {
         font-size: 25px;
         font-weight: 500;
@@ -1209,7 +1210,7 @@ div.logo {
 .content-container .text-block .goTopWrapper {
   text-align: right;
   position: absolute;
-  right: -10px;
+  right: -87px;
   top: 500px;
   display: none;
 }

@@ -37,6 +37,11 @@
     <div class="container">
       <div class="text-block">
         {{ page.content }}
+        <div class="goTopWrapper">
+          <a class="goTopButton link-icon-html link-icon" href="#" title="{% trans %}Go to top{% endtrans %}">
+            {% trans %}Go to top{% endtrans %}
+          </a>
+        </div>
       </div>
       {% if page.sidebar %}
       <div class="bar-menu">

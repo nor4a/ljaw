@@ -65,7 +65,8 @@
         "drupal/views_tree": "8.*",
         "drupal/diff": "8.*",
         "drupal/sitemap": "8.1.0",
-        "drupal/simple_sitemap": "8.*"
+        "drupal/simple_sitemap": "8.*",
+        "drupal/menu_trail_by_path":"8.*"
     },
     "require-dev": {
         "behat/mink": "~1.6",

@@ -512,8 +512,8 @@ display:
           exposed: true
           expose:
             operator_id: field_estimated_price_value_op
-            label: 'Paredzamā līgumcena'
-            description: 'izvēlies cenu no - līdz'
+            label: 'Paredzamās līgumcenas diapazons (no - līdz)'
+            description: ''
             use_operator: false
             operator: field_estimated_price_value_op
             identifier: field_estimated_price_value
@@ -594,8 +594,8 @@ display:
           exposed: true
           expose:
             operator_id: field_offer_deadlinie_value_op
-            label: 'Iesniegšanas termiņš'
-            description: 'izvēlies datumus no - līdz'
+            label: 'Iesniegšanas termiņš (no - līdz)'
+            description: ''
             use_operator: false
             operator: field_offer_deadlinie_value_op
             identifier: field_offer_deadlinie_value

@@ -684,7 +684,7 @@ display:
           1: AND
           2: OR
       display_description: ''
-      title: Contacts
+      title: Kontaktinformācija
       header: {  }
       fields:
         name:

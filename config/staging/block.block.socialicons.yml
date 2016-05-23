@@ -2,10 +2,6 @@ uuid: 44854ff1-98f3-4b3a-803b-0c43778cf2d2
 langcode: lv
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:25ce8cc5-f2aa-4847-bfc4-8df94ea7ad46'
-  module:
-    - block_content
   theme:
     - lja
 id: socialicons

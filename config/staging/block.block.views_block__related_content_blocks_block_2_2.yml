@@ -11,7 +11,7 @@ dependencies:
 id: views_block__related_content_blocks_block_2_2
 theme: lja
 region: sidebar
-weight: -14
+weight: -15
 provider: null
 plugin: 'views_block:related_content_blocks-block_2'
 settings:

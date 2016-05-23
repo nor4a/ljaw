@@ -121,7 +121,7 @@
         // Mobile
 
         $('#bar').on('click', function() {
-            var menu = $('.header-container .container > .menu');
+            var menu = $('.header-container .container #block-lja-main-menu > .menu');
             if(menu.is(':visible')) {
                 menu.slideUp();
                 $('.mobile-menu:visible').slideUp(400);
@@ -130,7 +130,7 @@
             }
         });
 
-        $('.header-container .container > .menu > ul > li > a').on('click', function(e) {
+        $('.header-container .container #block-lja-main-menu > .menu > ul > li > a').on('click', function(e) {
             if($(this).parent('.contextual-links').length) {
                 return false;
             }

@@ -31,7 +31,7 @@
       <ul>
     {% endif %}
     {% for key, item in items %}
-      {% set class = (item.in_active_trail ? 'active current' : '') %}
+      {% set class = ((item.in_active_trail and not is_front) ? 'active current' : '') %}
       <li{{ item.attributes.addClass(class) }}>
         <a {% if item.linkable %} href="{{ item.url }}" class="linkable" {% else %} class="not-linkable" {% endif %} data-id="{{ key }}">
           <img src="/themes/lja/img/icons/{{ item.icon }}" class="icon svg" style="max-width: 35px; max-height: 35px;"/>

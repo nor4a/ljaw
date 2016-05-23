@@ -678,6 +678,7 @@ display:
         title: false
         header: false
         fields: false
+        css_class: false
       filter_groups:
         operator: AND
         groups:
@@ -937,6 +938,7 @@ display:
           display: contacts_list
           arguments: '{{ raw_fields.tid }}'
           plugin_id: view
+      css_class: 'extendable-list contacts-list'
     cache_metadata:
       max-age: -1
       contexts:

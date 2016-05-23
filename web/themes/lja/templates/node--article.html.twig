@@ -70,11 +70,14 @@
   {{ title_suffix }}
 
   <div class="date">
-    {% trans %}Submitted on {{ date }}{% endtrans %}
+    {{ date }}
   </div>
 
   <div{{ content_attributes }}>
     {{ content }}
+    <div class="back">
+      <a href="/news">{% trans %}Back to list{% endtrans %}</a>
+    </div>
   </div>
 
 </article>

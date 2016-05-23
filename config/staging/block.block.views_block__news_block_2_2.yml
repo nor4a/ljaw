@@ -17,10 +17,10 @@ provider: null
 plugin: 'views_block:news-block_2'
 settings:
   id: 'views_block:news-block_2'
-  label: 'Jaunākās ziņas'
+  label: 'Jaunākās aktualitātes'
   provider: views
   label_display: visible
-  views_label: 'Jaunākās ziņas'
+  views_label: 'Jaunākās aktualitātes'
   items_per_page: none
 visibility:
   node_type:

@@ -67,7 +67,7 @@ a {
       margin-bottom: 20px;
       position: relative;
       h1 {
-        font-size: 25px;
+        font-size: 28px;
         font-weight: 500;
         line-height: 30px;
         margin: 0px 0 10px 0;
@@ -82,7 +82,7 @@ a {
     .text-block {
       width: 68%;
       color: #363842;
-      font-size: 13px;
+      font-size: 14px;
       line-height: 17px;
       float: left;
       padding-bottom: 30px;
@@ -254,7 +254,7 @@ a {
         left: 0;
       }
       p {
-        font-size: 13px;
+        font-size: 14px;
         color: #cdd7ea;
         line-height: 18px;
       }
@@ -279,7 +279,7 @@ a {
         padding: 20px;
         background: white;
         color: #363842;
-        font-size: 13px;
+        font-size: 14px;
         line-height: 17px;
         @include box-sizing(border-box);
         display: block;
@@ -636,7 +636,7 @@ a {
               @include transition(all 0.5s);
               span {
                 font-weight: lighter;
-                font-size: 13px;
+                font-size: 14px;
               }
               &:hover {
                 color: #007fff;
@@ -725,7 +725,7 @@ div.container {
         margin-bottom: 10px;
       }
       p {
-        font-size: 12px;
+        font-size: 13px;
         color: #636673;
         padding: 2px 0;
         display: block;
@@ -749,7 +749,7 @@ div.container {
       }
       ul li a,
       .views-row a {
-        font-size: 12px;
+        font-size: 13px;
         color: #636673;
         padding: 2px 0 5px;
         display: block;
@@ -853,7 +853,7 @@ div.container {
     //  left: 1px;
     //}
     a {
-      font-size: 13px;
+      font-size: 14px;
       color: #063D85;
       padding: 2px 0 2px;
       display: block;
@@ -940,7 +940,7 @@ div.container {
       font-weight: 400;
       padding: 5px 5px;
       border: 1px solid #efefef;
-      font-size: 13px;
+      font-size: 14px;
       vertical-align: top;
     }
     tbody tr:nth-child(2) td,
@@ -1028,7 +1028,7 @@ div.container {
   .social {
     display: inline-block;
     a {
-      font-size: 13px;
+      font-size: 14px;
       padding: 0px 10px 0px 5px;
       display: inline-block;
     }
@@ -1040,7 +1040,7 @@ div.container {
     margin-right: 10px;
     border-right: 1px solid #BEBEBE;
     a {
-      font-size: 13px;
+      font-size: 14px;
       display: block;
     }
   }
@@ -1186,7 +1186,7 @@ ul.dropdown ul ul {
   height: 30px;
   padding: 9px 0;
   background: #BEBEBE;
-  font-size: 13px;
+  font-size: 14px;
   color: white;
 }
 
@@ -1313,6 +1313,10 @@ div.logo {
       font-size: 10px;
       left: 1px;
     }
+    > a {
+      font-size: 16px;
+      font-weight: bold;
+    }
     &.expanded:before {
       background: url('../img/icons/folder-minus.svg') no-repeat !important;
       background-size: contain;
@@ -1349,7 +1353,7 @@ div.logo {
     }
     .description {
       margin-top: 2px;
-      font-size: 12px;
+      font-size: 13px;
       color: #636673;
     }
   }
@@ -1407,7 +1411,7 @@ input[type=submit] {
     margin-bottom: 10px;
   }
   .views-row {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 14px;
     color: #636673;
     padding-top: 20px;
@@ -1433,7 +1437,7 @@ input[type=submit] {
       margin-bottom: 10px;
     }
     .views-field-body {
-      font-size: 13px;
+      font-size: 14px;
       line-height: 16px;
     }
   }
@@ -1457,7 +1461,7 @@ input[type=submit] {
       padding-right: 0;
       p {
         margin: 0;
-        font-size: 12px;
+        font-size: 13px;
         line-height: 14px;
         color: #636673;
       }
@@ -1586,7 +1590,7 @@ input[type=submit] {
     font-size: 0;
     margin-right: 3px;
     &:before {
-      font-size: 13px;
+      font-size: 14px;
     }
   }
 }
@@ -1595,32 +1599,68 @@ input[type=submit] {
   position: relative;
   .views-row {
     padding-left: 0;
-    border-bottom: 1px solid #d6dce8;
-    padding: 8px 0;
-    font-size: 13px;
+    margin: 2px 0 5px;
+    font-size: 14px;
     line-height: 15px;
     color: #636673;
     .views-field-name {
       font-weight: bold;
-      margin-bottom: 3px;
+      margin-bottom: 4px;
+    }
+    .views-field-name,
+    .views-field-field-phone,
+    .views-field-field-email {
+      display: block
+    }
+    .views-field-field-phone,
+    .views-field-field-email,
+    .views-field-field-working-time {
+      position: relative;
+      padding-left: 18px;
+      padding-top: 1px;
+      &:before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 13px;
+        height: 13px;
+        left: 1px;
+        top: 1px;
+      }
+    }
+    .views-field-field-phone {
+      display: inline-block;
+      &:before {
+        background: url('../img/icons/phone-call.svg');
+        background-size: contain;
+      }
+    }
+    .views-field-field-email {
+      display: inline-block;
+      margin-left: 10px;
+      a {
+        padding: 0;
+      }
+      &:before {
+        background: url('../img/icons/envelope.svg');
+        background-size: contain;
+      }
+    }
+    .views-field-field-working-time {
+      display: block;
+      margin-top: 2px;
+      &:before {
+        background: url('../img/icons/clock.svg');
+        background-size: contain;
+      }
     }
     &:before {
       display: none;
     }
     &:last-child {
       border-bottom: 0;
+      margin-bottom: 0;
     }
-  }
-  &:before {
-    position: absolute;
-    display: block;
-    content: '';
-    background: url('../img/icons/phone-call.svg');
-    background-size: contain;
-    width: 38px;
-    height: 38px;
-    right: 32px;
-    top: 32px;
   }
 }
 
@@ -1645,9 +1685,8 @@ input[type=submit] {
 
 .news-list {
   .views-row {
-    padding-top: 12px;
     margin-top: 8px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     &:last-child {
       padding-bottom: 6px;
       margin-bottom: 0px;
@@ -1656,18 +1695,18 @@ input[type=submit] {
   .views-field-title {
     margin-bottom: 5px;
     &, a {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bold;
       color: #063D85;
     }
     a {
-      border-top: 1px solid #d6dce8;
-      padding-top: 10px;
+      padding-top: 0px;
     }
   }
   .views-field-created {
     color: #636673;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
+    font-size: 13px;
   }
   .views-field-body {
     p {
@@ -1678,30 +1717,36 @@ input[type=submit] {
 
 .news-latest-list {
   .views-row {
-    padding-left: 0 !important;
-    border-bottom: 1px solid #d6dce8;
-    padding: 8px 0;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 15px;
     color: #636673;
+    padding-top: 2px;
+    margin-bottom: 0;
     &:before {
-      content: '';
-      display: none;
+      width: 12px !important;
+      height: 12px !important;
+      background: url('../img/icons/copy.svg') !important;
+      background-size: contain;
     }
   }
   .views-field-title {
   }
   .views-field-created {
-    font-size: 12px;
+    font-size: 13px;
   }
   .more-link {
     margin-top: 9px;
   }
 }
 
+article div.back {
+  margin-top: 15px;
+}
+
 // Pagination
 
 nav.pager {
+  text-align: right;
   margin: 5px 0 15px;
   padding-top: 20px;
   border-top: 1px solid #d6dce8;
@@ -1717,6 +1762,7 @@ nav.pager {
     li a {
       padding: 5px 8px;
       border: 1px solid rgba(214, 220, 232, 0.43);
+      font-size: 13px;
     }
     li.is-active a {
       background: #063D85;
@@ -1805,5 +1851,63 @@ article .date {
   }
   input[type=submit] {
     margin: 0 0 10px;
+  }
+}
+
+.extendable-list.contacts-list {
+  .level-1 .childs .views-rows {
+    margin: 8px 0;
+    .views-row {
+      color: #363842;
+      margin-bottom: 8px;
+      padding-left: 7px !important;
+      .views-field-name {
+        font-weight: bold;
+        margin-bottom: 2px;
+      }
+      .views-field-name,
+      .views-field-field-phone,
+      .views-field-field-email {
+        display: block
+      }
+      .views-field-field-phone,
+      .views-field-field-email,
+      .views-field-field-working-time {
+        position: relative;
+        padding-left: 18px;
+        padding-top: 1px;
+        &:before {
+          position: absolute;
+          display: block;
+          content: '';
+          width: 13px;
+          height: 13px;
+          left: 0px;
+          top: 2px;
+        }
+      }
+      .views-field-field-phone {
+        &:before {
+          background: url('../img/icons/phone-call.svg');
+          background-size: contain;
+        }
+      }
+      .views-field-field-email {
+        a {
+          padding: 0;
+        }
+        &:before {
+          background: url('../img/icons/envelope.svg');
+          background-size: contain;
+        }
+      }
+      .views-field-field-working-time {
+        display: block;
+        &:before {
+          background: url('../img/icons/clock.svg');
+          background-size: contain;
+        }
+      }
+    }
   }
 }

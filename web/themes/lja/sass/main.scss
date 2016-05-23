@@ -759,6 +759,9 @@ div.container {
           text-decoration: underline;
         }
       }
+      li.active a {
+        color: #007fff;
+      }
     }
   }
 }
@@ -1755,4 +1758,52 @@ article .date {
   margin-top: -5px;
   margin-bottom: 15px;
   color: #636673;
+}
+
+.views-exposed-form {
+  border-bottom: 1px solid #d6dce8;
+  margin-bottom: 15px;
+  .form-item {
+    display: inline-block;
+    max-width: 200px;
+    margin-bottom: 8px;
+    label {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 13px;
+    }
+    input, select {
+      width: 100%;
+      display: block;
+    }
+    select {
+      padding: 3px;
+    }
+  }
+  .js-form-item-field-tender-type-value {
+    display: block;
+  }
+  .js-form-item-field-estimated-price-value-min,
+  .js-form-item-field-estimated-price-value-max,
+  .js-form-item-field-offer-deadlinie-value-min,
+  .js-form-item-field-offer-deadlinie-value-max {
+    width: 100px;
+  }
+  .js-form-item-field-estimated-price-value-min,
+  .js-form-item-field-offer-deadlinie-value-min {
+    margin-right: 10px;
+    label {
+      position: relative;
+      width: 280px;
+    }
+  }
+  .js-form-item-field-estimated-price-value-max,
+  .js-form-item-field-offer-deadlinie-value-max {
+    label {
+      display: none;
+    }
+  }
+  input[type=submit] {
+    margin: 0 0 10px;
+  }
 }

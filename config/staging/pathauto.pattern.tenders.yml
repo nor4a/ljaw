@@ -1,0 +1,22 @@
+uuid: 77461dfc-cd20-4e8f-8b66-25f38f888e86
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: tenders
+label: Tenders
+type: 'canonical_entities:node'
+pattern: 'tenders/[node:title]'
+selection_criteria:
+  6f7b1063-366c-4e36-bcfa-92385b44ff26:
+    id: node_type
+    bundles:
+      tenders: tenders
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 6f7b1063-366c-4e36-bcfa-92385b44ff26
+selection_logic: and
+weight: -5
+relationships: {  }

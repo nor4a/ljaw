@@ -217,12 +217,9 @@
                 var minHeight = windowHeight - footerHeight - 10;
                 $('.content-wrapper').css('min-height', minHeight);
                 // Content inner
-                var innerMinHeight = minHeight - headerHeight;
+                var innerMinHeight = 0.7 * (minHeight - headerHeight);
                 $('.content-container').css('min-height', innerMinHeight);
                 $('.content-container .container').css('min-height', innerMinHeight - 20);
-                // Footer
-                // var minHeight = windowHeight - contentHeight - 60;
-                // $('.footer').css('min-height', minHeight);
             }
 
         };

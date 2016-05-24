@@ -57,6 +57,7 @@ module:
   tour: 0
   update: 0
   user: 0
+  views_ef_fieldset: 0
   views_field_view: 0
   views_tree: 0
   views_ui: 0

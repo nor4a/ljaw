@@ -624,7 +624,7 @@ a {
               -webkit-box-sizing: border-box;
               -moz-box-sizing: border-box;
               box-sizing: border-box;
-              svg {
+              svg, img {
                 display: block;
                 height: 35px;
                 width: 35px;
@@ -1218,28 +1218,30 @@ div.logo {
 .content-container .text-block .goTopWrapper {
   text-align: right;
   position: absolute;
-  right: -87px;
+  right: -72px;
   top: 500px;
   display: none;
 }
 .content-container .text-block .goTopWrapper a.goTopButton {
+  position: relative;
   display: inline-block;
-  background: #007fff url("../img/icons/up2.svg") no-repeat;
+  background: #007fff;
   color: white;
-  background-size: contain;
-  background-position: 100% 0;
   margin-bottom: 20px;
-  padding-right: 25px;
-  padding-left: 10px;
-  padding: 5px 30px 5px 10px;
+  padding: 5px 25px 5px 10px;
   margin-top: 5px;
   &:after {
-    visibility: hidden;
+    position: absolute;
+    top: 1px;
+    right: 0;
+    background: url("../img/icons/up2.svg") no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
     display: block;
     font-size: 0;
     content: " ";
     clear: both;
-    height: 0;
   }
 }
 
@@ -1340,6 +1342,7 @@ div.logo {
 .page-wave {
   position: relative;
   top: -5px;
+  height: 10px;
 }
 
 .user-login-form {
@@ -1360,10 +1363,12 @@ div.logo {
 }
 
 input[type=text],
-input[type=password] {
+input[type=password],
+select {
   padding: 4px;
   border: 1px solid #dadada;
   color: #007fff;
+  background: white;
 }
 
 input[type=submit] {
@@ -1562,6 +1567,15 @@ input[type=submit] {
 
 #block-views-block-news-block-1 {
   left: 33.33%;
+  .views-row {
+    display: none;
+  }
+  .views-row:first-child {
+    display: block;
+  }
+  .slick-initialized .views-row {
+    display: block;
+  }
 }
 
 .text-block.home p span {
@@ -1809,48 +1823,67 @@ article .date {
 .views-exposed-form {
   border-bottom: 1px solid #d6dce8;
   margin-bottom: 15px;
-  .form-item {
-    display: inline-block;
-    max-width: 200px;
-    margin-bottom: 8px;
-    label {
-      display: block;
-      margin-bottom: 3px;
-      line-height: 13px;
-    }
-    input, select {
-      width: 100%;
-      display: block;
-    }
-    select {
-      padding: 3px;
-    }
+  summary {
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #063D85;
+    cursor: pointer;
   }
-  .js-form-item-field-tender-type-value {
-    display: block;
-  }
-  .js-form-item-field-estimated-price-value-min,
-  .js-form-item-field-estimated-price-value-max,
-  .js-form-item-field-offer-deadlinie-value-min,
-  .js-form-item-field-offer-deadlinie-value-max {
-    width: 100px;
-  }
-  .js-form-item-field-estimated-price-value-min,
-  .js-form-item-field-offer-deadlinie-value-min {
-    margin-right: 10px;
-    label {
+  details {
+    .views-ef-fieldset-container {
       position: relative;
-      width: 280px;
+      display: inline-block;
+      margin-right: 5px;
     }
-  }
-  .js-form-item-field-estimated-price-value-max,
-  .js-form-item-field-offer-deadlinie-value-max {
-    label {
-      display: none;
+    .form-item {
+      display: inline-block;
+      max-width: 200px;
+      margin-bottom: 8px;
+      label {
+        display: block;
+        margin-bottom: 3px;
+        line-height: 13px;
+      }
+      input, select {
+        width: 100%;
+        display: block;
+      }
+      select {
+        padding: 3px;
+      }
     }
-  }
-  input[type=submit] {
-    margin: 0 0 10px;
+    .views-ef-fieldset-container-0,
+    .views-ef-fieldset-container-1 {
+      width: 225px;
+    }
+    .js-form-item-field-estimated-price-value-min,
+    .js-form-item-field-estimated-price-value-max,
+    .js-form-item-field-offer-deadlinie-value-min,
+    .js-form-item-field-offer-deadlinie-value-max {
+      width: 100px;
+      margin-right: 10px;
+    }
+    .js-form-item-field-estimated-price-value-min,
+    .js-form-item-field-offer-deadlinie-value-min {
+      label {
+        width: 225px;
+      }
+    }
+    .js-form-item-field-estimated-price-value-max,
+    .js-form-item-field-offer-deadlinie-value-max {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      label {
+        display: none;
+      }
+    }
+    input[type=submit] {
+      margin: 0 0 10px;
+    }
   }
 }
 

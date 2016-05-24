@@ -45,7 +45,7 @@ display:
           query_comment: ''
           query_tags: {  }
       exposed_form:
-        type: input_required
+        type: basic
         options:
           submit_button: Apstiprināt
           reset_button: false
@@ -54,8 +54,6 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-          text_input_required: 'Select any filter and click on Apply to see results'
-          text_input_required_format: full_html
       pager:
         type: full
         options:
@@ -679,7 +677,86 @@ display:
     display_title: Page
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        views_ef_fieldset:
+          views_ef_fieldset:
+            enabled: 1
+            options:
+              sort:
+                root:
+                  container_type: details
+                  title: Filters
+                  description: ''
+                  open: '1'
+                  weight: '0'
+                  id: root
+                  pid: ''
+                  depth: '0'
+                  type: container
+                container-0:
+                  container_type: container
+                  title: 'Container 0'
+                  description: ''
+                  weight: '-9'
+                  open: 0
+                  id: container-0
+                  pid: root
+                  depth: '1'
+                  type: container
+                field_estimated_price_value:
+                  weight: '-9'
+                  id: field_estimated_price_value
+                  pid: container-0
+                  depth: '2'
+                  type: filter
+                container-1:
+                  container_type: container
+                  title: 'Container 1'
+                  description: ''
+                  weight: '-8'
+                  open: 0
+                  id: container-1
+                  pid: root
+                  depth: '1'
+                  type: container
+                field_offer_deadlinie_value:
+                  weight: '-9'
+                  id: field_offer_deadlinie_value
+                  pid: container-1
+                  depth: '2'
+                  type: filter
+                field_tender_type_value:
+                  weight: '-7'
+                  id: field_tender_type_value
+                  pid: root
+                  depth: '2'
+                  type: filter
+                submit:
+                  weight: '-6'
+                  id: submit
+                  pid: root
+                  depth: '2'
+                  type: buttons
+                container-2:
+                  container_type: container
+                  title: 'Container 2'
+                  description: ''
+                  weight: '-5'
+                  open: 0
+                  id: container-2
+                  pid: root
+                  depth: '1'
+                  type: container
+                container-3:
+                  container_type: container
+                  title: 'Container 3'
+                  description: ''
+                  weight: '-4'
+                  open: 0
+                  id: container-3
+                  pid: root
+                  depth: '1'
+                  type: container
       path: tenders
       menu:
         type: none

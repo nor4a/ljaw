@@ -250,7 +250,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Mime type'
+          label: 'MIME tips'
           exclude: false
           alter:
             alter_text: false
@@ -626,7 +626,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: 'Mime type'
+            label: 'MIME tips'
             description: ''
             use_operator: false
             operator: filemime_op

@@ -2,10 +2,10 @@
 
 @import "compass/reset";
 @import "mixins";
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100&subset=latin,latin-ext,cyrillic);
+//@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100&subset=latin,latin-ext,cyrillic);
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', Sans-Serif;
   @include box-sizing(border-box);
 }
 
@@ -195,6 +195,7 @@ a {
           font-size: 36px;
           font-weight: bold;
           line-height: 40px;
+          margin-bottom: 15px !important;
         }
         h3 {
           padding: 17px 0 0;
@@ -202,12 +203,14 @@ a {
         }
         p {
           font-size: 15px;
-          margin: 25px 0 28px;
-          line-height: 22px;
+          margin: 0px 0 15px 0;
+          line-height: 20px;
+          color: #063D85;
         }
         a {
           color: #007fff;
           padding-left: 50px;
+          margin-bottom: 15px;
           position: relative;
           @include transition(all 0.3s);
           font-weight: bold;
@@ -871,7 +874,7 @@ div.container {
 
 .content-container.home .text-block {
   background: transparent !important;
-  padding: 0 !important;
+  padding: 0 0 15px 0 !important;
 }
 .content-container {
 // M  padding-bottom: 30px;
@@ -1579,8 +1582,8 @@ input[type=submit] {
 }
 
 .text-block.home p span {
-  background: white;
-  color: black;
+  //background: white;
+  color: #063D85;
   padding: 1px 0;
 }
 

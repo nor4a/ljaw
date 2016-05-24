@@ -278,27 +278,29 @@
 
         var topButton = $('.goTopWrapper');
 
-        $(window).on('scroll', function(e) {
-           var scrollTop = $(window).scrollTop();
-           var containerHeight = $('.content-container.page .text-block').height();
-           var containerOffset = $('.content-container.page .text-block').offset().top;
-           var position = scrollTop - containerOffset + 10; // $(window).height()
-           if(position > containerHeight) {
-               position = containerHeight;
-           }
-           var topOffset = 600;
-           if($(window).width() < 880 && $(window).width() > 660) {
-               topOffset = $('.bar-menu').height() + $('.bar-menu').offset().top;
-           } else if ($(window).width() < 660) {
-               topOffset = 300;
-           }
-           topButton.css('top', position);
-           if(scrollTop > topOffset && topButton.css('display') == 'none') {
-               topButton.fadeIn();
-           } else if(scrollTop < topOffset && topButton.css('display') != 'none') {
-               topButton.fadeOut();
-           }
-        });
+        if(topButton.is('div')) {
+            $(window).on('scroll', function (e) {
+                var scrollTop = $(window).scrollTop();
+                var containerHeight = $('.content-container.page .text-block').height();
+                var containerOffset = $('.content-container.page .text-block').offset().top;
+                var position = scrollTop - containerOffset + 10; // $(window).height()
+                if (position > containerHeight) {
+                    position = containerHeight;
+                }
+                var topOffset = 600;
+                if ($(window).width() < 880 && $(window).width() > 660) {
+                    topOffset = $('.bar-menu').height() + $('.bar-menu').offset().top;
+                } else if ($(window).width() < 660) {
+                    topOffset = 300;
+                }
+                topButton.css('top', position);
+                if (scrollTop > topOffset && topButton.css('display') == 'none') {
+                    topButton.fadeIn();
+                } else if (scrollTop < topOffset && topButton.css('display') != 'none') {
+                    topButton.fadeOut();
+                }
+            });
+        }
 
         topButton.find('a').on('click', function() {
             var scrollTo = $('.content-container.page .text-block').offset().top - 10;
@@ -368,13 +370,13 @@
 
         // Home
 
-        var container = $('.text-block.home.front-page .content p');
-        var characters = container.text().split('');
-
-        container.html('');
-        $.each(characters, function (i, el) {
-            container.append("<span>" + el + "</span");
-        });
+        // var container = $('.text-block.home.front-page .content p');
+        // var characters = container.text().split('');
+        //
+        // container.html('');
+        // $.each(characters, function (i, el) {
+        //     container.append("<span>" + el + "</span");
+        // });
 
     });
 

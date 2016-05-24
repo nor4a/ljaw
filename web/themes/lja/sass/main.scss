@@ -202,9 +202,9 @@ a {
           color: #7e93b2;
         }
         p {
-          font-size: 15px;
+          font-size: 17px;
           margin: 0px 0 15px 0;
-          line-height: 20px;
+          line-height: 22px;
           color: #063D85;
         }
         a {
@@ -1827,6 +1827,7 @@ article .date {
   border-bottom: 1px solid #d6dce8;
   margin-bottom: 15px;
   summary {
+    display: none;
     border: none;
     outline: none;
     font-weight: bold;

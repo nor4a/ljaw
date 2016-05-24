@@ -289,9 +289,9 @@ a {
 }
 /* line 204, ../sass/main.scss */
 .content-container .container .text-block .content p {
-  font-size: 15px;
+  font-size: 17px;
   margin: 0px 0 15px 0;
-  line-height: 20px;
+  line-height: 22px;
   color: #063D85;
 }
 /* line 210, ../sass/main.scss */
@@ -2230,6 +2230,7 @@ article .date {
 }
 /* line 1829, ../sass/main.scss */
 .views-exposed-form summary {
+  display: none;
   border: none;
   outline: none;
   font-weight: bold;
@@ -2238,39 +2239,39 @@ article .date {
   color: #063D85;
   cursor: pointer;
 }
-/* line 1839, ../sass/main.scss */
+/* line 1840, ../sass/main.scss */
 .views-exposed-form details .views-ef-fieldset-container {
   position: relative;
   display: inline-block;
   margin-right: 5px;
 }
-/* line 1844, ../sass/main.scss */
+/* line 1845, ../sass/main.scss */
 .views-exposed-form details .form-item {
   display: inline-block;
   max-width: 200px;
   margin-bottom: 8px;
 }
-/* line 1848, ../sass/main.scss */
+/* line 1849, ../sass/main.scss */
 .views-exposed-form details .form-item label {
   display: block;
   margin-bottom: 3px;
   line-height: 13px;
 }
-/* line 1853, ../sass/main.scss */
+/* line 1854, ../sass/main.scss */
 .views-exposed-form details .form-item input, .views-exposed-form details .form-item select {
   width: 100%;
   display: block;
 }
-/* line 1857, ../sass/main.scss */
+/* line 1858, ../sass/main.scss */
 .views-exposed-form details .form-item select {
   padding: 3px;
 }
-/* line 1861, ../sass/main.scss */
+/* line 1862, ../sass/main.scss */
 .views-exposed-form details .views-ef-fieldset-container-0,
 .views-exposed-form details .views-ef-fieldset-container-1 {
   width: 225px;
 }
-/* line 1865, ../sass/main.scss */
+/* line 1866, ../sass/main.scss */
 .views-exposed-form details .js-form-item-field-estimated-price-value-min,
 .views-exposed-form details .js-form-item-field-estimated-price-value-max,
 .views-exposed-form details .js-form-item-field-offer-deadlinie-value-min,
@@ -2278,50 +2279,50 @@ article .date {
   width: 100px;
   margin-right: 10px;
 }
-/* line 1874, ../sass/main.scss */
+/* line 1875, ../sass/main.scss */
 .views-exposed-form details .js-form-item-field-estimated-price-value-min label,
 .views-exposed-form details .js-form-item-field-offer-deadlinie-value-min label {
   width: 225px;
 }
-/* line 1878, ../sass/main.scss */
+/* line 1879, ../sass/main.scss */
 .views-exposed-form details .js-form-item-field-estimated-price-value-max,
 .views-exposed-form details .js-form-item-field-offer-deadlinie-value-max {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-/* line 1883, ../sass/main.scss */
+/* line 1884, ../sass/main.scss */
 .views-exposed-form details .js-form-item-field-estimated-price-value-max label,
 .views-exposed-form details .js-form-item-field-offer-deadlinie-value-max label {
   display: none;
 }
-/* line 1887, ../sass/main.scss */
+/* line 1888, ../sass/main.scss */
 .views-exposed-form details input[type=submit] {
   margin: 0 0 10px;
 }
 
-/* line 1894, ../sass/main.scss */
+/* line 1895, ../sass/main.scss */
 .extendable-list.contacts-list .level-1 .childs .views-rows {
   margin: 8px 0;
 }
-/* line 1896, ../sass/main.scss */
+/* line 1897, ../sass/main.scss */
 .extendable-list.contacts-list .level-1 .childs .views-rows .views-row {
   color: #363842;
   margin-bottom: 8px;
   padding-left: 7px !important;
 }
-/* line 1900, ../sass/main.scss */
+/* line 1901, ../sass/main.scss */
 .extendable-list.contacts-list .level-1 .childs .views-rows .views-row .views-field-name {
   font-weight: bold;
   margin-bottom: 2px;
 }
-/* line 1904, ../sass/main.scss */
+/* line 1905, ../sass/main.scss */
 .extendable-list.contacts-list .level-1 .childs .views-rows .views-row .views-field-name,
 .extendable-list.contacts-list .level-1 .childs .views-rows .views-row .views-field-field-phone,
 .extendable-list.contacts-list .level-1 .childs .views-rows .views-row .views-field-field-email {
   display: block;
 }
-/* line 1909, ../sass/main.scss */
+/* line 1910, ../sass/main.scss */
 .extendable-list.contacts-list .level-1 .childs .views-rows .views-row .views-field-field-phone,
 .extendable-list.contacts-list .level-1 .childs .views-rows .views-row .views-field-field-email,
 .extendable-list.contacts-list .level-1 .childs .views-rows .views-row .views-field-field-working-time {
@@ -2329,7 +2330,7 @@ article .date {
   padding-left: 18px;
   padding-top: 1px;
 }
-/* line 1915, ../sass/main.scss */
+/* line 1916, ../sass/main.scss */
 .extendable-list.contacts-list .level-1 .childs .views-rows .views-row .views-field-field-phone:before,
 .extendable-list.contacts-list .level-1 .childs .views-rows .views-row .views-field-field-email:before,
 .extendable-list.contacts-list .level-1 .childs .views-rows .views-row .views-field-field-working-time:before {
@@ -2341,25 +2342,25 @@ article .date {
   left: 0px;
   top: 2px;
 }
-/* line 1926, ../sass/main.scss */
+/* line 1927, ../sass/main.scss */
 .extendable-list.contacts-list .level-1 .childs .views-rows .views-row .views-field-field-phone:before {
   background: url("../img/icons/phone-call.svg");
   background-size: contain;
 }
-/* line 1932, ../sass/main.scss */
+/* line 1933, ../sass/main.scss */
 .extendable-list.contacts-list .level-1 .childs .views-rows .views-row .views-field-field-email a {
   padding: 0;
 }
-/* line 1935, ../sass/main.scss */
+/* line 1936, ../sass/main.scss */
 .extendable-list.contacts-list .level-1 .childs .views-rows .views-row .views-field-field-email:before {
   background: url("../img/icons/envelope.svg");
   background-size: contain;
 }
-/* line 1940, ../sass/main.scss */
+/* line 1941, ../sass/main.scss */
 .extendable-list.contacts-list .level-1 .childs .views-rows .views-row .views-field-field-working-time {
   display: block;
 }
-/* line 1942, ../sass/main.scss */
+/* line 1943, ../sass/main.scss */
 .extendable-list.contacts-list .level-1 .childs .views-rows .views-row .views-field-field-working-time:before {
   background: url("../img/icons/clock.svg");
   background-size: contain;

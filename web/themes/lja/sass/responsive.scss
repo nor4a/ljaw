@@ -307,6 +307,9 @@
   .mobile-menu {
     display: none !important;
   }
+  #block-lja-main-menu > .menu {
+    display: block !important;
+  }
 }
 @include breakpoint(max-width 679px) {
   #block-mainnavigation .menu {

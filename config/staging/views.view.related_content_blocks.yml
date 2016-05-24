@@ -629,7 +629,9 @@ display:
     display_title: Kontakti
     position: 3
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        views_ef_fieldset:
+          views_ef_fieldset: null
       display_description: ''
       block_description: Kontakti
       fields:
@@ -751,7 +753,7 @@ display:
       defaults:
         fields: false
         title: false
-      title: Kontakti
+      title: 'Kontaktinformācija, Pieņemšanas laiki'
     cache_metadata:
       max-age: -1
       contexts:

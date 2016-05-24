@@ -340,7 +340,9 @@ display:
     display_title: 'Latest block'
     position: 3
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        views_ef_fieldset:
+          views_ef_fieldset: null
       pager:
         type: some
         options:
@@ -358,7 +360,7 @@ display:
       display_description: ''
       use_more: true
       use_more_always: true
-      use_more_text: 'See more'
+      use_more_text: 'Skatīt vairāk'
       fields:
         title:
           id: title
@@ -502,6 +504,7 @@ display:
       displays:
         default: default
         page_1: page_1
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:

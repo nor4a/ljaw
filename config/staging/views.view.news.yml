@@ -52,7 +52,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 2
+          items_per_page: 5
           offset: 0
           id: 0
           total_pages: null
@@ -520,7 +520,9 @@ display:
     display_title: Page
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        views_ef_fieldset:
+          views_ef_fieldset: null
       path: news
       menu:
         type: none

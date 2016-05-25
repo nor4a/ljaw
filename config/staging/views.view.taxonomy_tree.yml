@@ -472,7 +472,7 @@ display:
           entity_field: langcode
           plugin_id: language
       sorts: {  }
-      title: Likumdošana
+      title: 'Tiesību akti'
       header: {  }
       footer: {  }
       empty: {  }
@@ -687,7 +687,7 @@ display:
           1: AND
           2: OR
       display_description: ''
-      title: Kontaktinformācija
+      title: 'Kontaktinformācija un pieņemšanas laiki'
       header: {  }
       fields:
         name:
@@ -952,7 +952,7 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Likumdošana
+    display_title: 'Tiesību akti'
     position: 1
     display_options:
       display_extenders:

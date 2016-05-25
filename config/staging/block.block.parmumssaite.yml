@@ -10,7 +10,7 @@ dependencies:
     - lja
 id: parmumssaite
 theme: lja
-region: top
+region: '-1'
 weight: -17
 provider: null
 plugin: 'block_content:ef711fd8-9caa-40fa-b06b-d02a6006b2eb'

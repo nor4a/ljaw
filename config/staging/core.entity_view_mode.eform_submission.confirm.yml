@@ -1,0 +1,12 @@
+uuid: 9c6b86db-d950-4cd0-bcd5-6eb70e0d4c88
+langcode: lv
+status: true
+dependencies:
+  module:
+    - eform
+_core:
+  default_config_hash: Y3F2YplzVq7IDzj170zIwPyLOGsGErMJq2G-LpOdfDw
+id: eform_submission.confirm
+label: 'Confirm Page'
+targetEntityType: eform_submission
+cache: true

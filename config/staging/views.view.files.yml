@@ -42,8 +42,8 @@ display:
         options:
           submit_button: Filtrēt
           reset_button: false
-          reset_button_label: Attīrīt
-          exposed_sorts_label: 'Kārtot pēc'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -62,7 +62,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Visi -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
       style:
@@ -801,7 +801,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Visi -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
       filters: {  }
@@ -1028,7 +1028,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Visi
+            title: All
           title_enable: true
           title: 'File usage information for {{ arguments.fid }}'
           default_argument_type: fixed

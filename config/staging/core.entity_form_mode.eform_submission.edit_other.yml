@@ -1,0 +1,12 @@
+uuid: 12bc10f3-429c-4b9f-b3cb-e767ff10f6e5
+langcode: lv
+status: false
+dependencies:
+  module:
+    - eform
+_core:
+  default_config_hash: rpmjoQPm18JtnemvYAz6JcouwJegk-vtjRJY_rAENgM
+id: eform_submission.edit_other
+label: 'Edit Other'
+targetEntityType: eform_submission
+cache: true

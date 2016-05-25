@@ -1,0 +1,13 @@
+uuid: f465c878-9e9d-44bd-a4ed-c2acbe77a558
+langcode: lv
+status: true
+dependencies:
+  module:
+    - eform
+_core:
+  default_config_hash: E2YFj5fCkgwJdVO74MI6zG04PoMRewNHVYglZdKdMq8
+id: eform_submission_delete_action
+label: 'Delete EForm Submission'
+type: eform_submission
+plugin: eform_submission_delete_action
+configuration: {  }

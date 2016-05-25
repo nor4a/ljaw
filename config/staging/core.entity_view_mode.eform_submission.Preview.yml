@@ -1,0 +1,12 @@
+uuid: b247a38d-6a00-4cf7-9b7b-ac8581be8642
+langcode: en
+status: true
+dependencies:
+  module:
+    - eform
+_core:
+  default_config_hash: MGPbyeTi4PV_M7zomvB7uMTFFPVRq_BDfv8JIhsSuGA
+id: eform_submission.Preview
+label: Preview
+targetEntityType: eform_submission
+cache: true

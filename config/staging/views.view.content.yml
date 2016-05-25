@@ -32,8 +32,8 @@ display:
         options:
           submit_button: Filtrēt
           reset_button: true
-          reset_button_label: Attīrīt
-          exposed_sorts_label: 'Kārtot pēc'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -374,7 +374,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Darbības
+          label: Operations
           exclude: false
           alter:
             alter_text: false

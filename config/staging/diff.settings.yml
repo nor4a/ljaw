@@ -37,3 +37,5 @@ content_type_settings:
     view_mode: ''
   contact:
     view_mode: ''
+  tenders:
+    view_mode: ''

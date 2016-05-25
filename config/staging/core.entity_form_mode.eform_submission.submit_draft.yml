@@ -1,0 +1,12 @@
+uuid: 14977735-6136-4d76-ae58-358a69df5e7b
+langcode: lv
+status: false
+dependencies:
+  module:
+    - eform
+_core:
+  default_config_hash: B-OBBNTVLAzELTyprdXauPNL5qTWNFSNJR_eodbM-Iw
+id: eform_submission.submit_draft
+label: 'Submit Draft'
+targetEntityType: eform_submission
+cache: true

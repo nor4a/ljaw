@@ -626,7 +626,7 @@ display:
   block_4:
     display_plugin: block
     id: block_4
-    display_title: Kontakti
+    display_title: Kontaktinformācija
     position: 3
     display_options:
       display_extenders:

@@ -1,0 +1,12 @@
+uuid: 0544be66-9cb4-4fb6-bb0b-1aa86a5db743
+langcode: lv
+status: false
+dependencies:
+  module:
+    - eform
+_core:
+  default_config_hash: gXhqMD-cwUAzJJNFYZK-tws6FiPiGgMsaGJnCp0qeZA
+id: eform_submission.email
+label: Email
+targetEntityType: eform_submission
+cache: true

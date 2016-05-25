@@ -1359,7 +1359,7 @@ div.logo {
     }
     .description {
       margin-top: 2px;
-      font-size: 13px;
+      font-size: 12px;
       color: #636673;
     }
   }
@@ -1367,7 +1367,9 @@ div.logo {
 
 input[type=text],
 input[type=password],
-select {
+input[type=email],
+select,
+textarea {
   padding: 4px;
   border: 1px solid #dadada;
   color: #007fff;
@@ -2000,6 +2002,26 @@ article .date {
         font-size: 10px;
         left: 1px;
       }
+    }
+  }
+}
+
+#block-lja-content form {
+  > div {
+    margin-bottom: 5px;
+    .description {
+      margin-top: 2px;
+      font-size: 12px;
+      color: #636673;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 2px;
+      color: #063D85;
+    }
+    details summary {
+      display: none;
     }
   }
 }

@@ -2366,4 +2366,14 @@ article .date {
   background-size: contain;
 }
 
+/* line 1953, ../sass/main.scss */
+#block-lja-content strong {
+  font-weight: bold;
+}
+/* line 1956, ../sass/main.scss */
+#block-lja-content article img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*# sourceMappingURL=main.css.map */

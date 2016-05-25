@@ -2376,4 +2376,54 @@ article .date {
   height: auto;
 }
 
+/* line 1963, ../sass/main.scss */
+#block-lja-content article .attachements {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #dadada;
+}
+/* line 1967, ../sass/main.scss */
+#block-lja-content article .attachements .views-row {
+  position: relative;
+}
+/* line 1969, ../sass/main.scss */
+#block-lja-content article .attachements .views-row.link-icon {
+  padding-left: 18px;
+}
+/* line 1971, ../sass/main.scss */
+#block-lja-content article .attachements .views-row.link-icon:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  top: 1px;
+  left: -1px;
+}
+/* line 1979, ../sass/main.scss */
+#block-lja-content article .attachements .views-row.link-icon-doc:before {
+  background: url("../img/icons/doc.svg") no-repeat;
+  background-size: contain;
+}
+/* line 1983, ../sass/main.scss */
+#block-lja-content article .attachements .views-row.link-icon-pdf:before {
+  background: url("../img/icons/pdf.svg") no-repeat;
+  background-size: contain;
+}
+/* line 1987, ../sass/main.scss */
+#block-lja-content article .attachements .views-row.link-icon-php:before, #block-lja-content article .attachements .views-row.link-icon-html:before {
+  background: url("../img/icons/link.svg") no-repeat;
+  background-size: contain;
+  height: 10px;
+  top: 5px;
+  left: 2px;
+}
+/* line 1995, ../sass/main.scss */
+#block-lja-content article .attachements .views-row:before {
+  content: "•";
+  color: #007fff;
+  position: absolute;
+  top: 4px;
+  font-size: 10px;
+  left: 1px;
+}
+
 /*# sourceMappingURL=main.css.map */

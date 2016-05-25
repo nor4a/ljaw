@@ -1957,7 +1957,49 @@ article .date {
     max-width: 100%;
     height: auto;
   }
-  article ul {
+}
 
+#block-lja-content article {
+  .attachements {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #dadada;
+    .views-row {
+      position: relative;
+      &.link-icon {
+        padding-left: 18px;
+        &:before {
+          content: '';
+          width: 15px;
+          height: 15px;
+          top: 1px;
+          left: -1px
+        }
+      }
+      &.link-icon-doc:before {
+        background: url('../img/icons/doc.svg') no-repeat;
+        background-size: contain;
+      }
+      &.link-icon-pdf:before {
+        background: url('../img/icons/pdf.svg') no-repeat;
+        background-size: contain;
+      }
+      &.link-icon-php:before,
+      &.link-icon-html:before {
+        background: url('../img/icons/link.svg') no-repeat;
+        background-size: contain;
+        height: 10px;
+        top: 5px;
+        left: 2px
+      }
+      &:before {
+        content: "•";
+        color: #007fff;
+        position: absolute;
+        top: 4px;
+        font-size: 10px;
+        left: 1px;
+      }
+    }
   }
 }

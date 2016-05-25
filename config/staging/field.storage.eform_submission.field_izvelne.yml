@@ -1,0 +1,30 @@
+uuid: d3fe2670-8dad-4c4a-8e33-326db8373662
+langcode: lv
+status: true
+dependencies:
+  module:
+    - eform
+    - options
+id: eform_submission.field_izvelne
+field_name: field_izvelne
+entity_type: eform_submission
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '10'
+      label: '10'
+    -
+      value: '20'
+      label: '20'
+    -
+      value: '30'
+      label: '30'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

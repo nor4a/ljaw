@@ -1,0 +1,19 @@
+uuid: 4198576b-3b3d-4891-8acc-9a1075c41c32
+langcode: lv
+status: true
+dependencies:
+  config:
+    - eform.type.veidlapa_testa_nolukiem
+    - field.storage.eform_submission.field_e_pasts
+id: eform_submission.veidlapa_testa_nolukiem.field_e_pasts
+field_name: field_e_pasts
+entity_type: eform_submission
+bundle: veidlapa_testa_nolukiem
+label: e-pasts
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,18 @@
+uuid: 14cd1299-fe1b-415d-a6e8-0b832be876f8
+langcode: lv
+status: true
+dependencies:
+  module:
+    - eform
+id: eform_submission.field_e_pasts
+field_name: field_e_pasts
+entity_type: eform_submission
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

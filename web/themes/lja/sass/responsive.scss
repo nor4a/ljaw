@@ -86,9 +86,6 @@
   .menu-bar-container .container .column h2 {
     font-size: 13px;
   }
-  .menu .column ul li a {
-    font-size: 11px;
-  }
   .menu-bar-container .container{
     .column{
       //padding: 0 50px 55px;
@@ -150,7 +147,7 @@
     font-size: 11px;
   }
   .content-container {
-    padding-top: 20px;
+    padding-top: 10px !important;
   }
   .content-container .container .text-block .content h1 {
     font-size: 25px;
@@ -167,8 +164,8 @@
   .content-container .container .wrap .block.block-2 {
     height: 220px;
   }
-  .content-container .container .wrap .block.block-1 img,
-  .content-container .container .wrap .block.block-2 img {
+  .content-container.home .container .wrap .block.block-1 img,
+  .content-container.home .container .wrap .block.block-2 img {
     height: 40px;
     width: auto;
   }
@@ -197,7 +194,7 @@
     z-index: -1;
   }
   .content-container .container .text-block.home {
-    padding-bottom: 10px !important;
+    padding-bottom: 5px !important;
   }
   .content-container .container .blue-circle {
     width: 160px;
@@ -213,7 +210,7 @@
     font-size: 12px;
   }
   .menu .column ul li a {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 12px;
   }
   .container {
@@ -235,7 +232,7 @@
     margin-bottom: 10px;
   }
   .content-container .container .bar-menu .block .border {
-    padding: 30px 10px 10px;
+    padding: 15px 10px 10px;
   }
   //h1.wave:before {
   //  display: block;
@@ -269,17 +266,27 @@
   //  padding-bottom: 10px;
   //}
   .content-container .container .text-block .block h2 {
-    font-size: 13px;
-    margin: 8px 0;
+    a {
+      font-size: 14px !important;
+    }
+    margin: 3px 0;
   }
   .content-container .container .text-block {
     font-size: 12px;
+  }
+  .content-container .container .text-block hr {
+    margin: 10px 0;
+  }
+  .menu .column h2 a {
+    color: #063D85;
+    font-size: 14px;
   }
 
   // Bloki
 
   .path-frontpage #block-lja-content {
-    padding-bottom: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   #block-views-block-news-block-1,
   #block-views-block-content-banners-block-3,
@@ -298,8 +305,50 @@
     padding-bottom: 1px;
   }
 
-
+  .content-container.page .container .text-block h1 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .menu-bar-container .container .column h2 {
+    margin-bottom: 5px;
+  }
+  .content-container .container .bar-menu .block .border h2 {
+    font-size: 14px;
+  }
+  .content-container .container .bar-menu .block .border h2 .wave-svg {
+    top: -4px;
+  }
+  .content-container .container .text-block .block p + h2, .content-container .container .text-block .block ol + h2, .content-container .container .text-block .block ul + h2, .content-container .container .text-block .block span + h2 {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
 }
+
+// Fonts
+
+@include breakpoint(max-width 880px) {
+  #block-views-block-news-block-1 .views-row .views-field-body {
+    font-size: 13px;
+  }
+  .content-container .container #block-views-block-content-banners-block-1 .wrap .block .border > div h2, .content-container .container #block-views-block-content-banners-block-3 .wrap .block .border > div h2 {
+    font-size: 25px;
+    line-height: 27px;
+  }
+  #block-views-block-news-block-1 .views-row .views-field-title {
+    font-size: 15px;
+  }
+}
+
+@include breakpoint(max-width 680px) {
+  .content-container .container #block-views-block-content-banners-block-1 .wrap .block .border > div h2, .content-container .container #block-views-block-content-banners-block-3 .wrap .block .border > div h2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .content-container .container #block-views-block-content-banners-block-1 .wrap .block.vertical, .content-container .container #block-views-block-content-banners-block-1 .wrap .block.block-1, .content-container .container #block-views-block-content-banners-block-3 .wrap .block.vertical, .content-container .container #block-views-block-content-banners-block-3 .wrap .block.block-1 {
+    height: 150px;
+  }
+}
+
 
 // 425
 
@@ -318,6 +367,11 @@
 }
 
 @include breakpoint(max-width 680px) {
+
+  .content-container.page {
+    margin-top: 6px !important;
+    padding-top: 0 !important;
+  }
 
   #block-views-block-news-block-1,
   #block-views-block-content-banners-block-3,
@@ -653,6 +707,7 @@
   }
   .content-container .container .text-block.home {
     width: 100%;
+    padding: 0 5px !important;
   }
   .footer {
     padding: 24px 0 0px;

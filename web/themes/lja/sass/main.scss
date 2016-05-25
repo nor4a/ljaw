@@ -883,7 +883,7 @@ div.container {
   box-sizing: border-box;
 }
 .content-container.home {
-  padding-top: 20px !important;
+  padding-top: 20px;
 }
 .content-container .text-block {
   background: white;
@@ -1956,5 +1956,8 @@ article .date {
   article img {
     max-width: 100%;
     height: auto;
+  }
+  article ul {
+
   }
 }

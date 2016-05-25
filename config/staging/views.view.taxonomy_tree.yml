@@ -506,10 +506,12 @@ display:
   contacts_tree:
     display_plugin: page
     id: contacts_tree
-    display_title: Contacts
+    display_title: Kontaktinformācija
     position: 2
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        views_ef_fieldset:
+          views_ef_fieldset: null
       path: contacts
       filters:
         vid:
@@ -950,10 +952,12 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Legislation
+    display_title: Likumdošana
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        views_ef_fieldset:
+          views_ef_fieldset: null
       path: legislation
       display_description: ''
     cache_metadata:
@@ -967,10 +971,12 @@ display:
   page_2:
     display_plugin: page
     id: page_2
-    display_title: Forms
+    display_title: Veidlapas
     position: 2
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        views_ef_fieldset:
+          views_ef_fieldset: null
       path: forms
       filters:
         vid:
@@ -1144,7 +1150,7 @@ display:
           1: AND
           2: OR
       display_description: ''
-      title: Formas
+      title: Veidlapas
       header: {  }
     cache_metadata:
       max-age: -1
@@ -1157,10 +1163,12 @@ display:
   page_3:
     display_plugin: page
     id: page_3
-    display_title: 'Cenu lapas'
+    display_title: Cenrādis
     position: 3
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        views_ef_fieldset:
+          views_ef_fieldset: null
       path: pricelists
       display_description: ''
       filters:
@@ -1328,12 +1336,14 @@ display:
         filters: false
         filter_groups: false
         header: false
+        title: false
       filter_groups:
         operator: AND
         groups:
           1: AND
           2: OR
       header: {  }
+      title: Cenrādis
     cache_metadata:
       max-age: -1
       contexts:

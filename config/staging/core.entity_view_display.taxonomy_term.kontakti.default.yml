@@ -1,0 +1,40 @@
+uuid: 8ed41edb-70cf-43bb-955e-ce87b8e9e39e
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.kontakti.field_address
+    - taxonomy.vocabulary.kontakti
+  module:
+    - simple_gmap
+    - text
+id: taxonomy_term.kontakti.default
+targetEntityType: taxonomy_term
+bundle: kontakti
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_address:
+    weight: 1
+    label: hidden
+    settings:
+      include_map: '1'
+      iframe_width: '400'
+      iframe_height: '200'
+      link_text: ''
+      zoom_level: '14'
+      information_bubble: '1'
+      include_text: '1'
+      map_type: m
+      langcode: page
+      include_static_map: 0
+      include_link: 0
+    third_party_settings: {  }
+    type: simple_gmap
+hidden:
+  langcode: true

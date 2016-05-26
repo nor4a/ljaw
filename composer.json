@@ -68,7 +68,8 @@
         "drupal/simple_sitemap": "8.*",
         "drupal/menu_trail_by_path":"8.*",
         "drupal/views_ef_fieldset": "^8.1",
-        "drupal/eform": "8.*"
+        "drupal/eform": "8.*",
+        "drupal/simple_gmap": "8.*"
     },
     "require-dev": {
         "behat/mink": "~1.6",

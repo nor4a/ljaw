@@ -1,0 +1,14 @@
+uuid: 70abe123-d14d-4207-be00-29f21394fe73
+langcode: lv
+status: true
+dependencies:
+  config:
+    - user.role.sailor_registry_members
+  module:
+    - user
+id: user_remove_role_action.sailor_registry_members
+label: 'Remove the Jūrnieku reģistra pārstāvji role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: sailor_registry_members

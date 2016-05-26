@@ -1,0 +1,14 @@
+uuid: 7cbc23eb-e173-4e51-a4a1-0db5504f92cb
+langcode: lv
+status: true
+dependencies:
+  config:
+    - user.role.sailor_registry_members
+  module:
+    - user
+id: user_add_role_action.sailor_registry_members
+label: 'Add the Jūrnieku reģistra pārstāvji role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: sailor_registry_members

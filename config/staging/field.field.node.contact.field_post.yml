@@ -1,17 +1,18 @@
-uuid: e460e535-d9e1-4e6c-9904-f3843a8e153f
+uuid: 5cc19bec-e07c-4ad9-84ec-6439f97c7c3f
 langcode: lv
 status: true
 dependencies:
   config:
+    - field.storage.node.field_post
     - node.type.contact
-id: node.contact.title
-field_name: title
+id: node.contact.field_post
+field_name: field_post
 entity_type: node
 bundle: contact
-label: 'Nosaukums (aizpildās automātiski)'
+label: Amats
 description: ''
-required: true
-translatable: true
+required: false
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

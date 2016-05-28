@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.contact.field_first_name
     - field.field.node.contact.field_page_ref
     - field.field.node.contact.field_phone
+    - field.field.node.contact.field_post
     - field.field.node.contact.field_second_name
     - field.field.node.contact.field_working_time
     - node.type.contact
@@ -29,6 +30,7 @@ hidden:
   field_first_name: true
   field_page_ref: true
   field_phone: true
+  field_post: true
   field_second_name: true
   field_working_time: true
   langcode: true

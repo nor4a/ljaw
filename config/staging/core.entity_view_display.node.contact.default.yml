@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.contact.field_first_name
     - field.field.node.contact.field_page_ref
     - field.field.node.contact.field_phone
+    - field.field.node.contact.field_post
     - field.field.node.contact.field_second_name
     - field.field.node.contact.field_working_time
     - node.type.contact
@@ -39,9 +40,23 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_page_ref:
+    type: entity_reference_label
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_phone:
     weight: 3
     label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_post:
+    weight: 6
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -62,6 +77,5 @@ content:
     type: string
 hidden:
   field_display_sequence: true
-  field_page_ref: true
   langcode: true
   links: true

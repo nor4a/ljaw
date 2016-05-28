@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.contact.field_first_name
     - field.field.node.contact.field_page_ref
     - field.field.node.contact.field_phone
+    - field.field.node.contact.field_post
     - field.field.node.contact.field_second_name
     - field.field.node.contact.field_working_time
     - node.type.contact
@@ -18,31 +19,31 @@ bundle: contact
 mode: default
 content:
   field_department:
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
   field_display_sequence:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
   field_email:
-    weight: 6
+    weight: 7
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: email_default
   field_first_name:
-    weight: 3
+    weight: 4
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
   field_page_ref:
-    weight: 26
+    weight: 9
     settings:
       match_operator: CONTAINS
       size: 60
@@ -50,21 +51,28 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
   field_phone:
-    weight: 5
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_post:
+    weight: 1
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
   field_second_name:
-    weight: 4
+    weight: 5
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
   field_working_time:
-    weight: 7
+    weight: 8
     settings:
       size: 60
       placeholder: ''

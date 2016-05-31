@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@import "compass/reset";
+@import "mixins";
+
+body {
+  font-family: 'Roboto', Sans-Serif;
+  @include box-sizing(border-box);
+}
+a.linkable,
+a:not(.not-linkable) {
+  color: #007fff;
+  &:after {
+    content: " [" attr(absolute-href) "]";
+  }
+}
+.content-wrapper {
+  background: white;
+  .upper-header {
+    display: none;
+  }
+  .header-container {
+    display: none;
+  }
+  .menu-bar-container {
+    display: none;
+  }
+  .content-container {
+    padding: 0;
+    margin: 0;
+    .container {
+      width: 100%;
+      max-width: 100%;
+    }
+    .text-block {
+      width: 100%;
+    }
+    .bar-menu {
+      display: none;
+    }
+  }
+}
+.footer-wrapper {
+  display: none;
+}

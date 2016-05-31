@@ -271,6 +271,13 @@
             }
             $(this).addClass(name);
             $(this).parents('.views-row').addClass(name);
+            // Add absolute url
+            var isAbsoluteUrl = new RegExp('^(?:[a-z]+:)?//', 'i');
+            if(isAbsoluteUrl.test($(this).attr('href'))) {
+                $(this).attr('absolute-href', $(this).attr('href'));
+            } else {
+                $(this).attr('absolute-href', window.location.origin + $(this).attr('href'));
+            }
         });
 
         var topButton = $('.goTopWrapper');
@@ -316,7 +323,7 @@
         var prepareExtendableList = function(container, scoope) {
             // Variables
             var clone = $(container).clone();//.hide().appendTo('body');
-            $(clone).find('div, ol, ul').remove();
+            $(clone).find('div, ol, ul, iframe, p').remove();
             var label = $.trim($(clone).text());
             var content = $(container).html().replace(label, '');
             // Link

@@ -2,7 +2,6 @@
 
 @import "compass/reset";
 @import "mixins";
-//@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100&subset=latin,latin-ext,cyrillic);
 
 body {
   font-family: 'Roboto', Sans-Serif;
@@ -1252,6 +1251,20 @@ div.logo {
   header h1 {
 
   }
+  .childs {
+    > p {
+      margin: 3px 0 0 !important;
+      margin-top: 3px;
+      padding-left: 7px;
+      font-size: 14px;
+      color: #363842;
+    }
+    iframe {
+      width: 100%;
+      margin-top: 10px;
+      padding-left: 7px;
+    }
+  }
   .views-row {
     padding-left: 12px;
     position: relative;
@@ -2022,6 +2035,46 @@ article .date {
     }
     details summary {
       display: none;
+    }
+  }
+}
+
+#block-lja-content .sitemap {
+  ul {
+    margin: 3px 0;
+    li {
+      margin: 0;
+      padding-bottom: 0;
+      a {
+        padding-left: 0;
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+  a {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .sitemap-box-menu-main {
+    > div > ul > li > a {
+      font-weight: bold;
+    }
+  }
+  .sitemap-box-menu-about {
+    > div > ul {
+      margin: 3px 0;
+      > li {
+        padding-left: 0;
+        &:before,
+        > a {
+          display: none;
+        }
+        ul {
+          margin: 0;
+        }
+      }
     }
   }
 }

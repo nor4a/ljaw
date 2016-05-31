@@ -3,3 +3,5 @@ ljaw:
   css:
     theme:
       css/ljaw.css: {}
+  js:
+     js/ljaw.js: {}

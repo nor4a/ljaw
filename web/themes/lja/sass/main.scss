@@ -905,7 +905,7 @@ div.container {
   }
   ol {
     margin: 10px 0;
-    padding-left: 15px !important;
+    padding-left: 15px;
   }
   a {
     color: #007fff;
@@ -1534,7 +1534,8 @@ input[type=submit] {
   }
 }
 
-#block-parmumssaite {
+#block-parmumssaite,
+#block-lapaskarte {
   display: inline-block;
   padding: 15px;
   padding-right: 18px;
@@ -1964,6 +1965,30 @@ article .date {
   }
 }
 
+.locations-list {
+  ol {
+    padding: 0 !important;
+    margin: 0 !important;
+    > li {
+      padding-left: 0 !important;
+      &:before {
+        display: none;
+      }
+      .location-name {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #063D85;
+      }
+    }
+  }
+  iframe {
+    width: 100%;
+    max-height: 250px;
+    max-width: 500px;
+  }
+}
+
 #block-lja-content {
   strong {
     font-weight: bold;
@@ -2041,12 +2066,14 @@ article .date {
 
 #block-lja-content .sitemap {
   ul {
-    margin: 3px 0;
+    margin: 3px 0 5px;
     li {
       margin: 0;
       padding-bottom: 0;
       a {
+        display: block;
         padding-left: 0;
+        margin-bottom: 1px;
         &:before {
           display: none;
         }
@@ -2057,12 +2084,63 @@ article .date {
     font-size: 14px;
     font-weight: normal;
   }
+  ul li {
+    &:before {
+      display: none;
+    }
+  }
   .sitemap-box-menu-main {
+    margin-bottom: 0;
+    > h2 {
+      display: none;
+    }
     > div > ul > li > a {
       font-weight: bold;
     }
+    > div > ul > li {
+      padding-left: 0;
+      margin-bottom: 5px;
+      > a {
+        cursor: text;
+        color: #063D85;
+        margin-bottom: 5px;
+        display: block;
+        font-size: 16px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      &:before {
+        display: none;
+      }
+      > ul {
+        margin: 10px;
+      }
+      > ul > li {
+        padding-left: 0;
+        > a {
+          color: #063D85;
+          cursor: text;
+          font-weight: bold;
+          margin-bottom: 7px;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      > ul > li > ul > li {
+        padding-left: 10px;
+      }
+    }
   }
   .sitemap-box-menu-about {
+    h2 {
+      font-size: 14px;
+      color: #063D85;
+      margin: 0;
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
     > div > ul {
       margin: 3px 0;
       > li {
@@ -2074,6 +2152,9 @@ article .date {
         ul {
           margin: 0;
         }
+      }
+      > li > ul > li {
+        padding-left: 0;
       }
     }
   }

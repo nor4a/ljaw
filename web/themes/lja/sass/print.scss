@@ -10,9 +10,6 @@ body {
 a.linkable,
 a:not(.not-linkable) {
   color: #007fff;
-  &:after {
-    content: " [" attr(absolute-href) "]";
-  }
 }
 .content-wrapper {
   background: white;

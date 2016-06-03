@@ -1,0 +1,19 @@
+uuid: a8ee5f47-25c2-4568-a013-ed05ac4efe57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_address
+    - taxonomy.vocabulary.ka_mus_atrast
+id: taxonomy_term.ka_mus_atrast.field_address
+field_name: field_address
+entity_type: taxonomy_term
+bundle: ka_mus_atrast
+label: Adrese
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

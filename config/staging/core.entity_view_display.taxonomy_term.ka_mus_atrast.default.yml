@@ -1,0 +1,29 @@
+uuid: 60af0ad9-4257-4ba1-93e0-a419c1bda023
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.ka_mus_atrast.field_address
+    - taxonomy.vocabulary.ka_mus_atrast
+  module:
+    - text
+id: taxonomy_term.ka_mus_atrast.default
+targetEntityType: taxonomy_term
+bundle: ka_mus_atrast
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_address:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  langcode: true

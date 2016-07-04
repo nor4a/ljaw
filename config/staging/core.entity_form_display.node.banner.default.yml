@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.banner.body
-    - field.field.node.banner.field_column
     - field.field.node.banner.field_icon
     - field.field.node.banner.field_image
     - field.field.node.banner.field_position
@@ -34,11 +33,6 @@ content:
     weight: 4
     settings: {  }
     third_party_settings: {  }
-  field_column:
-    weight: 26
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
   field_icon:
     weight: 12
     settings:

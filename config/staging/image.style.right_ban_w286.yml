@@ -1,0 +1,15 @@
+uuid: b39bd5c5-f09e-4da3-8347-f2f6bfccbfbf
+langcode: lv
+status: true
+dependencies: {  }
+name: right_ban_w286
+label: right_ban_w286
+effects:
+  a8b26b1b-2877-463a-83ff-bc273b8dc603:
+    uuid: a8b26b1b-2877-463a-83ff-bc273b8dc603
+    id: image_scale
+    weight: 1
+    data:
+      width: 286
+      height: null
+      upscale: false

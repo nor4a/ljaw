@@ -13,7 +13,7 @@ _core:
 id: lja_footer
 theme: lja
 region: '-1'
-weight: -12
+weight: -15
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

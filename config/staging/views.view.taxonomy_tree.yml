@@ -1082,6 +1082,9 @@ display:
           arguments: '{{ raw_fields.tid }}'
           plugin_id: view
       css_class: 'extendable-list contacts-list'
+      menu:
+        enabled: true
+        expanded: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -1102,6 +1105,9 @@ display:
           views_ef_fieldset: null
       path: legislation
       display_description: ''
+      menu:
+        enabled: true
+        expanded: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -1294,6 +1300,9 @@ display:
       display_description: ''
       title: Veidlapas
       header: {  }
+      menu:
+        enabled: true
+        expanded: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -1486,6 +1495,9 @@ display:
           2: OR
       header: {  }
       title: Cenrādis
+      menu:
+        enabled: true
+        expanded: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -1824,6 +1836,9 @@ display:
           separator: ''
           hide_empty: false
       relationships: {  }
+      menu:
+        enabled: true
+        expanded: false
     cache_metadata:
       max-age: -1
       contexts:

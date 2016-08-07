@@ -533,6 +533,7 @@ display:
         weight: 0
         context: '0'
         menu_name: about
+        enabled: true
       title: Aktualitātes
       defaults:
         title: false

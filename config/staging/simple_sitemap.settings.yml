@@ -2,7 +2,7 @@ custom:
   -
     path: /
 entity_types:
-  node_type:
+  node:
     page:
       index: 0
       priority: 0.5
@@ -12,7 +12,7 @@ entity_types:
     contact:
       index: 1
       priority: 0.1
-  menu:
+  menu_link_content:
     main:
       index: 1
       priority: !!float 1

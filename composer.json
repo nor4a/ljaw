@@ -48,6 +48,7 @@
         "drupal-composer/drupal-scaffold": "~1",
         "cweagans/composer-patches": "~1.0",
         "drupal/core": "8.1.*",
+		"drupal/entity": "8.*",
         "drush/drush": "~8.0",
         "drupal/console": "~0.10",
         "drupal/devel": "*",
@@ -106,8 +107,8 @@
           "EntityStoragePatch": "https://raw.githubusercontent.com/nor4a/ljaw/master/patches/EntityStoragePatch.patch"
         },
         "drupal/spamspan": {
-          "EntityStoragePatch": "https://www.drupal.org/files/issues/spamspan_email_field_formatter-2716033-1.patch"
-		
+          "FieldFormatterPatch": "https://raw.githubusercontent.com/nor4a/ljaw/master/patches/SpamSpanFieldFormatter.patch"
+		}		
       }
     }
 }

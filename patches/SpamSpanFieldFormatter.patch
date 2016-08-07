@@ -2,7 +2,7 @@ diff --git a/src/Plugin/Field/FieldFormatter/EmailSpamspanFormatter.php b/src/Pl
 index e69de29..aec594b 100644
 --- a/src/Plugin/Field/FieldFormatter/EmailSpamspanFormatter.php
 +++ b/src/Plugin/Field/FieldFormatter/EmailSpamspanFormatter.php
-@@ -0,0 +1,44 @@
+@@ -0,0 +1,146 @@
 +<?php
 +
 +/**

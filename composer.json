@@ -104,7 +104,10 @@
       "patches": {
         "drupal/core": {
           "EntityStoragePatch": "https://raw.githubusercontent.com/nor4a/ljaw/master/patches/EntityStoragePatch.patch"
-        }
+        },
+        "drupal/spamspan": {
+          "EntityStoragePatch": "https://www.drupal.org/files/issues/spamspan_email_field_formatter-2716033-1.patch"
+		
       }
     }
 }

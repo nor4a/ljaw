@@ -46,7 +46,7 @@ index e69de29..aec594b 100644
 +  }
 +
 +}
-
++
 +class SpamspanObfuscator{
 +/**
 +  public function output($name, $domain, $contents = '', $headers = array(), $vars = array()) {

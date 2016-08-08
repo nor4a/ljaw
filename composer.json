@@ -108,7 +108,7 @@
           "EntityStoragePatch": "https://raw.githubusercontent.com/nor4a/ljaw/master/patches/EntityStoragePatch.patch"
         },
         "drupal/spamspan": {
-          "FieldFormatterPatch": "https://raw.githubusercontent.com/nor4a/ljaw/master/patches/SpamSpanFieldFormatter.patch"
+          "SpamSpanFieldFormatter": "https://raw.githubusercontent.com/nor4a/ljaw/master/patches/SpamSpanFieldFormatter.patch"
 		}		
       }
     }

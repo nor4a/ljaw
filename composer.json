@@ -109,7 +109,10 @@
         },
         "drupal/spamspan": {
           "SpamSpanFieldFormatter": "https://raw.githubusercontent.com/nor4a/ljaw/master/patches/SpamSpanFieldFormatter.patch"
-		}		
+		},
+        "drupal/field_redirection": {
+          "FieldRedirectionFormatter": "https://raw.githubusercontent.com/nor4a/ljaw/master/patches/FieldRedirectionFormatter.patch"
+        }
       }
     }
 }

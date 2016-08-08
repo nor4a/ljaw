@@ -1,0 +1,17 @@
+diff --git a/src/Plugin/Field/FieldFormatter/FieldRedirectionFormatter.php b/src/Plugin/Field/FieldFormatter/FieldRedirectionFormatter.php
+old mode 100644
+new mode 100755
+index cb63384..4bfff3d
+--- a/src/Plugin/Field/FieldFormatter/FieldRedirectionFormatter.php
++++ b/src/Plugin/Field/FieldFormatter/FieldRedirectionFormatter.php
+@@ -220,7 +220,9 @@ class FieldRedirectionFormatter extends FormatterBase {
+           if (!empty($item->uri)) {
+             // Create a Url object from the uri.
+             $redirect_url = Url::fromUri($item->uri);
+-
++            $elements[0] = array(
++              '#markup' => '<a href="'.$item->uri.'" target=_blank>'.$item->uri.'</a>',
++            );
+             // The path is the URL field itself.
+             // $uri = $item->uri;
+ 

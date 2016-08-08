@@ -15,6 +15,7 @@ dependencies:
     - file
     - link
     - node
+    - spamspan
     - taxonomy
     - user
 id: taxanomy_nodes_embed
@@ -794,7 +795,7 @@ display:
           empty_zero: true
           hide_alter_empty: true
           click_sort_column: value
-          type: email_mailto
+          type: email_spamspan
           settings: {  }
           group_column: value
           group_columns: {  }

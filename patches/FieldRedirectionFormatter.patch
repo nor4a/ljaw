@@ -9,8 +9,8 @@ index cb63384..4cf2fc0
      $current_path = $current_url->toString();
  
 +	//IDYNAMIC patched - avoid running on cron... 
-+	$current_path_parts = explode('/',$current_path);
-+    if(isset($current_path_parts[1]) && $current_path_parts == 'cron') return array();
++   $current_path_parts = explode('/',$current_path);
++   if(isset($current_path_parts[1]) && $current_path_parts[1] == 'cron') return array();
 +	//END IDYNAMIC patched - avoid running on cron... 
 +	
      // Optionally control the list of pages this works on.

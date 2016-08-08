@@ -145,6 +145,9 @@ class FieldFileRedirectFormatter extends \Drupal\Core\Field\Plugin\Field\FieldFo
     $current_url = Url::fromRoute('<current>');
     $current_path = $current_url->toString();
 
+    $current_path_parts = explode('/',$current_path);
+    if(isset($current_path_parts[1]) && $current_path_parts == 'cron') return array();
+
     // Optionally control the list of pages this works on.
     if (!empty($settings['page_restrictions']) && !empty($settings['pages'])) {
       // Remove '1' from this value so it can be XOR'd later on.
@@ -240,6 +243,7 @@ class FieldFileRedirectFormatter extends \Drupal\Core\Field\Plugin\Field\FieldFo
           break;
 
         case 'file':
+          return;
           foreach ($this->getEntitiesToView($items, $langcode) as $delta => $file) {
             $redirect_url = Url::fromUri(file_create_url($file->getFileUri()));
             $elements[$delta] = array(

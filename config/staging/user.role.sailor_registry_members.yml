@@ -13,3 +13,4 @@ permissions:
   - 'view page revisions'
   - 'use workbench access'
   - 'use text format full_html'
+  - 'bypass redirection'

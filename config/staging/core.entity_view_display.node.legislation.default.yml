@@ -9,8 +9,8 @@ dependencies:
     - field.field.node.legislation.field_url
     - node.type.legislation
   module:
-    - file
-    - link
+    - field_redirection
+    - ljaw
     - user
 id: node.legislation.default
 targetEntityType: node
@@ -18,38 +18,41 @@ bundle: legislation
 mode: default
 content:
   field_attachment:
-    weight: 104
+    weight: 3
     label: inline
-    settings: {  }
+    settings:
+      code: '301'
+      404_if_empty: false
+      page_restrictions: 0
+      pages: ''
     third_party_settings: {  }
-    type: file_default
+    type: field_fileredirect_formatter
   field_legislation_cat:
-    weight: 103
+    weight: 2
     label: inline
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_page_ref:
-    weight: 105
+    weight: 4
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_url:
-    weight: 101
+    weight: 1
     label: inline
     settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+      code: '301'
+      404_if_empty: false
+      page_restrictions: 0
+      pages: ''
     third_party_settings: {  }
-    type: link
+    type: field_redirection_formatter
   links:
-    weight: 100
+    weight: 0
     settings: {  }
     third_party_settings: {  }
 hidden:

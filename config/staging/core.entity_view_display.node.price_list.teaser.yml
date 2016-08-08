@@ -4,6 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.price_list.field_attachment
+    - field.field.node.price_list.field_page_ref
+    - field.field.node.price_list.field_pricelist_cat
+    - field.field.node.price_list.field_url
     - node.type.price_list
   module:
     - user
@@ -16,6 +20,7 @@ content:
     weight: 100
 hidden:
   field_attachment: true
+  field_page_ref: true
   field_pricelist_cat: true
   field_url: true
   langcode: true

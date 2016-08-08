@@ -24,6 +24,7 @@ module:
   eform: 0
   entity: 0
   field: 0
+  field_redirection: 0
   field_ui: 0
   file: 0
   filter: 0

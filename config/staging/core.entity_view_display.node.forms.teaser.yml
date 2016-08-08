@@ -4,6 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.forms.field_attachment
+    - field.field.node.forms.field_form_cat
+    - field.field.node.forms.field_page_ref
+    - field.field.node.forms.field_url
     - node.type.forms
   module:
     - user
@@ -17,5 +21,6 @@ content:
 hidden:
   field_attachment: true
   field_form_cat: true
+  field_page_ref: true
   field_url: true
   langcode: true

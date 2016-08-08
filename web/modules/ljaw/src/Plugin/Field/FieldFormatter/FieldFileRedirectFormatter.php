@@ -146,7 +146,7 @@ class FieldFileRedirectFormatter extends \Drupal\Core\Field\Plugin\Field\FieldFo
     $current_path = $current_url->toString();
 
     $current_path_parts = explode('/',$current_path);
-    if(isset($current_path_parts[1]) && $current_path_parts[1] == 'cron') return array();
+    if(isset($current_path_parts[1]) && $current_path_parts[1] == 'cron' || $current_path == '/admin/config/system/cron') return array();
 
     // Optionally control the list of pages this works on.
     if (!empty($settings['page_restrictions']) && !empty($settings['pages'])) {

@@ -17,7 +17,11 @@ matchers:
       result_description: ''
       bundles:
         article: article
+        forms: forms
+        legislation: legislation
         page: page
+        price_list: price_list
+        tenders: tenders
       group_by_bundle: false
       include_unpublished: false
   cea3ca34-bb42-4847-8523-3582848ba26b:

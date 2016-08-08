@@ -10,7 +10,7 @@ index cb63384..4cf2fc0
  
 +	//IDYNAMIC patched - avoid running on cron... 
 +   $current_path_parts = explode('/',$current_path);
-+   if(isset($current_path_parts[1]) && $current_path_parts[1] == 'cron') return array();
++   if(isset($current_path_parts[1]) && $current_path_parts[1] == 'cron' || $current_path == '/admin/config/system/cron') return array();
 +	//END IDYNAMIC patched - avoid running on cron... 
 +	
      // Optionally control the list of pages this works on.

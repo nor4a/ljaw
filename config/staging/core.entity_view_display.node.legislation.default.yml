@@ -10,7 +10,7 @@ dependencies:
     - node.type.legislation
   module:
     - field_redirection
-    - ljaw
+    - file
     - user
 id: node.legislation.default
 targetEntityType: node
@@ -20,13 +20,9 @@ content:
   field_attachment:
     weight: 3
     label: inline
-    settings:
-      code: '301'
-      404_if_empty: false
-      page_restrictions: 0
-      pages: ''
+    settings: {  }
     third_party_settings: {  }
-    type: field_fileredirect_formatter
+    type: file_url_plain
   field_legislation_cat:
     weight: 2
     label: inline

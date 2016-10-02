@@ -17,6 +17,7 @@ dependencies:
     - file
     - link
     - node
+    - spamspan
     - user
 id: related_content_block_embedd
 label: 'Related content block embedd'
@@ -811,7 +812,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: email_mailto
+          type: email_spamspan
           settings: {  }
           group_column: value
           group_columns: {  }

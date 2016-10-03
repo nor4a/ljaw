@@ -15,7 +15,7 @@ entity_types:
   menu_link_content:
     main:
       index: 1
-      priority: !!float 1
+      priority: !!float 0
     about:
       index: 1
       priority: 0.5

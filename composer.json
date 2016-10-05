@@ -74,7 +74,8 @@
         "drupal/workbench": "8.*",
         "drupal/workbench_access": "8.*",
         "drupal/workbench_moderation": "8.*",
-		"drupal/field_redirection": "8.*"
+		"drupal/field_redirection": "8.*",
+        "drupal/google_analytics": "8.*"
     },
     "require-dev": {
         "behat/mink": "~1.6",

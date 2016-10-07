@@ -87,7 +87,9 @@
                             return;
                         }
                         // Hide current active menu
-                        currentActiveMenu.dropdown.slideUp(300);
+                        if(currentActiveMenu.dropdown) {
+                            currentActiveMenu.dropdown.slideUp(300);
+                        }
                         currentActiveMenu.link = null;
                         currentActiveMenu.linkId = null;
                         currentActiveMenu.dropdown = null;
@@ -101,7 +103,9 @@
                     });
                     menuElement.on('click', function() {
                         // Hide current active menu
-                        currentActiveMenu.dropdown.slideUp(300);
+                        if(currentActiveMenu.dropdown) {
+                            currentActiveMenu.dropdown.slideUp(300);
+                        }
                         currentActiveMenu.link = null;
                         currentActiveMenu.linkId = null;
                         currentActiveMenu.dropdown = null;

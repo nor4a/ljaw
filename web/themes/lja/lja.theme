@@ -15,7 +15,7 @@ function lja_preprocess_menu(&$variables) {
     foreach($variables['items'] as &$item) {
       $a = $item['url']->getOption('attributes');
       $item['description'] = $a['title'];
-      $item['linkable'] = !in_array($item['url']->toString(),array('/','/lv','/en','/ru'));
+      $item['linkable'] = !in_array($item['url']->toString(),array('/','/lv','/en','/ru', 'index.php', '/index.php/', '/index.php'));
       // Icons
       $item['icon'] = isset($icons[$counter]) ? $icons[$counter] : null;
       $counter++;

@@ -143,9 +143,9 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ title }}'
+            text: '<a href="{{ field_attachment }}" target=_blank>{{ title }}</a>'
             make_link: true
-            path: '{{ field_attachment }}'
+            path: ''
             absolute: false
             external: false
             replace_spaces: false

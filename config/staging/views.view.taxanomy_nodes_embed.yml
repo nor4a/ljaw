@@ -170,9 +170,9 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ title }}'
-            make_link: true
-            path: '{{ field_attachment }}'
+            text: '<a href="{{ field_attachment }}" target=_blank>{{ title }}</a>'
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false

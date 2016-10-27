@@ -57,7 +57,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 5
+          items_per_page: 75
           offset: 0
           id: 0
           total_pages: null
@@ -213,73 +213,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Ievietots
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: timestamp
-          settings:
-            date_format: medium
-            custom_date_format: ''
-            timezone: ''
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: node
-          entity_field: created
-          plugin_id: field
         field_estimated_price:
           id: field_estimated_price
           table: node__field_estimated_price
@@ -679,84 +612,7 @@ display:
     display_options:
       display_extenders:
         views_ef_fieldset:
-          views_ef_fieldset:
-            enabled: 1
-            options:
-              sort:
-                root:
-                  container_type: details
-                  title: Filtri
-                  description: ''
-                  open: '1'
-                  weight: '0'
-                  id: root
-                  pid: ''
-                  depth: '0'
-                  type: container
-                container-0:
-                  container_type: details
-                  title: 'Container 0'
-                  description: ''
-                  open: '1'
-                  weight: '-9'
-                  id: container-0
-                  pid: root
-                  depth: '1'
-                  type: container
-                field_estimated_price_value:
-                  weight: '-9'
-                  id: field_estimated_price_value
-                  pid: container-0
-                  depth: '2'
-                  type: filter
-                container-1:
-                  container_type: details
-                  title: 'Container 1'
-                  description: ''
-                  open: '1'
-                  weight: '-8'
-                  id: container-1
-                  pid: root
-                  depth: '1'
-                  type: container
-                field_offer_deadlinie_value:
-                  weight: '-9'
-                  id: field_offer_deadlinie_value
-                  pid: container-1
-                  depth: '2'
-                  type: filter
-                field_tender_type_value:
-                  weight: '-7'
-                  id: field_tender_type_value
-                  pid: root
-                  depth: '1'
-                  type: filter
-                submit:
-                  weight: '-6'
-                  id: submit
-                  pid: root
-                  depth: '1'
-                  type: buttons
-                container-2:
-                  container_type: details
-                  title: 'Container 2'
-                  description: ''
-                  weight: '-5'
-                  open: 0
-                  id: container-2
-                  pid: root
-                  depth: '1'
-                  type: container
-                container-3:
-                  container_type: details
-                  title: 'Container 3'
-                  description: ''
-                  weight: '-4'
-                  open: 0
-                  id: container-3
-                  pid: root
-                  depth: '1'
-                  type: container
+          views_ef_fieldset: null
       path: tenders
       menu:
         type: none

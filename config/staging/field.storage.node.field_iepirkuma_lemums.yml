@@ -1,0 +1,23 @@
+uuid: 7d37030a-24db-4117-a473-e9667388c5cd
+langcode: lv
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_iepirkuma_lemums
+field_name: field_iepirkuma_lemums
+entity_type: node
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

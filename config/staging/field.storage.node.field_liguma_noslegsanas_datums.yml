@@ -1,12 +1,12 @@
-uuid: 848e244b-9b48-4280-a600-e1c713a17097
+uuid: d6595327-27ce-4d97-8dc2-85c46cdfef74
 langcode: lv
 status: true
 dependencies:
   module:
     - datetime
     - node
-id: node.field_offer_deadlinie
-field_name: field_offer_deadlinie
+id: node.field_liguma_noslegsanas_datums
+field_name: field_liguma_noslegsanas_datums
 entity_type: node
 type: datetime
 settings:

@@ -317,11 +317,13 @@ display:
     display_title: Block
     position: 3
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        views_ef_fieldset:
+          views_ef_fieldset: null
       pager:
         type: some
         options:
-          items_per_page: 3
+          items_per_page: 7
           offset: 0
       defaults:
         pager: false

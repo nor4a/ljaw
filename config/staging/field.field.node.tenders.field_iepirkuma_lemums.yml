@@ -1,0 +1,27 @@
+uuid: 4d05f154-494f-4c59-99bb-6bf0b9597dff
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_iepirkuma_lemums
+    - node.type.tenders
+  module:
+    - file
+id: node.tenders.field_iepirkuma_lemums
+field_name: field_iepirkuma_lemums
+entity_type: node
+bundle: tenders
+label: 'Iepirkuma lēmums'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'doc docx pdf jpg png pptx ppt'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

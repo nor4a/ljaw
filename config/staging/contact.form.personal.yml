@@ -9,3 +9,5 @@ label: 'Personīgā kontaktu forma'
 recipients: {  }
 reply: ''
 weight: 0
+message: 'Your message has been sent.'
+redirect: ''

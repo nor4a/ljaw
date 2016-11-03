@@ -4,9 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.storage.node.field_estimated_price
     - field.storage.node.field_id_no
-    - field.storage.node.field_offer_deadlinie
+    - field.storage.node.field_liguma_noslegsanas_datums
     - field.storage.node.field_tender_type
     - node.type.tenders
   module:
@@ -57,7 +56,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 5
+          items_per_page: 75
           offset: 0
           id: 0
           total_pages: null
@@ -213,139 +212,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Ievietots
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: timestamp
-          settings:
-            date_format: medium
-            custom_date_format: ''
-            timezone: ''
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: node
-          entity_field: created
-          plugin_id: field
-        field_estimated_price:
-          id: field_estimated_price
-          table: node__field_estimated_price
-          field: field_estimated_price
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: 'Paredzamā līgumcena '
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: number_decimal
-          settings:
-            thousand_separator: ''
-            prefix_suffix: true
-            decimal_separator: .
-            scale: 2
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         field_tender_type:
           id: field_tender_type
           table: node__field_tender_type
@@ -408,14 +274,14 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_offer_deadlinie:
-          id: field_offer_deadlinie
-          table: node__field_offer_deadlinie
-          field: field_offer_deadlinie
+        field_liguma_noslegsanas_datums:
+          id: field_liguma_noslegsanas_datums
+          table: node__field_liguma_noslegsanas_datums
+          field: field_liguma_noslegsanas_datums
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Iesniegšanas termiņš'
+          label: 'Līguma noslēgšanas datums'
           exclude: false
           alter:
             alter_text: false
@@ -448,19 +314,19 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
-          hide_alter_empty: true
+          hide_alter_empty: false
           click_sort_column: value
           type: datetime_default
           settings:
             timezone_override: ''
-            format_type: medium
+            format_type: html_date
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -474,7 +340,7 @@ display:
           plugin_id: field
       filters:
         status:
-          value: true
+          value: '1'
           table: node_field_data
           field: status
           plugin_id: boolean
@@ -494,47 +360,6 @@ display:
           entity_field: type
           plugin_id: bundle
           group: 1
-        field_estimated_price_value:
-          id: field_estimated_price_value
-          table: node__field_estimated_price
-          field: field_estimated_price_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: between
-          value:
-            min: ''
-            max: ''
-            value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_estimated_price_value_op
-            label: 'Paredzamās līgumcenas diapazons (no - līdz)'
-            description: ''
-            use_operator: false
-            operator: field_estimated_price_value_op
-            identifier: field_estimated_price_value
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: numeric
         field_tender_type_value:
           id: field_tender_type_value
           table: node__field_tender_type
@@ -575,64 +400,20 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: list_field
-        field_offer_deadlinie_value:
-          id: field_offer_deadlinie_value
-          table: node__field_offer_deadlinie
-          field: field_offer_deadlinie_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: between
-          value:
-            min: ''
-            max: ''
-            value: ''
-            type: date
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_offer_deadlinie_value_op
-            label: 'Iesniegšanas termiņš (no - līdz)'
-            description: ''
-            use_operator: false
-            operator: field_offer_deadlinie_value_op
-            identifier: field_offer_deadlinie_value
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: datetime
       sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
+        field_liguma_noslegsanas_datums_value:
+          id: field_liguma_noslegsanas_datums_value
+          table: node__field_liguma_noslegsanas_datums
+          field: field_liguma_noslegsanas_datums_value
           relationship: none
           group_type: group
           admin_label: ''
+          order: DESC
           exposed: false
           expose:
-            label: ''
+            label: 'Līguma noslēgšanas datums'
           granularity: second
+          plugin_id: datetime
       title: Iepirkumi
       header: {  }
       footer: {  }
@@ -667,9 +448,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_estimated_price'
         - 'config:field.storage.node.field_id_no'
-        - 'config:field.storage.node.field_offer_deadlinie'
+        - 'config:field.storage.node.field_liguma_noslegsanas_datums'
         - 'config:field.storage.node.field_tender_type'
   page_1:
     display_plugin: page
@@ -679,84 +459,7 @@ display:
     display_options:
       display_extenders:
         views_ef_fieldset:
-          views_ef_fieldset:
-            enabled: 1
-            options:
-              sort:
-                root:
-                  container_type: details
-                  title: Filtri
-                  description: ''
-                  open: '1'
-                  weight: '0'
-                  id: root
-                  pid: ''
-                  depth: '0'
-                  type: container
-                container-0:
-                  container_type: details
-                  title: 'Container 0'
-                  description: ''
-                  open: '1'
-                  weight: '-9'
-                  id: container-0
-                  pid: root
-                  depth: '1'
-                  type: container
-                field_estimated_price_value:
-                  weight: '-9'
-                  id: field_estimated_price_value
-                  pid: container-0
-                  depth: '2'
-                  type: filter
-                container-1:
-                  container_type: details
-                  title: 'Container 1'
-                  description: ''
-                  open: '1'
-                  weight: '-8'
-                  id: container-1
-                  pid: root
-                  depth: '1'
-                  type: container
-                field_offer_deadlinie_value:
-                  weight: '-9'
-                  id: field_offer_deadlinie_value
-                  pid: container-1
-                  depth: '2'
-                  type: filter
-                field_tender_type_value:
-                  weight: '-7'
-                  id: field_tender_type_value
-                  pid: root
-                  depth: '1'
-                  type: filter
-                submit:
-                  weight: '-6'
-                  id: submit
-                  pid: root
-                  depth: '1'
-                  type: buttons
-                container-2:
-                  container_type: details
-                  title: 'Container 2'
-                  description: ''
-                  weight: '-5'
-                  open: 0
-                  id: container-2
-                  pid: root
-                  depth: '1'
-                  type: container
-                container-3:
-                  container_type: details
-                  title: 'Container 3'
-                  description: ''
-                  weight: '-4'
-                  open: 0
-                  id: container-3
-                  pid: root
-                  depth: '1'
-                  type: container
+          views_ef_fieldset: null
       path: tenders
       menu:
         type: none
@@ -778,7 +481,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_estimated_price'
         - 'config:field.storage.node.field_id_no'
-        - 'config:field.storage.node.field_offer_deadlinie'
+        - 'config:field.storage.node.field_liguma_noslegsanas_datums'
         - 'config:field.storage.node.field_tender_type'

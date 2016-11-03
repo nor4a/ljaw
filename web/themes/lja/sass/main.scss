@@ -884,6 +884,17 @@ div.container {
 .content-container.home {
   padding-top: 20px;
 }
+ol {
+  li {
+    list-style: decimal;
+    margin-left: 15px;
+    padding-left: 0;
+    font-size: 14px;
+  }
+  li:before {
+    display: none !important;
+  }
+}
 .content-container .text-block {
   background: white;
   padding: 25px;
@@ -1670,7 +1681,7 @@ input[type=submit] {
     }
     .views-field-field-email {
       display: inline-block;
-      margin-left: 10px;
+      //margin-left: 10px;
       a {
         padding: 0;
       }

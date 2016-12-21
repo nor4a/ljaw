@@ -1,0 +1,22 @@
+uuid: a0280d4b-d259-48a8-9e4e-783998cfe57d
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.tenders
+  module:
+    - text
+id: node.tenders.body
+field_name: body
+entity_type: node
+bundle: tenders
+label: 'Iepirkuma priekšmets'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,9 @@
+uuid: 94068ffc-c10e-4698-bd00-0fd19a2507f5
+langcode: lv
+status: true
+dependencies: {  }
+name: 'Tiesību aktu kategorija'
+vid: laws
+description: ''
+hierarchy: 0
+weight: -8

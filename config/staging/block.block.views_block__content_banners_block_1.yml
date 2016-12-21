@@ -1,0 +1,30 @@
+uuid: 35d9ade2-f9bf-4456-bb00-ef3ac577bb5f
+langcode: lv
+status: true
+dependencies:
+  config:
+    - views.view.content_banners
+  module:
+    - system
+    - views
+  theme:
+    - lja
+id: views_block__content_banners_block_1
+theme: lja
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:content_banners-block_1'
+settings:
+  id: 'views_block:content_banners-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

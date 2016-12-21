@@ -1,0 +1,18 @@
+uuid: 8df7e152-8a0e-42fc-9231-492c9a13c05d
+langcode: lv
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+id: block_content.basic.info
+field_name: info
+entity_type: block_content
+bundle: basic
+label: 'Bloka apraksts'
+description: 'A brief description of your block.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

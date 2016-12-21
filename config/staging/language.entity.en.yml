@@ -1,0 +1,9 @@
+uuid: d4deb892-74c0-4683-a40d-1364d1118678
+langcode: lv
+status: true
+dependencies: {  }
+id: en
+label: English
+direction: ltr
+weight: 1
+locked: false

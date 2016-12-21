@@ -1,0 +1,21 @@
+uuid: 3de65e10-c551-4126-aa00-e7951ac9bfb4
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_results_date
+    - node.type.tenders
+  module:
+    - datetime
+id: node.tenders.field_results_date
+field_name: field_results_date
+entity_type: node
+bundle: tenders
+label: 'Lēmuma pieņemšanas datums'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

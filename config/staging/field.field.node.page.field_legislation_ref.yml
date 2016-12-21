@@ -1,0 +1,27 @@
+uuid: 42e4492c-19b7-4a4b-a786-03587e49f3fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legislation_ref
+    - node.type.legislation
+    - node.type.page
+id: node.page.field_legislation_ref
+field_name: field_legislation_ref
+entity_type: node
+bundle: page
+label: 'Saistītie tiesību akti'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      legislation: legislation
+    sort:
+      field: title
+      direction: ASC
+field_type: entity_reference

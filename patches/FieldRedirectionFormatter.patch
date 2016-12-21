@@ -1,0 +1,33 @@
+diff --git a/src/Plugin/Field/FieldFormatter/FieldRedirectionFormatter.php b/src/Plugin/Field/FieldFormatter/FieldRedirectionFormatter.php
+old mode 100644
+new mode 100755
+index cb63384..4cf2fc0
+--- a/src/Plugin/Field/FieldFormatter/FieldRedirectionFormatter.php
++++ b/src/Plugin/Field/FieldFormatter/FieldRedirectionFormatter.php
+@@ -144,6 +144,11 @@ class FieldRedirectionFormatter extends FormatterBase {
+     $current_url = Url::fromRoute('<current>');
+     $current_path = $current_url->toString();
+ 
++	//IDYNAMIC patched - avoid running on cron... 
++   $current_path_parts = explode('/',$current_path);
++   if(isset($current_path_parts[1]) && $current_path_parts[1] == 'cron' || $current_path == '/admin/config/system/cron') return array();
++	//END IDYNAMIC patched - avoid running on cron... 
++	
+     // Optionally control the list of pages this works on.
+     if (!empty($settings['page_restrictions']) && !empty($settings['pages'])) {
+       // Remove '1' from this value so it can be XOR'd later on.
+@@ -220,7 +225,13 @@ class FieldRedirectionFormatter extends FormatterBase {
+           if (!empty($item->uri)) {
+             // Create a Url object from the uri.
+             $redirect_url = Url::fromUri($item->uri);
+-
++			
++		    //IDYNAMIC patched - output when not redirecting
++            $elements[0] = array(
++              '#markup' => '<a href="'.$item->uri.'" target=_blank>'.$item->uri.'</a>',
++            );
++			//END IDYNAMIC patched - output when not redirecting
++			
+             // The path is the URL field itself.
+             // $uri = $item->uri;
+ 

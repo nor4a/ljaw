@@ -1,0 +1,11 @@
+uuid: 49ca5ea2-9d78-4c0b-ae09-9ba466d881e7
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.price_list
+id: node.price_list
+target_entity_type_id: node
+target_bundle: price_list
+default_langcode: site_default
+language_alterable: false

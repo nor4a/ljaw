@@ -1,0 +1,45 @@
+uuid: 4318fd4f-da3e-47fd-8701-1f0ac4a286c4
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_attachments
+    - field.field.node.page.field_contacts_ref
+    - field.field.node.page.field_forms_ref
+    - field.field.node.page.field_legislation_ref
+    - field.field.node.page.field_pricelists_ref
+    - node.type.page
+  module:
+    - file
+    - text
+    - user
+_core:
+  default_config_hash: oZ-7vpIJxjxL2up9B5KrJGD0lazQ9aN0P-fIPo6OrSU
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_attachments:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  links:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_contacts_ref: true
+  field_forms_ref: true
+  field_legislation_ref: true
+  field_pricelists_ref: true
+  langcode: true

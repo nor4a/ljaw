@@ -1,0 +1,23 @@
+uuid: 2824b8f4-7bca-4383-8ea7-d585a597bf09
+langcode: lv
+status: true
+dependencies: {  }
+name: 'veidlapa testa nolūkiem'
+type: veidlapa_testa_nolukiem
+description: 'forma testa nolūkiem'
+form_title: ''
+help: ''
+form_status: EFORM_OPEN
+resubmit_action: EFORM_RESUBMIT_NEW
+disallow_text:
+  value: ''
+  format: full_html
+preview_page: false
+submission_page_title: 'Lūdzu aizpildiet'
+submission_text:
+  value: ''
+  format: full_html
+submission_show_submitted: false
+draftable: false
+admin_submissions_view: ''
+user_submissions_view: ''

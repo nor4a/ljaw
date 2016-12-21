@@ -1,0 +1,60 @@
+<?php
+
+function ljaw_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'ljaw/ljaw';
+}
+
+function lja_preprocess_page(&$variables) {
+  if (!empty($variables['background_image']))  return;
+    //and now we get the background image if it exists...
+    $ids = \Drupal::service('menu.active_trail')->getActiveTrailIds('main');
+    $parent_id = '';
+    foreach ($ids as $id => $content) {
+      //print_r($content . 'xxx');exit();
+      if ($content) {
+        $parent_id = $content;
+      }
+    }
+
+    if ($parent_id) {
+      list($table, $uuid) = explode(':', $parent_id);
+      //get the menu id
+      if ($result = db_select($table, 'm')
+        ->fields('m', array('id'))
+        ->condition('m.uuid', $uuid)
+        ->execute()
+      ) {
+        foreach ($result as $r) {
+          //get the entity id
+          $er = db_select('node__field_menu_ref', 'm')
+            ->fields('m', array('entity_id'))
+            ->condition('m.field_menu_ref_target_id', $r->id)
+            ->execute()->fetchall();
+        }
+      }
+    } else {
+      //get the home menu item...
+      $er = db_select('node', 'n')->fields('n', array('nid'))->condition('type', 'background_images', '=');
+      $er->leftJoin('node__field_menu_ref', 'm', 'n.nid = m.entity_id');
+      $er->isNull('m.field_menu_ref_target_id');
+      $er = $er->execute()->fetchall();
+    }
+
+  if (!empty($er)) {
+    $e = reset($er);
+    $e = entity_load('node', isset($e->nid) ? $e->nid : $e->entity_id);
+    if ($ev = $e->get('field_background_image')->getValue()) {
+      if ($fr = db_select('file_managed', 'f')
+        ->fields('f', array('uri'))
+        ->condition('f.fid', $ev[0]['target_id'])
+        ->execute()
+      ) {
+        foreach ($fr as $f) {
+          $url = file_create_url($f->uri);
+          $url = parse_url($url);
+          $variables['background_image'] = $url['path'];
+        }
+      }
+    }
+  }
+}

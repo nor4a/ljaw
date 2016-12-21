@@ -1,0 +1,19 @@
+uuid: 07cb2b9d-dcfd-45dd-9add-f7764ba6f7f2
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_working_time
+    - node.type.contact
+id: node.contact.field_working_time
+field_name: field_working_time
+entity_type: node
+bundle: contact
+label: 'Pieņemšanas laiki'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

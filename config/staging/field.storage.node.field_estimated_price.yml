@@ -1,0 +1,20 @@
+uuid: db0d4c5b-c7d3-4438-a32e-466f399f2054
+langcode: lv
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_estimated_price
+field_name: field_estimated_price
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

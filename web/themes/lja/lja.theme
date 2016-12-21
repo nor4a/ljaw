@@ -1,0 +1,78 @@
+<?php
+
+use Drupal\Core\Menu\MenuLinkInterface;
+use Drupal\menu_link_content\Entity\MenuLinkContent;
+use Drupal\Core\Template\Attribute;
+
+function lja_views_pre_render($view) {
+
+}
+
+function lja_preprocess_menu(&$variables) {
+  if($variables['menu_name'] == 'main') {
+    $counter = 0;
+    $icons = array('anchor.svg', 'ship.svg', 'hands.svg', 'map.svg');
+    foreach($variables['items'] as &$item) {
+      $a = $item['url']->getOption('attributes');
+      $item['description'] = $a['title'];
+      $item['linkable'] = !in_array($item['url']->toString(),array('/','/lv','/en','/ru', 'index.php', '/index.php/', '/index.php'));
+      // Icons
+      $item['icon'] = isset($icons[$counter]) ? $icons[$counter] : null;
+      $counter++;
+    }
+  }
+  $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+}
+
+function lja_preprocess_block__phone(&$variables) {
+  $variables['attributes']['class'][] = 'blue-circle';
+}
+
+function lja_preprocess_block__parlja_2(&$variables) {
+  $link = \Drupal::service('menu.active_trail')->getActiveLink();
+  if($link && $link->getMenuName() !== 'about') {
+    $variables = array();
+  }
+}
+
+function lja_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+  if(\Drupal::service('path.matcher')->isFrontPage()) {
+    $suggestions[] = 'node__page_front';
+  }
+}
+
+function lja_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  $block = \Drupal\block\Entity\Block::load($variables['elements']['#id']);
+  $suggestions[] = 'block__' . $block->getRegion();
+  $suggestions[] = 'block__' . $variables['elements']['#base_plugin_id'] . '__' . $block->getRegion();
+  $suggestions[] = 'block__' . $variables['elements']['#base_plugin_id'] . '__' . $variables['elements']['#id'] . '__' . $block->getRegion();
+}
+
+function lja_preprocess_block(&$variables) {
+  $block = \Drupal\block\Entity\Block::load($variables['elements']['#id']);
+  $variables['content']['#attributes']['block_id'] = $variables['attributes']['id'];
+  $variables['content']['#attributes']['region']   = $block->getRegion();
+
+  $mylanguage = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['language'] = $mylanguage != 'lv' ? '/' . $mylanguage : '';
+
+  if(isset($variables['content']['#view']) && $variables['content']['#view']->id() == 'related_content_blocks') {
+    $variables['content']        = render($variables['content']);
+    $variables['content_exists'] = !empty(trim(strip_tags($variables['content'])));
+  }else{
+    $variables['content_exists'] = true;
+  }
+
+  switch ($variables['attributes']['id']) {
+    case 'block-views-block-laws-categories-block-1':
+      $variables['title_link'] = $variables['language'] . '/legislation';
+      break;
+  }
+
+}
+
+function lja_theme_suggestions_menu_alter(array &$suggestions, array $variables) {
+  if(isset($variables['attributes']['region'])){
+    $suggestions[] = $variables['theme_hook_original'] . '__' . $variables['attributes']['region'];
+  }
+}

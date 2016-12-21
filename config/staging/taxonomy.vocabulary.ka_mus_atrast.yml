@@ -1,0 +1,9 @@
+uuid: 2ea05480-dfa9-4fee-b9e3-65a069633bba
+langcode: lv
+status: true
+dependencies: {  }
+name: 'Kā mūs atrast'
+vid: ka_mus_atrast
+description: ''
+hierarchy: 0
+weight: 0

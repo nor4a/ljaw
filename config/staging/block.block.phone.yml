@@ -1,0 +1,31 @@
+uuid: 0d5844fb-a8da-4bef-8600-ae6d94a3c8e7
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:32336b7a-d492-4b4a-961b-27cb0a7a4210'
+  module:
+    - block_content
+    - system
+  theme:
+    - lja
+id: phone
+theme: lja
+region: '-1'
+weight: -3
+provider: null
+plugin: 'block_content:32336b7a-d492-4b4a-961b-27cb0a7a4210'
+settings:
+  id: 'block_content:32336b7a-d492-4b4a-961b-27cb0a7a4210'
+  label: Phone
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

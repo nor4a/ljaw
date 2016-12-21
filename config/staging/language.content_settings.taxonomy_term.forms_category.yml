@@ -1,0 +1,11 @@
+uuid: d82b25f1-934e-4d74-8538-56bb5ad2a94a
+langcode: lv
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.forms_category
+id: taxonomy_term.forms_category
+target_entity_type_id: taxonomy_term
+target_bundle: forms_category
+default_langcode: site_default
+language_alterable: false

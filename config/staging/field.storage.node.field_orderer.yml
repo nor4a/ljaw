@@ -1,0 +1,21 @@
+uuid: 75d2e9c7-423b-4c1e-9500-a2c504639997
+langcode: lv
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_orderer
+field_name: field_orderer
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

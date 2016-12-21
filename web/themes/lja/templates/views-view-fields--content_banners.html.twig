@@ -1,0 +1,24 @@
+{% set column = fields.field_column.content | striptags | trim %}
+<a href="{{ fields.field_url.content | striptags | trim }}">
+    {% if fields.body.content | striptags | trim %}
+    <div class="border">
+        <div>
+            <div class="wrapper-text">
+                {{ fields.body.content }}
+            </div>
+        </div>
+        <div>
+            {{ fields.field_icon.content }}
+        </div>
+    </div>
+    <div class="background">
+        {{ fields.field_image.content }}
+    </div>
+    {% else %}
+    <div class="border">
+        <div>
+            {{ fields.field_image.content }}
+        </div>
+    </div>
+    {% endif %}
+</a>

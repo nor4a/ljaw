@@ -1,0 +1,35 @@
+uuid: 5c20e4c2-98ae-4409-beb2-f5a2fe6b2782
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.field.node.background_images.field_background_image
+    - field.field.node.background_images.field_menu_ref
+    - image.style.large
+    - node.type.background_images
+  module:
+    - image
+    - user
+id: node.background_images.default
+targetEntityType: node
+bundle: background_images
+mode: default
+content:
+  field_background_image:
+    weight: 103
+    label: above
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_menu_ref:
+    weight: 102
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+hidden:
+  langcode: true
+  links: true

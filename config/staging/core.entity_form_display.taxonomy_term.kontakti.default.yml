@@ -1,0 +1,46 @@
+uuid: b1e1db3b-8585-4ef6-b7e1-75b03facbc6f
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.kontakti.field_address
+    - taxonomy.vocabulary.kontakti
+  module:
+    - text
+id: taxonomy_term.kontakti.default
+targetEntityType: taxonomy_term
+bundle: kontakti
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_address:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  langcode:
+    type: language_select
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  path: true

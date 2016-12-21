@@ -1,0 +1,21 @@
+uuid: c30d39b8-6dca-42be-880e-0d09706172d5
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_liguma_noslegsanas_datums
+    - node.type.tenders
+  module:
+    - datetime
+id: node.tenders.field_liguma_noslegsanas_datums
+field_name: field_liguma_noslegsanas_datums
+entity_type: node
+bundle: tenders
+label: 'Līguma noslēgšanas datums'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

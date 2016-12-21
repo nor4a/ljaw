@@ -1,0 +1,19 @@
+uuid: 5cc19bec-e07c-4ad9-84ec-6439f97c7c3f
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_post
+    - node.type.contact
+id: node.contact.field_post
+field_name: field_post
+entity_type: node
+bundle: contact
+label: Amats
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

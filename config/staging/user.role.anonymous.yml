@@ -1,0 +1,18 @@
+uuid: 63c3f710-ea6d-4d3b-8a00-cfc8e2f19429
+langcode: lv
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format restricted_html'
+  - 'access comments'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'submitveidlapa_testa_nolukiem eform'
+  - 'access sitemap'

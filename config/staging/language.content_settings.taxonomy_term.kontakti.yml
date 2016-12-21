@@ -1,0 +1,16 @@
+uuid: fb11a907-714c-4674-b2da-8346d75de3a1
+langcode: lv
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.kontakti
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.kontakti
+target_entity_type_id: taxonomy_term
+target_bundle: kontakti
+default_langcode: site_default
+language_alterable: false

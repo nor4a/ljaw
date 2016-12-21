@@ -1,0 +1,21 @@
+uuid: ae22d80d-6532-415b-851c-280e16838223
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tender_procedure
+    - node.type.tenders
+  module:
+    - options
+id: node.tenders.field_tender_procedure
+field_name: field_tender_procedure
+entity_type: node
+bundle: tenders
+label: 'Iepirkuma procedūra'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

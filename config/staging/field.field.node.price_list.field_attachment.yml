@@ -1,0 +1,27 @@
+uuid: dda9dca4-b565-4515-8d43-677f28452f8e
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachment
+    - node.type.price_list
+  module:
+    - file
+id: node.price_list.field_attachment
+field_name: field_attachment
+entity_type: node
+bundle: price_list
+label: Pielikums
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: pricelist_attachments
+  file_extensions: 'doc docx pdf'
+  max_filesize: 10MB
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

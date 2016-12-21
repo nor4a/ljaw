@@ -1,0 +1,34 @@
+uuid: 2bb9b91b-3f95-471f-be03-03d0490d2d99
+langcode: lv
+status: true
+dependencies:
+  module:
+    - node
+id: default
+label: default
+description: ''
+attributes: {  }
+matchers:
+  4fda46f8-d747-4d8e-ac01-1e114189f34a:
+    uuid: 4fda46f8-d747-4d8e-ac01-1e114189f34a
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles:
+        article: article
+        forms: forms
+        legislation: legislation
+        page: page
+        price_list: price_list
+        tenders: tenders
+      group_by_bundle: false
+      include_unpublished: false
+  cea3ca34-bb42-4847-8523-3582848ba26b:
+    uuid: cea3ca34-bb42-4847-8523-3582848ba26b
+    id: 'entity:shortcut'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles: {  }
+      group_by_bundle: false

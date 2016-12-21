@@ -1,0 +1,18 @@
+uuid: 4e27bdc9-da65-4ade-b91a-269d713b3725
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.changed
+field_name: changed
+entity_type: node
+bundle: page
+label: Labots
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

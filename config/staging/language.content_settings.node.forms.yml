@@ -1,0 +1,11 @@
+uuid: 26675da6-544c-456d-b600-b3759f28bc4c
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.forms
+id: node.forms
+target_entity_type_id: node
+target_bundle: forms
+default_langcode: site_default
+language_alterable: false

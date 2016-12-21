@@ -1,0 +1,23 @@
+uuid: 031fb12c-8c70-41ea-a3b9-04952c71bd4c
+langcode: lv
+status: true
+dependencies:
+  module:
+    - eform
+    - file
+id: eform_submission.field_pievienojiet_failu
+field_name: field_pievienojiet_failu
+entity_type: eform_submission
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,27 @@
+uuid: 32b4eb75-5c11-4293-8509-9fa2eb6be568
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachment
+    - node.type.forms
+  module:
+    - file
+id: node.forms.field_attachment
+field_name: field_attachment
+entity_type: node
+bundle: forms
+label: Pielikums
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: form_attachments
+  file_extensions: 'doc docx pdf'
+  max_filesize: 10MB
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

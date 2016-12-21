@@ -1,0 +1,11 @@
+<div {{ attributes.addClass('column')|without('role', 'aria-labelledby') }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <h2 class="wave">
+    <img src="/themes/lja/img/icons/wave-short-small.svg" class="wave-svg"/>
+    {{ configuration.label }}
+  </h2>
+  {% block content %}
+      {{ content }}
+  {% endblock %}
+</div>

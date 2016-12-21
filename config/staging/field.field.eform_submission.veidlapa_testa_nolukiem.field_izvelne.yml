@@ -1,0 +1,21 @@
+uuid: a0fb7da7-480c-4b7d-b08a-8a91a878d0ff
+langcode: lv
+status: true
+dependencies:
+  config:
+    - eform.type.veidlapa_testa_nolukiem
+    - field.storage.eform_submission.field_izvelne
+  module:
+    - options
+id: eform_submission.veidlapa_testa_nolukiem.field_izvelne
+field_name: field_izvelne
+entity_type: eform_submission
+bundle: veidlapa_testa_nolukiem
+label: izvelne
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,24 @@
+uuid: 4f926013-6af4-4119-a600-f2862fb8b44a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - lja
+id: mainnavigation
+theme: lja
+region: menu
+weight: -14
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation 2nd level'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

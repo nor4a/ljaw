@@ -1,0 +1,27 @@
+uuid: eeaf5be7-b13e-47ee-8bad-4c47e04e732b
+langcode: lv
+status: true
+dependencies:
+  config:
+    - eform.type.veidlapa_testa_nolukiem
+    - field.storage.eform_submission.field_pievienojiet_failu
+  module:
+    - file
+id: eform_submission.veidlapa_testa_nolukiem.field_pievienojiet_failu
+field_name: field_pievienojiet_failu
+entity_type: eform_submission
+bundle: veidlapa_testa_nolukiem
+label: 'pievienojiet failu'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

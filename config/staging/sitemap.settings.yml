@@ -1,0 +1,53 @@
+page_title: 'Lapas karte'
+message:
+  value: ''
+  format: full_html
+show_front: false
+show_titles: true
+show_books: {  }
+books_expanded: true
+show_menus:
+  about: about
+  main: main
+  account: '0'
+  admin: '0'
+  devel: '0'
+  footer: '0'
+  tools: '0'
+show_menus_hidden: false
+show_vocabularies:
+  banner: '0'
+  forms_category: '0'
+  ka_mus_atrast: '0'
+  kontakti: '0'
+  laws: '0'
+  pricelist_category: '0'
+  tags: '0'
+show_description: false
+show_count: false
+vocabulary_depth: -1
+term_threshold: 0
+forum_threshold: -1
+rss_front: rss.xml
+show_rss_links: 1
+rss_taxonomy: -1
+css: false
+order:
+  front: -50
+  menus_about: -50
+  menus_account: -50
+  menus_admin: -50
+  menus_devel: -50
+  menus_footer: -50
+  menus_main: -50
+  menus_tools: -50
+  vocabularies_banner: -50
+  vocabularies_forms_category: -50
+  vocabularies_ka_mus_atrast: -50
+  vocabularies_kontakti: -50
+  vocabularies_laws: -50
+  vocabularies_pricelist_category: -50
+  vocabularies_tags: -50
+_core:
+  default_config_hash: qZeaiLq06xBUfw-JNZtgetxUUMz-J8YCzw_LuhPrk2E
+langcode: lv

@@ -1,0 +1,22 @@
+uuid: f49bb893-7c0c-4b25-a508-8b95db0f6201
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.forms
+id: node.forms.promote
+field_name: promote
+entity_type: node
+bundle: forms
+label: 'Izvirzīts uz pirmo lapu'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aktīvs
+  off_label: Izslēgts
+field_type: boolean

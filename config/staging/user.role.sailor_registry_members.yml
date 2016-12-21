@@ -1,0 +1,16 @@
+uuid: 5eb6311e-7d43-4425-9c8c-2db9a9dea72b
+langcode: lv
+status: true
+dependencies: {  }
+id: sailor_registry_members
+label: 'Jūrnieku reģistra pārstāvji'
+weight: 3
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'edit any page content'
+  - 'edit own page content'
+  - 'view page revisions'
+  - 'use workbench access'
+  - 'use text format full_html'
+  - 'bypass redirection'

@@ -1,0 +1,26 @@
+uuid: 5f6c509a-08f0-4407-9b01-0030d46b5f8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pricelists_ref
+    - node.type.page
+    - node.type.price_list
+id: node.page.field_pricelists_ref
+field_name: field_pricelists_ref
+entity_type: node
+bundle: page
+label: 'Saistītie cenrāži'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      price_list: price_list
+    sort:
+      field: _none
+field_type: entity_reference

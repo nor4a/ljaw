@@ -1,0 +1,20 @@
+uuid: 7402eeec-684b-44d0-8306-060208f7e74d
+langcode: lv
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - lja
+id: valoduparsledzejs
+theme: lja
+region: top
+weight: -18
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Valodu pārslēdzējs'
+  provider: language
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: bcab87dc-41b6-4766-b917-23ffe936fd54
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.title
+field_name: title
+entity_type: node
+bundle: page
+label: Virsraksts
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

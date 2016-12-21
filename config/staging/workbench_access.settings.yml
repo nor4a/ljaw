@@ -1,0 +1,19 @@
+scheme: menu
+parents:
+  main: main
+label: Section
+plural_label: Sections
+fields:
+  node:
+    article: ''
+    background_images: ''
+    banner: ''
+    contact: ''
+    forms: ''
+    legislation: ''
+    page: menu
+    price_list: ''
+    tenders: ''
+_core:
+  default_config_hash: delTKALrhPWSM78GuDlZP2HmxNAJjxCvv4fQezJ7Dak
+langcode: lv

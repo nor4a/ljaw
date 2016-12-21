@@ -1,0 +1,15 @@
+name: LJA
+type: theme
+description: The LJA website theme
+core: 8.x
+regions:
+  top: Upper header
+  header: Header
+  menu: Menu
+  dropdown: Dropdown menu
+  content: Content
+  sidebar: Sidebar
+  footer: Footer
+libraries:
+  - lja/global-css
+  - lja/global-js

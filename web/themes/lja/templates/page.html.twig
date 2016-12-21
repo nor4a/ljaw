@@ -1,0 +1,69 @@
+{% if background_image %}
+<style type="text/css">
+  .content-wrapper {
+    background: url({{ background_image }}) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+  }
+</style>
+{% endif %}
+<div class="content-wrapper">
+  <div class="upper-header">
+    <div class="container">
+      {{ page.top }}
+    </div>
+  </div>
+  <div class="header-container home">
+    <div class="shadow">
+      <div class="container">
+        {{ page.header }}
+      </div>
+    </div>
+  </div>
+  {% if page.menu %}
+  <div class="menu-bar-container" id="sub-menu">
+    <div class="container">
+      {{ page.dropdown }}
+    </div>
+  </div>
+  <div class="menu-bar-container visible relative">
+    <div class="container">
+      {{ page.menu }}
+    </div>
+  </div>
+  {% endif %}
+  <div class="content-container page">
+    <div class="container">
+      <div class="text-block">
+        {{ page.content }}
+        <div class="goTopWrapper">
+          <a class="goTopButton link-icon-html link-icon" href="#" title="{% trans %}Go to top{% endtrans %}">
+            {% trans %}Go to top{% endtrans %}
+          </a>
+        </div>
+      </div>
+      {% if page.sidebar %}
+      <div class="bar-menu">
+        {{ page.sidebar }}
+        <div style="clear:both"></div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  <div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+<div class="footer-wrapper">
+  <div class="footer">
+    <div class="container">
+      {{ page.footer }}
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      Latvijas Jūras administrācija &copy; 2016
+    </div>
+  </div>
+</div>

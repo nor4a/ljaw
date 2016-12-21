@@ -1,0 +1,19 @@
+uuid: 691171a0-75fd-49b4-b920-a218f2616b7b
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_address
+    - taxonomy.vocabulary.kontakti
+id: taxonomy_term.kontakti.field_address
+field_name: field_address
+entity_type: taxonomy_term
+bundle: kontakti
+label: Adrese
+description: 'Jāievada korekta adrese - piemēram: Trijādības iela 5, Rīga, LV-1048. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

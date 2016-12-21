@@ -1,0 +1,12 @@
+uuid: 6bbc0050-155a-405e-ae58-b7666e7a62ca
+langcode: lv
+status: false
+dependencies:
+  module:
+    - eform
+_core:
+  default_config_hash: BQLFaYjQndAOCjkJhHACOT4uQJX8l3NKJJEQ0O4gqyE
+id: eform_submission.submit_previous
+label: 'Submit Previous'
+targetEntityType: eform_submission
+cache: true

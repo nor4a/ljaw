@@ -1,0 +1,25 @@
+uuid: 7faf4dda-c030-45cc-aa00-f57e51473d39
+langcode: lv
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8eac7669-6261-4121-9a3b-59f2ba100fe4'
+  module:
+    - block_content
+  theme:
+    - lja
+id: saziniesarmums
+theme: lja
+region: footer
+weight: -7
+provider: null
+plugin: 'block_content:8eac7669-6261-4121-9a3b-59f2ba100fe4'
+settings:
+  id: 'block_content:8eac7669-6261-4121-9a3b-59f2ba100fe4'
+  label: 'Sazinies ar mums'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

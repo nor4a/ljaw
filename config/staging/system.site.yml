@@ -1,0 +1,14 @@
+uuid: f744789a-5e2d-4a14-8e07-7a60eaa25a15
+name: 'Latvijas Jūras Administrācija'
+mail: it@idynamic.se
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: lv
+default_langcode: lv
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

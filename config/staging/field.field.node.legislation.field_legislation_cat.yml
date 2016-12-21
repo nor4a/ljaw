@@ -1,0 +1,27 @@
+uuid: 778b18fb-1dae-4435-bb00-a3f1e3f4317d
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legislation_cat
+    - node.type.legislation
+    - taxonomy.vocabulary.laws
+id: node.legislation.field_legislation_cat
+field_name: field_legislation_cat
+entity_type: node
+bundle: legislation
+label: Kategorija
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      laws: laws
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

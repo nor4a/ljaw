@@ -1,0 +1,9 @@
+uuid: 1e08d5ee-9f18-46b8-a4c1-a680f0a4148e
+langcode: und
+status: true
+dependencies: {  }
+name: Kontaktinformācija
+vid: kontakti
+description: ''
+hierarchy: 0
+weight: 0

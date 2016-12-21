@@ -1,0 +1,26 @@
+uuid: 2ea93792-6905-4019-ab45-69733b3347fc
+langcode: lv
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.forms.field_attachment
+    - field.field.node.forms.field_form_cat
+    - field.field.node.forms.field_page_ref
+    - field.field.node.forms.field_url
+    - node.type.forms
+  module:
+    - user
+id: node.forms.teaser
+targetEntityType: node
+bundle: forms
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_attachment: true
+  field_form_cat: true
+  field_page_ref: true
+  field_url: true
+  langcode: true

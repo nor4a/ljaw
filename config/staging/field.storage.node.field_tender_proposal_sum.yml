@@ -1,0 +1,20 @@
+uuid: 6fa2b1ee-b95c-4d17-bd00-ad0869d8cde7
+langcode: lv
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_tender_proposal_sum
+field_name: field_tender_proposal_sum
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

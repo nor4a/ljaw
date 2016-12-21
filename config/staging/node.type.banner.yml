@@ -1,0 +1,20 @@
+uuid: 58e9cdce-7b27-417a-9305-052acdf73b32
+langcode: lv
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - workbench_access
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  workbench_access:
+    workbench_access_status: false
+name: Banneris
+type: banner
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

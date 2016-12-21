@@ -1,0 +1,21 @@
+uuid: dd41d2e3-0cbf-4f5c-9600-b2e8bf54e177
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orderer
+    - node.type.tenders
+id: node.tenders.field_orderer
+field_name: field_orderer
+entity_type: node
+bundle: tenders
+label: Pasūtītājs
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Pasūtītājs: VAS "Latvijas Jūras administrācija" (LOTLP)'
+default_value_callback: ''
+settings: {  }
+field_type: string

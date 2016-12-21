@@ -1,0 +1,8 @@
+name: CKEditor "Go to top" button
+type: module
+description: This plugin adds button allowing to add "go to top" link
+core: 8.x
+package: CKEditor
+version: 1
+dependencies:
+  - ckeditor

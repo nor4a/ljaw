@@ -1,0 +1,22 @@
+uuid: 3761b596-f5e0-40ec-a41d-294640334600
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.legislation
+id: node.legislation.promote
+field_name: promote
+entity_type: node
+bundle: legislation
+label: 'Izvirzīts uz pirmo lapu'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aktīvs
+  off_label: Izslēgts
+field_type: boolean

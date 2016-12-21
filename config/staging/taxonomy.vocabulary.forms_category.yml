@@ -1,0 +1,9 @@
+uuid: 143efca0-cd80-47ae-a658-88c064936645
+langcode: lv
+status: true
+dependencies: {  }
+name: 'Formu kategorija'
+vid: forms_category
+description: ''
+hierarchy: 0
+weight: -9

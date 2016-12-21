@@ -1,0 +1,13 @@
+uuid: 434284a7-0c0e-47ec-8a03-3f156fce42a7
+langcode: lv
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: JBptjnfuOMtsdKygklXxoOgeOCTMtQxlkymjnnj-cC0
+id: node_unpromote_action
+label: 'Noņemt saturu no pirmās lapas'
+type: node
+plugin: node_unpromote_action
+configuration: {  }

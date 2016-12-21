@@ -1,0 +1,28 @@
+presets:
+  'node*page*field_legislation_ref*node*legislation*field_legislation_cat': 0
+  'node*page*field_legislation_ref*node*legislation*field_page_ref': 1
+  'node*page*field_forms_ref*node*forms*field_form_cat': 0
+  'node*page*field_forms_ref*node*forms*field_page_ref': 1
+  'node*page*field_pricelists_ref*node*price_list*field_pricelist_cat': 0
+  'node*page*field_pricelists_ref*node*price_list*field_page_ref': 1
+  'node*price_list*field_page_ref*node*page*field_legislation_ref': 0
+  'node*price_list*field_page_ref*node*page*field_forms_ref': 0
+  'node*price_list*field_page_ref*node*page*field_pricelists_ref': 1
+  'node*price_list*field_page_ref*node*page*field_contacts_ref': 0
+  'node*legislation*field_page_ref*node*page*field_legislation_ref': 1
+  'node*legislation*field_page_ref*node*page*field_forms_ref': 0
+  'node*legislation*field_page_ref*node*page*field_pricelists_ref': 0
+  'node*legislation*field_page_ref*node*page*field_contacts_ref': 0
+  'node*forms*field_page_ref*node*page*field_legislation_ref': 0
+  'node*forms*field_page_ref*node*page*field_forms_ref': 1
+  'node*forms*field_page_ref*node*page*field_pricelists_ref': 0
+  'node*forms*field_page_ref*node*page*field_contacts_ref': 0
+  'node*contact*field_page_ref*node*page*field_legislation_ref': 0
+  'node*contact*field_page_ref*node*page*field_forms_ref': 0
+  'node*contact*field_page_ref*node*page*field_pricelists_ref': 0
+  'node*contact*field_page_ref*node*page*field_contacts_ref': 1
+  'node*page*field_contacts_ref*node*contact*field_page_ref': 1
+  'node*page*field_contacts_ref*node*contact*field_department': 0
+_core:
+  default_config_hash: jSmtEx-s8WYYIbvZcsvbLSwFQ08_ppgDs33f2emFQtY
+langcode: lv

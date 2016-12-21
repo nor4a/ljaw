@@ -1,0 +1,23 @@
+uuid: f0e22b67-c758-4828-a500-0d2f007b0615
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.forms
+  module:
+    - link
+id: node.forms.field_url
+field_name: field_url
+entity_type: node
+bundle: forms
+label: URL
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

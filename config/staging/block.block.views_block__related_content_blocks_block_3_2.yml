@@ -1,0 +1,24 @@
+uuid: 44ffe716-3f65-481d-9555-85e8139d00cc
+langcode: lv
+status: true
+dependencies:
+  config:
+    - views.view.related_content_blocks
+  module:
+    - views
+  theme:
+    - lja
+id: views_block__related_content_blocks_block_3_2
+theme: lja
+region: sidebar
+weight: -16
+provider: null
+plugin: 'views_block:related_content_blocks-block_3'
+settings:
+  id: 'views_block:related_content_blocks-block_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

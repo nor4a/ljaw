@@ -1,0 +1,11 @@
+uuid: 8003eb5c-7fac-417f-8a00-e1cc3e91962c
+langcode: lv
+status: true
+dependencies:
+  config:
+    - node.type.legislation
+id: node.legislation
+target_entity_type_id: node
+target_bundle: legislation
+default_langcode: site_default
+language_alterable: false

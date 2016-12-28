@@ -45,7 +45,10 @@
 
       data = data[0];
 
-      data.endorsement_domain = JSON.parse(data.endorsement_domain);
+      if(data.endorsement_domain) {
+        data.endorsement_domain = JSON.parse(data.endorsement_domain);
+      }
+
       data.certificate_issued_at = parseDateToString(data.certificate_issued_at);
       data.endorsement_valid_till = parseDateToString(data.endorsement_valid_till);
       data.endorsement_issued_at = parseDateToString(data.endorsement_issued_at);
@@ -97,7 +100,10 @@
 
       data = data[0];
 
-      data.endorsement_domain = JSON.parse(data.endorsement_domain);
+      if(data.endorsement_domain) {
+        data.endorsement_domain = JSON.parse(data.endorsement_domain);
+      }
+
       data.certificate_issued_at = parseDateToString(data.certificate_issued_at);
       data.endorsement_valid_till = parseDateToString(data.endorsement_valid_till);
       data.endorsement_issued_at = parseDateToString(data.endorsement_issued_at);
@@ -147,7 +153,10 @@
 
       data = data[0];
 
-      data.endorsement_domain = JSON.parse(data.endorsement_domain);
+      if(data.endorsement_domain) {
+        data.endorsement_domain = JSON.parse(data.endorsement_domain);
+      }
+
       data.certificate_issued_at = parseDateToString(data.certificate_issued_at);
       data.endorsement_valid_till = parseDateToString(data.endorsement_valid_till);
       data.endorsement_issued_at = parseDateToString(data.endorsement_issued_at);

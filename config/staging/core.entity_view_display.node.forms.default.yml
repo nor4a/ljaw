@@ -9,8 +9,8 @@ dependencies:
     - field.field.node.forms.field_url
     - node.type.forms
   module:
+    - field_redirection
     - file
-    - link
     - user
 id: node.forms.default
 targetEntityType: node
@@ -22,7 +22,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: file_default
+    type: file_url_plain
   field_form_cat:
     weight: 103
     label: above
@@ -41,14 +41,15 @@ content:
     weight: 101
     label: above
     settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+      code: '301'
+      page_restrictions: '0'
+      pages: ''
+      404_if_empty: 0
     third_party_settings: {  }
-    type: link
+    type: field_redirection_formatter
   links:
     weight: 100
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true

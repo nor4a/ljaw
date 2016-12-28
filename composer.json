@@ -47,7 +47,8 @@
         "composer/installers": "^1.0.20",
         "drupal-composer/drupal-scaffold": "~1",
         "cweagans/composer-patches": "~1.0",
-        "drupal/core": "8.1.*",
+        "drupal/core": "8.*",
+		"drupal/entity": "8.*",
         "drush/drush": "~8.0",
         "drupal/console": "~0.10",
         "drupal/devel": "*",
@@ -72,7 +73,10 @@
         "drupal/simple_gmap": "8.*",
         "drupal/workbench": "8.*",
         "drupal/workbench_access": "8.*",
-        "drupal/workbench_moderation": "8.*"
+        "drupal/workbench_moderation": "8.*",
+		"drupal/field_redirection": "8.*",
+        "drupal/google_analytics": "8.*",
+        "drupal/content_access": "8.*"
     },
     "require-dev": {
         "behat/mink": "~1.6",
@@ -104,6 +108,12 @@
       "patches": {
         "drupal/core": {
           "EntityStoragePatch": "https://raw.githubusercontent.com/nor4a/ljaw/master/patches/EntityStoragePatch.patch"
+        },
+        "drupal/spamspan": {
+          "SpamSpanFieldFormatter": "https://raw.githubusercontent.com/nor4a/ljaw/master/patches/SpamSpanFieldFormatter.patch"
+		},
+        "drupal/field_redirection": {
+          "FieldRedirectionFormatter": "https://raw.githubusercontent.com/nor4a/ljaw/master/patches/FieldRedirectionFormatter.patch"
         }
       }
     }

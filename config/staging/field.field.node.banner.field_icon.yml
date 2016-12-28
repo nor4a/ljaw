@@ -12,7 +12,7 @@ field_name: field_icon
 entity_type: node
 bundle: banner
 label: Ikona
-description: ''
+description: 'Tiek attēlota tikai pirmās lapas baneriem gadījumā, ja ir norādīts Teksta lauka saturs'
 required: false
 translatable: false
 default_value: {  }

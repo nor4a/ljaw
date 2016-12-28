@@ -1,6 +1,6 @@
 {% set column = fields.field_column.content | striptags | trim %}
 <a href="{{ fields.field_url.content | striptags | trim }}">
-    {% if column == 1 or column == 2 %}
+    {% if fields.body.content | striptags | trim %}
     <div class="border">
         <div>
             <div class="wrapper-text">

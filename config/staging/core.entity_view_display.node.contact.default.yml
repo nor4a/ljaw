@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.contact.field_working_time
     - node.type.contact
   module:
+    - spamspan
     - user
 id: node.contact.default
 targetEntityType: node
@@ -32,7 +33,7 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: email_spamspan
   field_first_name:
     weight: 1
     label: inline

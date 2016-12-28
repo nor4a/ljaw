@@ -1,0 +1,15 @@
+uuid: b5bb9f97-078e-44b5-9686-7b139af7de42
+langcode: lv
+status: true
+dependencies: {  }
+name: fp_right_ban_w327xh134
+label: fp_right_ban_w327xh134
+effects:
+  1ea583b6-ab0b-4e01-91c8-5137a283b264:
+    uuid: 1ea583b6-ab0b-4e01-91c8-5137a283b264
+    id: image_scale
+    weight: 2
+    data:
+      width: 327
+      height: null
+      upscale: false

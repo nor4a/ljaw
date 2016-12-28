@@ -18,8 +18,8 @@ settings:
       value: '2'
       label: 'Iepirkuma reultāts'
     -
-      value: '3}Sarunu procedūra'
-      label: '3}Sarunu procedūra'
+      value: '3'
+      label: 'Sarunu procedūra'
   allowed_values_function: ''
 module: options
 locked: false

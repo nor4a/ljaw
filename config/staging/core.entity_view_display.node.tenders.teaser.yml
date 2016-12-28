@@ -9,6 +9,9 @@ dependencies:
     - field.field.node.tenders.field_cpv_code
     - field.field.node.tenders.field_estimated_price
     - field.field.node.tenders.field_id_no
+    - field.field.node.tenders.field_iepirkuma_lemums
+    - field.field.node.tenders.field_liguma_noslegsanas_datums
+    - field.field.node.tenders.field_ligumi
     - field.field.node.tenders.field_offer_deadlinie
     - field.field.node.tenders.field_orderer
     - field.field.node.tenders.field_results_date
@@ -50,6 +53,9 @@ hidden:
   field_attachments: true
   field_cpv_code: true
   field_id_no: true
+  field_iepirkuma_lemums: true
+  field_liguma_noslegsanas_datums: true
+  field_ligumi: true
   field_offer_deadlinie: true
   field_orderer: true
   field_results_date: true

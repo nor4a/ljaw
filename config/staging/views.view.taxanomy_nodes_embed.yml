@@ -15,6 +15,7 @@ dependencies:
     - file
     - link
     - node
+    - spamspan
     - taxonomy
     - user
 id: taxanomy_nodes_embed
@@ -169,9 +170,9 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ title }}'
-            make_link: true
-            path: '{{ field_attachment }}'
+            text: '<a href="{{ field_attachment }}" target=_blank>{{ title }}</a>'
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false
@@ -289,7 +290,7 @@ display:
           plugin_id: field
       filters:
         status:
-          value: true
+          value: '1'
           table: node_field_data
           field: status
           plugin_id: boolean
@@ -794,7 +795,7 @@ display:
           empty_zero: true
           hide_alter_empty: true
           click_sort_column: value
-          type: email_mailto
+          type: email_spamspan
           settings: {  }
           group_column: value
           group_columns: {  }

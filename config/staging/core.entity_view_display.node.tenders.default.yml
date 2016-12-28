@@ -8,6 +8,9 @@ dependencies:
     - field.field.node.tenders.field_cpv_code
     - field.field.node.tenders.field_estimated_price
     - field.field.node.tenders.field_id_no
+    - field.field.node.tenders.field_iepirkuma_lemums
+    - field.field.node.tenders.field_liguma_noslegsanas_datums
+    - field.field.node.tenders.field_ligumi
     - field.field.node.tenders.field_offer_deadlinie
     - field.field.node.tenders.field_orderer
     - field.field.node.tenders.field_results_date
@@ -30,24 +33,24 @@ content:
   body:
     label: inline
     type: text_default
-    weight: 5
+    weight: 4
     settings: {  }
     third_party_settings: {  }
   field_attachments:
-    weight: 9
+    weight: 8
     label: above
     settings: {  }
     third_party_settings: {  }
     type: file_default
   field_cpv_code:
-    weight: 3
+    weight: 2
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_estimated_price:
-    weight: 7
+    weight: 6
     label: inline
     settings:
       thousand_separator: ''
@@ -57,37 +60,57 @@ content:
     third_party_settings: {  }
     type: number_decimal
   field_id_no:
-    weight: 2
+    weight: 1
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_iepirkuma_lemums:
+    weight: 13
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_liguma_noslegsanas_datums:
+    weight: 10
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+  field_ligumi:
+    weight: 14
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
   field_offer_deadlinie:
-    weight: 8
+    weight: 7
     label: inline
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: html_date
     third_party_settings: {  }
     type: datetime_default
   field_orderer:
-    weight: 6
+    weight: 5
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_results_date:
-    weight: 10
+    weight: 9
     label: inline
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: html_date
     third_party_settings: {  }
     type: datetime_default
   field_tender_procedure:
-    weight: 4
+    weight: 3
     label: inline
     settings: {  }
     third_party_settings: {  }
@@ -103,7 +126,7 @@ content:
     third_party_settings: {  }
     type: number_decimal
   field_tender_type:
-    weight: 1
+    weight: 0
     label: inline
     settings: {  }
     third_party_settings: {  }
@@ -115,9 +138,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-  links:
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   langcode: true
+  links: true

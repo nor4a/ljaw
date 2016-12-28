@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.legislation.field_attachment
     - field.field.node.legislation.field_legislation_cat
+    - field.field.node.legislation.field_page_ref
     - field.field.node.legislation.field_url
     - node.type.legislation
   module:
@@ -20,5 +21,6 @@ content:
 hidden:
   field_attachment: true
   field_legislation_cat: true
+  field_page_ref: true
   field_url: true
   langcode: true

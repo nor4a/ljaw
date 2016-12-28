@@ -1,0 +1,143 @@
+diff --git a/src/Plugin/Field/FieldFormatter/EmailSpamspanFormatter.php b/src/Plugin/Field/FieldFormatter/EmailSpamspanFormatter.php
+new file mode 100644
+index 0000000..f63a9a8
++++ b/src/Plugin/Field/FieldFormatter/EmailSpamspanFormatter.php
+@@ -0,0 +1,137 @@
++<?php
++
++/**
++ * @file
++ * Contains \Drupal\Core\Field\Plugin\Field\FieldFormatter\MailToFormatter.
++ */
++
++namespace Drupal\spamspan\Plugin\Field\FieldFormatter;
++
++use Drupal\Core\Field\FormatterBase;
++use Drupal\Core\Field\FieldItemListInterface;
++use Drupal\Core\Url;
++
++/**
++ * Plugin implementation of the 'email_mailto' formatter.
++ *
++ * @FieldFormatter(
++ *   id = "email_spamspan",
++ *   label = @Translation("Email SpamSpan"),
++ *   field_types = {
++ *     "email"
++ *   }
++ * )
++ */
++class EmailSpamspanFormatter extends FormatterBase {
++
++  /**
++   * {@inheritdoc}
++   */
++  public function viewElements(FieldItemListInterface $items, $langcode) {
++    $elements = array();
++
++    $obfuscator = new SpamspanObfuscator();
++
++    foreach ($items as $delta => $item) {
++      $email_exploded = explode('@', $item->value);
++      $elements[$delta]['#markup'] = $obfuscator->output($email_exploded[0], $email_exploded[1]);
++    }
++
++    return $elements;
++  }
++
++}
++
++class SpamspanObfuscator{
++
++  public function output($name, $domain, $contents = '', $headers = array(), $vars = array()) {
++    // processing for forms
++    if (!empty($this->settings['spamspan_use_form'])) {
++      $email = urlencode(base64_encode($name . '@' . $domain));
++
++      //put in the defaults if nothing set
++      if (empty($vars['custom_form_url'])) {
++        $vars['custom_form_url'] = $this->settings['spamspan_form_default_url'];
++      }
++      if (empty($vars['custom_displaytext'])) {
++        $vars['custom_displaytext'] = $this->t($this->settings['spamspan_form_default_displaytext']);
++      }
++      $vars['custom_form_url'] = strip_tags($vars['custom_form_url']);
++      $vars['custom_displaytext'] = strip_tags($vars['custom_displaytext']);
++
++     $url_parts = parse_url($vars['custom_form_url']);
++      if (!$url_parts) {
++        $vars['custom_form_url'] = '';
++      }
++      else if (empty($url_parts['host'])) {
++        $vars['custom_form_url'] = base_path() . trim($vars['custom_form_url'], '/');
++      }
++
++      $replace = ['%url' => $vars['custom_form_url'], '%displaytext' => $vars['custom_displaytext'], '%email' => $email];
++
++      $output = strtr($this->settings['spamspan_form_pattern'], $replace);
++      return $output;
++    }
++
++    $at = '[etta]';
++/*    if ($this->settings['spamspan_use_graphic']) {
++      $render_at = array('#theme' => 'spamspan_at_sign', '#settings' => $this->settings);
++      $at = \Drupal::service('renderer')->renderRoot($render_at);
++    }*/
++
++    //if ($this->settings['spamspan_dot_enable']) {
++      // Replace .'s in the address with [dot]	  
++      $name = str_replace('.', '<span class="t">[pnkts]</span>', $name);
++      $domain = str_replace('.', '<span class="t">[pnkts]</span>', $domain);
++    //}
++    $output = '<span class="u">' . $name . '</span>' . $at . '<span class="d">' . $domain . '</span>';
++
++    // if there are headers, include them as eg (subject: xxx, cc: zzz)
++    // we replace the = in the headers by ": " to look nicer
++    if (count($headers)) {
++      foreach ($headers as $key => $header) {
++        // check if header is already urlencoded, if not, encode it
++        if ($header == rawurldecode($header)) {
++          $header = rawurlencode($header);
++          // replace the first = sign
++          $header = preg_replace('/%3D/', ': ', $header, 1);
++        }
++        else {
++          $header = str_replace('=', ': ', $header);
++        }
++        $headers[$key] = $header;
++      }
++      $output .= '<span class="h"> ('. HTML::escape(implode(', ', $headers)) .') </span>';
++    }
++
++    // If there are tag contents, include them, between round brackets.
++    // Remove emails from the tag contents, otherwise the tag contents are themselves
++    // converted into a spamspan, with undesirable consequences - see bug #305464.`
++    if (!empty($contents)) {
++      $contents = preg_replace(self::PATTERN_EMAIL_BARE, '', $contents);
++
++      // remove anything except certain inline elements, just in case.  NB nested
++      // <a> elements are illegal. <img> needs to be here to allow for graphic @
++      // !-- is allowed because of _filter_spamspan_escape_images
++      $contents = Xss::filter($contents, ['em', 'strong', 'cite', 'b', 'i', 'code', 'span', 'img', '!--']);
++
++      if (!empty($contents)) {
++        $output .= '<span class="a"> (' . $contents . ')</span>';
++      }
++    }
++
++    // put in the extra <a> attributes
++    // this has to come after the xss filter, since we want comment tags preserved
++    if (!empty($vars['extra_attributes'])) {
++      $output .= '<span class="e"><!--'. strip_tags($vars['extra_attributes']) .'--></span>';
++    }
++
++    $output = '<span class="spamspan">' . $output . '</span>';
++
++    //if (!$this->textAltered) {
++//      $this->textAltered = TRUE;
++  //  }
++
++    return $output;
++  }
++}	
+\ No newline at end of file

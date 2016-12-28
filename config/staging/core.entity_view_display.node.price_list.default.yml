@@ -9,8 +9,8 @@ dependencies:
     - field.field.node.price_list.field_url
     - node.type.price_list
   module:
+    - field_redirection
     - file
-    - link
     - user
 id: node.price_list.default
 targetEntityType: node
@@ -22,7 +22,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: file_default
+    type: file_url_plain
   field_page_ref:
     weight: 104
     label: above
@@ -41,14 +41,15 @@ content:
     weight: 102
     label: above
     settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+      code: '301'
+      404_if_empty: false
+      page_restrictions: 0
+      pages: ''
     third_party_settings: {  }
-    type: link
+    type: field_redirection_formatter
   links:
     weight: 100
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true

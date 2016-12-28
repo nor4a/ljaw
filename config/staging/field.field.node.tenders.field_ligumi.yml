@@ -1,0 +1,27 @@
+uuid: f66ad056-5105-49c1-b2b9-1158c1de9d94
+langcode: lv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ligumi
+    - node.type.tenders
+  module:
+    - file
+id: node.tenders.field_ligumi
+field_name: field_ligumi
+entity_type: node
+bundle: tenders
+label: Līgumi
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'doc docx pdf jpg png pptx ppt'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

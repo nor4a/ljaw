@@ -5,5 +5,5 @@ dependencies: {  }
 name: 'Formu kategorija'
 vid: forms_category
 description: ''
-hierarchy: 1
+hierarchy: 0
 weight: -9

@@ -12,6 +12,7 @@ module:
   color: 0
   config: 0
   contact: 0
+  content_access: 0
   contextual: 0
   ctools: 0
   datetime: 0
@@ -24,9 +25,11 @@ module:
   eform: 0
   entity: 0
   field: 0
+  field_redirection: 0
   field_ui: 0
   file: 0
   filter: 0
+  google_analytics: 0
   help: 0
   history: 0
   image: 0

@@ -9,7 +9,7 @@ _core:
 id: lja_local_tasks
 theme: lja
 region: '-1'
-weight: -5
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:

@@ -1,0 +1,7 @@
+name: 'LJA REST API client'
+type: module
+description: ''
+package: Custom
+version: 8.x-1.0
+core: 8.x
+hidden: false

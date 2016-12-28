@@ -1,0 +1,8 @@
+ljarestapi:
+  version: 1.x
+  css:
+    theme:
+      css/lja-rest-api.css: {}
+  js:
+     js/lja-rest-api.js: {}
+     js/jsrender.js: {}

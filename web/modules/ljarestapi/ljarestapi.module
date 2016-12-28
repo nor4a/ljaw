@@ -1,0 +1,15 @@
+<?php
+
+function ljarestapi_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'ljarestapi/ljarestapi';
+}
+
+function ljarestapi_theme($existing, $type, $theme, $path) {
+  return array(
+      'certificates' => array(
+          'variables' => array(
+            'variables' => array()
+          ),
+      ),
+  );
+}

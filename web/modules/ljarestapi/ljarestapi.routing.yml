@@ -1,0 +1,7 @@
+ljarestapi.certificates:
+  path: '/certificates'
+  defaults:
+   _controller: '\Drupal\ljarestapi\Controller\CertificatesController::form'
+   _title: 'Certificates'
+  requirements:
+   _permission: 'access content'

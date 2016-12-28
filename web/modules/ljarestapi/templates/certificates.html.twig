@@ -1,0 +1,254 @@
+<div class="certificate-verification-heading">
+    <h3>
+        Please, choose what you would like to verify.
+    </h3>
+    <ul class="certificate-buttons">
+        <li>
+            <h1>
+                <a href="#" class="active" data-screen-id="#certificate-verification-certificate-without-endorsement">Certificate without endorsement</a>
+            </h1>
+        </li>
+        <li>
+            <h1>
+                <a href="#" data-screen-id="#certificate-verification-certificate-with-endorsement">Certificate with endorsement</a>
+            </h1>
+        </li>
+        <li>
+            <h1>
+                <a href="#" data-screen-id="#certificate-verification-endorsement-only">Endorsement only</a>
+            </h1>
+        </li>
+    </ul>
+    <div style="clear: both"></div>
+</div>
+
+<div class="certificate-verification-screen active" id="certificate-verification-certificate-without-endorsement">
+
+    <form>
+        <div class="form-row">
+            <label>
+                Certificate number *
+            </label>
+            <input type="text" size="60" name="certificateNumber"/>
+        </div>
+        <div class="form-row">
+            <label>
+                Holder name *
+            </label>
+            <input type="text" size="60" name="holderName"/>
+        </div>
+        <div class="form-row">
+            <label>
+                Holder surname *
+            </label>
+            <input type="text" size="60" name="holderSurname"/>
+        </div>
+        <div class="form-row">
+            {# captcha #}
+        </div>
+        <div class="form-row">
+            <input type="submit" value="Submit"/>
+        </div>
+    </form>
+
+</div>
+<div class="certificate-verification-screen hidden" id="certificate-verification-certificate-with-endorsement">
+
+    <form>
+        <div class="form-row">
+            <label>
+                Certificate number *
+            </label>
+            <input type="text" size="60" name="certificateNumber"/>
+        </div>
+        <div class="form-row">
+            <label>
+                Endorsement number *
+            </label>
+            <input type="text" size="60" name="endorsementNumber"/>
+        </div>
+        <div class="form-row">
+            <label>
+                Holder name *
+            </label>
+            <input type="text" size="60" name="holderName"/>
+        </div>
+        <div class="form-row">
+            <label>
+                Holder surname *
+            </label>
+            <input type="text" size="60" name="holderSurname"/>
+        </div>
+        <div class="form-row">
+            {# captcha #}
+        </div>
+        <div class="form-row">
+            <input type="submit" value="Submit"/>
+        </div>
+    </form>
+
+</div>
+<div class="certificate-verification-screen hidden" id="certificate-verification-endorsement-only">
+
+    <form>
+        <div class="form-row">
+            <label>
+                Endorsement number *
+            </label>
+            <input type="text" size="60" name="endorsementNumber"/>
+        </div>
+        <div class="form-row">
+            <label>
+                Holder name *
+            </label>
+            <input type="text" size="60" name="holderName"/>
+        </div>
+        <div class="form-row">
+            <label>
+                Holder surname *
+            </label>
+            <input type="text" size="60" name="holderSurname"/>
+        </div>
+        <div class="form-row">
+            {# captcha #}
+        </div>
+        <div class="form-row">
+            <input type="submit" value="Submit"/>
+        </div>
+    </form>
+
+</div>
+
+<div class="certificate-verification-screen hidden" id="certificate-verification-results"></div>
+
+{% verbatim %}
+<script id="certificate-verification-results-template" type="text/x-jsrender">
+
+    {{if certificate_number}}
+
+    <h3>Certificate</h3>
+
+    <table>
+        <tr>
+            <td>Holder</td>
+            <td>{{:holder_name}} {{:holder_surname}}</td>
+        </tr>
+        <tr>
+            <td>Number</td>
+            <td>{{:certificate_number}}</td>
+        </tr>
+        <tr>
+            <td>Title</td>
+            <td>{{:certificate_name}}</td>
+        </tr>
+        {{if certificate_status}}
+        <tr>
+            <td>Status</td>
+            <td>{{:certificate_status}}</td>
+        </tr>
+        {{/if}}
+        <tr>
+            <td>Date of issue</td>
+            <td>{{:certificate_issued_at}}</td>
+        </tr>
+        {{if certificate_description}}
+        <tr>
+            <td>Regulation of the STCW</td>
+            <td>{{:certificate_description}}</td>
+        </tr>
+        {{/if}}
+    </table>
+
+    {{/if}}
+
+    {{if endorsement_number}}
+
+    <h3>Endorsement</h3>
+
+    <table>
+        <tr>
+            <td>Endorsement number</td>
+            <td>{{:endorsement_number}}</td>
+        </tr>
+        <tr>
+            <td>Date of issue</td>
+            <td>{{:endorsement_issued_at}}</td>
+        </tr>
+        {{if endorsement_valid_till}}
+        <tr>
+            <td>Date of expiration</td>
+            <td>{{:endorsement_valid_till}}</td>
+        </tr>
+        {{/if}}
+        {{if endorsement_description}}
+        <tr>
+            <td>Regulation of the STCW</td>
+            <td>{{:endorsement_description}}</td>
+        </tr>
+        {{/if}}
+    </table>
+
+    {{if endorsement_domain.Functions && endorsement_domain.Functions.length}}
+
+    <h3>Functions</h3>
+
+    <p>The holder is authorised to perform the following functions, at the level specified, subject to any limitations specified.</p>
+
+    <table class="three-columns">
+        <thead>
+            <tr>
+                <th>Function</th>
+                <th>Level</th>
+                <th>Limitations</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{for endorsement_domain.Functions}}
+            <tr>
+                <td>{{:Function}}</td>
+                <td>{{:Level}}</td>
+                <td>{{if Limitation}}{{:Limitation}}{{else}}-{{/if}}</td>
+            </tr>
+            {{/for}}
+        </tbody>
+    </table>
+
+    {{/if}}
+
+    {{if endorsement_domain.Capacities && endorsement_domain.Capacities.length}}
+
+    <h3>Capacities</h3>
+
+    <p>The lawful holder of this endorsement may serve in the following capacity specified in the applicable safe manning requirements of the administration.</p>
+
+    <table class="three-columns">
+        <thead>
+            <tr>
+                <th>Capacity</th>
+                <th>Limitations</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{for endorsement_domain.Capacities}}
+            <tr>
+                <td>{{:Capacity}}</td>
+                <td>{{if Limitation}}{{:Limitation}}{{else}}-{{/if}}</td>
+            </tr>
+            {{/for}}
+        </tbody>
+    </table>
+
+    {{/if}}
+
+    {{/if}}
+
+</script>
+{% endverbatim %}
+
+<div class="certificate-verification-footer" id="certificate-verification-help">
+    <h3>
+        Help heading
+    </h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id cursus ipsum, vitae hendrerit libero. Cras sed viverra velit. Morbi quis metus ullamcorper, maximus tellus nec, pellentesque est. Cras facilisis pellentesque vehicula. Sed id velit quis eros euismod euismod. Pellentesque non ligula quis nunc sagittis faucibus. Vestibulum enim ante, viverra eget viverra vel, pellentesque a felis. In consequat dolor id tellus pretium condimentum. </p>
+</div>
+

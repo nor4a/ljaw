@@ -1,0 +1,82 @@
+.certificate-buttons {
+    width: 100%;
+    margin: 10px 0;
+    margin-top: 20px;
+    font-size: 0;
+    display: table;
+}
+.certificate-buttons li {
+    width: 33.33%;
+    display: table-cell;
+    padding: 0 !important;
+    margin: 0;
+    border: 1px solid #dadada;
+    border-right: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: middle;
+    min-height: 56px;
+}
+.certificate-buttons li:last-child {
+    border-right: 1px solid #dadada;
+}
+.certificate-buttons li:before {
+    display: none;
+}
+.certificate-buttons li h1 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px !important;
+    line-height: 14px !important;
+    margin: 0 !important;
+    font-weight: 300 !important;
+}
+.certificate-buttons li h1 a {
+    width: 100%;
+    padding: 13px 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 54px;
+}
+.certificate-buttons li h1 a.active {
+    pointer-events: none;
+    background: #e8e8e8;
+    color: #063d85;
+}
+.certificate-buttons li:nth-child(2) a,
+.certificate-buttons li:nth-child(3) a {
+    padding-top: 20px;
+}
+.certificate-verification-heading h3,
+.certificate-verification-footer h3,
+.certificate-verification-screen h3{
+    color: #063D85;
+    font-weight: 600;
+}
+.certificate-verification-screen {
+    margin: 25px 0;
+}
+#certificate-verification-results {
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    padding: 20px 0 10px;
+}
+#certificate-verification-results table tr td:first-child {
+    width: 30%;
+    font-weight: 500;
+}
+#certificate-verification-results table tr td:last-child {
+    width: 70%;
+}
+#certificate-verification-results table.three-columns td:first-child {
+    font-weight: normal;
+}
+#certificate-verification-results table.three-columns td {
+    width: 33.33% !important;
+}

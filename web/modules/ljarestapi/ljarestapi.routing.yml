@@ -5,3 +5,24 @@ ljarestapi.certificates:
    _title: 'Certificates'
   requirements:
    _permission: 'access content'
+
+ljarestapi.getcertificate:
+  path: '/certificates/certificate/{certificateNumber}/{name}/{surname}'
+  defaults: { _controller: '\Drupal\ljarestapi\Controller\CertificatesController::getCertificate' }
+  methods:  [GET]
+  requirements:
+   _permission: 'access content'
+
+ljarestapi.getcertificateandendrosement:
+  path: '/certificates/certificate/{certificateNumber}/{endorsementNumber}/{name}/{surname}'
+  defaults: { _controller: '\Drupal\ljarestapi\Controller\CertificatesController::getCertificateAndEndrosement' }
+  methods:  [GET]
+  requirements:
+   _permission: 'access content'
+
+ljarestapi.getendorsement:
+  path: '/certificates/endorsement/{endorsementNumber}/{name}/{surname}'
+  defaults: { _controller: '\Drupal\ljarestapi\Controller\CertificatesController::getEndorsement' }
+  methods:  [GET]
+  requirements:
+   _permission: 'access content'

@@ -32,7 +32,7 @@
     values.certificateNumber = values.certificateNumber.replace('/', '::');
 
     $.ajax({
-        url: 'https://dmz-api-01.lja.lv:5443/app_dev.php/api/certificates/' + values.holderName + '/names/' + values.holderSurname + '/surnames/' + values.certificateNumber + '/certificate.json',
+        url: '/certificates/certificate/' + values.certificateNumber + '/' + values.holderName + '/' + values.holderSurname,
         beforeSend: function(request) {
           request.setRequestHeader('apitoken', '2f75a1f6fc5cc4ffa3c43b1199ee303c');
         }
@@ -87,7 +87,7 @@
     values.endorsementNumber = values.endorsementNumber.replace('/', '::');
 
     $.ajax({
-      url: 'https://dmz-api-01.lja.lv:5443/app_dev.php/api/certificates/' + values.holderName + '/names/' + values.holderSurname + '/surnames/' + values.certificateNumber + '/certificates/' + values.endorsementNumber + '/endorsement.json',
+      url: 'certificates/certificate/' + values.certificateNumber + '/' + values.endorsementNumber + '/' + values.holderName + '/' + values.holderSurname,
       beforeSend: function(request) {
         request.setRequestHeader('apitoken', '2f75a1f6fc5cc4ffa3c43b1199ee303c');
       }
@@ -140,7 +140,7 @@
     values.endorsementNumber = values.endorsementNumber.replace('/', '::');
 
     $.ajax({
-      url: 'https://dmz-api-01.lja.lv:5443/app_dev.php/api/certificates/' + values.holderName + '/names/' + values.holderSurname + '/surnames/' + values.endorsementNumber + '/endorsement.json',
+      url: '/certificates/endorsement/' + values.endorsementNumber + '/' + values.holderName + '/' + values.holderSurname,
       beforeSend: function(request) {
         request.setRequestHeader('apitoken', '2f75a1f6fc5cc4ffa3c43b1199ee303c');
       }

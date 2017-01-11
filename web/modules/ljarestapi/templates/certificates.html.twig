@@ -1,29 +1,29 @@
 <div class="certificate-verification-heading">
     <h3>
-        Please, choose what you would like to verify.
+        {{ variables.texts.heading | raw }}
     </h3>
     <ul class="certificate-buttons">
         <li>
             <h1>
-                <a href="#" class="active" data-screen-id="#certificate-verification-certificate-without-endorsement">Certificate without endorsement</a>
+                <a href="#" data-screen-id="#certificate-verification-certificate-without-endorsement">{{ variables.texts['button-certificate-only'] }}</a>
             </h1>
         </li>
         <li>
             <h1>
-                <a href="#" data-screen-id="#certificate-verification-certificate-with-endorsement">Certificate with endorsement</a>
+                <a href="#" data-screen-id="#certificate-verification-certificate-with-endorsement">{{ variables.texts['button-certificate-with-endorsment'] }}</a>
             </h1>
         </li>
         <li>
             <h1>
-                <a href="#" data-screen-id="#certificate-verification-endorsement-only">Endorsement only</a>
+                <a href="#" data-screen-id="#certificate-verification-endorsement-only">{{ variables.texts['button-endrosement-only'] }}</a>
             </h1>
         </li>
     </ul>
     <div style="clear: both"></div>
 </div>
 
-<div class="certificate-verification-screen active" id="certificate-verification-certificate-without-endorsement">
-
+<div class="certificate-verification-screen hidden" id="certificate-verification-certificate-without-endorsement">
+    {{ variables.texts['help-certificate-only'] | raw }}
     <form>
         <div class="form-row">
             <label>
@@ -43,17 +43,19 @@
             </label>
             <input type="text" size="60" name="holderSurname"/>
         </div>
-        <div class="form-row">
-            {# captcha #}
+        <div class="form-row captcha">
+            <div class="g-recaptcha" id="certificate-only-captcha" data-sitekey="6LcZygkTAAAAABAi7D6DonUIzVToFigdd97a8I56"></div>
+            <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha">
         </div>
         <div class="form-row">
-            <input type="submit" value="Submit"/>
+            <input type="submit" value="{{ variables.texts['button-submit'] }}"/>
         </div>
     </form>
 
 </div>
+
 <div class="certificate-verification-screen hidden" id="certificate-verification-certificate-with-endorsement">
-
+    {{ variables.texts['help-certificate-with-endorsment'] | raw }}
     <form>
         <div class="form-row">
             <label>
@@ -79,17 +81,19 @@
             </label>
             <input type="text" size="60" name="holderSurname"/>
         </div>
-        <div class="form-row">
-            {# captcha #}
+        <div class="form-row captcha">
+            <div class="g-recaptcha" id="certificate-with-endorsement-captcha"  data-sitekey="6LcZygkTAAAAABAi7D6DonUIzVToFigdd97a8I56"></div>
+            <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha">
         </div>
         <div class="form-row">
-            <input type="submit" value="Submit"/>
+            <input type="submit" value="{{ variables.texts['button-submit'] }}"/>
         </div>
     </form>
 
 </div>
-<div class="certificate-verification-screen hidden" id="certificate-verification-endorsement-only">
 
+<div class="certificate-verification-screen hidden" id="certificate-verification-endorsement-only">
+    {{ variables.texts['help-endorsement-only'] | raw }}
     <form>
         <div class="form-row">
             <label>
@@ -109,11 +113,12 @@
             </label>
             <input type="text" size="60" name="holderSurname"/>
         </div>
-        <div class="form-row">
-            {# captcha #}
+        <div class="form-row captcha">
+            <div class="g-recaptcha" id="endorsement-only-captcha" data-sitekey="6LcZygkTAAAAABAi7D6DonUIzVToFigdd97a8I56"></div>
+            <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha">
         </div>
         <div class="form-row">
-            <input type="submit" value="Submit"/>
+            <input type="submit" value="{{ variables.texts['button-submit'] }}"/>
         </div>
     </form>
 
@@ -192,7 +197,11 @@
 
     <h3>Functions</h3>
 
-    <p>The holder is authorised to perform the following functions, at the level specified, subject to any limitations specified.</p>
+{% endverbatim %}
+
+    {{ variables.texts['description-functions'] | raw }}
+
+{% verbatim %}
 
     <table class="three-columns">
         <thead>
@@ -219,7 +228,11 @@
 
     <h3>Capacities</h3>
 
-    <p>The lawful holder of this endorsement may serve in the following capacity specified in the applicable safe manning requirements of the administration.</p>
+{% endverbatim %}
+
+    {{ variables.texts['description-capacities'] | raw }}
+
+{% verbatim %}
 
     <table class="three-columns">
         <thead>
@@ -246,9 +259,6 @@
 {% endverbatim %}
 
 <div class="certificate-verification-footer" id="certificate-verification-help">
-    <h3>
-        Help heading
-    </h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id cursus ipsum, vitae hendrerit libero. Cras sed viverra velit. Morbi quis metus ullamcorper, maximus tellus nec, pellentesque est. Cras facilisis pellentesque vehicula. Sed id velit quis eros euismod euismod. Pellentesque non ligula quis nunc sagittis faucibus. Vestibulum enim ante, viverra eget viverra vel, pellentesque a felis. In consequat dolor id tellus pretium condimentum. </p>
+    {{ variables.texts.help | raw }}
 </div>
 

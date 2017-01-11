@@ -1,0 +1,5 @@
+ljarestapi.config:
+  title: 'REST API settings'
+  route_name: ljarestapi.config
+  parent: system.admin_config_system
+  weight: 99

@@ -45,7 +45,6 @@
     min-height: 54px;
 }
 .certificate-buttons li h1 a.active {
-    pointer-events: none;
     background: #e8e8e8;
     color: #063d85;
 }
@@ -58,6 +57,9 @@
 .certificate-verification-screen h3{
     color: #063D85;
     font-weight: 600;
+}
+.certificate-verification-footer {
+    margin-top: 20px;
 }
 .certificate-verification-screen {
     margin: 25px 0;
@@ -79,4 +81,13 @@
 }
 #certificate-verification-results table.three-columns td {
     width: 33.33% !important;
+}
+.form-row.captcha {
+    margin-top: 18px;
+}
+.form-row .error {
+    font-weight: normal !important;
+    color: #bd0000 !important;
+    font-size: 12px;
+    margin: 3px 0;
 }

@@ -4,5 +4,7 @@ ljarestapi:
     theme:
       css/lja-rest-api.css: {}
   js:
-     js/lja-rest-api.js: {}
+     js/jquery.validate.min.js: {}
+     https://www.google.com/recaptcha/api.js?onload=onReCaptchaLoad&render=explicit: { type: external }
      js/jsrender.js: {}
+     js/lja-rest-api.js: {}

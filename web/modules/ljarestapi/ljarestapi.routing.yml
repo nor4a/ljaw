@@ -26,3 +26,11 @@ ljarestapi.getendorsement:
   methods:  [GET]
   requirements:
    _permission: 'access content'
+
+ljarestapi.config:
+  path: '/admin/config/system/lja'
+  defaults:
+   _form: '\Drupal\ljarestapi\Form\ConfigForm'
+   _title: 'Configuration'
+  requirements:
+   _permission: 'administer site configuration'

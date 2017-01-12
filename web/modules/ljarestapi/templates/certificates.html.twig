@@ -44,6 +44,9 @@
             <input type="text" size="60" name="holderSurname"/>
         </div>
         <div class="form-row captcha">
+            <label>
+                Confirm that you are not robot *
+            </label>
             <div class="g-recaptcha" id="certificate-only-captcha" data-sitekey="6LcZygkTAAAAABAi7D6DonUIzVToFigdd97a8I56"></div>
             <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha">
         </div>
@@ -82,6 +85,9 @@
             <input type="text" size="60" name="holderSurname"/>
         </div>
         <div class="form-row captcha">
+            <label>
+                Confirm that you are not robot *
+            </label>
             <div class="g-recaptcha" id="certificate-with-endorsement-captcha"  data-sitekey="6LcZygkTAAAAABAi7D6DonUIzVToFigdd97a8I56"></div>
             <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha">
         </div>
@@ -93,7 +99,7 @@
 </div>
 
 <div class="certificate-verification-screen hidden" id="certificate-verification-endorsement-only">
-    {{ variables.texts['help-endorsement-only'] | raw }}
+    {{ variables.texts['help-endrosement-only'] | raw }}
     <form>
         <div class="form-row">
             <label>
@@ -114,6 +120,9 @@
             <input type="text" size="60" name="holderSurname"/>
         </div>
         <div class="form-row captcha">
+            <label>
+                Confirm that you are not robot *
+            </label>
             <div class="g-recaptcha" id="endorsement-only-captcha" data-sitekey="6LcZygkTAAAAABAi7D6DonUIzVToFigdd97a8I56"></div>
             <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha">
         </div>
@@ -135,15 +144,21 @@
 
     <table>
         <tr>
-            <td>Holder</td>
+            <td>Holder (name, surname)</td>
             <td>{{:holder_name}} {{:holder_surname}}</td>
         </tr>
         <tr>
-            <td>Number</td>
+            <td>Certificate number</td>
             <td>{{:certificate_number}}</td>
         </tr>
         <tr>
-            <td>Title</td>
+            <td>
+                {{if endorsement_number}}
+                    Capacity
+                {{else}}
+                    Qualification
+                {{/if}}
+            </td>
             <td>{{:certificate_name}}</td>
         </tr>
         {{if certificate_status}}
@@ -181,7 +196,7 @@
         </tr>
         {{if endorsement_valid_till}}
         <tr>
-            <td>Date of expiration</td>
+            <td>Valid till</td>
             <td>{{:endorsement_valid_till}}</td>
         </tr>
         {{/if}}

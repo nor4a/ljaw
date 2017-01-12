@@ -82,9 +82,9 @@
 #certificate-verification-results table.three-columns td {
     width: 33.33% !important;
 }
-.form-row.captcha {
-    margin-top: 18px;
-}
+/*.form-row.captcha {*/
+    /*margin-top: 18px;*/
+/*}*/
 .form-row .error {
     font-weight: normal !important;
     color: #bd0000 !important;

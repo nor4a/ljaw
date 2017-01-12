@@ -40,6 +40,9 @@
         },
         hiddenRecaptcha: {
           required: function () {
+            if(!window.drupalSettings.ljarestapi.captcha_key) {
+              return true;
+            }
             if (grecaptcha.getResponse(0) == '') {
               return true;
             } else {
@@ -134,6 +137,9 @@
       },
       hiddenRecaptcha: {
         required: function () {
+          if(!window.drupalSettings.ljarestapi.captcha_key) {
+            return true;
+          }
           if (grecaptcha.getResponse(1) == '') {
             return true;
           } else {
@@ -223,6 +229,9 @@
       },
       hiddenRecaptcha: {
         required: function () {
+          if(!window.drupalSettings.ljarestapi.captcha_key) {
+            return true;
+          }
           if (grecaptcha.getResponse(2) == '') {
             return true;
           } else {
@@ -320,23 +329,27 @@ var onReCaptchaLoad = function() {
 
   var siteKey = window.drupalSettings.ljarestapi.captcha_key;
 
-  grecaptcha.render('certificate-only-captcha', {
-    'sitekey': siteKey,
-    'callback': function() {
-      jQuery('#certificate-verification-certificate-without-endorsement').find('.hiddenRecaptcha').valid();
-    }
-  });
-  grecaptcha.render('certificate-with-endorsement-captcha', {
-    'sitekey': siteKey,
-    'callback': function() {
-      jQuery('#certificate-verification-certificate-with-endorsement').find('.hiddenRecaptcha').valid();
-    }
-  });
-  grecaptcha.render('endorsement-only-captcha', {
-    'sitekey': siteKey,
-    'callback': function() {
-      jQuery('#certificate-verification-endorsement-only').find('.hiddenRecaptcha').valid();
-    }
-  });
+  if(siteKey) {
+
+    grecaptcha.render('certificate-only-captcha', {
+      'sitekey': siteKey,
+      'callback': function () {
+        jQuery('#certificate-verification-certificate-without-endorsement').find('.hiddenRecaptcha').valid();
+      }
+    });
+    grecaptcha.render('certificate-with-endorsement-captcha', {
+      'sitekey': siteKey,
+      'callback': function () {
+        jQuery('#certificate-verification-certificate-with-endorsement').find('.hiddenRecaptcha').valid();
+      }
+    });
+    grecaptcha.render('endorsement-only-captcha', {
+      'sitekey': siteKey,
+      'callback': function () {
+        jQuery('#certificate-verification-endorsement-only').find('.hiddenRecaptcha').valid();
+      }
+    });
+
+  }
 
 };

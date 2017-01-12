@@ -299,9 +299,12 @@
   });
 
   var parseDateToString = function(date) {
-     if(!date) return '';
-     date = new Date(date);
-     return ('0' + date.getDay()).slice(-2) + '/' + ('0' + (date.getMonth() + 1)).slice(-2) + '/' + date.getFullYear();
+    if(!date) return '';
+    var parts = date.split('T');
+    var datePart = parts[0];
+    var dateParts = datePart.split('-');
+    date = new Date(dateParts[0], (dateParts[1]-1), dateParts[2]);
+    return ('0' + date.getDate()).slice(-2) + '/' + ('0' + (date.getMonth() + 1)).slice(-2) + '/' + date.getFullYear();
   };
 
   var handleError = function() {

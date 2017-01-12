@@ -41,7 +41,7 @@
         hiddenRecaptcha: {
           required: function () {
             if(!window.drupalSettings.ljarestapi.captcha_key) {
-              return true;
+              return false;
             }
             if (grecaptcha.getResponse(0) == '') {
               return true;
@@ -138,7 +138,7 @@
       hiddenRecaptcha: {
         required: function () {
           if(!window.drupalSettings.ljarestapi.captcha_key) {
-            return true;
+            return false;
           }
           if (grecaptcha.getResponse(1) == '') {
             return true;
@@ -230,7 +230,7 @@
       hiddenRecaptcha: {
         required: function () {
           if(!window.drupalSettings.ljarestapi.captcha_key) {
-            return true;
+            return false;
           }
           if (grecaptcha.getResponse(2) == '') {
             return true;

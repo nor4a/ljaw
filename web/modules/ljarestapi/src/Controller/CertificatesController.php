@@ -14,7 +14,9 @@ class CertificatesController extends ControllerBase {
             '#theme' => 'certificates',
             '#variables' => array(
                 'texts' => $config->get('texts'),
-                'captcha_key' => $config->get('captcha')['public_key']
+                'captcha_key' => $config->get('captcha')['public_key'],
+                'timestamp' => time(),
+                'time' => date()
             ),
             '#attached' => array(
                 'drupalSettings' => array(

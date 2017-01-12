@@ -91,3 +91,10 @@
     font-size: 12px;
     margin: 3px 0;
 }
+.certificate-timestamp {
+    margin-top: 20px;
+    color: #dadada;
+    font-size: 12px;
+    display: block;
+    margin-bottom: -20px;
+}

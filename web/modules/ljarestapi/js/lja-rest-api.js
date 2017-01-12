@@ -43,7 +43,7 @@
             if(!window.drupalSettings.ljarestapi.captcha_key) {
               return false;
             }
-            if (grecaptcha.getResponse(0) == '') {
+            if (reCaptchaGetResponse(0) == '') {
               return true;
             } else {
               return false;
@@ -64,7 +64,7 @@
         });
 
         values.certificateNumber = values.certificateNumber.replace('/', '::');
-        values.reCaptcha = grecaptcha.getResponse(0);
+        values.reCaptcha = reCaptchaGetResponse(0);
 
         $.ajax({
           url: '/certificates/certificate/' + values.certificateNumber + '/' + values.holderName + '/' + values.holderSurname + '?captcha=' + values.reCaptcha,
@@ -73,7 +73,7 @@
           }
         }).then(function(data) {
 
-          grecaptcha.reset(0);
+          reCaptchaReset(0);
 
           if(!data.length || (data.length && !data[0].id)) {
 
@@ -140,7 +140,7 @@
           if(!window.drupalSettings.ljarestapi.captcha_key) {
             return false;
           }
-          if (grecaptcha.getResponse(1) == '') {
+          if (reCaptchaGetResponse(1) == '') {
             return true;
           } else {
             return false;
@@ -162,7 +162,7 @@
 
       values.certificateNumber = values.certificateNumber.replace('/', '::');
       values.endorsementNumber = values.endorsementNumber.replace('/', '::');
-      values.reCaptcha = grecaptcha.getResponse(1);
+      values.reCaptcha = reCaptchaGetResponse(1);
 
       $.ajax({
         url: 'certificates/certificate/' + values.certificateNumber + '/' + values.endorsementNumber + '/' + values.holderName + '/' + values.holderSurname + '?captcha=' + values.reCaptcha,
@@ -171,7 +171,7 @@
         }
       }).then(function (data) {
 
-        grecaptcha.reset(1);
+        reCaptchaReset(1);
 
         if (!data.length || (data.length && !data[0].id)) {
 
@@ -232,7 +232,7 @@
           if(!window.drupalSettings.ljarestapi.captcha_key) {
             return false;
           }
-          if (grecaptcha.getResponse(2) == '') {
+          if (reCaptchaGetResponse(2) == '') {
             return true;
           } else {
             return false;
@@ -253,7 +253,7 @@
       });
 
       values.endorsementNumber = values.endorsementNumber.replace('/', '::');
-      values.reCaptcha = grecaptcha.getResponse(2);
+      values.reCaptcha = reCaptchaGetResponse(2);
 
       $.ajax({
         url: '/certificates/endorsement/' + values.endorsementNumber + '/' + values.holderName + '/' + values.holderSurname + '?captcha=' + values.reCaptcha,
@@ -262,7 +262,7 @@
         }
       }).then(function (data) {
 
-        grecaptcha.reset(2);
+        reCaptchaReset(2);
 
         if (!data.length || (data.length && !data[0].id)) {
 
@@ -321,6 +321,18 @@
     $('#certificate-verification-results').removeClass('hidden').addClass('active');
     $('#certificate-verification-results').html(moduleSettings.texts.error);
 
+  };
+
+  var reCaptchaGetResponse = function(index) {
+    if(window.drupalSettings.ljarestapi.captcha_key) {
+      return grecaptcha.getResponse(index);
+    }
+  };
+
+  var reCaptchaReset = function(index) {
+    if(window.drupalSettings.ljarestapi.captcha_key) {
+      grecaptcha.reset(index);
+    }
   };
 
 })(jQuery);

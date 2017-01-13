@@ -90,6 +90,7 @@
             }
 
             data.certificate_issued_at = parseDateToString(data.certificate_issued_at);
+            data.certificate_valid_till = parseDateToString(data.certificate_valid_till);
             data.endorsement_valid_till = parseDateToString(data.endorsement_valid_till);
             data.endorsement_issued_at = parseDateToString(data.endorsement_issued_at);
 
@@ -188,6 +189,7 @@
           }
 
           data.certificate_issued_at = parseDateToString(data.certificate_issued_at);
+          data.certificate_valid_till = parseDateToString(data.certificate_valid_till);
           data.endorsement_valid_till = parseDateToString(data.endorsement_valid_till);
           data.endorsement_issued_at = parseDateToString(data.endorsement_issued_at);
 
@@ -279,6 +281,7 @@
           }
 
           data.certificate_issued_at = parseDateToString(data.certificate_issued_at);
+          data.certificate_valid_till = parseDateToString(data.certificate_valid_till);
           data.endorsement_valid_till = parseDateToString(data.endorsement_valid_till);
           data.endorsement_issued_at = parseDateToString(data.endorsement_issued_at);
 

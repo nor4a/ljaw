@@ -30,7 +30,7 @@ class CertificatesController extends ControllerBase {
 
     }
 
-    private $apiUrl = 'https://dmz-api-01.lja.lv:5443/app_dev.php/api/';
+    private $apiUrl = 'https://dmz-api-01.lja.lv:5443/app.php/api/';
     private $apiToken = '2f75a1f6fc5cc4ffa3c43b1199ee303c';
 
     public function getCertificate($certificateNumber, $name, $surname)

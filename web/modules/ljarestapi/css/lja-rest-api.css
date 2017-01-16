@@ -82,9 +82,6 @@
 #certificate-verification-results table.three-columns td {
     width: 33.33% !important;
 }
-/*.form-row.captcha {*/
-    /*margin-top: 18px;*/
-/*}*/
 .form-row .error {
     font-weight: normal !important;
     color: #bd0000 !important;
@@ -97,4 +94,32 @@
     font-size: 12px;
     display: block;
     margin-bottom: -20px;
+}
+
+button.print {
+    background: #007fff;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+@media print {
+    button.print {
+        display: none;
+    }
+    .certificate-verification-heading,
+    .certificate-verification-screen .form-row.captcha,
+    .certificate-verification-screen .form-row > input[type=submit] {
+        display: none;
+    }
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px white inset;
+    }
 }

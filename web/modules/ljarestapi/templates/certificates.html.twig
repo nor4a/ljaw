@@ -43,7 +43,7 @@
             </label>
             <input type="text" size="60" name="holderSurname"/>
         </div>
-        {% if variables.captcha['public_key'] %}
+        {% if variables.captcha_key %}
         <div class="form-row captcha">
             <label>
                 Confirm that you are not robot *
@@ -86,7 +86,7 @@
             </label>
             <input type="text" size="60" name="holderSurname"/>
         </div>
-        {% if variables.captcha['public_key'] %}
+        {% if variables.captcha_key %}
         <div class="form-row captcha">
             <label>
                 Confirm that you are not robot *
@@ -123,7 +123,7 @@
             </label>
             <input type="text" size="60" name="holderSurname"/>
         </div>
-        {% if variables.captcha['public_key'] %}
+        {% if variables.captcha_key %}
         <div class="form-row captcha">
             <label>
                 Confirm that you are not robot *
@@ -281,6 +281,8 @@
     {{/if}}
 
     {{/if}}
+
+    <button class="print" onclick="javascript:window.print()">Print</button>
 
 </script>
 {% endverbatim %}

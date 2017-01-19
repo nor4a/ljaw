@@ -106,7 +106,6 @@ class CertificatesController extends ControllerBase {
 
     private function requestApi($url) {
 
-//        print_r($url); die();
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

@@ -122,4 +122,23 @@ button.print {
     input:-webkit-autofill {
         -webkit-box-shadow: 0 0 0px 1000px white inset;
     }
+    .goTopWrapper {
+        display: none !important;
+    }
+    body,
+    .content-wrapper,
+    .container > .text-block {
+        background-image: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    #block-lja-page-title {
+        display: none;
+    }
+    #certificate-verification-certificate-without-endorsement,
+    #certificate-verification-certificate-with-endorsement,
+    #certificate-verification-endorsement-only,
+    #certificate-verification-help {
+        display: none;
+    }
 }

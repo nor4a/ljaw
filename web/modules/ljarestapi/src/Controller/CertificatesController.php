@@ -35,38 +35,69 @@ class CertificatesController extends ControllerBase {
 
     public function getCertificate($certificateNumber, $name, $surname)
     {
+
+        $certificateNumber = str_replace(' ', '%20', $certificateNumber);
+        $name = str_replace(' ', '%20', $name);
+        $surname = str_replace(' ', '%20', $surname);
+
         if(!$this->validateCaptcha()) {
             return $this->captchaInvalidResponse();
         }
+
         $response = $this->requestApi($this->apiUrl . 'certificates/' . $name . '/names/' . $surname . '/surnames/' . $certificateNumber . '/certificate.json');
+
         if(!$response) $response = [];
+
         $response = new \Symfony\Component\HttpFoundation\Response($response);
         $response->headers->set('Content-Type', 'application/json');
+
         return $response;
+
     }
     
     public function getCertificateAndEndrosement($certificateNumber, $endorsementNumber, $name, $surname)
     {
+
+        $certificateNumber = str_replace(' ', '%20', $certificateNumber);
+        $endorsementNumber = str_replace(' ', '%20', $endorsementNumber);
+        $name = str_replace(' ', '%20', $name);
+        $surname = str_replace(' ', '%20', $surname);
+
         if(!$this->validateCaptcha()) {
             return $this->captchaInvalidResponse();
         }
+
         $response = $this->requestApi($this->apiUrl . 'certificates/' . $name . '/names/' . $surname . '/surnames/' . $certificateNumber . '/certificates/' . $endorsementNumber . '/endorsement.json');
+
         if(!$response) $response = [];
+
         $response = new \Symfony\Component\HttpFoundation\Response($response);
         $response->headers->set('Content-Type', 'application/json');
+
         return $response;
+
     }
 
     public function getEndorsement($endorsementNumber, $name, $surname)
     {
+
+        $endorsementNumber = str_replace(' ', '%20', $endorsementNumber);
+        $name = str_replace(' ', '%20', $name);
+        $surname = str_replace(' ', '%20', $surname);
+
         if(!$this->validateCaptcha()) {
             return $this->captchaInvalidResponse();
         }
+
         $response = $this->requestApi($this->apiUrl . 'certificates/' . $name . '/names/' . $surname . '/surnames/' . $endorsementNumber . '/endorsement.json');
+
         if(!$response) $response = [];
+
         $response = new \Symfony\Component\HttpFoundation\Response($response);
         $response->headers->set('Content-Type', 'application/json');
+
         return $response;
+
     }
 
     private function validateCaptcha() {

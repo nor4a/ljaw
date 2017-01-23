@@ -48,7 +48,7 @@
     background: #e8e8e8;
     color: #063d85;
 }
-.certificate-buttons li:nth-child(2) a,
+.certificate-buttons li:nth-child(1) a,
 .certificate-buttons li:nth-child(3) a {
     padding-top: 20px;
 }

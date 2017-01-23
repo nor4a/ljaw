@@ -5,12 +5,12 @@
     <ul class="certificate-buttons">
         <li>
             <h1>
-                <a href="#" data-screen-id="#certificate-verification-certificate-without-endorsement">{{ variables.texts['button-certificate-only'] }}</a>
+                <a href="#" data-screen-id="#certificate-verification-certificate-with-endorsement">{{ variables.texts['button-certificate-with-endorsment'] }}</a>
             </h1>
         </li>
         <li>
             <h1>
-                <a href="#" data-screen-id="#certificate-verification-certificate-with-endorsement">{{ variables.texts['button-certificate-with-endorsment'] }}</a>
+                <a href="#" data-screen-id="#certificate-verification-certificate-without-endorsement">{{ variables.texts['button-certificate-only'] }}</a>
             </h1>
         </li>
         <li>
@@ -52,8 +52,10 @@
             <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha">
         </div>
         {% endif %}
+        <span style="color: #063d85; font-size: 12px;">* that field is required</span>
         <div class="form-row">
             <input type="submit" value="{{ variables.texts['button-submit'] }}"/>
+            <input type="reset" value="Reset"/>
         </div>
     </form>
 
@@ -95,8 +97,10 @@
             <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha">
         </div>
         {% endif %}
+        <span style="color: #063d85; font-size: 12px;">* that field is required</span>
         <div class="form-row">
             <input type="submit" value="{{ variables.texts['button-submit'] }}"/>
+            <input type="reset" value="Reset"/>
         </div>
     </form>
 
@@ -132,11 +136,12 @@
             <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha">
         </div>
         {% endif %}
+        <span style="color: #063d85; font-size: 12px;">* that field is required</span>
         <div class="form-row">
             <input type="submit" value="{{ variables.texts['button-submit'] }}"/>
+            <input type="reset" value="Reset"/>
         </div>
     </form>
-
 </div>
 
 <div class="certificate-verification-screen hidden" id="certificate-verification-results"></div>
@@ -173,16 +178,16 @@
             <td style="color: red">{{:certificate_status}}</td>
         </tr>
         {{/if}}
+        <tr>
+            <td>Date of issue</td>
+            <td>{{:certificate_issued_at}}</td>
+        </tr>
         {{if certificate_valid_till}}
         <tr>
             <td>Valid till</td>
             <td>{{:certificate_valid_till}}</td>
         </tr>
         {{/if}}
-        <tr>
-            <td>Date of issue</td>
-            <td>{{:certificate_issued_at}}</td>
-        </tr>
         {{if certificate_description}}
         <tr>
             <td>Regulation of the STCW</td>

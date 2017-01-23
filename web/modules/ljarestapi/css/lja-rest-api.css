@@ -142,3 +142,20 @@ button.print {
         display: none;
     }
 }
+
+input[type=reset] {
+    background: #dadada;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+input[type=reset]:hover {
+    background: #969696;
+}

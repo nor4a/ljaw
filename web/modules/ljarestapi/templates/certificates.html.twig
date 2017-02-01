@@ -200,9 +200,15 @@
 
     {{if endorsement_number}}
 
-    <h3>Endorsement</h3>
+    <h3>Endorsement</h3> 
 
     <table>
+        {{if !certificate_number}}
+        <tr>
+            <td>Holder (name, surname)</td>
+            <td>{{:holder_name}} {{:holder_surname}}</td>
+        </tr>
+        {{/if}}
         <tr>
             <td>Endorsement number</td>
             <td>{{:endorsement_number}}</td>

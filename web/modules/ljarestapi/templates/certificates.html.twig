@@ -175,7 +175,11 @@
         {{if certificate_status}}
         <tr>
             <td>Status</td>
+            {{if certificate_status == 'Valid'}}
+            <td style="color: green">{{:certificate_status}}</td>
+            {{else}}
             <td style="color: red">{{:certificate_status}}</td>
+            {{/if}}
         </tr>
         {{/if}}
         <tr>
@@ -200,7 +204,7 @@
 
     {{if endorsement_number}}
 
-    <h3>Endorsement</h3> 
+    <h3>Endorsement</h3>
 
     <table>
         {{if !certificate_number}}
